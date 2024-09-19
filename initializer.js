@@ -1,5 +1,5 @@
 function LoadResourceScript(resourcePath) {
-	return  new Promise((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		const xhr = new XMLHttpRequest();
 		xhr.open("GET", window.location.href + resourcePath);
 		xhr.send();
@@ -15,23 +15,50 @@ function LoadResourceScript(resourcePath) {
 	});
 }
 
+function getScript(source) {
+	return new Promise((resolve, reject) => {
+		var script = document.createElement('script');
+		var prior = document.getElementsByTagName('script')[0];
+		script.async = 1;
+
+		script.onload = script.onreadystatechange = function( _, isAbort ) {
+			if(isAbort || !script.readyState || /loaded|complete/.test(script.readyState) ) {
+				script.onload = script.onreadystatechange = null;
+				script = undefined;
+				resolve();
+			}
+			else
+				resolve();
+		};
+
+		script.src = source;
+		prior.parentNode.insertBefore(script, prior);
+	});
+}
+
 async function Initialize() {
-	resource = await LoadResourceScript("map.svg");
-	var canvas = document.createElement('canvas');
-	var ctx = canvas.getContext('2d');
-	var img1 = new Image();
-	var svg = new Blob([resource], {type: 'image/svg+xml'});
-	var DOMURL = window.URL || window.webkitURL || window;
-	var url = DOMURL.createObjectURL(svg);
-	img1.onload = function() {
-	ctx.drawImage(img1, 0, 0);
-	DOMURL.revokeObjectURL(url);
+	let preloadDocuments = [
+		{name:"svg_map.js"},
+		{name:"zoom.js"}
+	];
+
+	// Launche the async preloading of all documents
+	for(preloadDocument of preloadDocuments) {
+		preloadDocument.defered = getScript(preloadDocument.name);
 	}
-	canvas.width = 6771,50049;
-	canvas.height = 6086,00195;
-	img1.src = url;
+
+	// Wait for all document to finish loading
+	for (preloadDocument of preloadDocuments)
+		await preloadDocument.defered;
+
+
+	window.map = new SVGMap("map.svg");
 	body = document.getElementsByTagName('body')[0];
-	body.appendChild(canvas)
+	await window.map.Draw(body);
+
+	window.zoom = new Zoom(window.map.Get_SVG_Element(),{x:6771, y:6086})
+
+
 }
 
 Initialize();
