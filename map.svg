@@ -125,9 +125,7 @@
 			#station-label>text,#station-label>text>tspan {
 				font-style:normal;
 				font-variant:normal;
-				font-weight:500;
 				font-stretch:normal;
-				font-size:7.5833px;
 				line-height:1;
 				font-family:Avenir;
 				-inkscape-font-specification:'Avenir, Heavy';
@@ -139,6 +137,11 @@
 				opacity:1;
 				fill:#000000;
 				fill-opacity:1;
+			}
+
+			.normal {
+				font-weight:500;
+				font-size:7.5833px;
 			}
 
 			.big {
@@ -892,76 +895,75 @@
 		<text class="big" x="-158.95534" y="138.77348" id="T-FR-29019-0" transform="rotate(45)" xml:space="default">
 			<tspan class="big">Brest</tspan>
 		</text>
-		<text
-			x="-168.12119" y="118.80708" id="T-FR-29103-0" transform="rotate(45)">
-			<tspan
+		<text class="normal" x="-168.12119" y="118.80708" id="T-FR-29103-0" transform="rotate(45)">
+			<tspan class="normal"
 				 >Landerneau</tspan>
 		</text>
-		<text
-			x="-151.36632" y="26.056166" id="T-FR-29080-0">
-			<tspan
+		<text class="normal"
+			x="-150.48807" y="28.808254" id="T-FR-29080-0">
+			<tspan class="normal"
 				>Hôpital-Camfrout</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-151.01357" y="43.635086" id="T-FR-29302-0">
-			<tspan
+			<tspan class="normal"
 				 >Pont-de-Buis</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-107.35712" y="11.675599" id="T-FR-29233-0" transform="rotate(-45)">
-			<tspan> Quimperlé</tspan>
+			<tspan class="normal"> Quimperlé</tspan>
 		</text>
-		<text
+		<text class="normal"
 			class="big" x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">
-			<tspan>Lorient</tspan>
+			<tspan class="normal">Lorient</tspan>
 		</text>
-		<text
-			x="-126.80771" y="96.141365" id="T-FR-56007-0" transform="rotate(-45)">
-			<tspan >Aurray</tspan>
+		<text class="normal"
+			x="-127.37451" y="98.746307" id="T-FR-56007-0" transform="rotate(-45)">
+			<tspan class="normal">Aurray</tspan>
 		</text>
-		<text
-			class="big" x="-121.24941" y="115.02228" id="T-FR-56260-0" transform="rotate(-45)">
-			<tspan >Vannes</tspan>
+		<text class="normal"
+			class="big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">
+			<tspan class="normal">Vannes</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-51.10313" y="-98.194611" id="T-FR-29151-0" transform="rotate(-45)">
-			<tspan >Morlaix</tspan>
+			<tspan class="normal">Morlaix</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-28.49445" y="-76.091797" id="T-FR-22207-0" transform="rotate(-45)">
-			<tspan>Plouaret</tspan>
+			<tspan class="normal">Plouaret</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="104.45073" y="192.0687" id="T-FR-35360-0" transform="rotate(-45)">
-			<tspan>Vitré</tspan>
+			<tspan class="normal">Vitré</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="57.061974" y="179.87" id="T-FR-35136-0" transform="rotate(-45)">
-			<tspan >Janzé</tspan>
+			<tspan class="normal">Janzé</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="187.3735" y="274.78613" id="T-FR-53097-0" transform="rotate(-45)">
-			<tspan>Évron</tspan>
+			<tspan class="normal">Évron</tspan>
 		</text>
-		<text
-			x="-53.236355" y="168.42792" id="T-FR-35236-0" transform="rotate(-45)">
-			<tspan>Redon</tspan>
+		<text class="normal"
+			x="-57.696621" y="166.61505" id="T-FR-35236-0" transform="rotate(-45)">
+			<tspan class="normal">Redon</tspan>
 		</text>
-		<text
-			x="-101.50353" y="142.83369" id="T-FR-56184-0" transform="rotate(-45)">
-			<tspan >Questembert</tspan>
+		<text class="normal"
+			x="-108.03723" y="143.1525" id="T-FR-56184-0" transform="rotate(-45)">
+			<tspan class="normal">Questembert</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-165.24535" y="91.769745" id="T-FR-29105-0" transform="rotate(45)">
-			<tspan >Landivisiau</tspan>
+			<tspan class="normal">Landivisiau</tspan>
 		</text>
 		<text
 			class="bbig" x="68.78463" y="154.83478" id="T-FR-35238-0" transform="rotate(-45)">
 			<tspan >Rennes</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="151.43181" y="6.4346581" id="T-FR-35095-0">
-			<tspan>Dol de Bretagne</tspan>
+			<tspan class="normal">Dol de Bretagne</tspan>
 		</text>
 		<text
 			class="bbbig" x="306.31592" y="-369.64957" id="T-FR-28085-0" transform="rotate(45)">
@@ -997,24 +999,24 @@
 			<tspan
 				class="bbbig" x="279.36646" y="-486.0311" >Montparnass</tspan>
 		</text>
-		<text
+		<text class="normal"
 			 x="271.89642" y="19.928392" id="text495">
-			<tspan
+			<tspan class="normal"
 				 x="271.89642" y="19.928392" >Mayenne</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="272.06519" y="-19.927856" id="T-FR-53147-0">
-			<tspan
+			<tspan class="normal"
 				>Domfront</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="273.6163" y="-44.119343" id="T-FR-61169-0">
-			<tspan
+			<tspan class="normal"
 				>Flers</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="224.45839" y="311.13403" id="T-FR-72181-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Le Mans</tspan>
 		</text>
 		<text
@@ -1027,14 +1029,14 @@
 			<tspan
 				class="bbbig" >Tours</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="169.51509" y="376.6803" id="T-FR-72071-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Château-du-Loir</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="372.05533" y="108.458" id="T-FR-72124-0">
-			<tspan
+			<tspan class="normal"
 				>Ecommoy</tspan>
 		</text>
 		<text
@@ -1047,13 +1049,13 @@
 			<tspan
 				class="bbbig"  >La Rochelles</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-127.79089" y="178.50777" id="T-FR-44049-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Croisic</tspan>
 		</text>
 		<text
-			class="big" x="-142.70552" y="209.87622" id="T-FR-44184-0" transform="rotate(-45)">
+			class="big" x="-147.66223" y="208.82231" id="T-FR-44184-0" transform="rotate(-45)">
 			<tspan
 				class="big" >Saint-Nazaire</tspan>
 		</text>
@@ -1072,9 +1074,9 @@
 			<tspan
 				class="bbbig" >Saint-Pierre-des-corps</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-7.7308092" y="-56.014641" id="T-FR-22070-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Guingamp</tspan>
 		</text>
 		<text
@@ -1097,123 +1099,122 @@
 			<tspan class="big" >Vannes</tspan>
 			<tspan class="big">TGV</tspan>
 		</text>
-		<text x="-91.305435" y="-101.77106" id="T-FR-29265-0" transform="rotate(-45)">
-			<tspan>Morlaix</tspan>
-			<tspan>TGV</tspan>
+		<text class="normal" x="-98.581871" y="65.569023" id="T-FR-29265-0">
+			<tspan class="normal" >Morlaix TGV</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="371.40265" y="-9.991293" id="T-FR-61001-0">
-			<tspan
+			<tspan class="normal"
 				>Alençon</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="184.72495" y="127.56915" id="T-FR-44036-0">
-			<tspan
+			<tspan class="normal"
 				>Châteaubriant</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="184.82079" y="163.02567" id="T-FR-44110-0">
-			<tspan
+			<tspan class="normal"
 				>Nort-sur-Erdre</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="371.35205" y="-62.041275" id="T-FR-61006-0">
-			<tspan
+			<tspan class="normal"
 				>Argentan</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="313.37344" y="169.52855" id="T-FR-08164-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Falaise</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="3.3389349" y="448.61642" id="T-FR-79202-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Parthenay</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="388.25311" y="271.43076" id="T-FR-86066-0">
-			<tspan
+			<tspan class="normal"
 				>Châtellerault</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="388.54944" y="235.70142" id="T-FR-37072-0">
-			<tspan
+			<tspan class="normal"
 				>Chinon</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="3.0200524" y="403.01593" id="T-FR-79049-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Bressuire</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="3.5911956" y="345.98022" id="T-FR-49099-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Cholet</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="309.13129" y="-154.57216" id="T-FR-72264-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				>Sablé-sur-Sarthe</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="113.57357" y="353.64569" id="T-FR-49328-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Saumur</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="256.31357" y="127.67708" id="T-FR-49331-0">
-			<tspan
+			<tspan class="normal"
 				 >Segré-en-Anjou Bleu</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="168.62427" y="241.25768" id="T-FR-44043-0">
-			<tspan
+			<tspan class="normal"
 				>Clisson</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="256.31357" y="93.281242" id="T-FR-53062-0">
-			<tspan
+			<tspan class="normal"
 				 >Château-Gontier</tspan>
-			<tspan
+			<tspan class="normal"
 				 >sur-Mayenne</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="26.524435" y="48.231972" id="T-FR-22093-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Lambal</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="26.353643" y="88.145706" id="T-FR-35184-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>La Brohinière</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="110.57822" y="27.7495" id="T-FR-35079-0">
-			<tspan
+			<tspan class="normal"
 				>Chevaigné</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="69.050133" y="-154.92105" id="T-FR-50025-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				 >Avranches</tspan>
 		</text>
 
-		<text
+		<text class="normal"
 			x="77.441002" y="-197.02658" id="T-FR-50188-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				 >Folligny</tspan>
 		</text>
 
-		<text
+		<text class="normal"
 			x="63.404274" y="-237.98842" id="T-FR-50147-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				>Courtances</tspan>
 		</text>
 
-		<text
+		<text class="normal"
 			x="76.004845" y="-269.73752" id="T-FR-50502-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				>Saint-Lô</tspan>
 		</text>
 		<text
@@ -1221,34 +1222,34 @@
 			<tspan
 				class="big" >Saint-Malo</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-5.7672453" y="121.8005" id="T-FR-35240-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Le Rheu</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="114.78688" y="111.80199" id="T-FR-35176-0">
-			<tspan
+			<tspan class="normal"
 				 >Guipry-Messac</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="114.44112" y="122.98892" id="T-FR-44007-0">
-			<tspan
+			<tspan class="normal"
 				 >Redon TGV</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-40.462395" y="208.79674" id="T-FR-44129-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Pontchâteau</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="-39.478123" y="227.47762" id="T-FR-44195-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Savenay</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="280.07568" y="-46.745235" id="T-FR-44003-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				 >Ancenis</tspan>
 		</text>
 		<text
@@ -1312,7 +1313,7 @@
 				class="bbbig" >Moulins</tspan>
 		</text>
 		<text
-			class="bbbig" x="212.97464" y="984.31116" id="T-FR-69382-0" transform="rotate(-45)">
+			class="bbbig" x="204.40031" y="987.55499" id="T-FR-69382-0" transform="rotate(-45)">
 			<tspan
 				class="bbbig">Lyon Perrache</tspan>
 		</text>
@@ -1341,36 +1342,36 @@
 			<tspan
 				class="bbbig" >Vierzon</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="268.2894" y="355.07059" id="T-FR-72132-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>La Ferté-Bernard</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="282.90375" y="393.40491" id="T-FR-41269-1" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				>Vendôme</tspan>
-			<tspan
+			<tspan class="normal"
 				>TGV</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="274.44537" y="407.10681" id="T-FR-41269-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Vendôme</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="283.97769" y="448.26633" id="T-FR-41018-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Blois</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="440.01178" y="-341.40988" id="T-FR-45234-0" transform="rotate(45)">
-			<tspan
+			<tspan class="normal"
 				 >Orléans</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="281.75974" y="368.54095" id="T-FR-28280-0" transform="rotate(-45)">
-			<tspan
+			<tspan class="normal"
 				 >Nogent-le-Rotrou</tspan>
 		</text>
 		<text
@@ -1439,13 +1440,13 @@
 			<tspan
 				class="bbbig">Aeroport CDG</tspan>
 		</text>
-		<text
+		<text class="normal"
 			x="133.80157" y="276.19324" id="T-FR-85146-0">
-			<tspan
+			<tspan class="normal"
 				 >Montaigu-Vendée</tspan>
 		</text>
 		<text
-			class="big" x="95.054298" y="281.74951" id="T-FR-85191-0">
+			class="big" x="90.30162" y="291.2471" id="T-FR-85191-0">
 			<tspan
 				class="big">La Roche-sur-Yon</tspan>
 		</text>
