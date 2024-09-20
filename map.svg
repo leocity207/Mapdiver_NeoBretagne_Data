@@ -85,7 +85,7 @@
 				fill:#ffffff
 			}
 
-			#ligne-label>g>text,#ligne-label>g>text>tspan{
+			#ligne-label g>text,#ligne-label g>text>tspan{
 				font-style:normal;
 				font-variant:normal;
 				font-weight:800;
@@ -913,17 +913,16 @@
 			x="-107.35712" y="11.675599" id="T-FR-29233-0" transform="rotate(-45)">
 			<tspan class="normal"> Quimperlé</tspan>
 		</text>
-		<text class="normal"
-			class="big" x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">
-			<tspan class="normal">Lorient</tspan>
+		<text class="big"
+			 x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">
+			<tspan class="big">Lorient</tspan>
 		</text>
 		<text class="normal"
 			x="-127.37451" y="98.746307" id="T-FR-56007-0" transform="rotate(-45)">
 			<tspan class="normal">Aurray</tspan>
 		</text>
-		<text class="normal"
-			class="big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">
-			<tspan class="normal">Vannes</tspan>
+		<text class="big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">
+			<tspan class="big">Vannes</tspan>
 		</text>
 		<text class="normal"
 			x="-51.10313" y="-98.194611" id="T-FR-29151-0" transform="rotate(-45)">
