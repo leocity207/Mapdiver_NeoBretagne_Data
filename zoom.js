@@ -20,46 +20,43 @@ class Zoom {
 	}
 
 	mousedown(e) {
-		let that = this.zoom_obj;
-		that.m_mouseStartPosition.x = e.pageX;
-		that.m_mouseStartPosition.y = e.pageY;
+		this.m_mouseStartPosition.x = e.pageX;
+		this.m_mouseStartPosition.y = e.pageY;
 
-		that.m_viewboxStartPosition.x = that.m_viewboxPosition.x;
-		that.m_viewboxStartPosition.y = that.m_viewboxPosition.y;
+		this.m_viewboxStartPosition.x = this.m_viewboxPosition.x;
+		this.m_viewboxStartPosition.y = this.m_viewboxPosition.y;
 
-		window.addEventListener("mouseup", that.mouseup.bind(this));
+		window.addEventListener("mouseup", this.mouseup.bind(this));
 
-		that.m_mouseDown = true;
+		this.m_mouseDown = true;
 	}
 
 	setviewbox()
 	{
-		let that = this.zoom_obj;
 		var vp = {x: 0, y: 0};
 		var vs = {x: 0, y: 0};
 		
-		vp.x = that.m_viewboxPosition.x;
-		vp.y = that.m_viewboxPosition.y;
+		vp.x = this.m_viewboxPosition.x;
+		vp.y = this.m_viewboxPosition.y;
 		
-		vs.x = that.m_viewboxSize.x * that.m_viewboxScale;
-		vs.y = that.m_viewboxSize.y * that.m_viewboxScale;
+		vs.x = this.m_viewboxSize.x * this.m_viewboxScale;
+		vs.y = this.m_viewboxSize.y * this.m_viewboxScale;
 
-		that.m_target_shape.setAttribute("viewBox", vp.x + " " + vp.y + " " + vs.x + " " + vs.y);
+		this.m_target_shape.setAttribute("viewBox", vp.x + " " + vp.y + " " + vs.x + " " + vs.y);
 		
 	}
 
 	mousemove(e)
 	{
-		let that = this.zoom_obj;
-		that.m_mousePosition.x = e.offsetX;
-		that.m_mousePosition.y = e.offsetY;
+		this.m_mousePosition.x = e.offsetX;
+		this.m_mousePosition.y = e.offsetY;
 		
-		if (that.m_mouseDown)
+		if (this.m_mouseDown)
 		{
-			that.m_viewboxPosition.x = that.m_viewboxStartPosition.x + (that.m_mouseStartPosition.x - e.pageX) * that.m_viewboxScale;
-			that.m_viewboxPosition.y = that.m_viewboxStartPosition.y + (that.m_mouseStartPosition.y - e.pageY) * that.m_viewboxScale;
+			this.m_viewboxPosition.x = this.m_viewboxStartPosition.x + (this.m_mouseStartPosition.x - e.pageX) * this.m_viewboxScale;
+			this.m_viewboxPosition.y = this.m_viewboxStartPosition.y + (this.m_mouseStartPosition.y - e.pageY) * this.m_viewboxScale;
 
-			that.setviewbox();
+			this.setviewbox();
 		}
 		
 		//var mpos = {x: mousePosition.x * viewboxScale, y: mousePosition.y * viewboxScale};
@@ -68,27 +65,25 @@ class Zoom {
 	}
 
 	mouseup(e) {
-		let that = this.zoom_obj;
-		window.removeEventListener("mouseup", that.mouseup.bind(this));
+		window.removeEventListener("mouseup", this.mouseup.bind(this));
 		
-		that.m_mouseDown = false;
+		this.m_mouseDown = false;
 	}
 
 	wheel(e) {
-		let that = this.zoom_obj;
 		var scale = (e.deltaY < 0) ? 0.8 : 1.2;
 		
-		if ((that.m_viewboxScale * scale < 8.) && (that.m_viewboxScale * scale > 1./256.))
+		if ((this.m_viewboxScale * scale < 8.) && (this.m_viewboxScale * scale > 1./256.))
 		{  
-			var mpos = {x: that.m_mousePosition.x * that.m_viewboxScale, y: that.m_mousePosition.y * that.m_viewboxScale};
-			var vpos = {x: that.m_viewboxPosition.x, y: that.m_viewboxPosition.y};
+			var mpos = {x: this.m_mousePosition.x * this.m_viewboxScale, y: this.m_mousePosition.y * this.m_viewboxScale};
+			var vpos = {x: this.m_viewboxPosition.x, y: this.m_viewboxPosition.y};
 			var cpos = {x: mpos.x + vpos.x, y: mpos.y + vpos.y}
 
-			that.m_viewboxPosition.x = (that.m_viewboxPosition.x - cpos.x) * scale + cpos.x;
-			that.m_viewboxPosition.y = (that.m_viewboxPosition.y - cpos.y) * scale + cpos.y;
-			that.m_viewboxScale *= scale;
+			this.m_viewboxPosition.x = (this.m_viewboxPosition.x - cpos.x) * scale + cpos.x;
+			this.m_viewboxPosition.y = (this.m_viewboxPosition.y - cpos.y) * scale + cpos.y;
+			this.m_viewboxScale *= scale;
 		
-			that.setviewbox();
+			this.setviewbox();
 		}
 	}
 }
