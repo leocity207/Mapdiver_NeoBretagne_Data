@@ -23,7 +23,7 @@
 				fill-opacity:1;
 			}
 			.SC-LER-NOR2 {stroke:#2699d1}
-			#L-LER-NOR2-0,#L-LER-NOR2-1 {fill:#2699d1}
+			#L-LER-NOR2-0>rect,#L-LER-NOR2-1>rect {fill:#2699d1}
 			.SC-LGV-FR4 {stroke:#da026c}
 			#L-LGV-FR4-0>rect,#L-LGV-FR4-1>rect {fill:#da026c}
 			.SC-LGV-BRE2 {stroke:#700707}
@@ -85,7 +85,9 @@
 				fill:#ffffff
 			}
 
-			#ligne-label g>text,#ligne-label g>text>tspan{
+			#ligne-label g text,
+			#ligne-label use
+			{
 				font-style:normal;
 				font-variant:normal;
 				font-weight:800;
