@@ -1,0 +1,19 @@
+- app container : app container should have panel on the left  if there are more than one element inside the list
+ - an app object is just a container for apps it have a loader and a page object
+    - Loader : a loader is a simple class image  that repeat itself
+    - page object: a page object is where everything happen it emit a signal when its complite to the one that created it
+        - map-page: the map page object contain three thing they are all linked together:  
+            * header menu (that contains option that can interact with the map by emiting signals)
+            * the map that display information
+            * a hovering left panel that display information when the user select a line or a station
+
+header menue:
+the header menu is composed of three things
+    - a hamberger menu on the left (that can be used to dispay more information to the user (including the search bar or display aditional information))
+    - a search bar to look for stations or lines inside the map
+    - a logo
+
+problems that we are still facing
+    - could it be possible to create HTML class elements
+
+    
