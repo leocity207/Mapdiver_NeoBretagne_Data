@@ -32,14 +32,19 @@ function getScript(source) {
 		};
 
 		script.src = source;
+		script.type = "application/javascript"
 		prior.parentNode.insertBefore(script, prior);
 	});
 }
 
 async function Initialize() {
 	let preloadDocuments = [
-		{name:"svg_map.js"},
-		{name:"zoom.js"}
+		{name:"fabric.js"},
+		{name:"hammer.js"},
+		{name:"config.js"},
+		{name:"animejs.js"},
+		{name:"map.js"},
+		{name:"normalizeWheel.js"}
 	];
 
 	// Launche the async preloading of all documents
@@ -47,17 +52,13 @@ async function Initialize() {
 		preloadDocument.defered = getScript(preloadDocument.name);
 	}
 
-	// Wait for all document to finish loading
 	for (preloadDocument of preloadDocuments)
 		await preloadDocument.defered;
 
-
-	window.map = new SVGMap("map.svg");
-	body = document.getElementsByTagName('body')[0];
-	await window.map.Draw(body);
-
-	window.zoom = new Zoom(window.map.Get_SVG_Element(),{x:6771, y:6086})
-
+	window.map = new Map("map-canvas", "desktop", "map-suisse.svg")
+	await window.map.setup();
+	window.map.initial_zoom_move();
+	window.map.setup_mouse_handlers(null,null);
 
 }
 
