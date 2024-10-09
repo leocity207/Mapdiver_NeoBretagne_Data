@@ -25,8 +25,13 @@ class App extends HTMLElement
 	Init() {
 		if(!this.loader || !this.main_page)
 			throw "missing value to init an App."
-		this.appendChild(this.loader);
-		this.appendChild(this.main_page);
+		let shadow = this.attachShadow({ mode: "open" });
+		const link = document.createElement('link');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('href', 'style/app.css');
+		shadow.appendChild(link);
+		shadow.appendChild(this.loader);
+		shadow.appendChild(this.main_page);
 		//to be removed
 		this.loader.Show();
 		this.main_page.Hide();

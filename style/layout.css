@@ -29,28 +29,4 @@ app-container {
     display: flex;
 }
 
-app-container > .app-window {
-    height: 100%;
-    width: 100%;
-}
 
-app-container > .panel {
-    height:100%;
-    width: 2.5rem;
-}
-
-app-app {
-    height: 100%;
-    position: relative;
-    display: block;
-}
-
-train-animation {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: 100%;
-    width: 100%;
-}

@@ -18,8 +18,13 @@ class App_Container extends HTMLElement
 	}
 
 	Init() {
-		this.appendChild(this.panel);
-		this.appendChild(this.app_window);
+		let shadow = this.attachShadow({ mode: "open" });
+		const link = document.createElement('link');
+		link.setAttribute('rel', 'stylesheet');
+		link.setAttribute('href', 'style/app-container.css');
+		shadow.appendChild(link);
+		shadow.appendChild(this.panel);
+		shadow.appendChild(this.app_window);
 	}
 
 
