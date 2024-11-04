@@ -1,6 +1,7 @@
 import { fabric } from 'fabric';
 import anime from 'animejs';
 import Hammer from 'hammerjs';
+import Util from '../utils';
 
 class SVG_Map {
 	constructor(client_type, filename, config) {
@@ -218,7 +219,7 @@ class SVG_Map {
 				const point_diff_distance = move_x > move_y ? move_x : move_y
 				// find the zoom difference
 				const zoom_diff_distance = zoom_box.zoom_level > orig_zoom ? zoom_box.zoom_level - orig_zoom : orig_zoom - zoom_box.zoom_level
-				const animation_time = calc_map_animation_timing(point_diff_distance, zoom_diff_distance, this.client_type)
+				const animation_time = Util.Calc_Map_Animation_Timing(point_diff_distance, zoom_diff_distance, this.client_type)
 				let mza = anime({
 					targets: that.move_zoom_animation_obj,
 					zoom: zoom_box.zoom_level,
@@ -658,7 +659,7 @@ class SVG_Map {
 				z = this.config.MAX_ZOOM_IN;
 			initial_zoom = z;
 		} else
-			console.warn('Best_Initial_Zoom: Cannot calculate initial zoom, object not found!');
+			if(this.config.DEBUG) console.warn('Best_Initial_Zoom: Cannot calculate initial zoom, object not found!');
 		return initial_zoom;
 	}
 

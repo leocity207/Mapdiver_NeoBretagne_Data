@@ -1,4 +1,5 @@
 import SVG_Map from './svg_map';
+import Util from '../utils';
 
 class Network_Map extends SVG_Map {
 
@@ -97,7 +98,7 @@ class Network_Map extends SVG_Map {
 			if (obj.id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`) === -1) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id);
 				const cld = this.#Find_Line_Data_By_Id(cid);
-				let obj_fill = rgba_to_hex(obj.get('fill'));
+				let obj_fill = Util.Rgba_To_Hex(obj.get('fill'));
 				if (cld.color === obj_fill) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -111,7 +112,7 @@ class Network_Map extends SVG_Map {
 		}
 		const specific_line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`, false);
 		for (const obj of specific_line_labels) {
-			let obj_fill = rgba_to_hex(obj.get('fill')) 
+			let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) 
 			if (line_data.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 				if(this.config.HARD_ANIMATION_TRANSITION)
 					obj.set('fill', line_data.color)
@@ -147,7 +148,7 @@ class Network_Map extends SVG_Map {
 		for (const obj of line_labels) {
 			const line_code = this.#Find_Track_Code_In_Id(obj.id)
 			const line_data = this.#Find_Line_Data_By_Id(line_code)
-			let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+			let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 			if (DISABLE_ELEMENT_COLOR === obj_fill) {
 				if(this.config.HARD_ANIMATION_TRANSITION)
 					obj.set('fill', line_data.color); 
@@ -160,7 +161,6 @@ class Network_Map extends SVG_Map {
 		}
 		this.fabric_canvas.requestRenderAll()
 	}
-
 
 	//////////////////////////////////////////////////////////////////////////////
 	/// @brief	highlight all line part(s) that are in connection with the to station.
@@ -221,7 +221,7 @@ class Network_Map extends SVG_Map {
 			if (disable) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id)
 				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+				let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 				if (cld.color === obj_fill) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -238,7 +238,7 @@ class Network_Map extends SVG_Map {
 			for (const obj of spezific_line_labels) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id)
 				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+				let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 				if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', cld.color)
@@ -328,7 +328,7 @@ class Network_Map extends SVG_Map {
 					if (disable) {
 						const cid = this.#Find_Track_Code_In_Id(obj.id)
 						const cld = this.#Find_Line_Data_By_Id(cid)
-						let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+						let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 						if (cld.color === obj_fill) {
 							if(this.config.HARD_ANIMATION_TRANSITION)
 								obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -346,7 +346,7 @@ class Network_Map extends SVG_Map {
 						for (const obj of spezific_line_labels) {
 							const cid = this.#Find_Track_Code_In_Id(obj.id)
 							const cld = this.#Find_Line_Data_By_Id(cid)
-							let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+							let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 							if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 								if(this.config.HARD_ANIMATION_TRANSITION)
 									obj.set('fill', cld.color)
@@ -376,7 +376,7 @@ class Network_Map extends SVG_Map {
 				for (const obj of line_labels) {
 					const cid = this.#Find_Track_Code_In_Id(obj.id)
 					const cld = this.#Find_Line_Data_By_Id(cid)
-					let obj_fill = rgba_to_hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+					let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 					if (cld.color === obj_fill) {
 						if(this.config.HARD_ANIMATION_TRANSITION)
 							obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -389,7 +389,7 @@ class Network_Map extends SVG_Map {
 				}
 				if(this.config.DEBUG) console.log('from_connected_stations or to_connected_stations is undefined');
 				if(this.config.DEBUG) console.log('from_connected_stations: ',from_connected_stations);
-				if(this.config.DEBUG)  console.log('to_connected_stations: ',to_connected_stations);
+				if(this.config.DEBUG) console.log('to_connected_stations: ',to_connected_stations);
 			}
 		}
 	}
@@ -416,9 +416,8 @@ class Network_Map extends SVG_Map {
 		if (highlight_pos_from_obj !== undefined && highlight_pos_to_obj !== undefined) {
 			let zoom_box = this.Zoom_Box_For_Objs(highlight_pos_from_obj, highlight_pos_to_obj);
 			this.Animated_Pan_Zoom(zoom_box)
-		} else {
-			console.warn('Zoom_Highlighted_Stations, cannot find from or to position object')
-		}
+		} else
+			if(this.config.DEBUG) console.warn('Zoom_Highlighted_Stations, cannot find from or to position object');
 	}
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -453,7 +452,7 @@ class Network_Map extends SVG_Map {
 				else if (obj_y > max_y)
 					max_y = obj_y;
 			} else
-				console.log('highlight_pos_obj not found for:', station_code)
+				if(this.config.DEBUG) console.log('highlight_pos_obj not found for:', station_code)
 		}
 		let bounds = {
 			left: min_x,
@@ -464,7 +463,7 @@ class Network_Map extends SVG_Map {
 			center_top: 0,
 			zoom_level: 2, // fix for now
 		}
-		const zoom_box = this.Optimize_Zoom_Box_For_Viewport(bounds, false)
+		const zoom_box = this._Optimize_Zoom_Box_For_Viewport(bounds, false)
 		this.Animated_Pan_Zoom(zoom_box)
 	}
 
@@ -479,7 +478,7 @@ class Network_Map extends SVG_Map {
 			this.Animated_Pan_Zoom(zoom_box)
 		} 
 		else
-			console.warn('Zoom_Not_Visible_Station, cannot find from position object')
+			if(this.config.DEBUG) console.warn('Zoom_Not_Visible_Station, cannot find from position object')
 	}
 
 	/////////////////////////////////////////////////////
