@@ -1,7 +1,7 @@
-import { fabric } from 'fabric';
-import anime from 'animejs';
-import Hammer from 'hammerjs';
-import Util from '../utils';
+import { fabric } from '../../libraries/fabric_wrapper.js';
+import * as anime from '../../libraries/animejs.js';
+import * as Hammer from '../../libraries/hammer.js';
+import Util from '../utils.js';
 
 class SVG_Map {
 	constructor(client_type, filename, config) {
@@ -86,7 +86,7 @@ class SVG_Map {
 	/// @param language language of the map
 	/// @param id, id to create the canva to
 	/// @param loader to show the main loader
-	Setup = async (language, id, loader) => {
+	Setup = (language, id) => {
 		/*
 			Setup the canvas
 			and load the svg
@@ -95,7 +95,6 @@ class SVG_Map {
 			the canvas element
 		*/
 		this.language = language
-		loader.show();
 
 		this.fabric_canvas = new fabric.Canvas(id, {
 			imageSmoothingEnabled: false,
@@ -125,8 +124,7 @@ class SVG_Map {
 					top: obj.top,
 					right: obj.left,
 					bottom: obj.top
-				}
-				loader.hide();
+				};
 				resolve();
 			});
 		});

@@ -1,5 +1,5 @@
-import SVG_Map from './svg_map';
-import Util from '../utils';
+import SVG_Map from './svg_map.js';
+import Util from '../utils.js';
 
 class Network_Map extends SVG_Map {
 

@@ -22,9 +22,10 @@ class App extends HTMLElement
 
 	////////////////////////////////////////////////////////////
 	/// @brief Initialize and app after it has been instantiated
-	Init() {
-		if(!this.loader || !this.main_page)
-			throw "missing value to init an App."
+	Init(loader, main_page, icon) {
+		this.loader = loader;
+		this.main_page = main_page;
+		this.icon = icon;
 		let shadow = this.attachShadow({ mode: "open" });
 		const link = document.createElement('link');
 		link.setAttribute('rel', 'stylesheet');
@@ -32,9 +33,6 @@ class App extends HTMLElement
 		shadow.appendChild(link);
 		shadow.appendChild(this.loader);
 		shadow.appendChild(this.main_page);
-		//to be removed
-		this.loader.Show();
-		this.main_page.Hide();
 	}
 
 	///////////////////////
@@ -49,6 +47,16 @@ class App extends HTMLElement
 		this.style.display = 'none';
 	}
 
+	Loaded() {
+		this.main_page.Show();
+		this.loader.Hide();
+	}
+
+	Loading() {
+		this.main_page.Hide();
+		this.loader.Show();
+	}
+
 	//////////////////
 	/// STATIC METHODS
 	//////////////////
@@ -58,10 +66,7 @@ class App extends HTMLElement
 	/// @return a new instance App (it should be added to the dom via an App_Container object)
 	static Create(loader, main_page, icon) {
 		let elt = document.createElement("app-app");
-		elt.loader = loader;
-		elt.main_page = main_page;
-		elt.icon = icon;
-		elt.Init();
+		elt.Init(loader, main_page, icon);
 		return elt;
 	}
 
