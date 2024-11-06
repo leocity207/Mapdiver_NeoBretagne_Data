@@ -3,7 +3,7 @@ const Config = {
 
 	// Initial value
 	INITIAL_ZOOM : 0.7, // initial zoom, perhaps this needs a calculation
-	INITIAL_CENTERING_OBJECT_ID: "BRE", // Initial ID of the object to be centered on
+	INITIAL_CENTERING_OBJECT_ID: "FR-BRE", // Initial ID of the object to be centered on
 	INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP : 200, // add this to bound zoom calculation to not be on the canvas border
 	INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE : 150, // add this to bound zoom calculation to not be on the canvas border
 

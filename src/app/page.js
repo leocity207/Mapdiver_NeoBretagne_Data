@@ -2,18 +2,14 @@ class Page extends HTMLElement
 {
 	constructor(loader,main_page) {
 		super();
-		this.m_loader = loader;
-		this.m_main_page = main_page;
 	}
 
-	Show_Loader() {
-		this.m_loader.show();
-		this.m_main_page.hide();
+	Show() {
+		this.style.display = 'block';
 	}
 
-	Show_Page() {
-		this.m_loader.hide();
-		this.m_main_page.show();
+	Hide() {
+		this.style.display = 'none';
 	}
 
 	static Create() {

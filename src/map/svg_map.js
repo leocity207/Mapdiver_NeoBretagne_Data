@@ -103,6 +103,7 @@ class SVG_Map {
 			allowTouchScrolling: true,
 			selection: false,
 		});
+
 		// load map from public folder
 		return new Promise((resolve, reject) => {
 			fabric.loadSVGFromURL(this.filename, (objects, options) => {
@@ -117,7 +118,7 @@ class SVG_Map {
 				let initial_zoom = this.#Best_Initial_Zoom(); // calculate the zoom that fits best
 				this.fabric_canvas.setZoom(initial_zoom);
 				this.fabric_canvas.viewportCenterObject(obj); // center the svg in the viewport, take zoom into account
-				this.fabric_canvas.requestRenderAll()
+				this.fabric_canvas.requestRenderAll();
 				// fill check bound data with initial values
 				this.last_bounding_data = {
 					left: obj.left,
@@ -283,7 +284,7 @@ class SVG_Map {
 			}
 
 			const Move_Zoom_Animation = () => {
-				const background_res = this._Find_Map_Objs_By_Id(Config.INITIAL_CENTERING_OBJECT_ID, true, 'polygon');
+				const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'polygon');
 				if (background_res.length === 1) {
 					const background = background_res[0];
 					let zoom_box = this.Zoom_Box_For_Objs(background)
@@ -307,7 +308,7 @@ class SVG_Map {
 						zoom: target_zoom,
 						x: target_x,
 						y: target_y,
-						easing: Config.DEFAULT_ANIMATION_EASING,
+						easing: this.config.DEFAULT_ANIMATION_EASING,
 						duration: animation_time,
 						update: function () {
 							that.fabric_canvas.setZoom(1); // this is very important!
@@ -319,7 +320,7 @@ class SVG_Map {
 					mza.finished.then(resolve);
 				}
 			}
-			setTimeout(Move_Zoom_Animation, Config.INITIAL_ZOOM_MOVE_DELAY);
+			setTimeout(Move_Zoom_Animation, this.config.INITIAL_ZOOM_MOVE_DELAY);
 		});
 	}
 
@@ -611,7 +612,7 @@ class SVG_Map {
 	/// @return the scale value as float
 	#Best_Initial_Zoom = () => {
 		let initial_zoom = this.config.INITIAL_ZOOM; // return that if object not found
-		const background_res = this._Find_Map_Objs_By_Id(Config.INITIAL_CENTERING_OBJECT_ID, true, 'polygon');
+		const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
 		if (background_res.length === 1) {
 			const background = background_res[0];
 			let vpw = this.fabric_canvas.getWidth()
