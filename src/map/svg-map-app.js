@@ -27,7 +27,8 @@ class Map_App extends App {
 	Initialize_Map = async () => {
 		this.Loading();
 		this.map = new SVG_Map("Desktop", "image/map.svg", Config);
-		await this.map.Setup("Fr", this.map_canvas)
+		await this.map.Setup("Fr", this.map_canvas);
+		this.map.Setup_Mouse_Handlers();
 		this.Loaded();
 		this.map.Initial_Zoom_Move();
 	}

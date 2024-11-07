@@ -1,6 +1,6 @@
 
 const Config = {
-
+  DEBUG: true,
 	// Initial value
 	INITIAL_ZOOM : 0.7, // initial zoom, perhaps this needs a calculation
 	INITIAL_CENTERING_OBJECT_ID: "FR-BRE", // Initial ID of the object to be centered on

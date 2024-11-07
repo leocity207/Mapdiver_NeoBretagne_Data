@@ -1,6 +1,7 @@
 import { fabric } from '../../libraries/fabric_wrapper.js';
-import * as anime from '../../libraries/animejs.js';
-import * as Hammer from '../../libraries/hammer.js';
+import { anime } from '../../libraries/animejs_wrapper.js';
+import { Hammer } from '../../libraries/hammer_wrapper.js';
+import {normalizeWheel} from '../../libraries/normalizeWheel.js';
 import Util from '../utils.js';
 
 class SVG_Map {
@@ -135,9 +136,7 @@ class SVG_Map {
 	/// @brief setup all the callback on the map
 	/// @param Lines, list of Line Object
 	/// @param Station, list of Station Objects
-	Setup_Mouse_Handlers = (Lines, Station) => {
-		this.Lines = Lines
-		this.Station = Station
+	Setup_Mouse_Handlers = () => {
 
 		this.fabric_canvas.on('mouse:wheel', this.#Handle_User_Mousewheel_Zoom);
 		this.fabric_canvas.on('object:moving', this.#Handle_User_Map_Move_Touch);
@@ -540,6 +539,7 @@ class SVG_Map {
 	// @param event a hammer event
 	// @todo if zoomed in a corner and near the edge, no zoom out is possible, we should actually pan and zoom
 	#Handle_User_Mousewheel_Zoom = (opt) => {
+		if(this.config.DEBUG) console.log("Handle_User_Mousewheel_Zoom");	
 		if (!this.map_animation_run) {
 			const normalized = normalizeWheel(opt.e);
 			const current_viewport_transform = this.fabric_canvas.viewportTransform;
