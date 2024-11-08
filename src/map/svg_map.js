@@ -283,7 +283,7 @@ class SVG_Map {
 			}
 
 			const Move_Zoom_Animation = () => {
-				const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'polygon');
+				const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
 				if (background_res.length === 1) {
 					const background = background_res[0];
 					let zoom_box = this.Zoom_Box_For_Objs(background)

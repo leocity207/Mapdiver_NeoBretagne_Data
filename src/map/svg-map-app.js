@@ -30,7 +30,7 @@ class Map_App extends App {
 		await this.map.Setup("Fr", this.map_canvas);
 		this.map.Setup_Mouse_Handlers();
 		this.Loaded();
-		this.map.Initial_Zoom_Move();
+		await this.map.Initial_Zoom_Move();	
 	}
 
 	static Create(loader, main_page, icon) {
