@@ -4,6 +4,10 @@ import { Hammer } from '../../libraries/hammer_wrapper.js';
 import {normalizeWheel} from '../../libraries/normalizeWheel.js';
 import Util from '../utils.js';
 
+
+/**
+ * SVG_Map declare a picture SVG map where we can manipulate object and zoom to object inside the map
+ */
 class SVG_Map {
 	constructor(client_type, filename, config) {
 

@@ -1,8 +1,17 @@
 import App from './app.js';
 
 
-//////////////////////////////////////////////////////////////////////////////////////
-/// @brief App container are element that display Apps with a left bare side if needed
+/**
+ *  App_container are element that display *Apps*.
+ *  
+ * 	When more than one *App* is added to the container  it create a left bare side to switch between app.
+ *  
+ * 	When multiple *App* are being used it is recommended to set the Icon inside the *App* in order to display it inside the left bare side.
+ * 
+ *  every element contained inside the container is inside a ShadowDom
+ * 
+ *  this class create a custome element named "app-container"
+ */
 class App_Container extends HTMLElement
 {
 
@@ -17,6 +26,10 @@ class App_Container extends HTMLElement
 		this.app_window = App_Container.#Create_App_Windows();
 	}
 
+	/**
+	* Initialize the App_Container
+	* @protected
+	*/
 	Init() {
 		let shadow = this.attachShadow({ mode: "open" });
 		const link = document.createElement('link');
@@ -32,9 +45,10 @@ class App_Container extends HTMLElement
 	/// METHODS
 	///////////
 
-	////////////////////////////////////////////////////
-	/// @brief add a new app to the container
-	/// @param new_app the app it should be a App object
+	/**
+	* add a new app to the container
+	* @param {App} new_app the App that should  be added to the container
+	*/
 	Add_App(new_app) {
 		if(!new_app instanceof App)
 			throw "new_app parameter should be an App object"
@@ -43,25 +57,29 @@ class App_Container extends HTMLElement
 			this.app_window.style.display = 'block';
 		if(this.m_app_list.length === 1)
 			this.app_window.appendChild(new_app);
-		
 	}
 
 	//////////////////
 	/// STATIC METHODS
 	//////////////////
 
-	//////////////////////////////////////////////////////////////////////
-	/// @brief create an App_Container object and initialize it
-	/// @return a new instance App_Container ready to be added to the DOM
+	/**
+	* create an App_Container object and initialize it ready to be added to the DOM
+	*
+	* @return a new instance App_Container ready to be added to the DOM
+	*/
 	static Create() {
 		let elt = document.createElement("app-container");
 		elt.Init();
 		return elt;
 	}
 
-	////////////////////////////////////////////////////////////
-	/// @brief create the left panel Div that contains app icons
-	/// @return a HTMLDivElement
+	/*
+	* Create the left panel Div that contains app icons.
+	*
+	* @return HTMLDivElement of class *panel*
+	* @private 
+	*/
 	static #Create_Left_Panel() {
 		let elt = document.createElement("div");
 		elt.classList.add("panel");
@@ -69,9 +87,11 @@ class App_Container extends HTMLElement
 		return elt;
 	}
 
-	////////////////////////////////////////////////////////////
-	/// @brief create the main app display Div that contains app icons
-	/// @return a HTMLDivElement
+	/*
+	* create the main app display Div that contains app icons
+	* @return HTMLDivElement of class *app-window*
+	* @private
+	*/
 	static #Create_App_Windows() {
 		let elt = document.createElement("div");
 		elt.classList.add("app-window");

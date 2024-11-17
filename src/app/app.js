@@ -2,16 +2,22 @@ import Loader from '../loader/loader.js';
 import Page from './page.js'; 
 
 
-//////////////////////////////////////////////////////////////////////////////////////
-/// App object that represent a working app
-/// App are made of two thing A main page node object and a loader animation displayed
-/// App register a "Loading" and "Done" event to display loading element 
+/**
+ * App object that represent a working app
+ * 
+ * App are made of two thing A main page node object and a loader animation displayed
+ * 
+ * App register a "Loading" and "Done" event to display loading element
+ * 
+ * Every element inside the App is inside a ShadowDom
+ * 
+ * App define a custom element named "app-app"
+*/
 class App extends HTMLElement
 {
 
 	/////////
 	/// CTOR
-	/////////
 	constructor() {
 		super();
 	}
@@ -20,8 +26,10 @@ class App extends HTMLElement
 	/// METHOD
 	////////////
 
-	////////////////////////////////////////////////////////////
-	/// @brief Initialize and app after it has been instantiated
+	/**
+	* Initialize an App object after it has been instantiated
+	* @protected
+	*/
 	Init(loader, main_page, icon) {
 		this.loader = loader;
 		this.main_page = main_page;
@@ -35,23 +43,31 @@ class App extends HTMLElement
 		shadow.appendChild(this.main_page);
 	}
 
-	///////////////////////
-	/// @brief Show the app
+	/**
+	 * Show the App
+	 */
 	Show() {
 		this.style.display = 'block';
 	}
 
-	///////////////////////
-	/// @brief Hide the app
+	/**
+	 * Hide the App
+	 */
 	Hide() {
 		this.style.display = 'none';
 	}
 
+	/**
+	 * Show the page and Hide the loader
+	 */
 	Loaded() {
 		this.main_page.Show();
 		this.loader.Hide();
 	}
 
+	/**
+	 * Hide the page and show the loader
+	 */
 	Loading() {
 		this.main_page.Hide();
 		this.loader.Show();
@@ -61,9 +77,13 @@ class App extends HTMLElement
 	/// STATIC METHODS
 	//////////////////
 
-	///////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief create an App object and initialize it
-	/// @return a new instance App (it should be added to the dom via an App_Container object)
+	/**
+	 * create an App object and initialize it
+	 * @param {Loader} loader 
+	 * @param {Page} main_page 
+	 * @param {Icon} icon 
+	 * @returns {App} a new instance App (it should be added to the dom via an App_Container object)
+	 */
 	static Create(loader, main_page, icon) {
 		let elt = document.createElement("app-app");
 		elt.Init(loader, main_page, icon);

@@ -1,6 +1,10 @@
 import SVG_Map from './svg_map.js';
 import Util from '../utils.js';
 
+
+/**
+ * Network_Map inherit from SVG_Map and declare map with lines, tracks and station, to zoom to and get information off
+ */
 class Network_Map extends SVG_Map {
 
 	constructor(client_type, filename, map_config, network_config) {
