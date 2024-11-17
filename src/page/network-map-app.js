@@ -1,5 +1,5 @@
 import Map_App from "./svg-map-app.js";
-import Network_Map from "./network_map.js";
+import Network_Map from "../map/network_map.js";
 
 /**
  * Network_Map_App define a node that contain a Network_Map object

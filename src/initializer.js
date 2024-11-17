@@ -1,5 +1,5 @@
 import App_Container from './app/app-container.js';
-import Map_App from './map/svg-map-app.js';
+import Map_App from './page/svg-map-app.js';
 import Page from './app/page.js';
 import Train_Animation from './loader/Train_Animation.js';
 

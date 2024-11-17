@@ -1,5 +1,5 @@
 import App from "../app/app.js";
-import SVG_Map from "./svg_map.js";
+import SVG_Map from "../map/svg_map.js";
 import Config from "../config/config.js"
 
 /**
