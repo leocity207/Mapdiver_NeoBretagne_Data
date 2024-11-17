@@ -9,6 +9,13 @@ import Util from '../utils.js';
  * SVG_Map declare a picture SVG map where we can manipulate object and zoom to object inside the map
  */
 class SVG_Map {
+
+	/**
+	 * 
+	 * @param {String} client_type if you areusing mobile or desktop
+	 * @param {String} filename the filename of the svg map
+	 * @param {Object} config config of the svg map (see config)
+	 */
 	constructor(client_type, filename, config) {
 
 		this.filename = filename;
@@ -86,11 +93,11 @@ class SVG_Map {
 	/// Public function
 	////////////////////
 
-	////////////////////////////////////////
-	/// @brief Setup the map to be viewd
-	/// @param language language of the map
-	/// @param id, id to create the canva to
-	/// @param loader to show the main loader
+	/**
+	* Setup the map to be viewd
+	* @param {String} language language of the map
+	* @param {String} id id to create the canva to
+	*/
 	Setup = (language, id) => {
 		/*
 			Setup the canvas
@@ -136,10 +143,9 @@ class SVG_Map {
 		});
 	}
 
-	////////////////////////////////////////////
-	/// @brief setup all the callback on the map
-	/// @param Lines, list of Line Object
-	/// @param Station, list of Station Objects
+	/**
+	 * Setup all the callback on the map
+	 */
 	Setup_Mouse_Handlers = () => {
 
 		this.fabric_canvas.on('mouse:wheel', this.#Handle_User_Mousewheel_Zoom);
@@ -158,10 +164,11 @@ class SVG_Map {
 		this.svg_main_group.on('mousedown', this.#Handle_Main_Group_Mousedown)
 	}
 
-		////////////////////////////////////////////////
-	/// @brief find objects by complete classname, and optional type
-	/// @param id       The id to match exactly
-	/// @param obj_type The type of svg object
+	/**
+	* find objects by complete classname, and optional type
+	* @param {String} class_name   The class to match exactly
+	* @param {class_name} obj_type The type of svg object
+	*/
 	Find_Map_Objs_By_Classname = (class_name, obj_type = undefined) => {
 		let result_list = [];
 		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'class', class_name, result_list);
@@ -173,13 +180,14 @@ class SVG_Map {
 			return result_list;
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////
-	/// @brief as we can not anmiate absolute pan x and y at the same time with given fabricjs functions. We take the animjs package todo the work.
-	/// @param zoom_box The target to zoom too a object that contain 
-	///                 center_left
-	///                 center_top
-	///                 zoom_level
-	/// @param promise_callback_fnc callback function when the animation is finished
+	/**
+	* @brief as we can not anmiate absolute pan x and y at the same time with given fabricjs functions. We take the animjs package todo the work.
+	* @param {Bound} zoom_box The target to zoom too an object that contain 
+	*                 center_left
+	*                 center_top
+	*                 zoom_level
+	* @param {function} promise_callback_fnc callback function when the animation is finished
+	*/
 	Animated_Pan_Zoom = async (zoom_box = null) => {
 		return new Promise((resolve, reject) => {
 			// if an animation is running, interrupt it
@@ -256,10 +264,11 @@ class SVG_Map {
 		});
 	}
 
-	/////////////////////////////////////////////////////////////////////////
-	/// @brief set the new width and heights, center and zoom to the whole map
-	/// @param map_containter_width width of the new map
-	/// @param map_container_height height of the new map
+	/**
+	* Set the new width and heights, center and zoom to the whole map
+	* @param {Number} map_containter_width width of the new map
+	* @param {Number} map_container_height height of the new map
+	*/
 	Zoom_Check_Map_Resize = (map_containter_width, map_container_height) => {
 		this.fabric_canvas.setWidth(map_containter_width)
 		this.fabric_canvas.setHeight(map_container_height)
@@ -271,9 +280,10 @@ class SVG_Map {
 		this.fabric_canvas.viewportCenterObject(this.svg_main_group)
 	}
 
-	///////////////////////////////////////////////////////////////////////////////
-	/// @brief Initial animation toward the initial ID of an element inside the map
-	/// @note this function is synchronous and wait for the end of the animation
+	/**
+	* Initial animation toward the initial ID of an element inside the map
+	* This function is synchronous and wait for the end of the animation
+	*/
 	Initial_Zoom_Move = async () => {
 		return new Promise((resolve, reject) => {
 			if(this.config.DEBUG) console.log('initial zoom move!');
@@ -327,11 +337,12 @@ class SVG_Map {
 		});
 	}
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief find the rectangle around one or two objects on the map. If only one object is given, calculate it for only one object
-	///        use different spacing if one or two objects are given
-	/// @todo check if spacing is sufficient for mobile too!
-	/// @return new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
+	/**
+	* Find the rectangle around one or two objects on the map. If only one object is given, calculate it for only one object
+	*        use different spacing if one or two objects are given
+	* @todo check if spacing is sufficient for mobile too!
+	* @return {Bound} new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
+	*/
 	Zoom_Box_For_Objs = (obj_1, obj_2 = undefined) => {
 		let bounds = {
 			left: 0,
@@ -382,23 +393,29 @@ class SVG_Map {
 	/// Protected function
 	//////////////////////
 
-	/////////////////////////////////////////////////////////////////////////////////////
-	// @brief Handle when the user hover on a object isnide the canva to change the cursor
+	/**
+	* Handle when the user hover on a object isnide the canva to change the cursor
+	* @protected
+	*/
 	_Handle_Mouse_Over_Obj = () => {
 		this.fabric_canvas.hoverCursor = "pointer";
 	}
 
-	/////////////////////////////////////////////////////////////////////////////////////
-	// @brief Handle when the user hover on a object isnide the canva to change the cursor
+	/**
+	* Handle when the user hover on a object isnide the canva to change the cursor
+	* @protected
+	*/
 	_Handle_Mouse_Out_Obj = () => {
 		this.fabric_canvas.hoverCursor = "move";
 	}
 
-		////////////////////////////////////////////////
-	/// @brief find objects by complete id, and optional type
-	/// @param id          The id to match exactly
-	/// @param exact_Match If true the id must exactly match otherwise its partial ID
-	/// @param obj_type    The type of svg object
+	/**
+	* Find objects by complete id, and optional type
+	* @param {String}  id          The id to match exactly
+	* @param {Boolean} exact_Match If true the id must exactly match otherwise its partial ID
+	* @param {String optional} obj_type    The type of svg object
+	* @protected
+	*/
 	_Find_Map_Objs_By_Id = (id, exact_Match, obj_type = undefined) => {
 		let result_list = [];
 		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'id', id, result_list, exact_Match);
@@ -410,18 +427,20 @@ class SVG_Map {
 			return result_list;
 	}
 
-	////////////////////////////////////////////////////
-	/// @brief find the best bounds for the image
-	/// @params bounds     Should be a box where to zoom
-	///                    center_left
-	///                    center_top
-	///                    left
-	///                    top
-	///                    width
-	///                    height
-	///                    zoom_level
-	/// @param extra_space extra space around the box
-	/// @return new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
+	/**
+	* Find the best bounds for the image
+	* @param {Bounds} bounds     Should be a box where to zoom
+	*                    center_left
+	*                    center_top
+	*                    left
+	*                    top
+	*                    width
+	*                    height
+	*                    zoom_level
+	* @param {Boolean} extra_space extra space around the box
+	* @return new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
+	* @protected
+	*/
 	_Optimize_Zoom_Box_For_Viewport = (bounds, extra_space) => {
 		bounds.center_left = bounds.left + (bounds.width / 2) + (this.fabric_canvas._offset.left / 2);
 		let vpw = 0
@@ -457,9 +476,12 @@ class SVG_Map {
 		return bounds;
 	}
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief check if start and current pointer are in a range, else we do not handle click events. on desktop they are always on the same spot. With gestures they can differ around 5 - 10 pixels...
-	/// @param pointer coordinate of the pointer
+	/**
+	* Check if start and current pointer are in a range, else we do not handle click events. on desktop they are always on the same spot. With gestures they can differ around 5 - 10 pixels...
+	* @param {Point} pointer coordinate of the pointer
+	* @returns {Boolean}
+	* @protected
+	*/
 	_Check_Pointer_In_Range = (pointer) => {
 		let diff_x = this.last_pointer.x > pointer.x ? this.last_pointer.x - pointer.x : pointer.x - this.last_pointer.x
 		let diff_y = this.last_pointer.y > pointer.y ? this.last_pointer.y - pointer.y : pointer.y - this.last_pointer.y
@@ -470,9 +492,10 @@ class SVG_Map {
 			return false
 	}
 
-	/////////////////////////////////////////////////////////////
-	/// @brief set local state and lock/unlocks the movement axis
-	/// @param run state of the animation true if it's runing or false if not
+	/**
+	* Set local state and lock/unlocks the movement axis
+	* @param {Boolean} run state of the animation true if it's runing or false if not
+	*/
 	_Handle_Animation_State = (run) => {
 
 		this.map_animation_run = run;
@@ -490,9 +513,11 @@ class SVG_Map {
 	/// Private function
 	////////////////////
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// @brief Handle when the user start a pinching event (save start scale and deactivate movement and lock movement to prevent jiggling around)
-	// @param event a hammer event
+	/**
+	* Handle when the user start a pinching event (save start scale and deactivate movement and lock movement to prevent jiggling around)
+	* @param {Event} event a hammer event
+	* @private
+	*/
 	#Handle_Pinch_Start = (event) => {
 		this.svg_main_group.lockMovementX = true;
 		this.svg_main_group.lockMovementY = true;
@@ -500,18 +525,22 @@ class SVG_Map {
 		this.last_scale = event.scale
 	}
 
-	//////////////////////////////////////////////////////
-	// @brief Handle when the user finish a pinching event (activate movement and remove the move lock)
-	// @param event a hammer event
+	/**
+	* Handle when the user finish a pinching event (activate movement and remove the move lock)
+	* @param {Event} event a hammer event
+	* @private
+	*/
 	#Handle_Pinch_End = (event) => {
 		this.last_scale = event.scale
 		this.svg_main_group.lockMovementX = false;
 		this.svg_main_group.lockMovementY = false;
 	}
 
-	////////////////////////////////////////////////////////
-	// @brief Handle when the user do a zoom with his finger
-	// @param event a hammer event
+	/**
+	* Handle when the user do a zoom with his finger
+	* @param {Event} event a hammer event
+	* @private
+	*/
 	#Handle_User_Gesture_Zoom = (event) => {
 		// uses pinch event from hammerjs
 		if (!this.map_animation_run) { 
@@ -538,10 +567,12 @@ class SVG_Map {
 		}
 	}
 
-	////////////////////////////////////////////////////////
-	// @brief Zoom into map with normalized delta. If the zoom would reveal the background just apply the current viewport Transform means, nothing happens
-	// @param event a hammer event
-	// @todo if zoomed in a corner and near the edge, no zoom out is possible, we should actually pan and zoom
+	/**
+	* Zoom into map with normalized delta. If the zoom would reveal the background just apply the current viewport Transform means, nothing happens
+	* @param {Event} event a hammer event
+	* @todo if zoomed in a corner and near the edge, no zoom out is possible, we should actually pan and zoom
+	* @private
+	*/
 	#Handle_User_Mousewheel_Zoom = (opt) => {
 		if(this.config.DEBUG) console.log("Handle_User_Mousewheel_Zoom");	
 		if (!this.map_animation_run) {
@@ -565,9 +596,11 @@ class SVG_Map {
 		opt.e.stopPropagation();
 	}
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// @brief called when the user drag the map wit hthe mouse or touch. keep the map inside the canva avoid showing the background
-	// @param opt is the hammer event when we are moving around
+	/**
+	* Called when the user drag the map wit hthe mouse or touch. keep the map inside the canva avoid showing the background
+	* @param {Event} opt is the hammer event when we are moving around
+	* @private
+	*/
 	#Handle_User_Map_Move_Touch = (opt) => {
 		// if we have a pinch gesture going on, return and let hammerjs handle it in #Handle_User_Gesture_Zoom
 		if (opt.e.touches && opt.e.touches.length === 2) { return; }
@@ -604,16 +637,20 @@ class SVG_Map {
 		}
 	}
 
-	///////////////////////////////////////////////////////////////
-	// @bried save the last pointer position to prevent ghost click
-	// @param event hammer overn
+	/**
+	* Save the last pointer position to prevent ghost click
+	* @param {Event} event hammer event
+	* @private
+	*/
 	#Handle_Main_Group_Mousedown = (event) => {
 		this.last_pointer = event.pointer
 	}
 
-	/////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief find the right zoom to show the initialized map by using the main centering object
-	/// @return the scale value as float
+	/**
+	* Find the right zoom to show the initialized map by using the main centering object
+	* @return the scale value as float
+	* @private
+	*/
 	#Best_Initial_Zoom = () => {
 		let initial_zoom = this.config.INITIAL_ZOOM; // return that if object not found
 		const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
@@ -666,13 +703,14 @@ class SVG_Map {
 		return initial_zoom;
 	}
 
-	///////////////////////////////////////////////////////////////////////
-	/// @brief recursive traverse through all objects, find attr with value
-	/// @param objects        An array object where we will look for
-	/// @param attr           The attribute we are checking of the objects
-	/// @param val            The value of the attribute we are looking for
-	/// @param result_list    The result list that will contain all the objects that match the ''val'' for this ''attribut''
-	/// @param val_full_match If true value should be completly equals if false the value of the attribute should only include ''val''
+	/**
+	* Recursively traverse through all objects, find attr with value
+	* @param {List[CanvasObject]} objects        An array object where we will look for
+	* @param {String}             attr           The attribute we are checking of the objects
+	* @param {String}             val            The value of the attribute we are looking for
+	* @param {List[CanvasObject]} result_list    The result list that will contain all the objects that match the ''val'' for this ''attribut''
+	* @param {Boolean}            val_full_match If true value should be completly equals if false the value of the attribute should only include ''val''
+	*/
 	#Traverse_All_Canvas_Objects = (objects, attr, val, result_list, val_full_match = true) => {
 		for (let obj of objects) {
 			if (obj['type'].includes('group'))
@@ -693,6 +731,7 @@ class SVG_Map {
 	/// Private static function
 	///////////////////////////
 
+	// Staticaly initialize fabric
 	static #Initialize_Fabric() {
 		// adjust some stuff in the library for better randering
 		fabric.Object.prototype.objectCaching = false;
