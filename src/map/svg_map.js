@@ -2,7 +2,6 @@ import { fabric } from '../../libraries/fabric_wrapper.js';
 import { anime } from '../../libraries/animejs_wrapper.js';
 import { Hammer } from '../../libraries/hammer_wrapper.js';
 import {normalizeWheel} from '../../libraries/normalizeWheel.js';
-import Util from '../utils.js';
 
 
 /**
@@ -229,7 +228,7 @@ class SVG_Map {
 				const point_diff_distance = move_x > move_y ? move_x : move_y
 				// find the zoom difference
 				const zoom_diff_distance = zoom_box.zoom_level > orig_zoom ? zoom_box.zoom_level - orig_zoom : orig_zoom - zoom_box.zoom_level
-				const animation_time = Util.Calc_Map_Animation_Timing(point_diff_distance, zoom_diff_distance, this.client_type)
+				const animation_time = Calc_Map_Animation_Timing(point_diff_distance, zoom_diff_distance)
 				let mza = anime({
 					targets: that.move_zoom_animation_obj,
 					zoom: zoom_box.zoom_level,
@@ -413,7 +412,7 @@ class SVG_Map {
 	* Find objects by complete id, and optional type
 	* @param {String}  id          The id to match exactly
 	* @param {Boolean} exact_Match If true the id must exactly match otherwise its partial ID
-	* @param {String optional} obj_type    The type of svg object
+	* @param {String}  obj_type    The type of svg object
 	* @protected
 	*/
 	_Find_Map_Objs_By_Id = (id, exact_Match, obj_type = undefined) => {
@@ -508,6 +507,30 @@ class SVG_Map {
 			this.svg_main_group.lockMovementY = false;
 		}
 	}
+
+	/**
+	 * 
+	 * @param {Number} point_diff_distance 
+	 * @param {Number} zoom_diff_distance 
+	 * @returns {Number} the timing
+	 * @protected
+	 */
+	_Calc_Map_Animation_Timing = (point_diff_distance, zoom_diff_distance) => {
+        let min_map_animation_time = this.config.MIN_MAP_ANIMATION_TIME_DESKTOP
+        let max_map_animation_time = this.config.MAX_MAP_ANIMATION_TIME_DESKTOP
+        if(this.client_type === 'mobile') {
+            min_map_animation_time = this.config.MIN_MAP_ANIMATION_TIME_MOBILE
+            max_map_animation_time = this.config.MAX_MAP_ANIMATION_TIME_MOBILE
+        }
+        let calc_animation_time = min_map_animation_time
+        const move_speed = point_diff_distance / max_map_animation_time
+        const zoom_speed = zoom_diff_distance / max_map_animation_time
+        const factor = move_speed + zoom_speed
+        calc_animation_time = max_map_animation_time - (factor * max_map_animation_time)
+        const animation_time = calc_animation_time < min_map_animation_time ? min_map_animation_time : calc_animation_time
+        if(cthis.onfig.debuf) console.log('move distance: '+point_diff_distance+' zoom distance: '+zoom_diff_distance+' resulting time in ms: '+animation_time);
+        return animation_time
+    }
 	
 	////////////////////
 	/// Private function
@@ -705,10 +728,10 @@ class SVG_Map {
 
 	/**
 	* Recursively traverse through all objects, find attr with value
-	* @param {List[CanvasObject]} objects        An array object where we will look for
+	* @param {List} objects        An array object where we will look for
 	* @param {String}             attr           The attribute we are checking of the objects
 	* @param {String}             val            The value of the attribute we are looking for
-	* @param {List[CanvasObject]} result_list    The result list that will contain all the objects that match the ''val'' for this ''attribut''
+	* @param {List} result_list    The result list that will contain all the objects that match the ''val'' for this ''attribut''
 	* @param {Boolean}            val_full_match If true value should be completly equals if false the value of the attribute should only include ''val''
 	*/
 	#Traverse_All_Canvas_Objects = (objects, attr, val, result_list, val_full_match = true) => {

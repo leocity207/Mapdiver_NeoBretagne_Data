@@ -1,5 +1,5 @@
 import SVG_Map from './svg_map.js';
-import Util from '../utils.js';
+import Utils from '../utils/utils.js';
 
 
 /**
@@ -102,7 +102,7 @@ class Network_Map extends SVG_Map {
 			if (obj.id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`) === -1) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id);
 				const cld = this.#Find_Line_Data_By_Id(cid);
-				let obj_fill = Util.Rgba_To_Hex(obj.get('fill'));
+				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill'));
 				if (cld.color === obj_fill) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -116,7 +116,7 @@ class Network_Map extends SVG_Map {
 		}
 		const specific_line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`, false);
 		for (const obj of specific_line_labels) {
-			let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) 
+			let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) 
 			if (line_data.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 				if(this.config.HARD_ANIMATION_TRANSITION)
 					obj.set('fill', line_data.color)
@@ -152,7 +152,7 @@ class Network_Map extends SVG_Map {
 		for (const obj of line_labels) {
 			const line_code = this.#Find_Track_Code_In_Id(obj.id)
 			const line_data = this.#Find_Line_Data_By_Id(line_code)
-			let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+			let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 			if (DISABLE_ELEMENT_COLOR === obj_fill) {
 				if(this.config.HARD_ANIMATION_TRANSITION)
 					obj.set('fill', line_data.color); 
@@ -225,7 +225,7 @@ class Network_Map extends SVG_Map {
 			if (disable) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id)
 				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 				if (cld.color === obj_fill) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -242,7 +242,7 @@ class Network_Map extends SVG_Map {
 			for (const obj of spezific_line_labels) {
 				const cid = this.#Find_Track_Code_In_Id(obj.id)
 				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 				if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 					if(this.config.HARD_ANIMATION_TRANSITION)
 						obj.set('fill', cld.color)
@@ -332,7 +332,7 @@ class Network_Map extends SVG_Map {
 					if (disable) {
 						const cid = this.#Find_Track_Code_In_Id(obj.id)
 						const cld = this.#Find_Line_Data_By_Id(cid)
-						let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+						let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 						if (cld.color === obj_fill) {
 							if(this.config.HARD_ANIMATION_TRANSITION)
 								obj.set('fill', DISABLE_ELEMENT_COLOR);
@@ -350,7 +350,7 @@ class Network_Map extends SVG_Map {
 						for (const obj of spezific_line_labels) {
 							const cid = this.#Find_Track_Code_In_Id(obj.id)
 							const cld = this.#Find_Line_Data_By_Id(cid)
-							let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+							let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 							if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
 								if(this.config.HARD_ANIMATION_TRANSITION)
 									obj.set('fill', cld.color)
@@ -380,7 +380,7 @@ class Network_Map extends SVG_Map {
 				for (const obj of line_labels) {
 					const cid = this.#Find_Track_Code_In_Id(obj.id)
 					const cld = this.#Find_Line_Data_By_Id(cid)
-					let obj_fill = Util.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
+					let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
 					if (cld.color === obj_fill) {
 						if(this.config.HARD_ANIMATION_TRANSITION)
 							obj.set('fill', DISABLE_ELEMENT_COLOR);

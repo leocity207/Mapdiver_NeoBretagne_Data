@@ -1,4 +1,4 @@
-import Loader from '../loader/loader.js';
+import Loader from './loader.js';
 
 /**
  * A simple Train Animation that implement a Loader

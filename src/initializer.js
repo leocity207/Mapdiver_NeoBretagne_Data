@@ -1,6 +1,6 @@
 import App_Container from './app/app-container.js';
 import Map_App from './page/svg-map-app.js';
-import Page from './app/page.js';
+import Page from './page/page.js';
 import Train_Animation from './loader/Train_Animation.js';
 
 
@@ -13,6 +13,7 @@ async function Initialize() {
 	let app = Map_App.Create(loader,page,null);
 	expandingList.Add_App(app);
 	await app.Initialize_Map();
+	
 }
 
 Initialize();

@@ -1,5 +1,5 @@
 import Loader from '../loader/loader.js';
-import Page from './page.js'; 
+import Page from '../page/page.js'; 
 
 
 /**

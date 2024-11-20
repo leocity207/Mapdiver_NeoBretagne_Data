@@ -15,6 +15,7 @@ Welcome to Octoliner-Maptiva's documentation!
 	src/page/page_base.rst
 	src/config/config_base.rst
 	src/map/map_base.rst
+	src/utils/utils.rst
 
 Indices and tables
 ==================

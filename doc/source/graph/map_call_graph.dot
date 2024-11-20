@@ -58,8 +58,8 @@ digraph {
 		Find_Track_Code_In_Id [label="#Find_Track_Code_In_Id" fillcolor="#ff5656"]   
   	#}
   
-  subgraph cluster_Util {
-		Util [style=invis]
+  subgraph cluster_Utils {
+		Utils [style=invis]
 		Calc_Map_Animation_Timing
   }
   
