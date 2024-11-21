@@ -727,25 +727,25 @@ class SVG_Map {
 	}
 
 	/**
-	* Recursively traverse through all objects, find attr with value
-	* @param {List} objects        An array object where we will look for
-	* @param {String}             attr           The attribute we are checking of the objects
-	* @param {String}             val            The value of the attribute we are looking for
-	* @param {List} result_list    The result list that will contain all the objects that match the ''val'' for this ''attribut''
-	* @param {Boolean}            val_full_match If true value should be completly equals if false the value of the attribute should only include ''val''
+	 * Recursively traverse through all objects, find attribute with value
+	 *
+	 * @param {Object[]} objects         An array of objects where we will look for
+	 * @param {string}   attributeName   The attribute we are checking of the objects
+	 * @param {string}   attributeValue  The value of the attribute we are looking for
+	 * @param {Object[]} result          The result list that will contain all the objects that match the attributeValue for this attributeName
+	 * @param {boolean}  fullMatch       If true, the attributeValue should be exactly equal to the object's attribute value. If false, the attributeValue should be a substring of the object's attribute value
 	*/
-	#Traverse_All_Canvas_Objects = (objects, attr, val, result_list, val_full_match = true) => {
-		for (let obj of objects) {
-			if (obj['type'].includes('group'))
-				this.#Traverse_All_Canvas_Objects(obj.getObjects(), attr, val, result_list, val_full_match);
+	#Traverse_All_Canvas_Objects = (objects, attributeName, attributeValue, result, fullMatch = true) => {
+		for (const obj of objects) {
+			if (obj.type.includes('group'))
+				this.#Traverse_All_Canvas_Objects(obj.getObjects(), attributeName, attributeValue, result, fullMatch);
 			else {
-				//console.warn('traverse, attr is: '+obj[attr])
-				if (val_full_match === true) 
-					if (obj[attr] === val)
-						result_list.push(obj);
+				if (fullMatch)
+					if (obj[attributeName] === attributeValue)
+						result.push(obj);
 				else 
-					if (obj[attr].includes(val)) 
-						result_list.push(obj);
+					if (obj[attributeName].includes(attributeValue))
+						result.push(obj);
 			}
 		}
 	}

@@ -28,7 +28,7 @@ class Network_Map extends SVG_Map {
 	/// @brief setup all the callback on the map
 	/// @param Lines, list of Line Object
 	/// @param Station, list of Station Objects
-	Setup_Mouse_Handlers = (lines, stations) => {
+	Setup_Mouse_Handlers(lines, stations) {
 		super.Setup_Mouse_Handlers();
 		this.lines = lines
 		this.stations = stations
@@ -600,7 +600,7 @@ class Network_Map extends SVG_Map {
 
 	/////////////////////////////////////////////////////////////
 	/// @brief find station code in station label or station icon
-	#Find_Station_Code_In_Id = (id) => {
+	Find_Station_Code_In_Id(id) {
 		if (id.indexOf('station_label_') > -1) {
 			let id_arr = id.split('label_');
 			if (id_arr[1].indexOf('_') > -1)
