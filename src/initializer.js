@@ -1,6 +1,6 @@
 import App_Container from './app/app-container.js';
-import Map_App from './page/svg-map-app.js';
-import Page from './page/page.js';
+import App from './app/app.js';
+import Map_Page from './page/svg-map-page.js';
 import Train_Animation from './loader/Train_Animation.js';
 
 
@@ -8,12 +8,14 @@ async function Initialize() {
 	let expandingList = App_Container.Create();
 	document.getElementById('root').appendChild(expandingList);
 
-	let page = Page.Create();
+	let map_page = Map_Page.Create();
 	let loader = Train_Animation.Create();
-	let app = Map_App.Create(loader,page,null);
+	let app = App.Create(loader,map_page,null);
 	expandingList.Add_App(app);
-	await app.Initialize_Map();
-	
+	app.Loading();
+	await app.Page.Initialize_Map();
+	app.Loaded();
+	await app.Page.Initial_Zoom_Move();
 }
 
 Initialize();

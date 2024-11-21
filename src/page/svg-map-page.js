@@ -1,4 +1,4 @@
-import App from "../app/app.js";
+import Page from "./page.js";
 import SVG_Map from "../map/svg_map.js";
 import Config from "../config/config.js"
 
@@ -7,7 +7,7 @@ import Config from "../config/config.js"
  * 
  * Map_App define a custom element named "svg-map-app"
  */
-class Map_App extends App {
+class Map_Page extends Page {
 
 	////////
 	m_map;
@@ -17,18 +17,28 @@ class Map_App extends App {
 	}
 
 	/**
-	* Initialize an Map_App object after it has been instantiated
-	* @protected
-	*/
-	Init(loader, main_page, icon) 
-	{
-		super.Init(loader, main_page, icon);
+	 * Initialize an Map_App object after it has been instantiated
+	 * @protected
+	 *
+	 * This function create a container and a canvas inside it. The container is used to scale the canvas
+	 * and the canvas is used as the context for the fabric.js canvas
+	 */
+	Init() {
+		super.Init();
+
+		// create a container to hold the canvas
 		const map_container = document.createElement('div');
 		map_container.setAttribute('id', 'map-container');
+
+		// create a canvas inside the container
 		const map_canvas = document.createElement('canvas');
 		map_container.appendChild(map_canvas);
 		map_canvas.setAttribute('id', 'map-canvas');
-		this.main_page.appendChild(map_container);
+
+		// add the container to the shadow root
+		this.shadowRoot.appendChild(map_container);
+
+		// keep a reference to the container and the canvas
 		this.map_container = map_container;
 		this.map_canvas = map_canvas;
 	}
@@ -37,26 +47,27 @@ class Map_App extends App {
 	 * Asynchronous function that initialize the map. the function resolve when the SVG is loaded and displayed inside the current node
 	 */
 	Initialize_Map = async () => {
-		this.Loading();
 		this.map = new SVG_Map("Desktop", "image/map.svg", Config);
 		await this.map.Setup("Fr", this.map_canvas);
 		this.map.Setup_Mouse_Handlers();
-		this.Loaded();
-		await this.map.Initial_Zoom_Move();	
+	}
+
+	Initial_Zoom_Move = async () => {
+		await this.map.Initial_Zoom_Move();
 	}
 
 	/**
-	 * Create a Map_App object and initialize it.
-	 * 
-	 * @returns {Map_App} an Page Object
+	 * Create a Map_Page object and initialize it.
+	 *
+	 * @returns {Map_Page} a Page Object
 	 */
-	static Create(loader, main_page, icon) {
-		let elt = document.createElement("svg-map-app");
-		elt.Init(loader, main_page, icon);
-		return elt;
+	static Create() {
+		const element = document.createElement('svg-map-page');
+		element.Init();
+		return element;
 	}
 }
 
-customElements.define("svg-map-app", Map_App);
+customElements.define("svg-map-page", Map_Page);
 
-export default Map_App;
+export default Map_Page;

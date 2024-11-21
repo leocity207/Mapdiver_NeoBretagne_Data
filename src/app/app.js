@@ -73,6 +73,15 @@ class App extends HTMLElement
 		this.loader.Show();
 	}
 
+	/**
+	 * get the Page of the App
+	 * @return {Page} the page of the App
+	 */
+	get Page() 
+	{
+		return this.main_page;
+	}
+
 	//////////////////
 	/// STATIC METHODS
 	//////////////////

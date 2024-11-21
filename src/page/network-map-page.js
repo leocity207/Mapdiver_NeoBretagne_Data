@@ -1,12 +1,12 @@
-import Map_App from "./svg-map-app.js";
 import Network_Map from "../map/network_map.js";
+import Map_Page from "./svg-map-page.js";
 
 /**
  * Network_Map_App define a node that contain a Network_Map object
  * 
  * Map_App define a custom element named "svg-map-app"
  */
-class Network_Map_App extends Map_App {
+class Network_Map_App extends Map_Page {
 
 	////////
 	
@@ -26,8 +26,8 @@ class Network_Map_App extends Map_App {
 	 * 
 	 * @returns {Map_App} an Page Object
 	 */
-	static Create(loader, main_page, icon) {
-		let elt = document.createElement("network-map-app");
+	static Create() {
+		let elt = document.createElement("network-map-page");
 		elt.Init();
 		return elt;
 	}
@@ -39,6 +39,6 @@ class Network_Map_App extends Map_App {
 
 }
 
-customElements.define("network-map-app", Network_Map_App);
+customElements.define("network-map-page", Network_Map_App);
 
 export default Network_Map_App;

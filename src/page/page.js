@@ -6,8 +6,22 @@
  */
 class Page extends HTMLElement
 {
-	constructor(loader,main_page) {
+	constructor() {
 		super();
+	}
+
+	/**
+	 * Initialize a Page object after it has been instantiated
+	 * @protected
+	 */
+	Init() {
+		// Create a shadow root for the page
+		this.attachShadow({ mode: "open" });
+		// Add a link to the stylesheet for the page
+		const styleLink = document.createElement('link');
+		styleLink.setAttribute('rel', 'stylesheet');
+		styleLink.setAttribute('href', 'style/app.css');
+		this.shadowRoot.appendChild(styleLink);
 	}
 
 	/**
