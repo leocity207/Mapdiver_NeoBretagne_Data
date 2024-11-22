@@ -2,6 +2,7 @@ import { fabric } from '../../libraries/fabric_wrapper.js';
 import { anime } from '../../libraries/animejs_wrapper.js';
 import { Hammer } from '../../libraries/hammer_wrapper.js';
 import {normalizeWheel} from '../../libraries/normalizeWheel.js';
+import Utils from '../utils/utils.js';
 
 
 /**
@@ -286,6 +287,7 @@ class SVG_Map {
 	Initial_Zoom_Move = async () => {
 		return new Promise((resolve, reject) => {
 			if(this.config.DEBUG) console.log('initial zoom move!');
+			this.map_animation_run = true;
 
 			let that = this
 			let zoom_step = this.config.INITIAL_ZOOM_MOVE_STEP_DESKTOP
@@ -329,7 +331,11 @@ class SVG_Map {
 							that.fabric_canvas.renderAll();
 						}
 					});
-					mza.finished.then(resolve);
+
+					mza.finished.then(() => {
+						that.map_animation_run = false;
+						resolve();
+					});
 				}
 			}
 			setTimeout(Move_Zoom_Animation, this.config.INITIAL_ZOOM_MOVE_DELAY);
@@ -509,28 +515,44 @@ class SVG_Map {
 	}
 
 	/**
-	 * 
-	 * @param {Number} point_diff_distance 
-	 * @param {Number} zoom_diff_distance 
-	 * @returns {Number} the timing
+	 * Calculate the animation time for the map animation based on the distance the user
+	 * moved their finger and the zoom difference.
+	 * The formula is designed to make the animation time longer when the zoom distance and point distance are far apart.
+	 *
+	 * @param {number} point_diff_distance The distance in pixels the user moved their finger.
+	 * @param {number} zoom_diff_distance The difference in zoom level.
+	 * @returns {number} The animation time in milliseconds.
 	 * @protected
 	 */
-	_Calc_Map_Animation_Timing = (point_diff_distance, zoom_diff_distance) => {
-        let min_map_animation_time = this.config.MIN_MAP_ANIMATION_TIME_DESKTOP
-        let max_map_animation_time = this.config.MAX_MAP_ANIMATION_TIME_DESKTOP
-        if(this.client_type === 'mobile') {
-            min_map_animation_time = this.config.MIN_MAP_ANIMATION_TIME_MOBILE
-            max_map_animation_time = this.config.MAX_MAP_ANIMATION_TIME_MOBILE
-        }
-        let calc_animation_time = min_map_animation_time
-        const move_speed = point_diff_distance / max_map_animation_time
-        const zoom_speed = zoom_diff_distance / max_map_animation_time
-        const factor = move_speed + zoom_speed
-        calc_animation_time = max_map_animation_time - (factor * max_map_animation_time)
-        const animation_time = calc_animation_time < min_map_animation_time ? min_map_animation_time : calc_animation_time
-        if(cthis.onfig.debuf) console.log('move distance: '+point_diff_distance+' zoom distance: '+zoom_diff_distance+' resulting time in ms: '+animation_time);
-        return animation_time
-    }
+	_calcMapAnimationTiming(point_diff_distance, zoom_diff_distance) {
+		// The minimum and maximum animation times are different for desktop and mobile
+		// devices. The times are set in the config object.
+		const min_animation_time = this.client_type === 'desktop'
+			? this.config.MIN_MAP_ANIMATION_TIME_DESKTOP
+			: this.config.MIN_MAP_ANIMATION_TIME_MOBILE;
+		const max_animation_time = this.client_type === 'desktop'
+			? this.config.MAX_MAP_ANIMATION_TIME_DESKTOP
+			: this.config.MAX_MAP_ANIMATION_TIME_MOBILE;
+
+		// Calculate the speed of the movement and the zoom difference in pixels per
+		// millisecond.
+		const move_speed = point_diff_distance / max_animation_time;
+		const zoom_speed = zoom_diff_distance / max_animation_time;
+
+		// Calculate a factor that will be used to calculate the animation time. The
+		// factor is a value between 0 and 1 that indicates how slow we should go considering the distances and zoom diference
+		const factor = move_speed + zoom_speed;
+
+		// Calculate the animation time by subtracting the factor from the maximum
+		// animation time. If the result is smaller than the minimum animation time,
+		// use the minimum animation time.
+		const calculated_animation_time = max_animation_time - (factor * max_animation_time);
+		return calculated_animation_time < min_animation_time
+			? min_animation_time
+			: calculated_animation_time;
+
+	}
+
 	
 	////////////////////
 	/// Private function
@@ -591,74 +613,85 @@ class SVG_Map {
 	}
 
 	/**
-	* Zoom into map with normalized delta. If the zoom would reveal the background just apply the current viewport Transform means, nothing happens
-	* @param {Event} event a hammer event
-	* @todo if zoomed in a corner and near the edge, no zoom out is possible, we should actually pan and zoom
+	* Zoom into map with normalized delta. If the zoom would reveal the background, nothing happens.
+	* @param {Event} event A hammer event.
+	* @todo If zoomed in a corner and near the edge, no zoom out is possible; we should actually pan and zoom.
 	* @private
 	*/
-	#Handle_User_Mousewheel_Zoom = (opt) => {
-		if(this.config.DEBUG) console.log("Handle_User_Mousewheel_Zoom");	
-		if (!this.map_animation_run) {
-			const normalized = normalizeWheel(opt.e);
-			const current_viewport_transform = this.fabric_canvas.viewportTransform;
-			let zoom = this.fabric_canvas.getZoom();
-			zoom *= 0.999 ** normalized.pixelY;
-			if (zoom > this.config.MAX_ZOOM_IN) zoom = this.config.MAX_ZOOM_IN;
-			if (zoom < this.config.MAX_ZOOM_OUT) zoom = this.config.MAX_ZOOM_OUT;
-			// check if the map still would cover the canvas
-			if (this.svg_main_group !== null) { // but be safe, else do nothing
-				this.fabric_canvas.zoomToPoint({ x: opt.e.offsetX, y: opt.e.offsetY }, zoom);
-				const calc_bounds = this.svg_main_group.getBoundingRect(false, true);
-				if ((calc_bounds.left + calc_bounds.width) < this.fabric_canvas.getWidth() || calc_bounds.left > 0)
-					this.fabric_canvas.setViewportTransform(current_viewport_transform);
-				if ((calc_bounds.top + calc_bounds.height) < this.fabric_canvas.getHeight() || calc_bounds.top > 0)
-					this.fabric_canvas.setViewportTransform(current_viewport_transform);
-			}
+	#Handle_User_Mousewheel_Zoom = (event) => {
+		// Return early if a map animation is running
+		if (this.map_animation_run) return;
+
+		// Normalize the wheel event delta for consistent zoom behavior
+		const normalized = normalizeWheel(event.e);
+
+		// Get the current viewport transform and calculate the new zoom level
+		const current_viewport_transform = this.fabric_canvas.viewportTransform;
+		let zoomLevel = this.fabric_canvas.getZoom() * Math.pow(0.999, normalized.pixelY);
+
+		// Bound the zoomLevel within the defined max and min limits
+		zoomLevel = Utils.Round_Bound(zoomLevel, this.config.MAX_ZOOM_OUT, this.config.MAX_ZOOM_IN);
+
+		// If the main SVG group exists, apply zoom to the point
+		if (this.svg_main_group !== null) {
+			this.fabric_canvas.zoomToPoint({ x: event.e.offsetX, y: event.e.offsetY }, zoomLevel);
+			const bounding_rect = this.svg_main_group.getBoundingRect(false, true);
+
+			// Check if the zoom would expose the background and revert if necessary
+			if ((bounding_rect.left + bounding_rect.width) < this.fabric_canvas.getWidth() || bounding_rect.left > 0)
+				this.fabric_canvas.setViewportTransform(current_viewport_transform);
+			if ((bounding_rect.top + bounding_rect.height) < this.fabric_canvas.getHeight() || bounding_rect.top > 0)
+				this.fabric_canvas.setViewportTransform(current_viewport_transform);
 		}
-		opt.e.preventDefault();
-		opt.e.stopPropagation();
+
+		// Prevent default scrolling behavior and stop event propagation
+		event.e.preventDefault();
+		event.e.stopPropagation();
 	}
 
 	/**
-	* Called when the user drag the map wit hthe mouse or touch. keep the map inside the canva avoid showing the background
-	* @param {Event} opt is the hammer event when we are moving around
+	* Called when the user drags the map with the mouse or touch. Keep the map inside the canvas, avoiding showing the background.
+	* @param {Event} event is the hammer event when we are moving around
 	* @private
 	*/
-	#Handle_User_Map_Move_Touch = (opt) => {
+	#Handle_User_Map_Move_Touch = (event) => {
 		// if we have a pinch gesture going on, return and let hammerjs handle it in #Handle_User_Gesture_Zoom
-		if (opt.e.touches && opt.e.touches.length === 2) { return; }
+		if (event.e.touches && event.e.touches.length === 2 || this.map_animation_run) return;
 
-		if (!this.map_animation_run) {
-			const obj = opt.target
-			const calc_bounds = obj.getBoundingRect(false, true);
-			if (calc_bounds.left > 0) {
-				obj.set('left', this.last_bounding_data.left);
-				obj.setCoords();
-			} else {
-				this.last_bounding_data.left = obj.left;
-			}
-			if (calc_bounds.top > 0) {
-				obj.set('top', this.last_bounding_data.top);
-				obj.setCoords();
-			} else {
-				this.last_bounding_data.top = obj.top;
-			}
-			const bottom = (calc_bounds.top + calc_bounds.height) - this.fabric_canvas.getHeight();
-			if (bottom < 0) {
-				obj.set('top', this.last_bounding_data.bottom);
-				obj.setCoords();
-			} else {
-				this.last_bounding_data.bottom = obj.top;
-			}
-			const right = (calc_bounds.left + calc_bounds.width) - this.fabric_canvas.getWidth();
-			if (right < 0) {
-				obj.set('left', this.last_bounding_data.right);
-				obj.setCoords();
-			} else {
-				this.last_bounding_data.right = obj.left;
-			}
-		}
+		const object = event.target;
+		const bounding_rect = object.getBoundingRect(false, true);
+		const object_left = object.left;
+		const object_top = object.top;
+
+		// Check if the left side of the map is out of bounds
+		if (bounding_rect.left > 0) 
+			object.set('left', this.last_bounding_data.left);
+		else
+			this.last_bounding_data.left = object_left;
+
+		// Check if the top side of the map is out of bounds
+		if (bounding_rect.top > 0)
+			object.set('top', this.last_bounding_data.top);
+		else
+			this.last_bounding_data.top = object_top;
+
+		// Check if the bottom side of the map is out of bounds
+		const bottom = (bounding_rect.top + bounding_rect.height) - this.fabric_canvas.getHeight();
+		if (bottom < 0)
+			object.set('top', this.last_bounding_data.bottom);
+		else
+			this.last_bounding_data.bottom = object_top;
+
+		// Check if the right side of the map is out of bounds
+		const right = (bounding_rect.left + bounding_rect.width) - this.fabric_canvas.getWidth();
+		if (right < 0)
+			object.set('left', this.last_bounding_data.right);
+		else
+			this.last_bounding_data.right = object_left;
+
+		object.setCoords();
 	}
+
 
 	/**
 	* Save the last pointer position to prevent ghost click
@@ -670,60 +703,70 @@ class SVG_Map {
 	}
 
 	/**
-	* Find the right zoom to show the initialized map by using the main centering object
-	* @return the scale value as float
-	* @private
-	*/
-	#Best_Initial_Zoom = () => {
-		let initial_zoom = this.config.INITIAL_ZOOM; // return that if object not found
-		const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
-		if (background_res.length === 1) {
-			const background = background_res[0];
-			let vpw = this.fabric_canvas.getWidth()
-			let vph = this.fabric_canvas.getHeight()
-			let zw = 0
-			let zh = 0
-			let z = 0
-			let additional_bound_zoom_space = this.config.INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP
-			if (this.client_type === 'mobile') {
-				additional_bound_zoom_space = this.config.INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE
+	 * Calculate the optimal initial zoom for displaying the map using the main centering object.
+	 * @return {number} The optimal scale value as a float.
+	 * @private
+	 */
+	#Best_Initial_Zoom() {
+		// Find the centering object by ID
+		const centering_objects = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
+
+		// Check if exactly one centering object is found
+		if (centering_objects.length !== 1) {
+			if (this.config.DEBUG) console.warn('Best_Initial_Zoom: Cannot calculate initial zoom, object not found!');
+			return this.config.INITIAL_ZOOM;
+		}
+
+		const centering_object = centering_objects[0];
+		const viewport_width = this.fabric_canvas.getWidth();
+		const viewport_height = this.fabric_canvas.getHeight();
+
+		// Determine additional bound space based on client type
+		const additionalBoundSpace = this.client_type === 'mobile'
+			? this.config.INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE
+			: this.config.INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP;
+
+		let zoom_width, zoom_height, calculated_zoom;
+
+		// Check if centering object is smaller than the viewport
+		if (centering_object.width < viewport_width || centering_object.height < viewport_height) {
+			zoom_width = viewport_width / this.svg_main_group.width;
+			zoom_height = viewport_height / this.svg_main_group.height;
+
+			// Adjust zoom width if centering object width exceeds viewport
+			if (centering_object.width >= viewport_width)
+				zoom_width = viewport_width / (centering_object.width + additionalBoundSpace);
+
+			// Adjust zoom height if centering object height exceeds viewport
+			if (centering_object.height >= viewport_height)
+				zoom_height = viewport_height / (centering_object.height + additionalBoundSpace);
+
+			calculated_zoom = Math.max(zoom_width, zoom_height);
+		} else {
+			zoom_width = viewport_width / (centering_object.width + additionalBoundSpace);
+			zoom_height = viewport_height / (centering_object.height + additionalBoundSpace);
+
+			calculated_zoom = Math.min(zoom_width, zoom_height);
+
+			let correction_factor = 0;
+
+			// Correct zoom if scaled group width is less than viewport width
+			if ((this.svg_main_group.width * calculated_zoom) < viewport_width) {
+				const width_difference = viewport_width - (this.svg_main_group.width * calculated_zoom);
+				correction_factor = ((this.svg_main_group.width - width_difference) / viewport_width) / 100;
 			}
-			// check if backround is smaller than the viewport -> we do not cover
-			if (background.width < vpw || background.height < vph) {
-				if (background.width < vpw)
-					zw = vpw / (this.svg_main_group.width)
-				else
-					zw = vpw / (background.width + additional_bound_zoom_space);
-				if (background.height < vph)
-					zh = vph / (this.svg_main_group.height)
-				else
-					zh = vph / (background.height + additional_bound_zoom_space);
-				z = zw > zh ? zw : zh;
-			} else { // it would cover the viewport
-				zw = vpw / (background.width + additional_bound_zoom_space);
-				zh = vph / (background.height + additional_bound_zoom_space);
 
-				z = zw < zh ? zw : zh;
-
-				// on some screen proportions there is a correction needed!
-				let z_cor = 0
-				if ((this.svg_main_group.width * z) < vpw) {
-					const diff = vpw - (this.svg_main_group.width * z)
-					z_cor = ((this.svg_main_group.width - diff) / vpw) / 100
-				}
-				if ((this.svg_main_group.height * z) < vph) {
-					const diff = vph - (this.svg_main_group.height * z)
-					z_cor = ((this.svg_main_group.height - diff) / vph) / 100
-				}
-				z += z_cor
-
+			// Correct zoom if scaled group height is less than viewport height
+			if ((this.svg_main_group.height * calculated_zoom) < viewport_height) {
+				const height_difference = viewport_height - (this.svg_main_group.height * calculated_zoom);
+				correction_factor = ((this.svg_main_group.height - height_difference) / viewport_height) / 100;
 			}
-			if (z > this.config.MAX_ZOOM_IN) // prevent to much zoom
-				z = this.config.MAX_ZOOM_IN;
-			initial_zoom = z;
-		} else
-			if(this.config.DEBUG) console.warn('Best_Initial_Zoom: Cannot calculate initial zoom, object not found!');
-		return initial_zoom;
+
+			calculated_zoom += correction_factor;
+		}
+
+		// Bound the calculated zoom value within defined limits
+		return Utils.Round_Bound(calculated_zoom, this.config.MAX_ZOOM_OUT, this.config.MAX_ZOOM_IN);
 	}
 
 	/**
