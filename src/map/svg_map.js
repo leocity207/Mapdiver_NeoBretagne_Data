@@ -433,7 +433,7 @@ class SVG_Map {
 	}
 
 	/**
-	* Find the best bounds for the image
+	* Find the best bounds for the image, taking into account the client type and the viewport size
 	* @param {Bounds} bounds     Should be a box where to zoom
 	*                    center_left
 	*                    center_top
@@ -446,38 +446,36 @@ class SVG_Map {
 	* @return new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
 	* @protected
 	*/
-	_Optimize_Zoom_Box_For_Viewport = (bounds, extra_space) => {
+	_Optimize_Zoom_Box_For_Viewport(bounds, extra_space) {
+		// Compute the center of the box
 		bounds.center_left = bounds.left + (bounds.width / 2) + (this.fabric_canvas._offset.left / 2);
-		let vpw = 0
-		let vph = 0
 
-		// add bound space for desktop or tablet
-		let bound_space = this.config.ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP
-		if (extra_space === true) {
-			bound_space = this.config.ADDITIONAL_SINGLE_BOUND_ZOOM_SPACE_DESKTOP
-		}
-		if (this.client_type !== 'mobile') {
+		// Depending on the client type (mobile or desktop) we need to adjust the top and the viewport size
+		if(this.client_type === 'mobile') {
+			// We add the header height and the detail space to the top
+			var additional_bounding_zoom_space = extra_space ? this.config.ADDITIONAL_SINGLE_BOUND_ZOOM_SPACE_MOBILE : this.config.ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE 
 			bounds.center_top = bounds.top + (bounds.height / 2) + (this.panel_header_height / 2);
-			vpw = this.fabric_canvas.getWidth() - this.panel_detail_space
-			vph = this.fabric_canvas.getHeight()
-		} else {
-			bounds.center_top = bounds.top + (bounds.height / 2) - ((this.panel_header_height + this.panel_detail_space) / 2)
-			vpw = this.fabric_canvas.getWidth()
-			vph = this.fabric_canvas.getHeight() - this.panel_detail_space - this.panel_header_height
-			// adjust bound space for mobile
-			bound_space = this.config.ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE
-			if (extra_space === true) {
-				bound_space = this.config.ADDITIONAL_SINGLE_BOUND_ZOOM_SPACE_MOBILE
-			}
+
+			// We substract the detail space and the header height from the viewport height
+			var viewport_width = this.fabric_canvas.getWidth();
+			var viewport_height = this.fabric_canvas.getHeight()  - this.panel_detail_space - this.panel_header_height;
+		}
+		else {
+			// We substract the header height and the detail space from the top
+			var additional_bounding_zoom_space = extra_space ? this.config.ADDITIONAL_SINGLE_BOUND_ZOOM_SPACE_DESKTOP : this.config.ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP 
+			bounds.center_top = bounds.top + (bounds.height / 2) - ((this.panel_header_height + this.panel_detail_space) / 2);
+
+			// We substract the detail space from the viewport width
+			var viewport_width = this.fabric_canvas.getWidth() - this.panel_detail_space;
+			var viewport_height = this.fabric_canvas.getHeight();
 		}
 
-		let zw = vpw / (bounds.width + bound_space);
-		let zh = vph / (bounds.height + bound_space);
-		let z = zw < zh ? zw : zh;
-		if (z > this.config.MAX_ZOOM_IN) {
-			z = this.config.MAX_ZOOM_IN;
-		}
-		bounds.zoom_level = z;
+		// Compute the zoom level
+		const zoomWidth = viewport_width / (bounds.width + additional_bounding_zoom_space); 
+		const zoomHeight = viewport_height / (bounds.height + additional_bounding_zoom_space); 
+		const zoomLevel = Math.min(zoomWidth, zoomHeight);
+		bounds.zoom_level = Math.min(this.config.MAX_ZOOM_IN, zoomLevel);
+	
 		return bounds;
 	}
 
@@ -505,13 +503,8 @@ class SVG_Map {
 
 		this.map_animation_run = run;
 		// lock/unlock the mouse moving
-		if (run) {
-			this.svg_main_group.lockMovementX = true;
-			this.svg_main_group.lockMovementY = true;
-		} else {
-			this.svg_main_group.lockMovementX = false;
-			this.svg_main_group.lockMovementY = false;
-		}
+		this.svg_main_group.lockMovementX = run ? true : false; 
+		this.svg_main_group.lockMovementY = run ? true : false;
 	}
 
 	/**
