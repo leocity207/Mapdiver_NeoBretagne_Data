@@ -20,6 +20,15 @@ class Utils {
                         ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : '';
         return 	hex_str.toUpperCase()
     }
+
+    static Round_Bound = (value, min, max) => {
+        return Math.min(Math.max(value, min), max);
+    }
+
+    static Wait = async (t) =>
+    { 
+        return new Promise((resolve, reject) => setTimeout(resolve, t))
+    }
 }
 
 export default Utils
