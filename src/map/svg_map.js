@@ -343,12 +343,13 @@ class SVG_Map {
 	}
 
 	/**
-	* Find the rectangle around one or two objects on the map. If only one object is given, calculate it for only one object
-	*        use different spacing if one or two objects are given
-	* @todo check if spacing is sufficient for mobile too!
-	* @return {Bound} new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
-	*/
-	Zoom_Box_For_Objs = (obj_1, obj_2 = undefined) => {
+	 * Find the rectangle around one or two objects on the map. If only one object is given, calculate it for only one object
+	 *
+	 * @param {Object} obj1 - the first object to calculate the bounds for
+	 * @param {Object} [obj2] - the second object to calculate the bounds for (if given)
+	 * @return {Bound} new bounds that can be used for zooming inside the ''Animated_Pan_Zoom'' function
+	 */
+	Zoom_Box_For_Objs(obj1, obj2 = undefined) {
 		let bounds = {
 			left: 0,
 			top: 0,
@@ -357,41 +358,35 @@ class SVG_Map {
 			center_left: 0,
 			center_top: 0,
 			zoom_level: 2, // fix for now
-		}
-		let m_obj_1 = obj_1.calcTransformMatrix(false);
-		let x_obj_1_left = m_obj_1[4] - obj_1.width / 2 // translation in X left
-		let x_obj_1_right = m_obj_1[4] + obj_1.width / 2 // translation in X right
-		let y_obj_1_top = m_obj_1[5] - obj_1.height / 2 // translation in Y top
-		let y_obj_1_bottom = m_obj_1[5] + obj_1.height / 2 // translation in Y bottom
-		let x_b_left, x_b_right, y_b_top, y_b_bottom
-		if (obj_2 !== undefined) {
-			let m_obj_2 = obj_2.calcTransformMatrix(false);
-			let x_obj_2_left = m_obj_2[4] - obj_2.width / 2 // translation in X left
-			let x_obj_2_right = m_obj_2[4] + obj_2.width / 2 // translation in X right
-			let y_obj_2_top = m_obj_2[5] - obj_2.height / 2 // translation in Y top
-			let y_obj_2_bottom = m_obj_2[5] + obj_2.height / 2 // translation in Y bottom
-			x_b_left = x_obj_1_left < x_obj_2_left ? x_obj_1_left : x_obj_2_left;
-			x_b_right = x_obj_1_right > x_obj_2_right ? x_obj_1_right : x_obj_2_right;
-			y_b_top = y_obj_1_top < y_obj_2_top ? y_obj_1_top : y_obj_2_top;
-			y_b_bottom = y_obj_1_bottom > y_obj_2_bottom ? y_obj_1_bottom : y_obj_2_bottom;
-		} else {
-			x_b_left = x_obj_1_left
-			x_b_right = x_obj_1_right
-			y_b_top = y_obj_1_top
-			y_b_bottom = y_obj_1_bottom
+		};
+
+		// Compute the bounds for each objects
+		const { left: obj_1_left, right: obj_1_right, top: obj_1_top, bottom: obj_1_bottom } = this._GetObjectBounds(obj1);
+		let obj_2_left, obj_2_right, obj_2_top, obj_2_bottom;
+		if (obj2 !== undefined) {
+			({ left: obj_2_left, right: obj_2_right, top: obj_2_top, bottom: obj_2_bottom } = this._GetObjectBounds(obj2));
 		}
 
-		bounds.left = x_b_left;
-		bounds.top = y_b_top;
-		bounds.width = x_b_right - x_b_left;
-		bounds.height = y_b_bottom - y_b_top;
+		// find the min and max of the two objects bounds
+		bounds.left   = Math.min(obj_1_left  , obj_2_left   ?? obj_1_left);
+		bounds.width  = Math.max(obj_1_right , obj_2_right  ?? obj_1_right) - bounds.left;
+		bounds.top    = Math.min(obj_1_top   , obj_2_top    ?? obj_1_top);
+		bounds.height = Math.max(obj_1_bottom, obj_2_bottom ?? obj_1_bottom) - bounds.top;
 
-		let extra_space = false;
-		if (obj_2 === undefined) {
-			extra_space = true;
-		}
-		bounds = this._Optimize_Zoom_Box_For_Viewport(bounds, extra_space);
+		// add extra space if only a second ovject is present
+		const extraSpace = obj2 === undefined;
+		bounds = this._Optimize_Zoom_Box_For_Viewport(bounds, extraSpace);
 		return bounds;
+	}
+
+	_GetObjectBounds(object) {
+		const matrix = object.calcTransformMatrix(false);
+		const xLeft = matrix[4] - object.width / 2;
+		const xRight = matrix[4] + object.width / 2;
+		const yTop = matrix[5] - object.height / 2;
+		const yBottom = matrix[5] + object.height / 2;
+
+		return { left: xLeft, right: xRight, top: yTop, bottom: yBottom };
 	}
 
 	//////////////////////
@@ -419,17 +414,18 @@ class SVG_Map {
 	* @param {String}  id          The id to match exactly
 	* @param {Boolean} exact_Match If true the id must exactly match otherwise its partial ID
 	* @param {String}  obj_type    The type of svg object
+	* @returns {fabric.Object[]}  The list of objects that match the conditions
 	* @protected
 	*/
-	_Find_Map_Objs_By_Id = (id, exact_Match, obj_type = undefined) => {
+	_Find_Map_Objs_By_Id(id, exact_Match, obj_type = undefined)  {
 		let result_list = [];
 		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'id', id, result_list, exact_Match);
 		if (obj_type !== undefined) {
 			let typed_result_list = [];
 			this.#Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list, exact_Match);
 			return typed_result_list;
-		} else 
-			return result_list;
+		} 
+		return result_list;
 	}
 
 	/**
@@ -485,7 +481,7 @@ class SVG_Map {
 	* @returns {Boolean}
 	* @protected
 	*/
-	_Check_Pointer_In_Range = (pointer) => {
+	_Check_Pointer_In_Range(pointer) {
 		let diff_x = this.last_pointer.x > pointer.x ? this.last_pointer.x - pointer.x : pointer.x - this.last_pointer.x
 		let diff_y = this.last_pointer.y > pointer.y ? this.last_pointer.y - pointer.y : pointer.y - this.last_pointer.y
 
