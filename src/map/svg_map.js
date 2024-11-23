@@ -207,16 +207,16 @@ class SVG_Map {
 				
 				let orig_zoom = this.fabric_canvas.getZoom();
 				this.fabric_canvas.setZoom(1); // this is very important!
-				let vpw = that.fabric_canvas.getWidth()
-				let vph = that.fabric_canvas.getHeight()
+				let viewport_width = that.fabric_canvas.getWidth()
+				let viewport_height = that.fabric_canvas.getHeight()
 				let target_x = 0
 				let target_y = 0
 				if (this.client_type !== 'mobile') { // panel is left
-					target_x = (zoom_box.center_left - (((vpw - this.panel_detail_space) / zoom_box.zoom_level) / 2))
-					target_y = (zoom_box.center_top - ((vph / zoom_box.zoom_level) / 2))
+					target_x = (zoom_box.center_left - (((viewport_width - this.panel_detail_space) / zoom_box.zoom_level) / 2))
+					target_y = (zoom_box.center_top - ((viewport_height / zoom_box.zoom_level) / 2))
 				} else { // do not take any panel space into account
-					target_x = (zoom_box.center_left - ((vpw / zoom_box.zoom_level) / 2))
-					target_y = (zoom_box.center_top - ((vph / zoom_box.zoom_level) / 2))
+					target_x = (zoom_box.center_left - ((viewport_width / zoom_box.zoom_level) / 2))
+					target_y = (zoom_box.center_top - ((viewport_height / zoom_box.zoom_level) / 2))
 				}
 				let vpt = that.fabric_canvas.viewportTransform;
 				this.move_zoom_animation_obj.x = fabric.util.invertTransform(vpt)[4];
@@ -284,62 +284,49 @@ class SVG_Map {
 	* Initial animation toward the initial ID of an element inside the map
 	* This function is synchronous and wait for the end of the animation
 	*/
-	Initial_Zoom_Move = async () => {
-		return new Promise((resolve, reject) => {
-			if(this.config.DEBUG) console.log('initial zoom move!');
-			this.map_animation_run = true;
+	async Initial_Zoom_Move() {
 
-			let that = this
-			let zoom_step = this.config.INITIAL_ZOOM_MOVE_STEP_DESKTOP
-			let animation_time = this.config.INITIAL_ZOOM_MOVE_TIME_DESKTOP
-			if (this.client_type === 'mobile') {
-				zoom_step = this.config.INITIAL_ZOOM_MOVE_STEP_MOBILE
-				animation_time = this.config.INITIAL_ZOOM_MOVE_TIME_MOBILE
+		const background_object = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path')[0];
+		if (!background_object) return;
+
+		// This create flicking animation maybe it should not be used
+		await new Promise(resolve => setTimeout(resolve, this.config.INITIAL_ZOOM_MOVE_DELAY));
+
+		if(this.config.DEBUG) console.log('initial zoom move!');
+		this.map_animation_run = true;
+
+		const zoom_box = this.Zoom_Box_For_Objs(background_object);
+		const orig_zoom = this.fabric_canvas.getZoom();
+		const target_zoom = orig_zoom + this.config.INITIAL_ZOOM_MOVE_STEP_DESKTOP;
+
+		this.fabric_canvas.setZoom(1);
+		const viewport_width = this.fabric_canvas.width / target_zoom;
+		const viewport_height = this.fabric_canvas.height / target_zoom;
+		const target_x = (zoom_box.center_left - viewport_width / 2);
+		const target_y = (zoom_box.center_top - viewport_height / 2);
+
+		const initial_zoom_move_obj = {
+			zoom: orig_zoom,
+			x: fabric.util.invertTransform(this.fabric_canvas.viewportTransform)[4],
+			y: fabric.util.invertTransform(this.fabric_canvas.viewportTransform)[5]
+		};
+
+		await anime({
+			targets: initial_zoom_move_obj,
+			zoom: target_zoom,
+			x: target_x,
+			y: target_y,
+			easing: this.config.DEFAULT_ANIMATION_EASING,
+			duration: this.config.INITIAL_ZOOM_MOVE_TIME_DESKTOP,
+			update: () => {
+				this.fabric_canvas.setZoom(1); // this is very important!
+				this.fabric_canvas.absolutePan({ x: initial_zoom_move_obj.x, y: initial_zoom_move_obj.y });
+				this.fabric_canvas.setZoom(initial_zoom_move_obj.zoom);
+				this.fabric_canvas.renderAll();
 			}
-
-			const Move_Zoom_Animation = () => {
-				const background_res = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
-				if (background_res.length === 1) {
-					const background = background_res[0];
-					let zoom_box = this.Zoom_Box_For_Objs(background)
-					let orig_zoom = this.fabric_canvas.getZoom()
-					let target_zoom = orig_zoom + zoom_step
-					this.fabric_canvas.setZoom(1)
-					let vpw = this.fabric_canvas.width / target_zoom
-					let vph = this.fabric_canvas.height / target_zoom
-					let target_x = (zoom_box.center_left - vpw / 2)
-					let target_y = (zoom_box.center_top - vph / 2)
-					this.fabric_canvas.setZoom(orig_zoom)
-
-					let vpt = that.fabric_canvas.viewportTransform;
-					let initial_zoom_move_obj = {
-						zoom: orig_zoom,
-						x: fabric.util.invertTransform(vpt)[4],
-						y: fabric.util.invertTransform(vpt)[5]
-					}
-					let mza = anime({
-						targets: initial_zoom_move_obj,
-						zoom: target_zoom,
-						x: target_x,
-						y: target_y,
-						easing: this.config.DEFAULT_ANIMATION_EASING,
-						duration: animation_time,
-						update: function () {
-							that.fabric_canvas.setZoom(1); // this is very important!
-							that.fabric_canvas.absolutePan({ x: initial_zoom_move_obj.x, y: initial_zoom_move_obj.y });
-							that.fabric_canvas.setZoom(initial_zoom_move_obj.zoom);
-							that.fabric_canvas.renderAll();
-						}
-					});
-
-					mza.finished.then(() => {
-						that.map_animation_run = false;
-						resolve();
-					});
-				}
-			}
-			setTimeout(Move_Zoom_Animation, this.config.INITIAL_ZOOM_MOVE_DELAY);
 		});
+
+		this.map_animation_run = false;
 	}
 
 	/**

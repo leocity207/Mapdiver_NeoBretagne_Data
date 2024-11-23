@@ -24,6 +24,11 @@ class Utils {
     static Round_Bound = (value, min, max) => {
         return Math.min(Math.max(value, min), max);
     }
+
+    static Wait = async (t) =>
+    { 
+        return new Promise((resolve, reject) => setTimeout(resolve, t))
+    }
 }
 
 export default Utils
