@@ -99,13 +99,6 @@ class SVG_Map {
 	* @param {String} id id to create the canva to
 	*/
 	Setup = (language, id) => {
-		/*
-			Setup the canvas
-			and load the svg
-			resource. This is called
-			by parent after adding
-			the canvas element
-		*/
 		this.language = language
 
 		this.fabric_canvas = new fabric.Canvas(id, {
@@ -150,10 +143,12 @@ class SVG_Map {
 
 		this.fabric_canvas.on('mouse:wheel', this.#Handle_User_Mousewheel_Zoom);
 		this.fabric_canvas.on('object:moving', this.#Handle_User_Map_Move_Touch);
+
 		// gesture is not well handled with fabricjs, use hammerjs
 		let hammer = new Hammer.Manager(this.fabric_canvas.upperCanvasEl); // Initialize hammer
 		let pinch = new Hammer.Pinch({ threshold: 0.2 }) // Initialize pinch
-		let tap = new Hammer.Tap()
+		let tap = new Hammer.Tap();
+
 		hammer.add([pinch, tap]);
 		hammer.on('pinch', this.#Handle_User_Gesture_Zoom);
 		hammer.on('pinchstart', this.#Handle_Pinch_Start)
@@ -165,7 +160,7 @@ class SVG_Map {
 	}
 
 	/**
-	* find objects by complete classname, and optional type
+	* Find objects by complete classname, and optional type
 	* @param {String} class_name   The class to match exactly
 	* @param {class_name} obj_type The type of svg object
 	*/
@@ -176,92 +171,59 @@ class SVG_Map {
 			let typed_result_list = [];
 			this.#Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list);
 			return typed_result_list;
-		} else 
-			return result_list;
+		} 
+		return result_list;
 	}
 
 	/**
-	* @brief as we can not anmiate absolute pan x and y at the same time with given fabricjs functions. We take the animjs package todo the work.
+	* As we can not anmiate absolute pan x and y at the same time with given fabricjs functions. We take the animjs package todo the work.
 	* @param {Bound} zoom_box The target to zoom too an object that contain 
 	*                 center_left
 	*                 center_top
 	*                 zoom_level
-	* @param {function} promise_callback_fnc callback function when the animation is finished
 	*/
 	Animated_Pan_Zoom = async (zoom_box = null) => {
-		return new Promise((resolve, reject) => {
-			// if an animation is running, interrupt it
-			anime.remove(this.move_zoom_animation_obj)
-			// reset animation state
-			this._Handle_Animation_State(false);
-			// reset data
-			this.move_zoom_animation_obj = {
-				x: 0,
-				y: 0,
-				zoom: 1
+
+		// if an animation is running, interrupt it
+		anime.remove(this.move_zoom_animation_obj)
+		// reset animation state
+		this._Handle_Animation_State(true);
+
+		const orig_zoom = this.fabric_canvas.getZoom();
+		this.fabric_canvas.setZoom(1); // this is very important to get the right viewport width and height
+		const viewport_width = that.fabric_canvas.getWidth()
+		const viewport_height = that.fabric_canvas.getHeight()
+		const target_x = zoom_box.center_left  - (this.client_type !== 'mobile' ? ((viewport_height / zoom_box.zoom_level) / 2) : (((viewport_width - this.panel_detail_space) / zoom_box.zoom_level) / 2));
+		const target_y = (zoom_box.center_top  - ((viewport_height / zoom_box.zoom_level) / 2));
+		// Set the animation zoom objects
+		this.move_zoom_animation_obj.x = fabric.util.invertTransform(that.fabric_canvas.viewportTransform)[4];
+		this.move_zoom_animation_obj.y = fabric.util.invertTransform(that.fabric_canvas.viewportTransform)[5];
+		this.move_zoom_animation_obj.zoom = orig_zoom;
+		this.fabric_canvas.setZoom(orig_zoom); // zoom back without changing the view
+		// find the bigger distance that we have to move
+		const move_x = target_x > this.move_zoom_animation_obj.x ? target_x - this.move_zoom_animation_obj.x : this.move_zoom_animation_obj.x - target_x
+		const move_y = target_y > this.move_zoom_animation_obj.y ? target_y - this.move_zoom_animation_obj.y : this.move_zoom_animation_obj.y - target_y
+		const point_diff_distance = move_x > move_y ? move_x : move_y
+		// find the zoom difference
+		const zoom_diff_distance = zoom_box.zoom_level > orig_zoom ? zoom_box.zoom_level - orig_zoom : orig_zoom - zoom_box.zoom_level
+		const animation_time = Calc_Map_Animation_Timing(point_diff_distance, zoom_diff_distance)
+		await anime({
+			targets: that.move_zoom_animation_obj,
+			zoom: zoom_box.zoom_level,
+			x: target_x,
+			y: target_y,
+			easing: this.config.DEFAULT_ANIMATION_EASING,
+			duration: animation_time,
+			update: function () {
+				that.fabric_canvas.setZoom(1); // this is very important!
+				that.fabric_canvas.absolutePan({ x: that.move_zoom_animation_obj.x, y: that.move_zoom_animation_obj.y });
+				that.fabric_canvas.setZoom(that.move_zoom_animation_obj.zoom);
+				that.fabric_canvas.renderAll();
 			}
-
-			let that = this;
-
-			const Move_Zoom_Animation = () => {
-				
-				let orig_zoom = this.fabric_canvas.getZoom();
-				this.fabric_canvas.setZoom(1); // this is very important!
-				let viewport_width = that.fabric_canvas.getWidth()
-				let viewport_height = that.fabric_canvas.getHeight()
-				let target_x = 0
-				let target_y = 0
-				if (this.client_type !== 'mobile') { // panel is left
-					target_x = (zoom_box.center_left - (((viewport_width - this.panel_detail_space) / zoom_box.zoom_level) / 2))
-					target_y = (zoom_box.center_top - ((viewport_height / zoom_box.zoom_level) / 2))
-				} else { // do not take any panel space into account
-					target_x = (zoom_box.center_left - ((viewport_width / zoom_box.zoom_level) / 2))
-					target_y = (zoom_box.center_top - ((viewport_height / zoom_box.zoom_level) / 2))
-				}
-				let vpt = that.fabric_canvas.viewportTransform;
-				this.move_zoom_animation_obj.x = fabric.util.invertTransform(vpt)[4];
-				this.move_zoom_animation_obj.y = fabric.util.invertTransform(vpt)[5];
-				this.move_zoom_animation_obj.zoom = orig_zoom;
-				this.fabric_canvas.setZoom(orig_zoom); // zoom back without changing the view
-				// find the bigger distance that we have to move
-				const move_x = target_x > this.move_zoom_animation_obj.x ? target_x - this.move_zoom_animation_obj.x : this.move_zoom_animation_obj.x - target_x
-				const move_y = target_y > this.move_zoom_animation_obj.y ? target_y - this.move_zoom_animation_obj.y : this.move_zoom_animation_obj.y - target_y
-				const point_diff_distance = move_x > move_y ? move_x : move_y
-				// find the zoom difference
-				const zoom_diff_distance = zoom_box.zoom_level > orig_zoom ? zoom_box.zoom_level - orig_zoom : orig_zoom - zoom_box.zoom_level
-				const animation_time = Calc_Map_Animation_Timing(point_diff_distance, zoom_diff_distance)
-				let mza = anime({
-					targets: that.move_zoom_animation_obj,
-					zoom: zoom_box.zoom_level,
-					x: target_x,
-					y: target_y,
-					easing: DEFAULT_ANIMATION_EASING,
-					duration: animation_time,
-					update: function () {
-						that.fabric_canvas.setZoom(1); // this is very important!
-						that.fabric_canvas.absolutePan({ x: that.move_zoom_animation_obj.x, y: that.move_zoom_animation_obj.y });
-						that.fabric_canvas.setZoom(that.move_zoom_animation_obj.zoom);
-						that.fabric_canvas.renderAll();
-					}
-				});
-				mza.finished.then(Animation_Finished);
-			}
-
-			const Animation_Finished = () => {
-				this.fabric_canvas.requestRenderAll();
-				this._Handle_Animation_State(false);
-				if (promise_callback_fnc !== null) {
-					promise_callback_fnc();
-				}
-			}
-
-			// only start if not running
-			if (!this.map_animation_run) {
-				this._Handle_Animation_State(true);
-				Move_Zoom_Animation();
-			} else
-				console.warn('animation is already running!');
 		});
+
+		this.fabric_canvas.requestRenderAll();
+		this._Handle_Animation_State(false);
 	}
 
 	/**
