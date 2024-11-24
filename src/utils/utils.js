@@ -21,6 +21,13 @@ class Utils {
         return 	hex_str.toUpperCase()
     }
 
+    /**
+     * check the bound of the value and put it in bound if needed
+     * @param {Float} value The value to check if in bound
+     * @param {Float} min the min value
+     * @param {Float} max the max value
+     * @returns 
+     */
     static Round_Bound = (value, min, max) => {
         return Math.min(Math.max(value, min), max);
     }
