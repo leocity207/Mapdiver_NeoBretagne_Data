@@ -278,7 +278,7 @@
 		<path id="IC" class="symbole" d="m -358.13344,-115.22231 -2.89976,5.07999 h 1.44988 l 2.89976,-5.07999 z m 2.89934,0 -2.89934,5.07999 h 4.34922 l 0.72515,-1.45149 h -2.89976 l 1.44988,-2.17702 h 2.89976 l 0.72473,-1.45148 z" />
 		<g id="L-LGV-BRE2-0" transform="rotate(-45,-62.34796,2.7587205)">
 			<rect width="33.734375" height="6.3500824" rx="3.1331387" ry="3.1485832" transform="rotate(90)" x="-77.057533" y="122.58241" />
-			<text transform="matrix(0,0.99944621,-1.0005541,0,0,0)" x="-62.56385" y="128.16397"> BRE2 </text>
+			<text transform="matrix(0,0.99944621,-1.0005541,0,0,0)" x="-62.56385" y="128.16397">BRE2 </text>
 			<use xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%" x="0" y="0"/>
 		</g>
 		<g id="L-LGV-FR4-0" transform="rotate(-135,177.83916,-429.91878)" >
@@ -297,7 +297,7 @@
 			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-BRE0-0" transform="translate(-56.239823,34.247809)">
-			<rect width="51.933544" height="10.133508" x="2751.4717" y="-538.87122" rx="4.9998841" ry="5.0245309" transform="matrix(0.44310297,0.44310297,-0.44310297,0.44310297,-1557.5434,-1031.3016)" />
+			<rect width="53" height="10.133508" x="2751.4717" y="-538.87122" rx="4.9998841" ry="5.0245309" transform="matrix(0.44310297,0.44310297,-0.44310297,0.44310297,-1557.5434,-1031.3016)" />
 			<text x="-91.835564" y="40.039288" transform="matrix(0.70671519,0.70671519,-0.70749859,0.70749859,0,0)">BRE0</text>
 			<use x="0" y="0" xlink:href="#LGV" transform="rotate(45,-274.32713,248.47212)" width="100%" height="100%"/>
 		</g>
@@ -307,28 +307,32 @@
 			<use x="0" y="0" xlink:href="#LGV" transform="translate(255.85268,46.457329)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-BRE1-0" transform="rotate(-45,197.36179,-866.85245)">
-			<rect width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<rect width="34" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
 			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
 			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)">BRE1</text>
 		</g>
 		<g transform="rotate(-45,191.59646,-852.02696)"  id="L-LGV-BRE3-0">
-			<rect width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<rect width="34" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
 			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
 			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)"> BRE3</text>
 		</g>
 		<g id="L-LER-BRE0-0" transform="rotate(45,-259.15722,-133.46962)">
-			<rect width="34.131248" height="6.3499985" x="-103.45208" y="-108.21458" rx="3.1182206" ry="3.0671625"
-				 />
+			<rect width="35.6" height="6.3499985" x="-103.45208" y="-108.21458" rx="3.1182206" ry="3.0671625"/>
 			<text x="-87.296059" y="-102.52605" transform="scale(0.9994462,1.0005541)" >BRE0</text>
 			<use x="0" y="0" xlink:href="#LER" transform="translate(258.99437,-7.143751)" width="100%" height="100%"/>
 		</g>
-		<g id="L-LER-BRE1-0" transform="rotate(90,-190.79776,-75.191819)">
-			<rect width="34.131248" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+		<g id="L-LER-BRE1-0" transform="rotate(90,-191.9704,-77.228501)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE1</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE1-1" transform="rotate(90,42.207084,285.64567)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE1</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE5-0" transform="rotate(180,-39.397785,54.889982)">
-			<rect width="34.131248" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<rect width="35.6" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
 			<text x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE5</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
 		</g>
@@ -338,42 +342,42 @@
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE6-0" transform="rotate(90,-82.629364,245.73898)">
-			<rect width="34.131248" height="6.3499985" x="115.41671" y="-69.882301" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<rect width="35.6" height="6.3499985" x="115.41671" y="-69.882301" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
 			<text x="131.69398" y="-64.215004" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE6</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-232.47223,-114.56296)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE2-0" transform="rotate(90,-209.03946,-17.644944)">
-			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE2</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-BRE4-0" transform="rotate(90,-2.6986596,41.073713)">
-			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE4</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-BRE8-0" transform="rotate(180,81.595977,-76.017448)">
-			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE8</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-NOR2-0" transform="rotate(90,141.75941,81.573806)">
-			<rect width="36.551388" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"/>
+			<rect width="38" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"/>
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR2</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-NOR3-0" transform="rotate(90,114.20553,94.100088)">
-			<rect width="36.886406" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<rect width="38" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR3</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-CVL1-0" transform="rotate(90,66.414173,244.592)">
-			<rect width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
+			<rect width="36" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
 			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)" >CVL1</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-CVL4-0" transform="rotate(90,60.857923,239.03575)">
-			<rect width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)"/>
+			<rect width="36" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)"/>
 			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">CVL4</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%"/>
 		</g>
@@ -383,38 +387,126 @@
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-BRE3-0" transform="rotate(90,-66.561335,116.89568)">
-			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
 			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE3</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
-      <g id="L-IC1-0" transform="rotate(-45,442.44802,-300.46154)">
+      	<g id="L-IC1-0" transform="rotate(-45,442.44802,-300.46154)">
 			<rect width="19.049997" height="6.3499908" x="-76.464577" y="-115.35832" rx="3.1713946" ry="3.0671575" />
 			<text x="-42.718372" y="-65.836349" transform="matrix(0.99944621,0,0,1.0005541,-20.397399,-43.853793)">1</text>
 			<use x="0" y="0" xlink:href="#IC" transform="translate(286.638,0.498985)" width="100%" height="100%" />
 		</g>
-      <use x="0" y="0" xlink:href="#L-LER-BRE1-0" id="L-LER-BRE1-1" transform="translate(594.02215,126.97522)" width="100%" height="100%"  />
-		<use x="0" y="0" xlink:href="#L-LGV-FR9-0"  id="L-LGV-FR9-1" transform="rotate(45,426.18288,-1170.6362)" width="100%" height="100%"  />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE1-0" id="L-LGV-BRE1-1" transform="rotate(45,450.57498,902.34499)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE0-0" id="L-LER-BRE0-1" transform="translate(507.64105,38.262427)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE2-0" id="L-LER-BRE2-1" transform="translate(265.86762,-7.8988692)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE3-0" id="L-LER-BRE3-1" transform="translate(216.65512,219.90738)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE4-0" id="L-LER-BRE4-1" transform="translate(41.289412,237.35452)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE2-0" id="L-LGV-BRE2-1" transform="rotate(-90,109.27292,-29.285583)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE3-0" id="L-LGV-BRE3-1" transform="rotate(45,53.041522,377.86364)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE0-0" id="L-LGV-BRE0-1" transform="rotate(-45,167.19489,-949.22704)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE5-0" id="L-LER-BRE5-1" transform="translate(83.34375,140.49375)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE6-0" id="L-LER-BRE6-1" transform="rotate(90,107.71487,279.75511)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE7-0" id="L-LER-BRE7-1" transform="rotate(45,408.93774,301.02078)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE8-0" id="L-LER-BRE8-1" transform="translate(-1.1417641,218.99936)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NOR2-0" id="L-LER-NOR2-1" transform="rotate(45,-21.220927,-281.55855)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NOR3-0" id="L-LER-NOR3-1" transform="translate(113.50625,257.96875)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-CVL1-0" id="L-LER-CVL1-1" transform="rotate(-45,340.45786,-235.4284)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NAQ7-0" id="L-LER-NAQ7-1" transform="translate(58.737503,153.9875)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-CVL4-0" id="L-LER-CVL4-1" transform="translate(164.20469,-3.9962104)" width="100%" height="100%" />
-      <use x="0" y="0" xlink:href="#L-IC1-0"      id="L-IC1-1" transform="translate(706.4375,256.38125)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR4-0" id="L-LGV-FR4-1" transform="translate(-503.23749,1322.3875)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR7-0" id="L-LGV-FR7-1" transform="translate(-522.28751,603.25)" width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR8-0" id="L-LGV-FR8-1" transform="translate(818.0752,796.4123)" width="100%" height="100%" />
+		<g id="L-LGV-FR9-1" transform="rotate(-90,189.54352,-88.064689)">
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)"  />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)" >FR9</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LGV-BRE1-1" transform="translate(1325.1759,339.13717)">
+			<rect width="34" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
+			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)">BRE1</text>
+		</g>
+		<g id="L-LER-BRE0-1" transform="rotate(45,-48.61998,494.21009)">
+			<rect width="35.6" height="6.3499985" x="-103.45208" y="-108.21458" rx="3.1182206" ry="3.0671625"/>
+			<text x="-87.296059" y="-102.52605" transform="scale(0.9994462,1.0005541)" >BRE0</text>
+			<use x="0" y="0" xlink:href="#LER" transform="translate(258.99437,-7.143751)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE2-1" transform="rotate(90,-72.156215,111.33943)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE2</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
+		</g>
+		<g id="L-LER-BRE3-1" transform="rotate(90,-68.187465,335.17693)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE3</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
+		</g>
+		<g id="L-LER-BRE4-1" transform="rotate(90,-100.73125,180.39568)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE4</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
+		</g>
+		<g id="L-LGV-BRE2-1" transform="rotate(-135,68.08425,29.510124)">
+			<rect width="33.734375" height="6.3500824" rx="3.1331387" ry="3.1485832" transform="rotate(90)" x="-77.057533" y="122.58241" />
+			<text transform="matrix(0,0.99944621,-1.0005541,0,0,0)" x="-62.56385" y="128.16397"> BRE2 </text>
+			<use xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%" x="0" y="0"/>
+		</g>
+		<g transform="translate(829.08218,458.19975)"  id="L-LGV-BRE3-1">
+			<rect width="34" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
+			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)"> BRE3</text>
+		</g>
+		<g id="L-LGV-BRE0-1" transform="rotate(-45,236.65556,-898.46347)">
+			<rect width="53" height="10.133508" x="2751.4717" y="-538.87122" rx="4.9998841" ry="5.0245309" transform="matrix(0.44310297,0.44310297,-0.44310297,0.44310297,-1557.5434,-1031.3016)" />
+			<text x="-91.835564" y="40.039288" transform="matrix(0.70671519,0.70671519,-0.70749859,0.70749859,0,0)">BRE0</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="rotate(45,-274.32713,248.47212)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE5-1" transform="rotate(180,2.27409,125.13686)">
+			<rect width="35.6" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE5</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE6-1" transform="rotate(180,29.550818,167.57493)">
+			<rect width="35.6" height="6.3499985" x="115.41671" y="-69.882301" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="131.69398" y="-64.215004" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE6</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-232.47223,-114.56296)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE7-1" transform="rotate(135,77.008828,96.297197)" >
+			<rect width="35.461746" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" id="rect178" />
+			<text x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE7</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-BRE8-1" transform="rotate(180,81.025077,33.482214)">
+			<rect width="35.6" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE8</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
+		</g>
+		<g id="L-LER-NOR2-1" transform="rotate(135,-12.829171,22.746123)">
+			<rect width="38" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"/>
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR2</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
+		</g>
+
+		<g id="L-LER-NOR3-1" transform="rotate(90,41.97428,279.83759)">
+			<rect width="38" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR3</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LER-CVL1-1" transform="rotate(45,212.0617,777.79583)">
+			<rect width="36" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)" >CVL1</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
+		</g>
+		<g id="L-LER-NAQ7-1" transform="translate(462.86376,399.17893)">
+			<rect width="38.404854" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">NAQ7</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
+		</g>
+		<g id="L-LER-CVL4-1" transform="rotate(90,144.95837,319.13995)">
+			<rect width="36" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)"/>
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">CVL4</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%"/>
+		</g>
+		<g id="L-IC1-1" transform="rotate(-45,1105.1463,-1025.0164)">
+			<rect width="19.049997" height="6.3499908" x="-76.464577" y="-115.35832" rx="3.1713946" ry="3.0671575" />
+			<text x="-42.718372" y="-65.836349" transform="matrix(0.99944621,0,0,1.0005541,-20.397399,-43.853793)">1</text>
+			<use x="0" y="0" xlink:href="#IC" transform="translate(286.638,0.498985)" width="100%" height="100%" />
+		</g>
+		<g id="L-LGV-FR4-1" transform="rotate(-135,200.09583,335.49887)" >
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)" />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">FR4</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LGV-FR7-1" transform="rotate(-90,185.50601,-92.006468)">
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)" id="rect99" />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">FR7</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
+		</g>
+		<g id="L-LGV-FR8-1" transform="rotate(-45,1517.332,-908.13968)">
+			<rect width="28.354986" height="6.3500824" x="-106.5937" y="-40.315758" rx="3.1331387" ry="3.1485832"/>
+			<text x="-92.02787" y="-34.664761" transform="scale(0.99944621,1.0005541)" >FR8</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(255.85268,46.457329)" width="100%" height="100%"/>
+		</g>
 	</g>
 	<g inkscape:groupmode="layer" id="station" inkscape:label="station" style="display:inline"
 		transform="translate(370.54916,539.8825)">
@@ -528,14 +620,16 @@
 		<circle class="station-circle" id="S-FR-72071-0" cx="383.91043" cy="145.78542" r="0.625" />
 		<circle class="station-circle" id="S-FR-72124-0" cx="370.41666" cy="107.68542" r="0.625" />
 		<path id="S-FR-35176-0"
-			style="display:inline;opacity:1;fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+			style="fill:#ffffff;fill-opacity:1"
 			d="m 108.47917,109.61088 a 0.62499999,0.62499999 0 0 0 -0.62477,0.62477 0.62499999,0.62499999 0 0 0 0.62477,0.62477 0.62499999,0.62499999 0 0 0 0.61029,-0.49196 h 3.54191 a 0.62499999,0.62499999 0 0 0 0.6103,0.49196 0.62499999,0.62499999 0 0 0 0.62476,-0.62477 0.62499999,0.62499999 0 0 0 -0.62476,-0.62477 0.62499999,0.62499999 0 0 0 -0.6103,0.49145 h -3.54139 a 0.62499999,0.62499999 0 0 0 -0.61081,-0.49145 z" />
 
 		<path id="S-FR-44195-0"
+			style="fill:#ffffff;fill-opacity:1"
 			d="M 491,713.63867 A 2.3622047,2.3622047 0 0 0 488.63867,716 a 2.3622047,2.3622047 0 0 0 0.375,1.27539 l -8.73828,8.73828 A 2.3622047,2.3622047 0 0 0 479,725.63867 2.3622047,2.3622047 0 0 0 476.63867,728 a 2.3622047,2.3622047 0 0 0 0.375,1.27539 l -14.73633,14.73633 A 2.3622047,2.3622047 0 0 0 461,743.63867 2.3622047,2.3622047 0 0 0 458.63867,746 2.3622047,2.3622047 0 0 0 461,748.36133 2.3622047,2.3622047 0 0 0 463.36133,746 a 2.3622047,2.3622047 0 0 0 -0.375,-1.2793 l 14.73633,-14.73632 A 2.3622047,2.3622047 0 0 0 479,730.36133 2.3622047,2.3622047 0 0 0 481.36133,728 a 2.3622047,2.3622047 0 0 0 -0.375,-1.2793 l 8.73633,-8.73632 A 2.3622047,2.3622047 0 0 0 491,718.36133 2.3622047,2.3622047 0 0 0 493.36133,716 2.3622047,2.3622047 0 0 0 491,713.63867 Z"
 			transform="scale(0.26458333)" />
 		
 		<path id="S-FR-44129-0"
+			style="fill:#ffffff;fill-opacity:1"
 			d="M 440,662.63867 A 2.3622047,2.3622047 0 0 0 437.63867,665 a 2.3622047,2.3622047 0 0 0 0.375,1.27344 l -8.73437,8.74023 A 2.3622047,2.3622047 0 0 0 428,674.63867 2.3622047,2.3622047 0 0 0 425.63867,677 2.3622047,2.3622047 0 0 0 428,679.36133 2.3622047,2.3622047 0 0 0 430.36133,677 a 2.3622047,2.3622047 0 0 0 -0.37305,-1.27734 l 8.73242,-8.73828 A 2.3622047,2.3622047 0 0 0 440,667.36133 2.3622047,2.3622047 0 0 0 442.36133,665 2.3622047,2.3622047 0 0 0 440,662.63867 Z"
 			transform="scale(0.26458333)" />
 	</g>
