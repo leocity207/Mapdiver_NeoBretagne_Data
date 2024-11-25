@@ -23,51 +23,51 @@
 				fill-opacity:1;
 			}
 			.SC-LER-NOR2 {stroke:#2699d1}
-			#L-LER-NOR2-0>rect,#L-LER-NOR2-1>rect {fill:#2699d1}
+			#L-LER-NOR2-0,#L-LER-NOR2-1 {fill:#2699d1}
 			.SC-LGV-FR4 {stroke:#da026c}
-			#L-LGV-FR4-0>rect,#L-LGV-FR4-1>rect {fill:#da026c}
+			#L-LGV-FR4-0,#L-LGV-FR4-1 {fill:#da026c}
 			.SC-LGV-BRE2 {stroke:#700707}
-			#L-LGV-BRE2-0>rect,#L-LGV-BRE2-1>rect {fill:#700707}
+			#L-LGV-BRE2-0,#L-LGV-BRE2-1 {fill:#700707}
 			.SC-LGV-BRE0 {stroke:#fa0a0a}
-			#L-LGV-BRE0-0>rect,#L-LGV-BRE0-1>rect {fill:#fa0a0a}
+			#L-LGV-BRE0-0,#L-LGV-BRE0-1 {fill:#fa0a0a}
 			.SC-LER-BRE0 {stroke:#25158b}
-			#L-LER-BRE0-0>rect,#L-LER-BRE0-1>rect {fill:#25158b}
+			#L-LER-BRE0-0,#L-LER-BRE0-1 {fill:#25158b}
 			.SC-LER-BRE2 {stroke:#7065b2}
-			#L-LER-BRE2-0>rect,#L-LER-BRE2-1>rect {fill:#7065b2}
+			#L-LER-BRE2-0,#L-LER-BRE2-1 {fill:#7065b2}
 			.SC-LGV-BRE3 {stroke:#a42626}
-			#L-LGV-BRE3-0>rect,#L-LGV-BRE3-1>rect {fill:#a42626}
+			#L-LGV-BRE3-0,#L-LGV-BRE3-1 {fill:#a42626}
 			.SC-LER-BRE4 {stroke:#2437b1}
-			#L-LER-BRE4-0>rect,#L-LER-BRE4-1>rect {fill:#2437b1}
+			#L-LER-BRE4-0,#L-LER-BRE4-1 {fill:#2437b1}
 			.SC-LER-NOR3 {stroke:#95d9fd}
-			#L-LER-NOR3-0>rect,#L-LER-NOR3-1>rect {fill:#95d9fd}
+			#L-LER-NOR3-0,#L-LER-NOR3-1 {fill:#95d9fd}
 			.SC-LER-BRE5 {stroke:#01112f}
-			#L-LER-BRE5-0>rect,#L-LER-BRE5-1>rect {fill:#01112f}
+			#L-LER-BRE5-0,#L-LER-BRE5-1 {fill:#01112f}
 			.SC-LER-BRE6 {stroke:#19a8c8}
-			#L-LER-BRE6-0>rect,#L-LER-BRE6-1>rect {fill:#19a8c8}
+			#L-LER-BRE6-0,#L-LER-BRE6-1 {fill:#19a8c8}
 			.SC-LER-BRE3 {stroke:#316b80}
-			#L-LER-BRE3-0>rect,#L-LER-BRE3-1>rect {fill:#316b80}
+			#L-LER-BRE3-0,#L-LER-BRE3-1 {fill:#316b80}
 			.SC-LGV-FR9 {stroke:#bb0c64}
-			#L-LGV-FR9-0>rect,#L-LGV-FR9-1>rect {fill:#bb0c64}
+			#L-LGV-FR9-0,#L-LGV-FR9-1 {fill:#bb0c64}
 			.SC-LGV-FR7 {stroke:#9b3120}
-			#L-LGV-FR7-0>rect,#L-LGV-FR7-1>rect {fill:#9b3120}
+			#L-LGV-FR7-0,#L-LGV-FR7-1 {fill:#9b3120}
 			.SC-LGV-BRE1 {stroke:#c01400}
-			#L-LGV-BRE1-0>rect,#L-LGV-BRE1-1>rect {fill:#c01400}
+			#L-LGV-BRE1-0,#L-LGV-BRE1-1 {fill:#c01400}
 			.SC-LER-BRE1 {stroke:#4d84b8}
-			#L-LER-BRE1-0>rect,#L-LER-BRE1-1>rect {fill:#4d84b8}
+			#L-LER-BRE1-0,#L-LER-BRE1-1 {fill:#4d84b8}
 			.SC-LER-BRE7 {stroke:#7594e0}
-			#L-LER-BRE7-0>rect,#L-LER-BRE7-1>rect {fill:#7594e0}
+			#L-LER-BRE7-0,#L-LER-BRE7-1 {fill:#7594e0}
 			.SC-LER-BRE8 {stroke:#0fbfc4}
-			#L-LER-BRE8-0>rect,#L-LER-BRE8-1>rect {fill:#0fbfc4}
+			#L-LER-BRE8-0,#L-LER-BRE8-1 {fill:#0fbfc4}
 			.SC-LER-CVL1 {stroke:#0002ff}
-			#L-LER-CVL1-0>rect,#L-LER-CVL1-1>rect {fill:#0002ff}
+			#L-LER-CVL1-0,#L-LER-CVL1-1 {fill:#0002ff}
 			.SC-IC1 {stroke:#00fdff}
-			#L-IC1-0>rect,#L-IC1-1>rect {fill:#00fdff}
+			#L-IC1-0,#L-IC1-1 {fill:#00fdff}
 			.SC-LER-NAQ7 {stroke:#2d71ca}
-			#L-LER-NAQ7-0>rect,#L-LER-NAQ7-1>rect {fill:#2d71ca}
+			#L-LER-NAQ7-0,#L-LER-NAQ7-1 {fill:#2d71ca}
 			.SC-LER-CVL4 {stroke:#171764}
-			#L-LER-CVL4-0>rect,#L-LER-CVL4-1>rect {fill:#171764}
+			#L-LER-CVL4-0,#L-LER-CVL4-1 {fill:#171764}
 			.SC-LGV-FR8 {stroke:#e07777}
-			#L-LGV-FR8-0>rect,#L-LGV-FR8-1>rect {fill:#e07777}
+			#L-LGV-FR8-0,#L-LGV-FR8-1 {fill:#e07777}
 					
 			#W{fill:#9de2fb}
 			#ES{fill:#bdbdbd}
@@ -105,7 +105,7 @@
 				fill-opacity:1;
 			}
 			
-			#station>rect {
+			.station-rect{
 				fill:#e9e9e9;
 				fill-opacity:1;
 				stroke:#858585;
@@ -118,13 +118,13 @@
 				paint-order:stroke fill
 			}
 
-			#station>circle,#station>path {
+			.station-rect,.station-circle {
 				display:inline;
 				fill:#e9e9e9;
 				fill-opacity:1;
 			}
 
-			#station-label>text,#station-label>text>tspan {
+			.label {
 				font-style:normal;
 				font-variant:normal;
 				font-stretch:normal;
@@ -273,1181 +273,413 @@
 	</g>
 	<g inkscape:groupmode="layer" id="ligne-label" inkscape:label="ligne label" style="display:inline;opacity:1"
 		transform="translate(370.54916,539.8825)">
-		<path id="LGV" class="symbole"
-			d="m -353.16744,-86.137502 c -0.14894,0 -0.26213,0.105577 -0.29242,0.235164 h 1.20893 c -0.15314,-0.148477 -0.35908,-0.235164 -0.57788,-0.235164 z m -7.36974,4.14e-4 c -0.1488,0 -0.262,0.105324 -0.29242,0.23475 h 1.20852 c -0.15308,-0.148248 -0.35887,-0.23475 -0.57747,-0.23475 z m 2.97284,0 c -0.14879,0 -0.26199,0.105324 -0.29242,0.23475 h 3.88936 c -0.1531,-0.14823 -0.35887,-0.23475 -0.57747,-0.23475 z m 7.07814,0 c -0.1777,0 -0.33356,0.09378 -0.42247,0.23475 h 1.05434 c -0.0889,-0.140975 -0.24477,-0.23475 -0.42247,-0.23475 z m -10.24525,0.581917 0.10634,0.201688 h 1.34062 l -0.10633,-0.201688 z m 2.97285,0 0.10633,0.201688 h 4.02187 l -0.10634,-0.201688 z m 4.39731,0 0.10633,0.201688 h 1.34062 l -0.10633,-0.201688 z m 2.3741,0 v 0.201688 h 1.21139 v -0.201688 z m -9.45429,0.548854 1.84816,3.50101 c 0.14509,0.274901 0.42869,0.446771 0.73697,0.446771 h 1.67926 c 0.22684,0 0.37179,-0.244107 0.26501,-0.446358 l -0.19876,-0.37651 c -0.14516,-0.274901 -0.42828,-0.44677 -0.73656,-0.44677 h -0.33864 c -0.30828,0 -0.59147,-0.171869 -0.73656,-0.44677 l -1.17826,-2.231373 z m 2.97284,0 1.84816,3.50101 c 0.1451,0.274901 0.42863,0.446771 0.73698,0.446771 h 3.01946 c 0.22691,0 0.37221,-0.244457 0.26543,-0.446771 l -1.15536,-2.092505 c -0.14509,-0.274902 -0.42827,-0.446708 -0.73656,-0.446771 h -0.33904 c -0.22685,6.3e-5 -0.3718,0.24452 -0.26502,0.446771 l 0.48505,0.823281 c 0.10677,0.20225 -0.038,0.446357 -0.26502,0.446357 h -0.33863 c -0.30829,0 -0.59182,-0.171456 -0.73698,-0.446357 l -0.86907,-1.646563 c -0.10678,-0.202249 0.0384,-0.446356 0.26543,-0.446356 h 1.67925 c 0.10932,0 0.19884,-0.05739 0.25111,-0.138867 z m 4.3969,0 1.84857,3.501423 c 0.14516,0.274901 0.42869,0.446358 0.73697,0.446358 h 0.2094 c 0.27665,0 0.501,-0.226717 0.501,-0.506285 v -3.441496 h -1.21139 v 0.90222 c -2.1e-4,0.131617 -0.1747,0.175618 -0.23598,0.05951 l -0.50754,-0.961734 z" />
-		<path id="LER" class="symbole"
-			d="m -358.24583,-100.11424 -2.11276,4.436788 a 0.21164105,0.22222362 0 0 0 0.1893,0.32162 h 2.33893 a 0.55408348,0.58178903 0 0 0 0.49558,-0.32162 l 0.29847,-0.62678 a 0.21164105,0.22222362 0 0 0 -0.18929,-0.32161 h -1.1294 a 0.21164105,0.22222362 0 0 1 -0.1893,-0.3216 l 1.50799,-3.166798 a 0.21164105,0.22222362 0 0 0 -0.18929,-0.32161 h -0.52464 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z m 3.35127,0 -2.11275,4.436788 a 0.21164105,0.22222362 0 0 0 0.18929,0.32162 h 2.94369 a 0.55408348,0.58178903 0 0 0 0.49559,-0.32162 l 0.29847,-0.62678 a 0.21164105,0.22222362 0 0 0 -0.1893,-0.32161 h -1.73416 a 0.20457286,0.21480201 0 0 1 -0.18013,-0.31661 l 0.1087,-0.21206 a 0.5732276,0.6018904 0 0 1 0.50476,-0.31661 h 0.22225 a 0.52390018,0.55009649 0 0 0 0.47987,-0.32934 l 0.0706,-0.16918 a 0.22383426,0.23502653 0 0 0 -0.20502,-0.32935 h -0.22226 a 0.20757744,0.21795682 0 0 1 -0.18404,-0.31878 l 0.11395,-0.2293 a 0.56493047,0.59317839 0 0 1 0.50085,-0.31877 h 1.73416 a 0.55408348,0.58178903 0 0 0 0.49559,-0.32161 l 0.29847,-0.626788 a 0.21164105,0.22222362 0 0 0 -0.1893,-0.32161 h -2.94368 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z m 3.91199,0 -0.29847,0.626788 -1.81429,3.81 a 0.21164105,0.22222362 0 0 0 0.1893,0.32162 h 0.72673 a 0.22709209,0.23844726 0 0 0 0.20311,-0.13181 l 1.59838,-3.3566 a 0.55408348,0.58178903 0 0 1 0.49559,-0.3216 h 0.80379 a 0.11387234,0.11956624 0 0 1 0.0986,0.17933 l -0.42833,0.77925 a 0.59302395,0.62267662 0 0 1 -0.51362,0.31142 h -0.47971 a 0.08148141,0.08555569 0 0 0 -0.0729,0.12382 l 1.07855,2.26497 a 0.26053439,0.27356175 0 0 0 0.23303,0.15122 h 0.70606 a 0.21164105,0.22222362 0 0 0 0.1893,-0.32162 l -0.66499,-1.39648 a 0.12299785,0.12914805 0 0 1 0.11001,-0.18691 0.32148503,0.33756008 0 0 0 0.27138,-0.18098 l 1.47505,-2.682628 a 0.19771041,0.20759642 0 0 0 -0.17122,-0.3114 h -3.23981 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z" />
-		<path id="IC" class="symbole"
-			d="m -358.13344,-115.22231 -2.89976,5.07999 h 1.44988 l 2.89976,-5.07999 z m 2.89934,0 -2.89934,5.07999 h 4.34922 l 0.72515,-1.45149 h -2.89976 l 1.44988,-2.17702 h 2.89976 l 0.72473,-1.45148 z" />
+		<path id="LGV" class="symbole" d="m -353.16744,-86.137502 c -0.14894,0 -0.26213,0.105577 -0.29242,0.235164 h 1.20893 c -0.15314,-0.148477 -0.35908,-0.235164 -0.57788,-0.235164 z m -7.36974,4.14e-4 c -0.1488,0 -0.262,0.105324 -0.29242,0.23475 h 1.20852 c -0.15308,-0.148248 -0.35887,-0.23475 -0.57747,-0.23475 z m 2.97284,0 c -0.14879,0 -0.26199,0.105324 -0.29242,0.23475 h 3.88936 c -0.1531,-0.14823 -0.35887,-0.23475 -0.57747,-0.23475 z m 7.07814,0 c -0.1777,0 -0.33356,0.09378 -0.42247,0.23475 h 1.05434 c -0.0889,-0.140975 -0.24477,-0.23475 -0.42247,-0.23475 z m -10.24525,0.581917 0.10634,0.201688 h 1.34062 l -0.10633,-0.201688 z m 2.97285,0 0.10633,0.201688 h 4.02187 l -0.10634,-0.201688 z m 4.39731,0 0.10633,0.201688 h 1.34062 l -0.10633,-0.201688 z m 2.3741,0 v 0.201688 h 1.21139 v -0.201688 z m -9.45429,0.548854 1.84816,3.50101 c 0.14509,0.274901 0.42869,0.446771 0.73697,0.446771 h 1.67926 c 0.22684,0 0.37179,-0.244107 0.26501,-0.446358 l -0.19876,-0.37651 c -0.14516,-0.274901 -0.42828,-0.44677 -0.73656,-0.44677 h -0.33864 c -0.30828,0 -0.59147,-0.171869 -0.73656,-0.44677 l -1.17826,-2.231373 z m 2.97284,0 1.84816,3.50101 c 0.1451,0.274901 0.42863,0.446771 0.73698,0.446771 h 3.01946 c 0.22691,0 0.37221,-0.244457 0.26543,-0.446771 l -1.15536,-2.092505 c -0.14509,-0.274902 -0.42827,-0.446708 -0.73656,-0.446771 h -0.33904 c -0.22685,6.3e-5 -0.3718,0.24452 -0.26502,0.446771 l 0.48505,0.823281 c 0.10677,0.20225 -0.038,0.446357 -0.26502,0.446357 h -0.33863 c -0.30829,0 -0.59182,-0.171456 -0.73698,-0.446357 l -0.86907,-1.646563 c -0.10678,-0.202249 0.0384,-0.446356 0.26543,-0.446356 h 1.67925 c 0.10932,0 0.19884,-0.05739 0.25111,-0.138867 z m 4.3969,0 1.84857,3.501423 c 0.14516,0.274901 0.42869,0.446358 0.73697,0.446358 h 0.2094 c 0.27665,0 0.501,-0.226717 0.501,-0.506285 v -3.441496 h -1.21139 v 0.90222 c -2.1e-4,0.131617 -0.1747,0.175618 -0.23598,0.05951 l -0.50754,-0.961734 z" />
+		<path id="LER" class="symbole" d="m -358.24583,-100.11424 -2.11276,4.436788 a 0.21164105,0.22222362 0 0 0 0.1893,0.32162 h 2.33893 a 0.55408348,0.58178903 0 0 0 0.49558,-0.32162 l 0.29847,-0.62678 a 0.21164105,0.22222362 0 0 0 -0.18929,-0.32161 h -1.1294 a 0.21164105,0.22222362 0 0 1 -0.1893,-0.3216 l 1.50799,-3.166798 a 0.21164105,0.22222362 0 0 0 -0.18929,-0.32161 h -0.52464 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z m 3.35127,0 -2.11275,4.436788 a 0.21164105,0.22222362 0 0 0 0.18929,0.32162 h 2.94369 a 0.55408348,0.58178903 0 0 0 0.49559,-0.32162 l 0.29847,-0.62678 a 0.21164105,0.22222362 0 0 0 -0.1893,-0.32161 h -1.73416 a 0.20457286,0.21480201 0 0 1 -0.18013,-0.31661 l 0.1087,-0.21206 a 0.5732276,0.6018904 0 0 1 0.50476,-0.31661 h 0.22225 a 0.52390018,0.55009649 0 0 0 0.47987,-0.32934 l 0.0706,-0.16918 a 0.22383426,0.23502653 0 0 0 -0.20502,-0.32935 h -0.22226 a 0.20757744,0.21795682 0 0 1 -0.18404,-0.31878 l 0.11395,-0.2293 a 0.56493047,0.59317839 0 0 1 0.50085,-0.31877 h 1.73416 a 0.55408348,0.58178903 0 0 0 0.49559,-0.32161 l 0.29847,-0.626788 a 0.21164105,0.22222362 0 0 0 -0.1893,-0.32161 h -2.94368 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z m 3.91199,0 -0.29847,0.626788 -1.81429,3.81 a 0.21164105,0.22222362 0 0 0 0.1893,0.32162 h 0.72673 a 0.22709209,0.23844726 0 0 0 0.20311,-0.13181 l 1.59838,-3.3566 a 0.55408348,0.58178903 0 0 1 0.49559,-0.3216 h 0.80379 a 0.11387234,0.11956624 0 0 1 0.0986,0.17933 l -0.42833,0.77925 a 0.59302395,0.62267662 0 0 1 -0.51362,0.31142 h -0.47971 a 0.08148141,0.08555569 0 0 0 -0.0729,0.12382 l 1.07855,2.26497 a 0.26053439,0.27356175 0 0 0 0.23303,0.15122 h 0.70606 a 0.21164105,0.22222362 0 0 0 0.1893,-0.32162 l -0.66499,-1.39648 a 0.12299785,0.12914805 0 0 1 0.11001,-0.18691 0.32148503,0.33756008 0 0 0 0.27138,-0.18098 l 1.47505,-2.682628 a 0.19771041,0.20759642 0 0 0 -0.17122,-0.3114 h -3.23981 a 0.55408348,0.58178903 0 0 0 -0.49559,0.32161 z" />
+		<path id="IC" class="symbole" d="m -358.13344,-115.22231 -2.89976,5.07999 h 1.44988 l 2.89976,-5.07999 z m 2.89934,0 -2.89934,5.07999 h 4.34922 l 0.72515,-1.45149 h -2.89976 l 1.44988,-2.17702 h 2.89976 l 0.72473,-1.45148 z" />
 		<g id="L-LGV-BRE2-0" transform="rotate(-45,-62.34796,2.7587205)">
-			<rect
-				width="33.734375" height="6.3500824" rx="3.1331387" ry="3.1485832" transform="rotate(90)" x="-77.057533"
-				y="122.58241" />
-			<text
-				transform="matrix(0,0.99944621,-1.0005541,0,0,0)" x="-62.56385" y="128.16397">
-				<tspan
-					x="-62.56385" y="128.16397" >BRE2</tspan>
-			</text>
+			<rect width="33.734375" height="6.3500824" rx="3.1331387" ry="3.1485832" transform="rotate(90)" x="-77.057533" y="122.58241" />
+			<text transform="matrix(0,0.99944621,-1.0005541,0,0,0)" x="-62.56385" y="128.16397"> BRE2 </text>
 			<use xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%" x="0" y="0"/>
 		</g>
 		<g id="L-LGV-FR4-0" transform="rotate(-135,177.83916,-429.91878)" >
-			<rect
-				width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832"
-				transform="rotate(90)" />
-			<text
-				x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">
-				<tspan
-					x="-62.475342" y="128.14325">FR4</tspan>
-			</text>
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)" />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">FR4</text>
 			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-FR7-0" transform="rotate(-90,145.19835,-654.60164)" style="display:inline">
-			<rect
-				width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832"
-				transform="rotate(90)" id="rect99" />
-			<text
-				x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">
-				<tspan x="-62.475342" y="128.14325">FR7</tspan>
-			</text>
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)" id="rect99" />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)">FR7</text>
 			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-FR9-0" transform="rotate(-135,575.93144,-335.83248)">
-			<rect
-				width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832"
-				transform="rotate(90)"  />
-			<text
-				x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)" >
-				<tspan
-					x="-62.475342" y="128.14325" >FR9</tspan>
-			</text>
+			<rect width="28.773438" height="6.3500824" x="-77.057533" y="122.58241" rx="3.1331387" ry="3.1485832" transform="rotate(90)"  />
+			<text x="-62.475342" y="128.14325" transform="matrix(0,0.99944621,-1.0005541,0,0,0)" >FR9</text>
 			<use x="0" y="0" xlink:href="#LGV" transform="rotate(90,-247.3722,38.016636)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-BRE0-0" transform="translate(-56.239823,34.247809)">
-			<rect
-				width="51.933544" height="10.133508" x="2751.4717" y="-538.87122" rx="4.9998841" ry="5.0245309"
-				transform="matrix(0.44310297,0.44310297,-0.44310297,0.44310297,-1557.5434,-1031.3016)" />
-			<text
-				x="-91.835564" y="40.039288" transform="matrix(0.70671519,0.70671519,-0.70749859,0.70749859,0,0)"
-				>
-				<tspan
-					x="-91.835564" y="40.039288">BRE0</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LGV" transform="rotate(45,-274.32713,248.47212)" width="100%" height="100%"
-				 />
+			<rect width="51.933544" height="10.133508" x="2751.4717" y="-538.87122" rx="4.9998841" ry="5.0245309" transform="matrix(0.44310297,0.44310297,-0.44310297,0.44310297,-1557.5434,-1031.3016)" />
+			<text x="-91.835564" y="40.039288" transform="matrix(0.70671519,0.70671519,-0.70749859,0.70749859,0,0)">BRE0</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="rotate(45,-274.32713,248.47212)" width="100%" height="100%"/>
 		</g>
-		<g id="L-LGV-FR8-0" transform="rotate(-45,146.93968,-318.84171)"
-			>
-			<rect
-				width="28.354986" height="6.3500824" x="-106.5937" y="-40.315758" rx="3.1331387" ry="3.1485832"
-				 />
-			<text
-				x="-92.02787" y="-34.664761" transform="scale(0.99944621,1.0005541)" >
-				<tspan
-					x="-92.02787" y="-34.664761" >FR8</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LGV" transform="translate(255.85268,46.457329)" width="100%" height="100%"
-				/>
+		<g id="L-LGV-FR8-0" transform="rotate(-45,146.93968,-318.84171)">
+			<rect width="28.354986" height="6.3500824" x="-106.5937" y="-40.315758" rx="3.1331387" ry="3.1485832"/>
+			<text x="-92.02787" y="-34.664761" transform="scale(0.99944621,1.0005541)" >FR8</text>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(255.85268,46.457329)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LGV-BRE1-0" transform="rotate(-45,197.36179,-866.85245)">
-			<rect
-				width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832" />
-			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"
-				 />
-			<text
-				x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)">
-				<tspan
-					x="-705.58313" y="-401.80994" >BRE1</tspan>
-			</text>
+			<rect width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
+			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)">BRE1</text>
 		</g>
 		<g transform="rotate(-45,191.59646,-852.02696)"  id="L-LGV-BRE3-0">
-			<rect
-				width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"
-				 />
-			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"
-				/>
-			<text
-				x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)">
-				<tspan
-					x="-705.58313" y="-401.80994" >BRE3</tspan>
-			</text>
+			<rect width="32.543751" height="6.3500838" x="-719.80927" y="-407.66434" rx="3.1331387" ry="3.1485832"/>
+			<use x="0" y="0" xlink:href="#LGV" transform="translate(-357.36282,-320.89127)" width="100%" height="100%"/>
+			<text x="-705.58313" y="-401.80994" transform="scale(0.99944621,1.0005541)"> BRE3</text>
 		</g>
-		<use x="0" y="0" xlink:href="#L-LER-BRE1-0" transform="translate(594.02215,126.97522)" width="100%"
-			height="100%" id="L-LER-BRE1-1" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR9-0" transform="rotate(45,426.18288,-1170.6362)" width="100%"
-			height="100%" id="L-LGV-FR9-1" />
 		<g id="L-LER-BRE0-0" transform="rotate(45,-259.15722,-133.46962)">
-			<rect
-				width="34.131248" height="6.3499985" x="-103.45208" y="-108.21458" rx="3.1182206" ry="3.0671625"
+			<rect width="34.131248" height="6.3499985" x="-103.45208" y="-108.21458" rx="3.1182206" ry="3.0671625"
 				 />
-			<text
-				x="-87.296059" y="-102.52605" transform="scale(0.9994462,1.0005541)" >
-				<tspan
-					x="-87.296059" y="-102.52605" >BRE0</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="translate(258.99437,-7.143751)" width="100%" height="100%"
-				 />
+			<text x="-87.296059" y="-102.52605" transform="scale(0.9994462,1.0005541)" >BRE0</text>
+			<use x="0" y="0" xlink:href="#LER" transform="translate(258.99437,-7.143751)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE1-0" transform="rotate(90,-190.79776,-75.191819)">
-			<rect
-				width="34.131248" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)"  />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">BRE1</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"
-				 />
+			<rect width="34.131248" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE1</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE5-0" transform="rotate(180,-39.397785,54.889982)">
-			<rect
-				width="34.131248" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)"  />
-			<text
-				x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="140.04425" y="-35.493076">BRE5</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"
-				 />
+			<rect width="34.131248" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE5</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE7-0" transform="rotate(90,-94.097692,219.86201)" >
-			<rect
-				width="35.461746" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" id="rect178" />
-			<text
-				x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="140.04425" y="-35.493076" >BRE7</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"
-				/>
+			<rect width="35.461746" height="6.3499985" x="123.76235" y="-41.144463" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" id="rect178" />
+			<text x="140.04425" y="-35.493076" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE7</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-230.69324,-130.66032)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-BRE6-0" transform="rotate(90,-82.629364,245.73898)">
-			<rect
-				width="34.131248" height="6.3499985" x="115.41671" y="-69.882301" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)"  />
-			<text
-				x="131.69398" y="-64.215004" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">
-				<tspan x="131.69398" y="-64.215004">BRE6</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-232.47223,-114.56296)" width="100%" height="100%"
-				 />
+			<rect width="34.131248" height="6.3499985" x="115.41671" y="-69.882301" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"  />
+			<text x="131.69398" y="-64.215004" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE6</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-232.47223,-114.56296)" width="100%" height="100%"/>
 		</g>
-		<g id="L-LER-BRE2-0" transform="rotate(90,-209.03946,-17.644944)"
-			>
-			<rect
-				width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">BRE2</tspan>
-			</text>
+		<g id="L-LER-BRE2-0" transform="rotate(90,-209.03946,-17.644944)">
+			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE2</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-BRE4-0" transform="rotate(90,-2.6986596,41.073713)">
-			<rect
-				width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">BRE4</tspan>
-			</text>
+			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE4</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
-		<g id="L-LER-BRE8-0" transform="rotate(180,81.595977,-76.017448)"
-			>
-			<rect
-				width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">BRE8</tspan>
-			</text>
+		<g id="L-LER-BRE8-0" transform="rotate(180,81.595977,-76.017448)">
+			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE8</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-NOR2-0" transform="rotate(90,141.75941,81.573806)">
-			<rect
-				width="36.551388" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)"/>
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">NOR2</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"
-				/>
+			<rect width="36.551388" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)"/>
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR2</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
-		<g id="L-LER-NOR3-0" transform="rotate(90,114.20553,94.100088)"
-			>
-			<rect
-				width="36.886406" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)"
-				>
-				<tspan
-					x="127.59914" y="-0.4655143">NOR3</tspan>
-			</text>
-			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"
-				/>
+		<g id="L-LER-NOR3-0" transform="rotate(90,114.20553,94.100088)">
+			<rect width="36.886406" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">NOR3</text>
+			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%"/>
 		</g>
-		<g id="L-LER-CVL1-0" transform="rotate(90,66.414173,244.592)"
-			>
-			<rect
-				width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-45)" />
-			<text
-				x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)"
-				>
-				<tspan
-					x="-4.8152852" y="-126.39868" >CVL1</tspan>
-			</text>
+		<g id="L-LER-CVL1-0" transform="rotate(90,66.414173,244.592)">
+			<rect width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)" >CVL1</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-CVL4-0" transform="rotate(90,60.857923,239.03575)">
-			<rect
-				width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-45)"/>
-			<text
-				x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">
-				<tspan
-					x="-4.8152852" y="-126.39868" >CVL4</tspan>
-			</text>
+			<rect width="34.505157" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)"/>
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">CVL4</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%"/>
 		</g>
 		<g id="L-LER-NAQ7-0" transform="translate(404.12629,245.19139)">
-			<rect
-				width="38.404854" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-45)" />
-			<text
-				x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">
-				<tspan
-					x="-4.8152852" y="-126.39868">NAQ7</tspan>
-			</text>
+			<rect width="38.404854" height="6.3499985" x="-21.016968" y="-132.10043" rx="3.1182206" ry="3.0671625" transform="rotate(-45)" />
+			<text x="-4.8152852" y="-126.39868" transform="matrix(0.70671519,-0.70671519,0.70749859,0.70749859,0,0)">NAQ7</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-45,-208.17079,-396.62704)" width="100%" height="100%" />
 		</g>
 		<g id="L-LER-BRE3-0" transform="rotate(90,-66.561335,116.89568)">
-			<rect
-				width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625"
-				transform="rotate(-135)" />
-			<text
-				x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">
-				<tspan
-					x="127.59914" y="-0.4655143" >BRE3</tspan>
-			</text>
+			<rect width="35.321884" height="6.3499985" x="111.32413" y="-6.0974898" rx="3.1182206" ry="3.0671625" transform="rotate(-135)" />
+			<text x="127.59914" y="-0.4655143" transform="matrix(-0.70671519,-0.70671519,0.70749859,-0.70749859,0,0)">BRE3</text>
 			<use x="0" y="0" xlink:href="#LER" transform="rotate(-135,-217.21567,-145.60777)" width="100%" height="100%" />
 		</g>
-		<use x="0" y="0" xlink:href="#L-LGV-BRE1-0" id="L-LGV-BRE1-1" transform="rotate(45,450.57498,902.34499)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE0-0" id="L-LER-BRE0-1" transform="translate(507.64105,38.262427)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE2-0" id="L-LER-BRE2-1" transform="translate(265.86762,-7.8988692)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE3-0" id="L-LER-BRE3-1" transform="translate(216.65512,219.90738)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE4-0" id="L-LER-BRE4-1" transform="translate(41.289412,237.35452)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE2-0" id="L-LGV-BRE2-1" transform="rotate(-90,109.27292,-29.285583)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE3-0" id="L-LGV-BRE3-1" transform="rotate(45,53.041522,377.86364)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-BRE0-0" id="L-LGV-BRE0-1" transform="rotate(-45,167.19489,-949.22704)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE5-0" id="L-LER-BRE5-1" transform="translate(83.34375,140.49375)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE6-0" id="L-LER-BRE6-1" transform="rotate(90,107.71487,279.75511)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE7-0" id="L-LER-BRE7-1" transform="rotate(45,408.93774,301.02078)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-BRE8-0" id="L-LER-BRE8-1" transform="translate(-1.1417641,218.99936)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NOR2-0" id="L-LER-NOR2-1" transform="rotate(45,-21.220927,-281.55855)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NOR3-0" id="L-LER-NOR3-1" transform="translate(113.50625,257.96875)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-CVL1-0" id="L-LER-CVL1-1" transform="rotate(-45,340.45786,-235.4284)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-NAQ7-0" id="L-LER-NAQ7-1" transform="translate(58.737503,153.9875)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LER-CVL4-0" id="L-LER-CVL4-1" transform="translate(164.20469,-3.9962104)"
-			width="100%" height="100%" />
-		
-		<g id="L-IC1-0" transform="rotate(-45,442.44802,-300.46154)">
-			<rect
-				width="19.049997" height="6.3499908" x="-76.464577" y="-115.35832" rx="3.1713946" ry="3.0671575" />
-			<text
-				x="-42.718372" y="-65.836349" transform="matrix(0.99944621,0,0,1.0005541,-20.397399,-43.853793)">
-				<tspan x="-42.718372" y="-65.836349" >1</tspan>
-			</text>
+      <g id="L-IC1-0" transform="rotate(-45,442.44802,-300.46154)">
+			<rect width="19.049997" height="6.3499908" x="-76.464577" y="-115.35832" rx="3.1713946" ry="3.0671575" />
+			<text x="-42.718372" y="-65.836349" transform="matrix(0.99944621,0,0,1.0005541,-20.397399,-43.853793)">1</text>
 			<use x="0" y="0" xlink:href="#IC" transform="translate(286.638,0.498985)" width="100%" height="100%" />
 		</g>
-		<use x="0" y="0" xlink:href="#L-IC1-0" id="L-IC1-1" transform="translate(706.4375,256.38125)" width="100%"
-			height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR4-0" id="L-LGV-FR4-1" transform="translate(-503.23749,1322.3875)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR7-0" id="L-LGV-FR7-1" transform="translate(-522.28751,603.25)"
-			width="100%" height="100%" />
-		<use x="0" y="0" xlink:href="#L-LGV-FR8-0" id="L-LGV-FR8-1" transform="translate(818.0752,796.4123)"
-			width="100%" height="100%" />
+      <use x="0" y="0" xlink:href="#L-LER-BRE1-0" id="L-LER-BRE1-1" transform="translate(594.02215,126.97522)" width="100%" height="100%"  />
+		<use x="0" y="0" xlink:href="#L-LGV-FR9-0"  id="L-LGV-FR9-1" transform="rotate(45,426.18288,-1170.6362)" width="100%" height="100%"  />
+		<use x="0" y="0" xlink:href="#L-LGV-BRE1-0" id="L-LGV-BRE1-1" transform="rotate(45,450.57498,902.34499)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE0-0" id="L-LER-BRE0-1" transform="translate(507.64105,38.262427)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE2-0" id="L-LER-BRE2-1" transform="translate(265.86762,-7.8988692)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE3-0" id="L-LER-BRE3-1" transform="translate(216.65512,219.90738)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE4-0" id="L-LER-BRE4-1" transform="translate(41.289412,237.35452)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-BRE2-0" id="L-LGV-BRE2-1" transform="rotate(-90,109.27292,-29.285583)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-BRE3-0" id="L-LGV-BRE3-1" transform="rotate(45,53.041522,377.86364)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-BRE0-0" id="L-LGV-BRE0-1" transform="rotate(-45,167.19489,-949.22704)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE5-0" id="L-LER-BRE5-1" transform="translate(83.34375,140.49375)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE6-0" id="L-LER-BRE6-1" transform="rotate(90,107.71487,279.75511)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE7-0" id="L-LER-BRE7-1" transform="rotate(45,408.93774,301.02078)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-BRE8-0" id="L-LER-BRE8-1" transform="translate(-1.1417641,218.99936)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-NOR2-0" id="L-LER-NOR2-1" transform="rotate(45,-21.220927,-281.55855)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-NOR3-0" id="L-LER-NOR3-1" transform="translate(113.50625,257.96875)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-CVL1-0" id="L-LER-CVL1-1" transform="rotate(-45,340.45786,-235.4284)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-NAQ7-0" id="L-LER-NAQ7-1" transform="translate(58.737503,153.9875)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LER-CVL4-0" id="L-LER-CVL4-1" transform="translate(164.20469,-3.9962104)" width="100%" height="100%" />
+      <use x="0" y="0" xlink:href="#L-IC1-0"      id="L-IC1-1" transform="translate(706.4375,256.38125)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-FR4-0" id="L-LGV-FR4-1" transform="translate(-503.23749,1322.3875)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-FR7-0" id="L-LGV-FR7-1" transform="translate(-522.28751,603.25)" width="100%" height="100%" />
+		<use x="0" y="0" xlink:href="#L-LGV-FR8-0" id="L-LGV-FR8-1" transform="translate(818.0752,796.4123)" width="100%" height="100%" />
 	</g>
 	<g inkscape:groupmode="layer" id="station" inkscape:label="station" style="display:inline"
 		transform="translate(370.54916,539.8825)">
-		<rect
-			id="S-FR-22070-0" width="3.968749" height="6.3500018" x="-51.064579" y="-33.602085" rx="0.59999865"
-			ry="0.52062368" />
-		<rect
-			id="S-FR-22278-0" width="3.3675966" height="6.7351928" x="11.412411" y="-26.379505" rx="0.68452597"
-			ry="0.59396875" transform="rotate(45)" />
-		<rect
-			id="S-FR-35238-0" width="13.493743" height="14.287495" x="141.02292" y="60.854168" rx="0.49999899"
-			ry="0.43385318" />
-		<rect
-			id="S-FR-28085-0" width="5.0513844" height="12.909105" x="370.99683" y="372.86771" rx="0.49999899"
-			ry="0.43385318" transform="rotate(-45)" />
-		<rect
-			id="S-FR-91377-1" width="5.0513792" height="10.102779" x="429.92978" y="375.11279" rx="0.49999899"
-			ry="0.43385318" transform="rotate(-45)" />
-		<rect
-			id="S-FR-72181-0" width="11.273457" height="10.583332" x="-71.063606" y="363.27292" rx="0.49034289"
-			ry="0.42547452" transform="rotate(-90)" />
-		<rect
-			id="S-FR-49007-0" width="15.87501" height="15.87501" x="-183.88542" y="275.16666" rx="0.49034289"
-			ry="0.42547452" transform="rotate(-90)" />
-		<rect
-			id="S-FR-53130-0" width="6.3500056" height="4.7624927" x="-67.997917" y="252.94167" rx="0.43616959"
-			ry="0.261392" transform="rotate(-90)" />
-		<rect
-			id="S-FR-14118-0" width="6.3499961" height="4.7625122" x="131.23334" y="301.36041" rx="0.49034289"
-			ry="0.42547452" transform="rotate(-90)" />
-		<rect
-			id="S-FR-37261-0" width="1.587495" height="3.9687548" x="-165.62917" y="425.18542" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-90)" />
-		<rect
-			id="S-FR-37233-0" width="3.9687636" height="8.7312574" x="429.94791" y="175.15416" rx="0.30003548"
-			ry="0.26034322" />
-		<rect
-			id="S-FR-41269-1" width="7.1437583" height="7.1437635" x="80.697914" y="-472.81042" rx="0.30003548"
-			ry="0.26034322" transform="rotate(90)" />
-		<rect
-			id="S-FR-45234-0" width="1.3229228" height="3.4395752" x="-343.03372" y="-470.564" rx="0.30003548"
-			ry="0.26034322" transform="rotate(135)" />
-		<rect
-			id="S-FR-61169-0" width="1.3229228" height="3.4395752" x="46.860409" y="269.34586" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-90)" />
-		<rect
-			id="S-FR-35288-0" width="1.3229228" height="3.4395752" x="-50.801228" y="102.67569" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-135)" />
-		<rect
-			id="S-FR-44049-0" width="1.3229228" height="3.4395752" x="-52.255207" y="-199.09895" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-56206-0" width="3.9687512" height="8.7312469" x="-37.835419" y="-139.43541" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-44007-0" width="2.3812494" height="11.112511" x="-121.97292" y="102.92292" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-90)" />
-		<rect
-			id="S-FR-29265-0" width="3.9687467" height="6.349998" x="116.15208" y="27.252083" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-56098-0" width="3.3675821" height="8.9802628" x="-66.416481" y="-116.18206" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-135)" />
-		<rect
-			id="S-FR-29019-0" width="1.5592943" height="8.2944975" x="135.82637" y="121.60764" rx="0.30003548"
-			ry="0.26034322" transform="rotate(135)" />
-		<rect
-			id="S-FR-85194-0" width="1.3229228" height="3.4395752" x="-136.12813" y="-340.38644" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-86194-0" width="5.5562391" height="5.5562539" x="-389.46667" y="-326.76041" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-17300-0" width="1.3229228" height="3.4395752" x="132.25839" y="-434.04572" rx="0.30003548"
-			ry="0.26034322" transform="rotate(135)" />
-		<rect
-			id="S-FR-17142-0" width="3.1749897" height="3.9687543" x="383.11667" y="-225.16042" rx="0.30003548"
-			ry="0.26034322" transform="rotate(90)" />
-		<rect
-			id="S-FR-75115-0" width="6.5879917" height="6.2138252" x="70.789337" y="612.04932" rx="0.49999899"
-			ry="0.43385318" transform="rotate(-90)" />
-		<rect
-			id="S-FR-56121-0" width="4.4901271" height="1.1225328" x="109.44687" y="-50.701031" rx="0.66145831"
-			ry="0.54569805" transform="rotate(135)" />
-		<rect
-			id="S-FR-49328-0" width="6.3500018" height="1.5874891" x="170.39166" y="-329.93542" rx="0.79375201"
-			ry="0.79374456" transform="rotate(90)" />
-		<rect
-			id="S-FR-44043-0" width="3.9687483" height="1.5875071" x="-195.79167" y="-240.24167" rx="0.79374826"
-			ry="0.79375201" transform="scale(-1)" />
-		<rect
-			id="S-FR-44003-0" width="5.6126404" height="1.1225433" x="-311.12845" y="47.707607" rx="0.56127167"
-			ry="0.56127167" transform="rotate(-135)" />
-		<rect
-			id="S-FR-29233-0" width="4.4901285" height="1.1225318" x="-113.937" y="8.0448151" rx="0.66145831"
-			ry="0.56126589" transform="rotate(-45)" />
-		<rect
-			id="S-FR-35079-0" width="3.1783335" height="1.3229065" x="-148.57051" y="-26.98749" rx="0.66145831"
-			ry="0.65628558" transform="scale(-1)" />
-		<rect
-			id="S-FR-35095-0" width="3.1783335" height="1.3229065" x="-148.59001" y="0.42995229" rx="0.66145831"
-			ry="0.65628558" transform="scale(-1)" />
-		<rect
-			id="S-FR-44109-0" width="19.050005" height="19.843733" x="164.04167" y="201.34792" rx="0.6233958"
-			ry="0.54092562" />
-		<rect
-			id="S-FR-29232-0" width="8.7312574" height="8.7312469" x="-139.17084" y="74.347916" rx="0.49999899"
-			ry="0.43385318" />
-		<circle
-			id="S-FR-29080-0" cx="-151.87083" cy="23.547916" r="0.625" />
-		<circle
-			id="S-FR-61145-0" cx="271.19791" cy="-22.489584" r="0.625" />
-		<circle
-			id="S-FR-29302-0" cx="-151.87083" cy="41.010418" r="0.625" />
-		<circle
-			id="S-FR-50188-0-5" cx="213.30862" cy="-67.095177" r="0.625" />
-		<rect
-			id="S-FR-56007-0" width="3.9687519" height="1.5874999" x="-137.05417" y="-5.8208299" rx="0.79374802"
-			ry="0.79374993" transform="rotate(-90)" />
-		<rect
-			id="S-FR-85191-0" width="3.367599" height="5.6126661" x="-80.26104" y="335.82416" rx="0.30003548"
-			ry="0.26034322" transform="rotate(-45)" />
-		
-		<circle
-			id="S-FR-41269-0" cx="479.16043" cy="94.191666" r="0.625" />
-		<circle
-			id="S-FR-10387-0" cx="816.50415" cy="37.835415" r="0.625" />
-		<circle
-			id="S-FR-51454-0" cx="846.66669" cy="-116.15208" r="0.625" />
-		<circle
-			id="S-FR-55545-1" cx="987.1604" cy="-116.15208" r="0.625" />
-		<circle
-			id="S-FR-54546-0" cx="1090.3479" cy="-116.15208" r="0.625" />
-		<circle
-			id="S-FR-41018-0" cx="516.46667" cy="117.21042" r="0.625" />
-		<circle
-			id="S-FR-58194-0" cx="687.12292" cy="292.62918" r="0.625" />
-		<circle
-			id="S-FR-03236-0" cx="779.19794" cy="384.70416" r="0.625" />
-		<circle
-			id="S-FR-21231-0" cx="795.50104" cy="-520.85486" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-72132-0" cx="438.67917" cy="62.177082" r="0.625" />
-		<circle
-			id="S-FR-28280-0" cx="457.72916" cy="62.177082" r="0.625" />
-		<circle
-			id="S-FR-50147-0" cx="239.66058" cy="103.46004" r="0.625" transform="rotate(-45)" />
-		<rect
-			id="S-FR-69382-0" width="1.3229228" height="3.4395752" x="979.49609" y="-323.32523" rx="0.30003548"
-			ry="0.26034322" transform="rotate(45)" />
-		<circle
-			id="S-FR-50502-0" cx="264.84793" cy="-118.53333" r="0.625" />
-
-		<rect
-			id="S-FR-13201-0" width="1.3229228" height="3.4395752" x="873.78644" y="-983.32397" rx="0.30003548"
-			ry="0.26034322" transform="rotate(90)" />
-		<rect
-			id="S-FR-64260-0" width="1.3229228" height="3.4395752" x="-138.50938" y="-864.26147" rx="0.30003548"
-			ry="0.26034322" transform="scale(-1)" />
-		<rect
-			id="S-FR-67482-0" width="1.3229228" height="3.4395752" x="874.53931" y="-900.86792" rx="0.30003548"
-			ry="0.26034322" transform="rotate(45)" />
-		<rect
-			id="S-FR-59350-0" height="3.9687669" x="-396.34558" y="-720.06354" rx="0.30003548" ry="0.26034322"
-			transform="rotate(90)" width="1.5870056" />
-		<rect
-			id="S-FR-62274-0" height="3.9687669" x="-738.85834" y="-241.27078" rx="0.30003548" ry="0.26034322"
-			transform="rotate(135)" width="1.5870056" />
-		<rect
-			id="S-FR-62193-0" height="3.9687669" x="120.06579" y="-783.26666" rx="0.30003548" ry="0.26034322"
-			transform="rotate(45)" width="1.5870056" />
-		<circle
-			id="S-FR-42187-0" cx="828.4104" cy="412.48541" r="0.625" />
-		<circle
-			id="S-FR-03190-0" cx="745.06665" cy="350.57291" r="0.625" />
-		<circle
-			id="S-FR-33063-0" cx="283.89792" cy="594.25415" r="0.625" />
-		<circle
-			id="S-FR-40192-0" cx="283.89792" cy="703.79169" r="0.625" />
-		<circle
-			id="S-FR-40088-0" cx="748.91595" cy="368.75177" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-64102-1" cx="716.92377" cy="457.99307" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-17415-1" cx="-181.85019" cy="545.17639" r="0.625" transform="rotate(-45)" />
-		<circle
-			id="S-FR-29151-0" cx="-108.21458" cy="-32.808334" r="0.625" />
-		<circle
-			id="S-FR-22207-0" cx="-75.67083" cy="-32.808334" r="0.625" />
-		<circle
-			id="S-FR-22093-0" cx="50.535419" cy="14.816667" r="0.625" />
-		<circle
-			id="S-FR-35184-0" cx="79.11042" cy="43.391666" r="0.625" />
-		<circle
-			id="S-FR-35240-0" cx="99.747917" cy="70.379166" r="0.625" />
+		<rect class="station-rect" id="S-FR-22070-0" width="3.968749" height="6.3500018" x="-51.064579" y="-33.602085" rx="0.59999865" ry="0.52062368" />
+		<rect class="station-rect" id="S-FR-22278-0" width="3.3675966" height="6.7351928" x="11.412411" y="-26.379505" rx="0.68452597" ry="0.59396875" transform="rotate(45)" />
+		<rect class="station-rect" id="S-FR-35238-0" width="13.493743" height="14.287495" x="141.02292" y="60.854168" rx="0.49999899" ry="0.43385318" />
+		<rect class="station-rect" id="S-FR-28085-0" width="5.0513844" height="12.909105" x="370.99683" y="372.86771" rx="0.49999899" ry="0.43385318" transform="rotate(-45)" />
+		<rect class="station-rect" id="S-FR-91377-1" width="5.0513792" height="10.102779" x="429.92978" y="375.11279" rx="0.49999899" ry="0.43385318" transform="rotate(-45)" />
+		<rect class="station-rect" id="S-FR-72181-0" width="11.273457" height="10.583332" x="-71.063606" y="363.27292" rx="0.49034289" ry="0.42547452" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-49007-0" width="15.87501" height="15.87501" x="-183.88542" y="275.16666" rx="0.49034289" ry="0.42547452" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-53130-0" width="6.3500056" height="4.7624927" x="-67.997917" y="252.94167" rx="0.43616959" ry="0.261392" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-14118-0" width="6.3499961" height="4.7625122" x="131.23334" y="301.36041" rx="0.49034289" ry="0.42547452" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-37261-0" width="1.587495" height="3.9687548" x="-165.62917" y="425.18542" rx="0.30003548" ry="0.26034322" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-37233-0" width="3.9687636" height="8.7312574" x="429.94791" y="175.15416" rx="0.30003548" ry="0.26034322" />
+		<rect class="station-rect" id="S-FR-41269-1" width="7.1437583" height="7.1437635" x="80.697914" y="-472.81042" rx="0.30003548" ry="0.26034322" transform="rotate(90)" />
+		<rect class="station-rect" id="S-FR-45234-0" width="1.3229228" height="3.4395752" x="-343.03372" y="-470.564" rx="0.30003548" ry="0.26034322" transform="rotate(135)" />
+		<rect class="station-rect" id="S-FR-61169-0" width="1.3229228" height="3.4395752" x="46.860409" y="269.34586" rx="0.30003548" ry="0.26034322" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-35288-0" width="1.3229228" height="3.4395752" x="-50.801228" y="102.67569" rx="0.30003548" ry="0.26034322" transform="rotate(-135)" />
+		<rect class="station-rect" id="S-FR-44049-0" width="1.3229228" height="3.4395752" x="-52.255207" y="-199.09895" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-56206-0" width="3.9687512" height="8.7312469" x="-37.835419" y="-139.43541" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-44007-0" width="2.3812494" height="11.112511" x="-121.97292" y="102.92292" rx="0.30003548" ry="0.26034322" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-29265-0" width="3.9687467" height="6.349998" x="116.15208" y="27.252083" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-56098-0" width="3.3675821" height="8.9802628" x="-66.416481" y="-116.18206" rx="0.30003548" ry="0.26034322" transform="rotate(-135)" />
+		<rect class="station-rect" id="S-FR-29019-0" width="1.5592943" height="8.2944975" x="135.82637" y="121.60764" rx="0.30003548" ry="0.26034322" transform="rotate(135)" />
+		<rect class="station-rect" id="S-FR-85194-0" width="1.3229228" height="3.4395752" x="-136.12813" y="-340.38644" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-86194-0" width="5.5562391" height="5.5562539" x="-389.46667" y="-326.76041" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-17300-0" width="1.3229228" height="3.4395752" x="132.25839" y="-434.04572" rx="0.30003548" ry="0.26034322" transform="rotate(135)" />
+		<rect class="station-rect" id="S-FR-17142-0" width="3.1749897" height="3.9687543" x="383.11667" y="-225.16042" rx="0.30003548" ry="0.26034322" transform="rotate(90)" />
+		<rect class="station-rect" id="S-FR-75115-0" width="6.5879917" height="6.2138252" x="70.789337" y="612.04932" rx="0.49999899" ry="0.43385318" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-56121-0" width="4.4901271" height="1.1225328" x="109.44687" y="-50.701031" rx="0.66145831" ry="0.54569805" transform="rotate(135)" />
+		<rect class="station-rect" id="S-FR-49328-0" width="6.3500018" height="1.5874891" x="170.39166" y="-329.93542" rx="0.79375201" ry="0.79374456" transform="rotate(90)" />
+		<rect class="station-rect" id="S-FR-44043-0" width="3.9687483" height="1.5875071" x="-195.79167" y="-240.24167" rx="0.79374826" ry="0.79375201" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-44003-0" width="5.6126404" height="1.1225433" x="-311.12845" y="47.707607" rx="0.56127167" ry="0.56127167" transform="rotate(-135)" />
+		<rect class="station-rect" id="S-FR-29233-0" width="4.4901285" height="1.1225318" x="-113.937" y="8.0448151" rx="0.66145831" ry="0.56126589" transform="rotate(-45)" />
+		<rect class="station-rect" id="S-FR-35079-0" width="3.1783335" height="1.3229065" x="-148.57051" y="-26.98749" rx="0.66145831" ry="0.65628558" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-35095-0" width="3.1783335" height="1.3229065" x="-148.59001" y="0.42995229" rx="0.66145831" ry="0.65628558" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-44109-0" width="19.050005" height="19.843733" x="164.04167" y="201.34792" rx="0.6233958" ry="0.54092562" />
+		<rect class="station-rect" id="S-FR-29232-0" width="8.7312574" height="8.7312469" x="-139.17084" y="74.347916" rx="0.49999899" ry="0.43385318" />
+      <rect class="station-rect" id="S-FR-56007-0" width="3.9687519" height="1.5874999" x="-137.05417" y="-5.8208299" rx="0.79374802" ry="0.79374993" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-85191-0" width="3.367599" height="5.6126661" x="-80.26104" y="335.82416" rx="0.30003548" ry="0.26034322" transform="rotate(-45)" />
+      <rect class="station-rect" id="S-FR-69382-0" width="1.3229228" height="3.4395752" x="979.49609" y="-323.32523" rx="0.30003548" ry="0.26034322" transform="rotate(45)" />
+      <rect class="station-rect" id="S-FR-13201-0" width="1.3229228" height="3.4395752" x="873.78644" y="-983.32397" rx="0.30003548" ry="0.26034322" transform="rotate(90)" />
+		<rect class="station-rect" id="S-FR-64260-0" width="1.3229228" height="3.4395752" x="-138.50938" y="-864.26147" rx="0.30003548" ry="0.26034322" transform="scale(-1)" />
+		<rect class="station-rect" id="S-FR-67482-0" width="1.3229228" height="3.4395752" x="874.53931" y="-900.86792" rx="0.30003548" ry="0.26034322" transform="rotate(45)" />
+		<rect class="station-rect" id="S-FR-59350-0" height="3.9687669" x="-396.34558" y="-720.06354" rx="0.30003548" ry="0.26034322" transform="rotate(90)" width="1.5870056" />
+		<rect class="station-rect" id="S-FR-62274-0" height="3.9687669" x="-738.85834" y="-241.27078" rx="0.30003548" ry="0.26034322" transform="rotate(135)" width="1.5870056" />
+		<rect class="station-rect" id="S-FR-62193-0" height="3.9687669" x="120.06579" y="-783.26666" rx="0.30003548" ry="0.26034322" transform="rotate(45)" width="1.5870056" />
+      <rect class="station-rect" id="S-FR-56260-0" width="3.9687519" height="1.5874999" x="-137.05417" y="17.991671" rx="0.79374802" ry="0.79374993" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-56184-0" width="3.9687519" height="1.5874999" x="-137.05417" y="58.472919" rx="0.79374802" ry="0.79374993" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-35236-0" width="3.9687519" height="1.5874999" x="-137.05417" y="93.397919" rx="0.79374802" ry="0.79374993" transform="rotate(-90)" />
+		<rect class="station-rect" id="S-FR-85146-0" width="3.9687483" height="1.5875071" x="-195.79167" y="-275.16666" rx="0.79374826" ry="0.79375201" transform="scale(-1)" />
+		<circle class="station-circle" id="S-FR-29080-0" cx="-151.87083" cy="23.547916" r="0.625" />
+		<circle class="station-circle" id="S-FR-61145-0" cx="271.19791" cy="-22.489584" r="0.625" />
+		<circle class="station-circle" id="S-FR-29302-0" cx="-151.87083" cy="41.010418" r="0.625" />
+		<circle class="station-circle" id="S-FR-50188-0-5" cx="213.30862" cy="-67.095177" r="0.625" />
+		<circle class="station-circle" id="S-FR-41269-0" cx="479.16043" cy="94.191666" r="0.625" />
+		<circle class="station-circle" id="S-FR-10387-0" cx="816.50415" cy="37.835415" r="0.625" />
+		<circle class="station-circle" id="S-FR-51454-0" cx="846.66669" cy="-116.15208" r="0.625" />
+		<circle class="station-circle" id="S-FR-55545-1" cx="987.1604" cy="-116.15208" r="0.625" />
+		<circle class="station-circle" id="S-FR-54546-0" cx="1090.3479" cy="-116.15208" r="0.625" />
+		<circle class="station-circle" id="S-FR-41018-0" cx="516.46667" cy="117.21042" r="0.625" />
+		<circle class="station-circle" id="S-FR-58194-0" cx="687.12292" cy="292.62918" r="0.625" />
+		<circle class="station-circle" id="S-FR-03236-0" cx="779.19794" cy="384.70416" r="0.625" />
+		<circle class="station-circle" id="S-FR-21231-0" cx="795.50104" cy="-520.85486" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-72132-0" cx="438.67917" cy="62.177082" r="0.625" />
+		<circle class="station-circle" id="S-FR-28280-0" cx="457.72916" cy="62.177082" r="0.625" />
+		<circle class="station-circle" id="S-FR-50147-0" cx="239.66058" cy="103.46004" r="0.625" transform="rotate(-45)" />
+		<circle class="station-circle" id="S-FR-50502-0" cx="264.84793" cy="-118.53333" r="0.625" />
+		<circle class="station-circle" id="S-FR-42187-0" cx="828.4104" cy="412.48541" r="0.625" />
+      <circle class="station-circle" id="S-FR-03190-0" cx="745.06665" cy="350.57291" r="0.625" />
+		<circle class="station-circle" id="S-FR-33063-0" cx="283.89792" cy="594.25415" r="0.625" />
+		<circle class="station-circle" id="S-FR-40192-0" cx="283.89792" cy="703.79169" r="0.625" />
+		<circle class="station-circle" id="S-FR-40088-0" cx="748.91595" cy="368.75177" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-64102-1" cx="716.92377" cy="457.99307" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-17415-1" cx="-181.85019" cy="545.17639" r="0.625" transform="rotate(-45)" />
+		<circle class="station-circle" id="S-FR-29151-0" cx="-108.21458" cy="-32.808334" r="0.625" />
+		<circle class="station-circle" id="S-FR-22207-0" cx="-75.67083" cy="-32.808334" r="0.625" />
+		<circle class="station-circle" id="S-FR-22093-0" cx="50.535419" cy="14.816667" r="0.625" />
+		<circle class="station-circle" id="S-FR-35184-0" cx="79.11042" cy="43.391666" r="0.625" />
+		<circle class="station-circle" id="S-FR-35240-0" cx="99.747917" cy="70.379166" r="0.625" />
+      <circle class="station-circle" id="S-FR-29103-0" cx="-173.30208" cy="-8.9958334" r="0.625" />
+		<circle class="station-circle" id="S-FR-29105-0" cx="-154.51666" cy="-27.78125" r="0.625" />
+		<circle class="station-circle" id="S-FR-50025-0" cx="183.88542" cy="-37.570835" r="0.625" />
+		<circle class="station-circle" id="S-FR-44110-0" cx="244.45877" cy="-15.59447" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-80021-0" cx="238.0528" cy="-624.578" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-76540-0" cx="238.16388" cy="-472.02472" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-77111-0" cx="435.16824" cy="-524.22247" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-95527-0" cx="397.56342" cy="-532.64142" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-59350-1" cx="231.42868" cy="-776.2309" r="0.625" transform="rotate(45)" />
+      <circle class="station-circle" id="S-FR-44184-0" cx="92.604172" cy="197.37917" r="0.625" />
+      <circle class="station-circle" id="S-FR-18279-0" cx="574.4104" cy="179.91667" r="0.625" />
+		<circle class="station-circle" id="S-FR-18033-0" cx="625.21045" cy="230.71666" r="0.625" />
+		<circle class="station-circle" id="S-FR-353600-0" cx="209.28542" cy="62.441666" r="0.625" />
+		<circle class="station-circle" id="S-FR-353600-0-9" cx="271.19791" cy="17.197916" r="0.625" />
+		<circle class="station-circle" id="S-FR-53097-0" cx="324.37918" cy="62.441666" r="0.625" />
+		<circle class="station-circle" id="S-FR-35136-0" cx="166.59166" cy="87.216667" r="0.625" />
+		<circle class="station-circle" id="S-FR-44036-0" cx="219.88075" cy="-40.036976" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-72264-0" cx="106.09792" cy="-328.34793" r="0.625" transform="rotate(90)" />
+		<circle class="station-circle" id="S-FR-49331-0" cx="270.15604" cy="-90.925095" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-53062-0" cx="245.46034" cy="-115.6208" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-79202-0" cx="317.23541" cy="314.06042" r="0.625" />
+		<circle class="station-circle" id="S-FR-86066-0" cx="387.08542" cy="269.61041" r="0.625" />
+		<circle class="station-circle" id="S-FR-37072-0" cx="387.08542" cy="233.09792" r="0.625" />
+		<circle class="station-circle" id="S-FR-79049-0" cx="284.69168" cy="281.51666" r="0.625" />
+		<circle class="station-circle" id="S-FR-49099-0" cx="245.00417" cy="241.82916" r="0.625" />
+		<circle class="station-circle" id="S-FR-61001-0" cx="254.61188" cy="-269.30795" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-61006-0" cx="217.39703" cy="-306.45123" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-08164-0" cx="340.51877" cy="-101.33542" r="0.625" />
+		<circle class="station-circle" id="S-FR-69383-0" cx="988.01526" cy="-328.34061" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-84007-1" cx="1172.6718" cy="-143.6841" r="0.625" transform="rotate(45)" />
+		<circle class="station-circle" id="S-FR-72071-0" cx="383.91043" cy="145.78542" r="0.625" />
+		<circle class="station-circle" id="S-FR-72124-0" cx="370.41666" cy="107.68542" r="0.625" />
 		<path id="S-FR-35176-0"
 			style="display:inline;opacity:1;fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
 			d="m 108.47917,109.61088 a 0.62499999,0.62499999 0 0 0 -0.62477,0.62477 0.62499999,0.62499999 0 0 0 0.62477,0.62477 0.62499999,0.62499999 0 0 0 0.61029,-0.49196 h 3.54191 a 0.62499999,0.62499999 0 0 0 0.6103,0.49196 0.62499999,0.62499999 0 0 0 0.62476,-0.62477 0.62499999,0.62499999 0 0 0 -0.62476,-0.62477 0.62499999,0.62499999 0 0 0 -0.6103,0.49145 h -3.54139 a 0.62499999,0.62499999 0 0 0 -0.61081,-0.49145 z" />
-		<circle
-			style="display:inline;opacity:1;fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-29103-0" cx="-173.30208" cy="-8.9958334" r="0.625" />
-		<circle
-			style="display:inline;opacity:1;fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-29105-0" cx="-154.51666" cy="-27.78125" r="0.625" />
-		<circle
-			style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-50025-0" cx="183.88542" cy="-37.570835" r="0.625" />
-		<circle
-			style="display:inline;opacity:1;fill:#e9e9e9;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-44110-0" cx="244.45877" cy="-15.59447" r="0.625" transform="rotate(45)" />
-		<circle
-			style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-80021-0" cx="238.0528" cy="-624.578" r="0.625" transform="rotate(45)" />
-		<circle
-			style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-76540-0" cx="238.16388" cy="-472.02472" r="0.625" transform="rotate(45)" />
-		<circle
-			style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-77111-0" cx="435.16824" cy="-524.22247" r="0.625" transform="rotate(45)" />
-		<circle
-			style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.77165;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
-			id="S-FR-95527-0" cx="397.56342" cy="-532.64142" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-59350-1" cx="231.42868" cy="-776.2309" r="0.625" transform="rotate(45)" />
+
 		<path id="S-FR-44195-0"
 			d="M 491,713.63867 A 2.3622047,2.3622047 0 0 0 488.63867,716 a 2.3622047,2.3622047 0 0 0 0.375,1.27539 l -8.73828,8.73828 A 2.3622047,2.3622047 0 0 0 479,725.63867 2.3622047,2.3622047 0 0 0 476.63867,728 a 2.3622047,2.3622047 0 0 0 0.375,1.27539 l -14.73633,14.73633 A 2.3622047,2.3622047 0 0 0 461,743.63867 2.3622047,2.3622047 0 0 0 458.63867,746 2.3622047,2.3622047 0 0 0 461,748.36133 2.3622047,2.3622047 0 0 0 463.36133,746 a 2.3622047,2.3622047 0 0 0 -0.375,-1.2793 l 14.73633,-14.73632 A 2.3622047,2.3622047 0 0 0 479,730.36133 2.3622047,2.3622047 0 0 0 481.36133,728 a 2.3622047,2.3622047 0 0 0 -0.375,-1.2793 l 8.73633,-8.73632 A 2.3622047,2.3622047 0 0 0 491,718.36133 2.3622047,2.3622047 0 0 0 493.36133,716 2.3622047,2.3622047 0 0 0 491,713.63867 Z"
 			transform="scale(0.26458333)" />
-		<circle
-			id="S-FR-44184-0" cx="92.604172" cy="197.37917" r="0.625" />
+		
 		<path id="S-FR-44129-0"
 			d="M 440,662.63867 A 2.3622047,2.3622047 0 0 0 437.63867,665 a 2.3622047,2.3622047 0 0 0 0.375,1.27344 l -8.73437,8.74023 A 2.3622047,2.3622047 0 0 0 428,674.63867 2.3622047,2.3622047 0 0 0 425.63867,677 2.3622047,2.3622047 0 0 0 428,679.36133 2.3622047,2.3622047 0 0 0 430.36133,677 a 2.3622047,2.3622047 0 0 0 -0.37305,-1.27734 l 8.73242,-8.73828 A 2.3622047,2.3622047 0 0 0 440,667.36133 2.3622047,2.3622047 0 0 0 442.36133,665 2.3622047,2.3622047 0 0 0 440,662.63867 Z"
 			transform="scale(0.26458333)" />
-		<circle
-			id="S-FR-18279-0" cx="574.4104" cy="179.91667" r="0.625" />
-		<circle
-			id="S-FR-18033-0" cx="625.21045" cy="230.71666" r="0.625" />
-		<circle
-			id="S-FR-353600-0" cx="209.28542" cy="62.441666" r="0.625" />
-		<circle
-			id="S-FR-353600-0-9" cx="271.19791" cy="17.197916" r="0.625" />
-		<circle
-			id="S-FR-53097-0" cx="324.37918" cy="62.441666" r="0.625" />
-		<circle
-			id="S-FR-35136-0" cx="166.59166" cy="87.216667" r="0.625" />
-		<circle
-			id="S-FR-44036-0" cx="219.88075" cy="-40.036976" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-72264-0" cx="106.09792" cy="-328.34793" r="0.625" transform="rotate(90)" />
-		<circle
-			id="S-FR-49331-0" cx="270.15604" cy="-90.925095" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-53062-0" cx="245.46034" cy="-115.6208" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-79202-0" cx="317.23541" cy="314.06042" r="0.625" />
-		<circle
-			id="S-FR-86066-0" cx="387.08542" cy="269.61041" r="0.625" />
-		<circle
-			id="S-FR-37072-0" cx="387.08542" cy="233.09792" r="0.625" />
-		<circle
-			id="S-FR-79049-0" cx="284.69168" cy="281.51666" r="0.625" />
-		<circle
-			id="S-FR-49099-0" cx="245.00417" cy="241.82916" r="0.625" />
-		<circle
-			id="S-FR-61001-0" cx="254.61188" cy="-269.30795" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-61006-0" cx="217.39703" cy="-306.45123" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-08164-0" cx="340.51877" cy="-101.33542" r="0.625" />
-		<circle
-			id="S-FR-69383-0" cx="988.01526" cy="-328.34061" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-84007-1" cx="1172.6718" cy="-143.6841" r="0.625" transform="rotate(45)" />
-		<circle
-			id="S-FR-72071-0" cx="383.91043" cy="145.78542" r="0.625" />
-		<circle
-			id="S-FR-72124-0" cx="370.41666" cy="107.68542" r="0.625" />
-		<rect
-			id="S-FR-56260-0" width="3.9687519" height="1.5874999" x="-137.05417" y="17.991671" rx="0.79374802"
-			ry="0.79374993" transform="rotate(-90)" />
-		<rect
-			id="S-FR-56184-0" width="3.9687519" height="1.5874999" x="-137.05417" y="58.472919" rx="0.79374802"
-			ry="0.79374993" transform="rotate(-90)" />
-		<rect
-			id="S-FR-35236-0" width="3.9687519" height="1.5874999" x="-137.05417" y="93.397919" rx="0.79374802"
-			ry="0.79374993" transform="rotate(-90)" />
-		<rect
-			id="S-FR-85146-0" width="3.9687483" height="1.5875071" x="-195.79167" y="-275.16666" rx="0.79374826"
-			ry="0.79375201" transform="scale(-1)" />
 	</g>
 	<g inkscape:groupmode="layer" id="station-label" inkscape:label="station label" style="display:inline"
 		transform="translate(370.54916,539.8825)">
-		<text class="big" x="-158.95534" y="138.77348" id="T-FR-29019-0" transform="rotate(45)" xml:space="default">
-			<tspan class="big">Brest</tspan>
-		</text>
-		<text class="normal" x="-168.12119" y="118.80708" id="T-FR-29103-0" transform="rotate(45)">
-			<tspan class="normal"
-				 >Landerneau</tspan>
-		</text>
-		<text class="normal"
-			x="-150.48807" y="28.808254" id="T-FR-29080-0">
-			<tspan class="normal"
-				>Hôpital-Camfrout</tspan>
-		</text>
-		<text class="normal"
-			x="-151.01357" y="43.635086" id="T-FR-29302-0">
-			<tspan class="normal"
-				 >Pont-de-Buis</tspan>
-		</text>
-		<text class="normal"
-			x="-107.35712" y="11.675599" id="T-FR-29233-0" transform="rotate(-45)">
-			<tspan class="normal"> Quimperlé</tspan>
-		</text>
-		<text class="big"
-			 x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">
-			<tspan class="big">Lorient</tspan>
-		</text>
-		<text class="normal"
-			x="-127.37451" y="98.746307" id="T-FR-56007-0" transform="rotate(-45)">
-			<tspan class="normal">Aurray</tspan>
-		</text>
-		<text class="big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">
-			<tspan class="big">Vannes</tspan>
-		</text>
-		<text class="normal"
-			x="-51.10313" y="-98.194611" id="T-FR-29151-0" transform="rotate(-45)">
-			<tspan class="normal">Morlaix</tspan>
-		</text>
-		<text class="normal"
-			x="-28.49445" y="-76.091797" id="T-FR-22207-0" transform="rotate(-45)">
-			<tspan class="normal">Plouaret</tspan>
-		</text>
-		<text class="normal"
-			x="104.45073" y="192.0687" id="T-FR-35360-0" transform="rotate(-45)">
-			<tspan class="normal">Vitré</tspan>
-		</text>
-		<text class="normal"
-			x="57.061974" y="179.87" id="T-FR-35136-0" transform="rotate(-45)">
-			<tspan class="normal">Janzé</tspan>
-		</text>
-		<text class="normal"
-			x="187.3735" y="274.78613" id="T-FR-53097-0" transform="rotate(-45)">
-			<tspan class="normal">Évron</tspan>
-		</text>
-		<text class="normal"
-			x="-57.696621" y="166.61505" id="T-FR-35236-0" transform="rotate(-45)">
-			<tspan class="normal">Redon</tspan>
-		</text>
-		<text class="normal"
-			x="-108.03723" y="143.1525" id="T-FR-56184-0" transform="rotate(-45)">
-			<tspan class="normal">Questembert</tspan>
-		</text>
-		<text class="normal"
-			x="-165.24535" y="91.769745" id="T-FR-29105-0" transform="rotate(45)">
-			<tspan class="normal">Landivisiau</tspan>
-		</text>
-		<text
-			class="bbig" x="68.78463" y="154.83478" id="T-FR-35238-0" transform="rotate(-45)">
-			<tspan >Rennes</tspan>
-		</text>
-		<text class="normal"
-			x="151.43181" y="6.4346581" id="T-FR-35095-0">
-			<tspan class="normal">Dol de Bretagne</tspan>
-		</text>
-		<text
-			class="bbbig" x="306.31592" y="-369.64957" id="T-FR-28085-0" transform="rotate(45)">
-			<tspan
-				class="bbbig">Chartres</tspan>
-		</text>
-		<text
-			class="bbbig" x="242.23326" y="-734.26459" id="T-FR-62274-0" transform="rotate(45)">
-			<tspan
-				class="bbbig">Douai-Lens</tspan>
-			<tspan
-				class="bbbig">TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="181.52687" y="-622.21924" id="T-FR-80021-0" transform="rotate(45)">
-			<tspan
-				class="bbbig">Amiens</tspan>
-		</text>
-		<text
-			class="bbbig" x="190.166" y="-467.82349" id="T-FR-76540-0" transform="rotate(45)">
-			<tspan
-				class="bbbig" x="190.166" y="-467.82349">Rouen</tspan>
-		</text>
-		<text
-			class="bbbig" x="387.72504" y="-427.67761" id="T-FR-91377-1" transform="rotate(45)">
-			<tspan
-				class="bbbig" x="387.72504" y="-427.67761" >Massy TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="279.36646" y="-501.9061" id="T-FR-75115-0" transform="rotate(45)">
-			<tspan
-				class="bbbig" x="279.36646" y="-501.9061" >Paris</tspan>
-			<tspan
-				class="bbbig" x="279.36646" y="-486.0311" >Montparnass</tspan>
-		</text>
-		<text class="normal"
-			 x="271.89642" y="19.928392" id="text495">
-			<tspan class="normal"
-				 x="271.89642" y="19.928392" >Mayenne</tspan>
-		</text>
-		<text class="normal"
-			x="272.06519" y="-19.927856" id="T-FR-53147-0">
-			<tspan class="normal"
-				>Domfront</tspan>
-		</text>
-		<text class="normal"
-			x="273.6163" y="-44.119343" id="T-FR-61169-0">
-			<tspan class="normal"
-				>Flers</tspan>
-		</text>
-		<text class="normal"
-			x="224.45839" y="311.13403" id="T-FR-72181-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Le Mans</tspan>
-		</text>
-		<text
-			class="big" x="-44.787811" y="17.377867" id="T-FR-22278-0" transform="rotate(-45)">
-			<tspan
-				class="big"  >Saint-Brieuc</tspan>
-		</text>
-		<text
-			class="bbbig" x="187.25215" y="420.2388" id="T-FR-37261-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Tours</tspan>
-		</text>
-		<text class="normal"
-			x="169.51509" y="376.6803" id="T-FR-72071-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Château-du-Loir</tspan>
-		</text>
-		<text class="normal"
-			x="372.05533" y="108.458" id="T-FR-72124-0">
-			<tspan class="normal"
-				>Ecommoy</tspan>
-		</text>
-		<text
-			class="bbbig" x="390.58591" y="328.37173" id="T-FR-86194-0">
-			<tspan
-				class="bbbig" >Poitiers</tspan>
-		</text>
-		<text
-			class="bbbig" x="115.50395" y="404.10342" id="T-FR-17300-0">
-			<tspan
-				class="bbbig"  >La Rochelles</tspan>
-		</text>
-		<text class="normal"
-			x="-127.79089" y="178.50777" id="T-FR-44049-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Croisic</tspan>
-		</text>
-		<text
-			class="big" x="-147.66223" y="208.82231" id="T-FR-44184-0" transform="rotate(-45)">
-			<tspan
-				class="big" >Saint-Nazaire</tspan>
-		</text>
-		<text
-			class="big" x="36.179352" y="340.98441" id="T-FR-85194-0">
-			<tspan
-				class="big" >Les Sables-d'Olonne</tspan>
-		</text>
-		<text
-			class="bbbig" x="226.00957" y="387.59131" id="T-FR-17142-0">
-			<tspan
-				class="bbbig" >La Rochelles TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="442.42999" y="-169.31226" id="T-FR-37233-0" transform="rotate(45)">
-			<tspan
-				class="bbbig" >Saint-Pierre-des-corps</tspan>
-		</text>
-		<text class="normal"
-			x="-7.7308092" y="-56.014641" id="T-FR-22070-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Guingamp</tspan>
-		</text>
-		<text
-			class="big" x="-143.2735" y="-37.001446" id="T-FR-29232-0" transform="rotate(-45)">
-			<tspan
-				class="big" >Quimper</tspan>
-		</text>
-		<text
-			class="big" x="-105.39444" y="66.77401" id="T-FR-56098-0" transform="rotate(-45)">
-			<tspan class="big" >Lorient</tspan>
-			<tspan class="big" >TGV</tspan>
-		</text>
-		<text
-			class="bbig" x="-77.921341" y="276.06824" id="T-FR-44109-0" transform="rotate(-45)">
-			<tspan
-				class="bbig" >Nante</tspan>
-		</text>
-		<text
-			class="big" x="-70.642197" y="112.46723" id="T-FR-56206-0" transform="rotate(-45)">
-			<tspan class="big" >Vannes</tspan>
-			<tspan class="big">TGV</tspan>
-		</text>
-		<text class="normal" x="-98.581871" y="65.569023" id="T-FR-29265-0">
-			<tspan class="normal" >Morlaix TGV</tspan>
-		</text>
-		<text class="normal"
-			x="371.40265" y="-9.991293" id="T-FR-61001-0">
-			<tspan class="normal"
-				>Alençon</tspan>
-		</text>
-		<text class="normal"
-			x="184.72495" y="127.56915" id="T-FR-44036-0">
-			<tspan class="normal"
-				>Châteaubriant</tspan>
-		</text>
-		<text class="normal"
-			x="184.82079" y="163.02567" id="T-FR-44110-0">
-			<tspan class="normal"
-				>Nort-sur-Erdre</tspan>
-		</text>
-		<text class="normal"
-			x="371.35205" y="-62.041275" id="T-FR-61006-0">
-			<tspan class="normal"
-				>Argentan</tspan>
-		</text>
-		<text class="normal"
-			x="313.37344" y="169.52855" id="T-FR-08164-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Falaise</tspan>
-		</text>
-		<text class="normal"
-			x="3.3389349" y="448.61642" id="T-FR-79202-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Parthenay</tspan>
-		</text>
-		<text class="normal"
-			x="388.25311" y="271.43076" id="T-FR-86066-0">
-			<tspan class="normal"
-				>Châtellerault</tspan>
-		</text>
-		<text class="normal"
-			x="388.54944" y="235.70142" id="T-FR-37072-0">
-			<tspan class="normal"
-				>Chinon</tspan>
-		</text>
-		<text class="normal"
-			x="3.0200524" y="403.01593" id="T-FR-79049-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Bressuire</tspan>
-		</text>
-		<text class="normal"
-			x="3.5911956" y="345.98022" id="T-FR-49099-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Cholet</tspan>
-		</text>
-		<text class="normal"
-			x="309.13129" y="-154.57216" id="T-FR-72264-0" transform="rotate(45)">
-			<tspan class="normal"
-				>Sablé-sur-Sarthe</tspan>
-		</text>
-		<text class="normal"
-			x="113.57357" y="353.64569" id="T-FR-49328-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Saumur</tspan>
-		</text>
-		<text class="normal"
-			x="256.31357" y="127.67708" id="T-FR-49331-0">
-			<tspan class="normal"
-				 >Segré-en-Anjou Bleu</tspan>
-		</text>
-		<text class="normal"
-			x="168.62427" y="241.25768" id="T-FR-44043-0">
-			<tspan class="normal"
-				>Clisson</tspan>
-		</text>
-		<text class="normal"
-			x="256.31357" y="93.281242" id="T-FR-53062-0">
-			<tspan class="normal"
-				 >Château-Gontier</tspan>
-			<tspan class="normal"
-				 >sur-Mayenne</tspan>
-		</text>
-		<text class="normal"
-			x="26.524435" y="48.231972" id="T-FR-22093-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Lambal</tspan>
-		</text>
-		<text class="normal"
-			x="26.353643" y="88.145706" id="T-FR-35184-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>La Brohinière</tspan>
-		</text>
-		<text class="normal"
-			x="110.57822" y="27.7495" id="T-FR-35079-0">
-			<tspan class="normal"
-				>Chevaigné</tspan>
-		</text>
-		<text class="normal"
-			x="69.050133" y="-154.92105" id="T-FR-50025-0" transform="rotate(45)">
-			<tspan class="normal"
-				 >Avranches</tspan>
-		</text>
+		<text class="label big" x="-158.95534" y="138.77348" id="T-FR-29019-0" transform="rotate(45)" >Brest</text>
+		<text class="label normal" x="-168.12119" y="118.80708" id="T-FR-29103-0" transform="rotate(45)">Landerneau</text>
+		<text class="label normal" x="-150.48807" y="28.808254" id="T-FR-29080-0">Hôpital-Camfrout</text>
+		<text class="label normal" x="-151.01357" y="43.635086" id="T-FR-29302-0">Pont-de-Buis</text>
+		<text class="label normal" x="-107.35712" y="11.675599" id="T-FR-29233-0" transform="rotate(-45)">Quimperlé</text>
+		<text class="label big" x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">Lorient</text>
+		<text class="label normal" x="-127.37451" y="98.746307" id="T-FR-56007-0" transform="rotate(-45)">Aurray</text>
+		<text class="label big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">Vannes</text>
+		<text class="label normal" x="-51.10313" y="-98.194611" id="T-FR-29151-0" transform="rotate(-45)">Morlaix</text>
+		<text class="label normal" x="-28.49445" y="-76.091797" id="T-FR-22207-0" transform="rotate(-45)">Plouaret</text>
+		<text class="label normal" x="104.45073" y="192.0687" id="T-FR-35360-0" transform="rotate(-45)">Vitré</text>
+		<text class="label normal" x="57.061974" y="179.87" id="T-FR-35136-0" transform="rotate(-45)">Janzé</text>
+		<text class="label normal" x="187.3735" y="274.78613" id="T-FR-53097-0" transform="rotate(-45)">Évron</text>
+		<text class="label normal" x="-57.696621" y="166.61505" id="T-FR-35236-0" transform="rotate(-45)">Redon</text>
+		<text class="label normal" x="-108.03723" y="143.1525" id="T-FR-56184-0" transform="rotate(-45)">Questembert</text>
+		<text class="label normal" x="-165.24535" y="91.769745" id="T-FR-29105-0" transform="rotate(45)">Landivisiau</text>
+		<text class="label bbig" x="68.78463" y="154.83478" id="T-FR-35238-0" transform="rotate(-45)">Rennes</text>
+		<text class="label normal" x="151.43181" y="6.4346581" id="T-FR-35095-0">Dol de Bretagne</text>
+		<text class="label bbbig" x="306.31592" y="-369.64957" id="T-FR-28085-0" transform="rotate(45)">Chartres</text>
 
-		<text class="normal"
-			x="77.441002" y="-197.02658" id="T-FR-50188-0" transform="rotate(45)">
-			<tspan class="normal"
-				 >Folligny</tspan>
-		</text>
+      	<text class="label bbbig" x="242.23326" y="-734.26459" id="T-FR-62274-0-A" transform="rotate(45)">Douai-Lens</text>
+		<text class="label bbbig" x="262.23326" y="-720.26459" id="T-FR-62274-0-B" transform="rotate(45)">TGV</text>
 
-		<text class="normal"
-			x="63.404274" y="-237.98842" id="T-FR-50147-0" transform="rotate(45)">
-			<tspan class="normal"
-				>Courtances</tspan>
-		</text>
+		<text class="label bbbig" x="181.52687" y="-622.21924" id="T-FR-80021-0" transform="rotate(45)">Amiens</text>
+		<text class="label bbbig" x="190.166" y="-467.82349" id="T-FR-76540-0" transform="rotate(45)">Rouen</text>
+		<text class="label bbbig" x="387.72504" y="-427.67761" id="T-FR-91377-1" transform="rotate(45)">Massy TGV</text>
 
-		<text class="normal"
-			x="76.004845" y="-269.73752" id="T-FR-50502-0" transform="rotate(45)">
-			<tspan class="normal"
-				>Saint-Lô</tspan>
-		</text>
-		<text
-			class="big" x="78.175056" y="48.231613" id="T-FR-35288-0" transform="rotate(-45)">
-			<tspan
-				class="big" >Saint-Malo</tspan>
-		</text>
-		<text class="normal"
-			x="-5.7672453" y="121.8005" id="T-FR-35240-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Le Rheu</tspan>
-		</text>
-		<text class="normal"
-			x="114.78688" y="111.80199" id="T-FR-35176-0">
-			<tspan class="normal"
-				 >Guipry-Messac</tspan>
-		</text>
-		<text class="normal"
-			x="114.44112" y="122.98892" id="T-FR-44007-0">
-			<tspan class="normal"
-				 >Redon TGV</tspan>
-		</text>
-		<text class="normal"
-			x="-40.462395" y="208.79674" id="T-FR-44129-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Pontchâteau</tspan>
-		</text>
-		<text class="normal"
-			x="-39.478123" y="227.47762" id="T-FR-44195-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>Savenay</tspan>
-		</text>
-		<text class="normal"
-			x="280.07568" y="-46.745235" id="T-FR-44003-0" transform="rotate(45)">
-			<tspan class="normal"
-				 >Ancenis</tspan>
-		</text>
-		<text
-			class="bbbig" x="552.47327" y="608.54626" id="T-FR-10387-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig"  >Troyes</tspan>
-		</text>
-		<text
-			class="bbbig" x="433.38037" y="-680.24731" id="T-FR-51454-0" transform="rotate(45)">
-			<tspan
-				class="bbbig" >Reims TGV</tspan>
-		</text>
-		<text
-			class="big" x="25.94021" y="328.88049" id="T-FR-49007-0" transform="rotate(-45)">
-			<tspan
-				class="big" >Angers</tspan>
-		</text>
-		<text
-			class="bbbig" x="266.96445" y="123.93799" id="T-FR-14118-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig"  >Caen</tspan>
-		</text>
-		<text
-			class="big" x="143.10413" y="228.56699" id="T-FR-53130-0" transform="rotate(-45)">
-			<tspan
-				class="big"  >Laval</tspan>
-		</text>
-		<text
-			class="bbbig" x="522.21893" y="-778.46887" id="T-FR-55545-1" transform="rotate(45)">
-			<tspan
-				class="bbbig" >Verdun TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="584.81628" y="-851.43347" id="T-FR-54546-0" transform="rotate(45)">
-			<tspan
-				class="bbbig" >Lorraine TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="810.91968" y="879.57208" id="T-FR-67482-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig"  >Strasbourg</tspan>
-		</text>
-		<text
-			class="bbbig" x="279.94003" y="609.38544" id="T-FR-18033-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Bourges</tspan>
-		</text>
-		<text
-			class="bbbig" x="282.35406" y="698.62677" id="T-FR-58194-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Nevers</tspan>
-		</text>
-		<text
-			class="bbbig" x="281.914" y="827.14044" id="T-FR-03236-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Saint-Germain-des-fossés</tspan>
-		</text>
-		<text
-			class="bbbig" x="279.51266" y="780.05792" id="T-FR-03190-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Moulins</tspan>
-		</text>
-		<text
-			class="bbbig" x="204.40031" y="987.55499" id="T-FR-69382-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig">Lyon Perrache</tspan>
-		</text>
-		<text
-			class="bbbig" x="929.43915" y="467.47119" id="T-FR-69383-0" transform="translate(3.4130575,2.2488832)">
-			<tspan
-				class="bbbig" >Lyon Part-Dieu</tspan>
-		</text>
-		<text
-			class="bbbig" x="932.48303" y="731.41553" id="T-FR-84007-1">
-			<tspan
-				class="bbbig" >Avignon TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="932.85217" y="197.72839" id="T-FR-21231-0">
-			<tspan
-				class="bbbig">Dijon</tspan>
-		</text>
-		<text
-			class="bbbig" x="82.653931" y="1318.2644" id="T-FR-13201-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig">Marseille Saint-Charles</tspan>
-		</text>
-		<text
-			class="bbbig" x="281.81204" y="538.71356" id="T-FR-18279-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Vierzon</tspan>
-		</text>
-		<text class="normal"
-			x="268.2894" y="355.07059" id="T-FR-72132-0" transform="rotate(-45)">
-			<tspan class="normal"
-				>La Ferté-Bernard</tspan>
-		</text>
-		<text class="normal"
-			x="282.90375" y="393.40491" id="T-FR-41269-1" transform="rotate(-45)">
-			<tspan class="normal"
-				>Vendôme</tspan>
-			<tspan class="normal"
-				>TGV</tspan>
-		</text>
-		<text class="normal"
-			x="274.44537" y="407.10681" id="T-FR-41269-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Vendôme</tspan>
-		</text>
-		<text class="normal"
-			x="283.97769" y="448.26633" id="T-FR-41018-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Blois</tspan>
-		</text>
-		<text class="normal"
-			x="440.01178" y="-341.40988" id="T-FR-45234-0" transform="rotate(45)">
-			<tspan class="normal"
-				 >Orléans</tspan>
-		</text>
-		<text class="normal"
-			x="281.75974" y="368.54095" id="T-FR-28280-0" transform="rotate(-45)">
-			<tspan class="normal"
-				 >Nogent-le-Rotrou</tspan>
-		</text>
-		<text
-			class="bbbig" x="284.1868" y="708.15057" id="T-FR-40192-0">
-			<tspan
-				class="bbbig">Mont-de-Marsan</tspan>
-		</text>
-		<text
-			class="bbbig" x="749.22931" y="374.58917" id="T-FR-40088-0" transform="rotate(45)">
-			<tspan
-				class="bbbig">Dax</tspan>
-		</text>
-		<text
-			class="bbbig" x="717.20422" y="463.47705" id="T-FR-64102-1" transform="rotate(45)">
-			<tspan
-				class="bbbig">Bayonne</tspan>
-			<tspan
-				class="bbbig">TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="-584.12531" y="712.09711" id="T-FR-64260-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Hendaye</tspan>
-		</text>
-		<text
-			class="bbbig" x="284.28293" y="598.90674" id="T-FR-33063-0">
-			<tspan
-				class="bbbig">Bordeaux Saint-Jean</tspan>
-		</text>
-		<text
-			class="bbbig" x="-179.92714" y="550.65283" id="T-FR-17415-1" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Saintes</tspan>
-			<tspan
-				class="bbbig">TGV</tspan>
-		</text>
-		<text
-			class="bbbig" x="720.6203" y="-389.64658" id="T-FR-59350-0">
-			<tspan
-				class="bbbig" >Lille Flandre</tspan>
-		</text>
-		<text
-			class="bbbig" x="608.66876" y="-381.04233" id="T-FR-59350-1">
-			<tspan
-				class="bbbig">Lille Europe</tspan>
-		</text>
-		<text
-			class="bbbig" x="735.23706" y="125.01289" id="T-FR-62193-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Calais</tspan>
-		</text>
-		<text
-			class="bbbig" x="297.40469" y="879.88361" id="T-FR-42187-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Roanne</tspan>
-		</text>
-		<text
-			class="bbbig" x="530.0979" y="443.88092" id="T-FR-77111-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig" >Marne la vallée</tspan>
-			<tspan
-				class="bbbig">chessy</tspan>
-		</text>
-		<text
-			class="bbbig" x="535.15619" y="403.64841" id="T-FR-95527-0" transform="rotate(-45)">
-			<tspan
-				class="bbbig">Aeroport CDG</tspan>
-		</text>
-		<text class="normal"
-			x="133.80157" y="276.19324" id="T-FR-85146-0">
-			<tspan class="normal"
-				 >Montaigu-Vendée</tspan>
-		</text>
-		<text
-			class="big" x="90.30162" y="291.2471" id="T-FR-85191-0">
-			<tspan
-				class="big">La Roche-sur-Yon</tspan>
-		</text>
+		<text class="label bbbig" x="279.36646" y="-501.9061" id="T-FR-75115-0-A" transform="rotate(45)">Paris</text>
+      	<text class="label bbbig" x="279.36646" y="-477.9061" id="T-FR-75115-0-B" transform="rotate(45)">Montparnass</text>
+
+		<text class="label normal" x="271.89642" y="19.928392" id="text495">Mayenne</text>
+		<text class="label normal" x="272.06519" y="-19.927856" id="T-FR-53147-0">Domfront</text>
+		<text class="label normal" x="273.6163" y="-44.119343" id="T-FR-61169-0">Flers</text>
+		<text class="label normal" x="224.45839" y="311.13403" id="T-FR-72181-0" transform="rotate(-45)">Le Mans</text>
+		<text class="label big" x="-44.787811" y="17.377867" id="T-FR-22278-0" transform="rotate(-45)">Saint-Brieuc</text>
+		<text class="label bbbig" x="187.25215" y="420.2388" id="T-FR-37261-0" transform="rotate(-45)">Tours</text>
+		<text class="label normal" x="169.51509" y="376.6803" id="T-FR-72071-0" transform="rotate(-45)">Château-du-Loir</text>
+		<text class="label normal" x="372.05533" y="108.458" id="T-FR-72124-0">Ecommoy</text>
+		<text class="label bbbig" x="390.58591" y="328.37173" id="T-FR-86194-0">Poitiers</text>
+		<text class="label bbbig" x="115.50395" y="404.10342" id="T-FR-17300-0">La Rochelles</text>
+		<text class="label normal" x="-127.79089" y="178.50777" id="T-FR-44049-0" transform="rotate(-45)">Croisic</text>
+		<text class="label big" x="-147.66223" y="208.82231" id="T-FR-44184-0" transform="rotate(-45)">Saint-Nazaire</text>
+		<text class="label big" x="36.179352" y="340.98441" id="T-FR-85194-0">Les Sables-d'Olonne</text>
+		<text class="label bbbig" x="226.00957" y="387.59131" id="T-FR-17142-0">La Rochelles TGV</text>
+		<text class="label bbbig" x="442.42999" y="-169.31226" id="T-FR-37233-0" transform="rotate(45)">Saint-Pierre-des-corps</text>
+		<text class="label normal" x="-7.7308092" y="-56.014641" id="T-FR-22070-0" transform="rotate(-45)">Guingamp</text>
+		<text class="label big" x="-143.2735" y="-37.001446" id="T-FR-29232-0" transform="rotate(-45)">Quimper</text>
+
+		<text class="label big" x="-105.39444" y="70.77401" id="T-FR-56098-0-A" transform="rotate(-45)">Lorient</text>
+      	<text class="label big" x="-105.39444" y="66.77401" id="T-FR-56098-0-B" transform="rotate(-45)">TGV</text>
+
+		<text class="label bbig" x="-77.921341" y="276.06824" id="T-FR-44109-0" transform="rotate(-45)">Nante</text>
+
+		<text class="label big" x="-70.642197" y="98.46723" id="T-FR-56206-0-A" transform="rotate(-45)">Vannes</text>
+      	<text class="label big" x="-70.642197" y="112.46723" id="T-FR-56206-0-B" transform="rotate(-45)">TGV</text>
+
+		<text class="label normal" x="-98.581871" y="65.569023" id="T-FR-29265-0">Morlaix TGV</text>
+		<text class="label normal" x="371.40265" y="-9.991293" id="T-FR-61001-0">Alençon</text>
+		<text class="label normal" x="184.72495" y="127.56915" id="T-FR-44036-0">Châteaubriant</text>
+		<text class="label normal" x="184.82079" y="163.02567" id="T-FR-44110-0">Nort-sur-Erdre</text>
+		<text class="label normal" x="371.35205" y="-62.041275" id="T-FR-61006-0">Argentan</text>
+		<text class="label normal" x="313.37344" y="169.52855" id="T-FR-08164-0" transform="rotate(-45)">Falaise</text>
+		<text class="label normal" x="3.3389349" y="448.61642" id="T-FR-79202-0" transform="rotate(-45)">Parthenay</text>
+		<text class="label normal" x="388.25311" y="271.43076" id="T-FR-86066-0">Châtellerault</text>
+		<text class="label normal" x="388.54944" y="235.70142" id="T-FR-37072-0">Chinon</text>
+		<text class="label normal" x="3.0200524" y="403.01593" id="T-FR-79049-0" transform="rotate(-45)">Bressuire</text>
+		<text class="label normal" x="3.5911956" y="345.98022" id="T-FR-49099-0" transform="rotate(-45)">Cholet</text>
+		<text class="label normal" x="309.13129" y="-154.57216" id="T-FR-72264-0" transform="rotate(45)">Sablé-sur-Sarthe</text>
+		<text class="label normal" x="113.57357" y="353.64569" id="T-FR-49328-0" transform="rotate(-45)">Saumur</text>
+		<text class="label normal" x="256.31357" y="127.67708" id="T-FR-49331-0">Segré-en-Anjou Bleu</text>
+		<text class="label normal" x="168.62427" y="241.25768" id="T-FR-44043-0">Clisson</text>
+
+		<text class="label normal" x="256.31357" y="93.281242" id="T-FR-53062-0-A">Château-Gontier</text>
+      	<text class="label normal" x="256.31357" y="105.281242" id="T-FR-53062-0-B">sur-Mayenne</text>
+
+		<text class="label normal" x="26.524435" y="48.231972" id="T-FR-22093-0" transform="rotate(-45)">Lambal</text>
+		<text class="label normal" x="26.353643" y="88.145706" id="T-FR-35184-0" transform="rotate(-45)">La Brohinière</text>
+		<text class="label normal" x="110.57822" y="27.7495" id="T-FR-35079-0">Chevaigné</text>
+		<text class="label normal" x="69.050133" y="-154.92105" id="T-FR-50025-0" transform="rotate(45)">Avranches</text>
+		<text class="label normal" x="77.441002" y="-197.02658" id="T-FR-50188-0" transform="rotate(45)">Folligny</text>
+		<text class="label normal" x="63.404274" y="-237.98842" id="T-FR-50147-0" transform="rotate(45)">Courtances</text>
+		<text class="label normal" x="76.004845" y="-269.73752" id="T-FR-50502-0" transform="rotate(45)">Saint-Lô</text>
+		<text class="label big" x="78.175056" y="48.231613" id="T-FR-35288-0" transform="rotate(-45)">Saint-Malo</text>
+		<text class="label normal" x="-5.7672453" y="121.8005" id="T-FR-35240-0" transform="rotate(-45)">Le Rheu</text>
+		<text class="label normal" x="114.78688" y="111.80199" id="T-FR-35176-0">Guipry-Messac</text>
+		<text class="label normal" x="114.44112" y="122.98892" id="T-FR-44007-0">Redon TGV</text>
+		<text class="label normal" x="-40.462395" y="208.79674" id="T-FR-44129-0" transform="rotate(-45)">Pontchâteau</text>
+		<text class="label normal" x="-39.478123" y="227.47762" id="T-FR-44195-0" transform="rotate(-45)">Savenay</text>
+		<text class="label normal" x="280.07568" y="-46.745235" id="T-FR-44003-0" transform="rotate(45)">Ancenis</text>
+		<text class="label bbbig" x="552.47327" y="608.54626" id="T-FR-10387-0" transform="rotate(-45)">Troyes</text>
+		<text class="label bbbig" x="433.38037" y="-680.24731" id="T-FR-51454-0" transform="rotate(45)">Reims TGV</text>
+		<text class="label big" x="25.94021" y="328.88049" id="T-FR-49007-0" transform="rotate(-45)">Angers</text>
+		<text class="label bbbig" x="266.96445" y="123.93799" id="T-FR-14118-0" transform="rotate(-45)">Caen</text>
+		<text class="label big" x="143.10413" y="228.56699" id="T-FR-53130-0" transform="rotate(-45)">Laval</text>
+		<text class="label bbbig" x="522.21893" y="-778.46887" id="T-FR-55545-1" transform="rotate(45)">Verdun TGV</text>
+		<text class="label bbbig" x="584.81628" y="-851.43347" id="T-FR-54546-0" transform="rotate(45)">Lorraine TGV</text>
+		<text class="label bbbig" x="810.91968" y="879.57208" id="T-FR-67482-0" transform="rotate(-45)">Strasbourg</text>
+		<text class="label bbbig" x="279.94003" y="609.38544" id="T-FR-18033-0" transform="rotate(-45)">Bourges</text>
+		<text class="label bbbig" x="282.35406" y="698.62677" id="T-FR-58194-0" transform="rotate(-45)">Nevers</text>
+		<text class="label bbbig" x="281.914" y="827.14044" id="T-FR-03236-0" transform="rotate(-45)">Saint-Germain-des-fossés</text>
+		<text class="label bbbig" x="279.51266" y="780.05792" id="T-FR-03190-0" transform="rotate(-45)">Moulins</text>
+		<text class="label bbbig" x="204.40031" y="987.55499" id="T-FR-69382-0" transform="rotate(-45)">Lyon Perrache</text>
+		<text class="label bbbig" x="929.43915" y="467.47119" id="T-FR-69383-0" transform="translate(3.4130575,2.2488832)">Lyon Part-Dieu</text>
+		<text class="label bbbig" x="932.48303" y="731.41553" id="T-FR-84007-1">Avignon TGV</text>
+		<text class="label bbbig" x="932.85217" y="197.72839" id="T-FR-21231-0">Dijon</text>
+		<text class="label bbbig" x="82.653931" y="1318.2644" id="T-FR-13201-0" transform="rotate(-45)">Marseille Saint-Charles</text>
+		<text class="label bbbig" x="281.81204" y="538.71356" id="T-FR-18279-0" transform="rotate(-45)">Vierzon</text>
+		<text class="label normal" x="268.2894" y="355.07059" id="T-FR-72132-0" transform="rotate(-45)">La Ferté-Bernard</text>
+
+		<text class="label normal" x="282.90375" y="393.40491" id="T-FR-41269-1-A" transform="rotate(-45)">Vendôme</text>
+      	<text class="label normal" x="282.90375" y="405.40491" id="T-FR-41269-1-B" transform="rotate(-45)">TGV</text>
+
+		<text class="label normal" x="274.44537" y="407.10681" id="T-FR-41269-0" transform="rotate(-45)">Vendôme</text>
+		<text class="label normal" x="283.97769" y="448.26633" id="T-FR-41018-0" transform="rotate(-45)">Blois</text>
+		<text class="label normal" x="440.01178" y="-341.40988" id="T-FR-45234-0" transform="rotate(45)">Orléans</text>
+		<text class="label normal" x="281.75974" y="368.54095" id="T-FR-28280-0" transform="rotate(-45)">Nogent-le-Rotrou</text>
+		<text class="label bbbig" x="284.1868" y="708.15057" id="T-FR-40192-0">Mont-de-Marsan</text>
+		<text class="label bbbig" x="749.22931" y="374.58917" id="T-FR-40088-0" transform="rotate(45)">Dax</text>
+
+		<text class="label bbbig" x="717.20422" y="449.47705" id="T-FR-64102-1-A" transform="rotate(45)">Bayonne</text>
+      	<text class="label bbbig" x="717.20422" y="463.47705" id="T-FR-64102-1-B" transform="rotate(45)">TGV</text>
+
+		<text class="label bbbig" x="-584.12531" y="712.09711" id="T-FR-64260-0" transform="rotate(-45)">Hendaye</text>
+		<text class="label bbbig" x="284.28293" y="598.90674" id="T-FR-33063-0">Bordeaux Saint-Jean</text>
+
+		<text class="label bbbig" x="-179.92714" y="536.65283" id="T-FR-17415-1-A" transform="rotate(-45)">Saintes</text>
+      	<text class="label bbbig" x="-179.92714" y="550.65283" id="T-FR-17415-1-B" transform="rotate(-45)">TGV</text>
+
+		<text class="label bbbig" x="720.6203" y="-389.64658" id="T-FR-59350-0">Lille Flandre</text>
+		<text class="label bbbig" x="608.66876" y="-381.04233" id="T-FR-59350-1">Lille Europe</text>
+		<text class="label bbbig" x="735.23706" y="125.01289" id="T-FR-62193-0" transform="rotate(-45)">Calais</text>
+		<text class="label bbbig" x="297.40469" y="879.88361" id="T-FR-42187-0" transform="rotate(-45)">Roanne</text>
+
+		<text class="label bbbig" x="530.0979" y="443.88092" id="T-FR-77111-0-A" transform="rotate(-45)">Marne la vallée</text>
+      	<text class="label bbbig" x="530.0979" y="435.88092" id="T-FR-77111-0-B" transform="rotate(-45)">chessy</text>
+
+		<text class="label bbbig" x="535.15619" y="403.64841" id="T-FR-95527-0" transform="rotate(-45)">Aeroport CDG</text>
+		<text class="label normal" x="133.80157" y="276.19324" id="T-FR-85146-0">Montaigu-Vendée</text>
+		<text class="label big" x="90.30162" y="291.2471" id="T-FR-85191-0">La Roche-sur-Yon</text>
 	</g>
 
 </svg>
