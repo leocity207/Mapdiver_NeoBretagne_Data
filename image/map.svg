@@ -636,21 +636,21 @@
 	<g inkscape:groupmode="layer" id="station-label" inkscape:label="station label" style="display:inline"
 		transform="translate(370.54916,539.8825)">
 		<text class="label big" x="-158.95534" y="138.77348" id="T-FR-29019-0" transform="rotate(45)" >Brest</text>
-		<text class="label normal" x="-168.12119" y="118.80708" id="T-FR-29103-0" transform="rotate(45)">Landerneau</text>
+		<text class="label normal" x="-172.48528" y="117.70152" id="T-FR-29103-0" transform="rotate(45)">Landerneau</text>
 		<text class="label normal" x="-150.48807" y="28.808254" id="T-FR-29080-0">Hôpital-Camfrout</text>
 		<text class="label normal" x="-151.01357" y="43.635086" id="T-FR-29302-0">Pont-de-Buis</text>
 		<text class="label normal" x="-107.35712" y="11.675599" id="T-FR-29233-0" transform="rotate(-45)">Quimperlé</text>
 		<text class="label big" x="-107.42113" y="53.619038" id="T-FR-56121-0" transform="rotate(-45)">Lorient</text>
 		<text class="label normal" x="-127.37451" y="98.746307" id="T-FR-56007-0" transform="rotate(-45)">Aurray</text>
-		<text class="label big" x="-112.82594" y="115.19828" id="T-FR-56260-0" transform="rotate(-45)">Vannes</text>
+		<text class="label big" x="-122.54333" y="114.55821" id="T-FR-56260-0" transform="rotate(-45)">Vannes</text>
 		<text class="label normal" x="-51.10313" y="-98.194611" id="T-FR-29151-0" transform="rotate(-45)">Morlaix</text>
 		<text class="label normal" x="-28.49445" y="-76.091797" id="T-FR-22207-0" transform="rotate(-45)">Plouaret</text>
 		<text class="label normal" x="104.45073" y="192.0687" id="T-FR-35360-0" transform="rotate(-45)">Vitré</text>
 		<text class="label normal" x="57.061974" y="179.87" id="T-FR-35136-0" transform="rotate(-45)">Janzé</text>
 		<text class="label normal" x="187.3735" y="274.78613" id="T-FR-53097-0" transform="rotate(-45)">Évron</text>
 		<text class="label normal" x="-57.696621" y="166.61505" id="T-FR-35236-0" transform="rotate(-45)">Redon</text>
-		<text class="label normal" x="-108.03723" y="143.1525" id="T-FR-56184-0" transform="rotate(-45)">Questembert</text>
-		<text class="label normal" x="-165.24535" y="91.769745" id="T-FR-29105-0" transform="rotate(45)">Landivisiau</text>
+		<text class="label normal" x="-105.06965" y="142.1633" id="T-FR-56184-0" transform="rotate(-45)">Questembert</text>
+		<text class="label normal" x="-168.56206" y="91.711555" id="T-FR-29105-0" transform="rotate(45)">Landivisiau</text>
 		<text class="label bbig" x="68.78463" y="154.83478" id="T-FR-35238-0" transform="rotate(-45)">Rennes</text>
 		<text class="label normal" x="151.43181" y="6.4346581" id="T-FR-35095-0">Dol de Bretagne</text>
 		<text class="label bbbig" x="306.31592" y="-369.64957" id="T-FR-28085-0" transform="rotate(45)">Chartres</text>
@@ -662,8 +662,8 @@
 		<text class="label bbbig" x="190.166" y="-467.82349" id="T-FR-76540-0" transform="rotate(45)">Rouen</text>
 		<text class="label bbbig" x="387.72504" y="-427.67761" id="T-FR-91377-1" transform="rotate(45)">Massy TGV</text>
 
-		<text class="label bbbig" x="279.36646" y="-501.9061" id="T-FR-75115-0-A" transform="rotate(45)">Paris</text>
-      	<text class="label bbbig" x="279.36646" y="-477.9061" id="T-FR-75115-0-B" transform="rotate(45)">Montparnass</text>
+		<text class="label bbbig" x="309.19769" y="-499.85516" id="T-FR-75115-0-A" transform="rotate(45)">Paris</text>
+      	<text class="label bbbig" x="278.28519" y="-486.98264" id="T-FR-75115-0-B" transform="rotate(45)">Montparnass</text>
 
 		<text class="label normal" x="271.89642" y="19.928392" id="text495">Mayenne</text>
 		<text class="label normal" x="272.06519" y="-19.927856" id="T-FR-53147-0">Domfront</text>
@@ -675,23 +675,23 @@
 		<text class="label normal" x="372.05533" y="108.458" id="T-FR-72124-0">Ecommoy</text>
 		<text class="label bbbig" x="390.58591" y="328.37173" id="T-FR-86194-0">Poitiers</text>
 		<text class="label bbbig" x="115.50395" y="404.10342" id="T-FR-17300-0">La Rochelles</text>
-		<text class="label normal" x="-127.79089" y="178.50777" id="T-FR-44049-0" transform="rotate(-45)">Croisic</text>
+		<text class="label normal" x="-129.10754" y="180.81189" id="T-FR-44049-0" transform="rotate(-45)">Croisic</text>
 		<text class="label big" x="-147.66223" y="208.82231" id="T-FR-44184-0" transform="rotate(-45)">Saint-Nazaire</text>
-		<text class="label big" x="36.179352" y="340.98441" id="T-FR-85194-0">Les Sables-d'Olonne</text>
+		<text class="label big" x="29" y="341.34766" id="T-FR-85194-0">Les Sables-d'Olonne</text>
 		<text class="label bbbig" x="226.00957" y="387.59131" id="T-FR-17142-0">La Rochelles TGV</text>
 		<text class="label bbbig" x="442.42999" y="-169.31226" id="T-FR-37233-0" transform="rotate(45)">Saint-Pierre-des-corps</text>
 		<text class="label normal" x="-7.7308092" y="-56.014641" id="T-FR-22070-0" transform="rotate(-45)">Guingamp</text>
 		<text class="label big" x="-143.2735" y="-37.001446" id="T-FR-29232-0" transform="rotate(-45)">Quimper</text>
 
-		<text class="label big" x="-105.39444" y="70.77401" id="T-FR-56098-0-A" transform="rotate(-45)">Lorient</text>
-      	<text class="label big" x="-105.39444" y="66.77401" id="T-FR-56098-0-B" transform="rotate(-45)">TGV</text>
+		<text class="label big" x="-105.80176" y="68.504677" id="T-FR-56098-0-A" transform="rotate(-45)">Lorient</text>
+      	<text class="label big" x="-99.459267" y="77.829727" id="T-FR-56098-0-B" transform="rotate(-45)">TGV</text>
 
 		<text class="label bbig" x="-77.921341" y="276.06824" id="T-FR-44109-0" transform="rotate(-45)">Nante</text>
 
-		<text class="label big" x="-70.642197" y="98.46723" id="T-FR-56206-0-A" transform="rotate(-45)">Vannes</text>
-      	<text class="label big" x="-70.642197" y="112.46723" id="T-FR-56206-0-B" transform="rotate(-45)">TGV</text>
+		<text class="label big" x="-69.1875" y="112.95603" id="T-FR-56206-0-A" transform="rotate(-45)">Vannes</text>
+      	<text class="label big" x="-61.215748" y="122.35918" id="T-FR-56206-0-B" transform="rotate(-45)">TGV</text>
 
-		<text class="label normal" x="-98.581871" y="65.569023" id="T-FR-29265-0">Morlaix TGV</text>
+		<text class="label big" x="-97.912476" y="68.340508" id="T-FR-29265-0" transform="rotate(45)">Morlaix TGV</text>
 		<text class="label normal" x="371.40265" y="-9.991293" id="T-FR-61001-0">Alençon</text>
 		<text class="label normal" x="184.72495" y="127.56915" id="T-FR-44036-0">Châteaubriant</text>
 		<text class="label normal" x="184.82079" y="163.02567" id="T-FR-44110-0">Nort-sur-Erdre</text>
@@ -704,29 +704,30 @@
 		<text class="label normal" x="3.5911956" y="345.98022" id="T-FR-49099-0" transform="rotate(-45)">Cholet</text>
 		<text class="label normal" x="309.13129" y="-154.57216" id="T-FR-72264-0" transform="rotate(45)">Sablé-sur-Sarthe</text>
 		<text class="label normal" x="113.57357" y="353.64569" id="T-FR-49328-0" transform="rotate(-45)">Saumur</text>
-		<text class="label normal" x="256.31357" y="127.67708" id="T-FR-49331-0">Segré-en-Anjou Bleu</text>
-		<text class="label normal" x="168.62427" y="241.25768" id="T-FR-44043-0">Clisson</text>
+		<text class="label normal" x="256.31357" y="127.67708" id="T-FR-49331-0-A">Segré-en-Anjou</text>
+		<text class="label normal" x="274.34204" y="134.7141" id="T-FR-49331-0-B">Bleu</text>
+		<text class="label normal" x="165.66182" y="241.58684" id="T-FR-44043-0">Clisson</text>
 
 		<text class="label normal" x="256.31357" y="93.281242" id="T-FR-53062-0-A">Château-Gontier</text>
-      	<text class="label normal" x="256.31357" y="105.281242" id="T-FR-53062-0-B">sur-Mayenne</text>
+      	<text class="label normal" x="263.96655" y="100.09696" id="T-FR-53062-0-B">sur-Mayenne</text>
 
 		<text class="label normal" x="26.524435" y="48.231972" id="T-FR-22093-0" transform="rotate(-45)">Lambal</text>
 		<text class="label normal" x="26.353643" y="88.145706" id="T-FR-35184-0" transform="rotate(-45)">La Brohinière</text>
-		<text class="label normal" x="110.57822" y="27.7495" id="T-FR-35079-0">Chevaigné</text>
-		<text class="label normal" x="69.050133" y="-154.92105" id="T-FR-50025-0" transform="rotate(45)">Avranches</text>
-		<text class="label normal" x="77.441002" y="-197.02658" id="T-FR-50188-0" transform="rotate(45)">Folligny</text>
+		<text class="label normal" x="107.45119" y="28.160952" id="T-FR-35079-0">Chevaigné</text>
+		<text class="label normal" x="66.489861" y="-154.45555" id="T-FR-50025-0" transform="rotate(45)">Avranches</text>
+		<text class="label normal" x="73.949722" y="-197.3757" id="T-FR-50188-0" transform="rotate(45)">Folligny</text>
 		<text class="label normal" x="63.404274" y="-237.98842" id="T-FR-50147-0" transform="rotate(45)">Courtances</text>
-		<text class="label normal" x="76.004845" y="-269.73752" id="T-FR-50502-0" transform="rotate(45)">Saint-Lô</text>
+		<text class="label normal" x="73.444572" y="-268.57376" id="T-FR-50502-0" transform="rotate(45)">Saint-Lô</text>
 		<text class="label big" x="78.175056" y="48.231613" id="T-FR-35288-0" transform="rotate(-45)">Saint-Malo</text>
-		<text class="label normal" x="-5.7672453" y="121.8005" id="T-FR-35240-0" transform="rotate(-45)">Le Rheu</text>
+		<text class="label normal" x="-8.6766434" y="121.91688" id="T-FR-35240-0" transform="rotate(-45)">Le Rheu</text>
 		<text class="label normal" x="114.78688" y="111.80199" id="T-FR-35176-0">Guipry-Messac</text>
 		<text class="label normal" x="114.44112" y="122.98892" id="T-FR-44007-0">Redon TGV</text>
 		<text class="label normal" x="-40.462395" y="208.79674" id="T-FR-44129-0" transform="rotate(-45)">Pontchâteau</text>
 		<text class="label normal" x="-39.478123" y="227.47762" id="T-FR-44195-0" transform="rotate(-45)">Savenay</text>
-		<text class="label normal" x="280.07568" y="-46.745235" id="T-FR-44003-0" transform="rotate(45)">Ancenis</text>
+		<text class="label normal" x="223.07114" y="181.7375" id="T-FR-44003-0">Ancenis</text>
 		<text class="label bbbig" x="552.47327" y="608.54626" id="T-FR-10387-0" transform="rotate(-45)">Troyes</text>
 		<text class="label bbbig" x="433.38037" y="-680.24731" id="T-FR-51454-0" transform="rotate(45)">Reims TGV</text>
-		<text class="label big" x="25.94021" y="328.88049" id="T-FR-49007-0" transform="rotate(-45)">Angers</text>
+		<text class="label big" x="333.6767" y="-66.062935" id="T-FR-49007-0" transform="rotate(45)">Angers</text>
 		<text class="label bbbig" x="266.96445" y="123.93799" id="T-FR-14118-0" transform="rotate(-45)">Caen</text>
 		<text class="label big" x="143.10413" y="228.56699" id="T-FR-53130-0" transform="rotate(-45)">Laval</text>
 		<text class="label bbbig" x="522.21893" y="-778.46887" id="T-FR-55545-1" transform="rotate(45)">Verdun TGV</text>
@@ -745,7 +746,7 @@
 		<text class="label normal" x="268.2894" y="355.07059" id="T-FR-72132-0" transform="rotate(-45)">La Ferté-Bernard</text>
 
 		<text class="label normal" x="282.90375" y="393.40491" id="T-FR-41269-1-A" transform="rotate(-45)">Vendôme</text>
-      	<text class="label normal" x="282.90375" y="405.40491" id="T-FR-41269-1-B" transform="rotate(-45)">TGV</text>
+      	<text class="label normal" x="292.03925" y="399.41156" id="T-FR-41269-1-B" transform="rotate(-45)">TGV</text>
 
 		<text class="label normal" x="274.44537" y="407.10681" id="T-FR-41269-0" transform="rotate(-45)">Vendôme</text>
 		<text class="label normal" x="283.97769" y="448.26633" id="T-FR-41018-0" transform="rotate(-45)">Blois</text>
@@ -754,14 +755,14 @@
 		<text class="label bbbig" x="284.1868" y="708.15057" id="T-FR-40192-0">Mont-de-Marsan</text>
 		<text class="label bbbig" x="749.22931" y="374.58917" id="T-FR-40088-0" transform="rotate(45)">Dax</text>
 
-		<text class="label bbbig" x="717.20422" y="449.47705" id="T-FR-64102-1-A" transform="rotate(45)">Bayonne</text>
-      	<text class="label bbbig" x="717.20422" y="463.47705" id="T-FR-64102-1-B" transform="rotate(45)">TGV</text>
+		<text class="label bbbig" x="718.77527" y="454.77216" id="T-FR-64102-1-A" transform="rotate(45)">Bayonne</text>
+      	<text class="label bbbig" x="732.74036" y="472.14706" id="T-FR-64102-1-B" transform="rotate(45)">TGV</text>
 
 		<text class="label bbbig" x="-584.12531" y="712.09711" id="T-FR-64260-0" transform="rotate(-45)">Hendaye</text>
 		<text class="label bbbig" x="284.28293" y="598.90674" id="T-FR-33063-0">Bordeaux Saint-Jean</text>
 
-		<text class="label bbbig" x="-179.92714" y="536.65283" id="T-FR-17415-1-A" transform="rotate(-45)">Saintes</text>
-      	<text class="label bbbig" x="-179.92714" y="550.65283" id="T-FR-17415-1-B" transform="rotate(-45)">TGV</text>
+		<text class="label bbbig" x="-179.22888" y="543.28625" id="T-FR-17415-1-A" transform="rotate(-45)">Saintes</text>
+      	<text class="label bbbig" x="-169.33693" y="557.75177" id="T-FR-17415-1-B" transform="rotate(-45)">TGV</text>
 
 		<text class="label bbbig" x="720.6203" y="-389.64658" id="T-FR-59350-0">Lille Flandre</text>
 		<text class="label bbbig" x="608.66876" y="-381.04233" id="T-FR-59350-1">Lille Europe</text>
@@ -769,11 +770,11 @@
 		<text class="label bbbig" x="297.40469" y="879.88361" id="T-FR-42187-0" transform="rotate(-45)">Roanne</text>
 
 		<text class="label bbbig" x="530.0979" y="443.88092" id="T-FR-77111-0-A" transform="rotate(-45)">Marne la vallée</text>
-      	<text class="label bbbig" x="530.0979" y="435.88092" id="T-FR-77111-0-B" transform="rotate(-45)">chessy</text>
+      	<text class="label bbbig" x="561.98492" y="457.06134" id="T-FR-77111-0-B" transform="rotate(-45)">chessy</text>
 
 		<text class="label bbbig" x="535.15619" y="403.64841" id="T-FR-95527-0" transform="rotate(-45)">Aeroport CDG</text>
-		<text class="label normal" x="133.80157" y="276.19324" id="T-FR-85146-0">Montaigu-Vendée</text>
-		<text class="label big" x="90.30162" y="291.2471" id="T-FR-85191-0">La Roche-sur-Yon</text>
+		<text class="label normal" x="128.94646" y="276.11096" id="T-FR-85146-0">Montaigu-Vendée</text>
+		<text class="label big" x="93" y="293.02341" id="T-FR-85191-0">La Roche-sur-Yon</text>
 	</g>
 
 </svg>
