@@ -7,6 +7,11 @@ import Utils from '../utils/utils.js';
  */
 class Network_Map extends SVG_Map {
 
+	/**
+	* Setup all the callback on the map
+	* @param Lines, list of Line Object
+	* @param Station, list of Station Objects
+	*/
 	constructor(client_type, filename, map_config, network_config) {
 		super(client_type, filename, map_config);
 
@@ -19,15 +24,16 @@ class Network_Map extends SVG_Map {
 		this.stations = [];
 	}
 
-	////////////////////
-	/// Public function
-	////////////////////
+	/*
+	* Public function
+	*/
 
 
-	////////////////////////////////////////////
-	/// @brief setup all the callback on the map
-	/// @param Lines, list of Line Object
-	/// @param Station, list of Station Objects
+	/**
+	* Setup all the callback on the map
+	* @param Lines, list of Line Object
+	* @param Station, list of Station Objects
+	*/
 	Setup_Mouse_Handlers(lines, stations) {
 		super.Setup_Mouse_Handlers();
 		this.lines = lines
@@ -66,9 +72,10 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	///////////////////////////////////////////////////////////
-	/// @param disable all other lines, mark the line with the line color handle labels too
-	/// @param line_code The code of the line to show
+	/** 
+	* disable all other lines, mark the line with the line color handle labels too
+	* @param line_code The code of the line to show
+	*/
 	Highlight_Line = (line_code) => {
 		if(this.config.DEBUG) console.log('Highlight_Line called');
 		let that = this
@@ -130,8 +137,9 @@ class Network_Map extends SVG_Map {
 		this.fabric_canvas.requestRenderAll();
 	}
 
-	////////////////////////////////////////////////////////
-	/// @brief revert all line marking to the original color
+	/**
+	 * revert all line marking to the original color
+	 */
 	Reset_Line_Highlight = () => {
 		// tracks
 		let that = this
@@ -166,9 +174,10 @@ class Network_Map extends SVG_Map {
 		this.fabric_canvas.requestRenderAll()
 	}
 
-	//////////////////////////////////////////////////////////////////////////////
-	/// @brief	highlight all line part(s) that are in connection with the to station.
-	/// @note We can actually highlight the whole line and do not have to search line parts, because there is no destination given.
+	/**
+	 * highlight all line part(s) that are in connection with the to station.
+	 * We can actually highlight the whole line and do not have to search line parts, because there is no destination given.
+	 */
 	Highlight_All_From_Station_Lines = () => {
 		// get all line names, first in an array, after make a unique set
 		let that = this
@@ -256,11 +265,12 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	///	@brief highlight all line part(s) that are in connection with the to and from station disable the rest. If there is no connection, disable all lines and labels
-	/// @param from_station_code starting station point
-	/// @param to_station_code   end station code
-	/// @note this function might need few tweeking
+	/**
+	 * highlight all line part(s) that are in connection with the to and from station disable the rest. If there is no connection, disable all lines and labels
+	 * this function might need few tweeking
+	 * @param from_station_code starting station point
+	 * @param to_station_code   end station code
+	 */
 	Highlight_All_From_To_Station_Lines = (from_station_code, to_station_code) => {
 		let that = this
 		let tmp_lines_obj = {}
@@ -398,9 +408,10 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	////////////////////////////////////////////
-	/// @brief Zoom toward the line
-	/// @param line_code where we want to zoom to
+	/**
+	 * Zoom toward the line
+	 * @param line_code where we want to zoom to
+	 */
 	Zoom_Highlighted_Line = (line_code) => {
 		const line_data = this.#Find_Line_Data_By_Id(line_code)
 		if (line_data !== undefined) {
@@ -409,10 +420,11 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief zoom to the higlighted station, and find the smalles bounding box that include all the line around the station
-	/// @param from_station_code starting station
-	/// @param to_station_code end station
+	/**
+	* @brief zoom to the higlighted station, and find the smalles bounding box that include all the line around the station
+	* @param from_station_code starting station
+	* @param to_station_code end station
+	*/
 	Zoom_Highlighted_Stations = (from_station_code, to_station_code) => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
 		const highlight_pos_from_obj = all_highlights.find(x => x.id === `highlight_pos_${from_station_code}`)
@@ -424,9 +436,10 @@ class Network_Map extends SVG_Map {
 			if(this.config.DEBUG) console.warn('Zoom_Highlighted_Stations, cannot find from or to position object');
 	}
 
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief optimize zoom_box for highlighted tracks find MAX stretch values for all Stations around highlighted tracks replacement for Zoom_Highlighted_Line & Zoom_Highlighted_Stations -> expects a set of station_codes
-	/// @param station_codes station that should be the center of the zoom
+	/**
+	* optimize zoom_box for highlighted tracks find MAX stretch values for all Stations around highlighted tracks replacement for Zoom_Highlighted_Line & Zoom_Highlighted_Stations -> expects a set of station_codes
+	* @param station_codes station that should be the center of the zoom
+	*/
 	Zoom_Highlighted_Tracks = (station_codes) => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
 		let min_x = 0;
@@ -471,8 +484,9 @@ class Network_Map extends SVG_Map {
 		this.Animated_Pan_Zoom(zoom_box)
 	}
 
-	//////////////////////////////////////////////////////
-	/// @brief if a station is not really visible, zoom it
+	/**
+	* if a station is not really visible, zoom it
+	*/
 	Zoom_Not_Visible_Station = (from_station_code) => {
 
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
@@ -485,10 +499,11 @@ class Network_Map extends SVG_Map {
 			if(this.config.DEBUG) console.warn('Zoom_Not_Visible_Station, cannot find from position object')
 	}
 
-	/////////////////////////////////////////////////////
-	/// @brief mark the station with the right circle
-	/// @param station_code code of the station 
-	/// @param station_type if it's a from or to station
+	/**
+	* mark the station with the right circle
+	* @param station_code code of the station 
+	* @param station_type if it's a from or to station
+	*/
 	Highlight_Station = (station_code, station_type) => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
 		const highlight_pos_obj = all_highlights.find(x => x.id === `highlight_pos_${station_code}`);
@@ -507,8 +522,9 @@ class Network_Map extends SVG_Map {
 		this.fabric_canvas.requestRenderAll();
 	}
 
-	//////////////////////////////////////////////////
-	/// @brief remove all highlights for all stations
+	/**
+	* remove all highlights for all stations
+	*/
 	Reset_All_Highlight_Station = () => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
 		const highlight_origin_obj = all_highlights.find(x => x.id === 'highlight_origin');
@@ -518,8 +534,9 @@ class Network_Map extends SVG_Map {
 		this.fabric_canvas.requestRenderAll()
 	}
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief check if the station highlight is visible use a config specific margin for the borders
+	/**
+	* check if the station highlight is visible use a config specific margin for the borders
+	*/
 	Check_Station_Visible = (station_code) => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
 		const highlight_pos_obj = all_highlights.find(x => x.id === `highlight_pos_${station_code}`)
@@ -552,13 +569,14 @@ class Network_Map extends SVG_Map {
 		return true // return always true if undefined, else we start to trigger an animation on a non existent object
 	}
 
-	////////////////////
-	/// Private function
-	////////////////////
+	/**
+	* Private function
+	*/
 
-	////////////////////////////////////////////////////////////////////////////////////////
-	/// @brief Handle the when the user click on the map with a track to get more information
-	/// @param event comming from hammer
+	/**
+	* Handle the when the user click on the map with a track to get more information
+	* @param event comming from hammer
+	*/
 	#Handle_Mouse_Click_Track = (event) => {
 		if (event.currentSubTargets.length) {
 			if (this._Check_Pointer_In_Range(event.pointer)) { // only if on same position
@@ -570,9 +588,10 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	////////////////////////////////////////////////
-	/// @brief Handle when the user click on a station
-	/// @param event pointing to the station
+	/**
+	* Handle when the user click on a station
+	* @param event pointing to the station
+	*/
 	#Handle_Mouse_Click_Station = (event) => {
 		if (event.currentSubTargets.length) {
 			if (this._Check_Pointer_In_Range(event.pointer)) { // only if on same position
@@ -586,8 +605,9 @@ class Network_Map extends SVG_Map {
 		}
 	}
 
-	////////////////////////////////////////
-	/// find line codes in label or line id
+	/**
+	* find line codes in label or line id
+	*/
 	#Find_Track_Code_In_Id = (id) => {
 		const regex = /^line_label_([a-zA-Z0-9]+)_|^track_([a-zA-Z0-9]+)_/;
 		let match = regex.exec(id)
@@ -598,8 +618,9 @@ class Network_Map extends SVG_Map {
 			return '';
 	}
 
-	/////////////////////////////////////////////////////////////
-	/// @brief find station code in station label or station icon
+	/**
+	* find station code in station label or station icon
+	*/
 	Find_Station_Code_In_Id(id) {
 		if (id.indexOf('station_label_') > -1) {
 			let id_arr = id.split('label_');

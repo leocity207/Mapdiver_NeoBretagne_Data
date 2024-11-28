@@ -2,5 +2,5 @@ Map_Page
 ============
 
 
-.. js:autoclass:: Map_App
+.. js:autoclass:: Map_Page
 	:members:
