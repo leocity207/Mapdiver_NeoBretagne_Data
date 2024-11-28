@@ -1,5 +1,5 @@
 Page
 ====
 
-.. js:autoclass:: Page
+.. js:autoclass:: page.Page
 	:members:
