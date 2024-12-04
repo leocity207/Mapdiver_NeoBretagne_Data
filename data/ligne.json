@@ -1,0 +1,188 @@
+{
+	"LER-BRE0":{
+		"label" : "LER BRE0",
+		"urls" : [],
+		"color": {
+			"default": "#25158B",
+			"easy": "#DD2F1D",
+		},
+	},
+	"LER-BRE1":{
+		"label" : "LER BRE1",
+		"urls" : [],
+		"color": {
+			"default": "#4D84B8",
+			"easy": "#9184BE",
+		},
+	},
+	"LER-BRE2":{
+		"label" : "LER BRE2",
+		"urls" : [],
+		"color": {
+			"default": "#7065B2",
+			"easy": "#008B39",
+		},
+	},
+	"LER-BRE3":{
+		"label" : "LER BRE3",
+		"urls" : [],
+		"color": {
+			"default": "#316B80",
+			"easy": "#F39100",
+		},
+	},
+	"LER-BRE4":{
+		"label" : "LER-BRE4",
+		"urls" : [],
+		"color": {
+			"default": "#2437B1",
+			"easy": "#94C11A",
+		},
+	},
+	"LER-BRE5":{
+		"label" : "LER BRE5",
+		"urls" : [],
+		"color": {
+			"default": "#01112F",
+			"easy": "#0090D6",
+		},
+	},
+	"LER-BRE6":{
+		"label" : "LER BRE6",
+		"urls" : [],
+		"color": {
+			"default": "#19A8C8",
+			"easy": "#FEC800",
+		},
+	},
+	"LER-BRE7":{
+		"label" : "LER BRE7",
+		"urls" : [],
+		"color": {
+			"default": "#7594E0",
+			"easy": "#AD0600",
+		},
+	},
+	"LER-BRE8":{
+		"label" : "LER BRE8",
+		"urls" : [],
+		"color": {
+			"default": "0FBFC4",
+			"easy": "#EA5097",
+		},
+	},
+
+	"LER-NOR2":{
+		"label" : "LER NOR2",
+		"urls" : [],
+		"color": {
+			"default": "#2699D1",
+			"easy": "#7DA9C0",
+		},
+	},
+	"LER-NOR3":{
+		"label" : "LER NOR3",
+		"urls" : [],
+		"color": {
+			"default": "#95D9FD",
+			"easy": "#565655",
+		},
+	},
+	"LER-CVL4":{
+		"label" : "LER CVL4",
+		"urls" : [],
+		"color": {
+			"default": "#171764",
+			"easy": "#2CAEB3",
+		},
+	},
+	"LER-NAQ7":{
+		"label" : "LER NAQ7",
+		"urls" : [],
+		"color": {
+			"default": "#2D71CA",
+			"easy": "#15AE8D",
+		},
+	},
+	"LER-CVL1":{
+		"label" : "LER CVL1",
+		"urls" : [],
+		"color": {
+			"default": "#0002FF",
+			"easy": "#A36B1F",
+		},
+	},
+
+	"LGV-BRE0":{
+		"label" : "LGV BRE0",
+		"urls" : [],
+		"color": {
+			"default": "#FA0A0A",
+			"easy": "#294B95",
+		},
+	},
+	"LGV-BRE1":{
+		"label" : "LGV BRE1",
+		"urls" : [],
+		"color": {
+			"default": "#C01400",
+			"easy": "#B69495",
+		},
+	},
+	"LGV-BRE2":{
+		"label" : "LGV BRE2",
+		"urls" : [],
+		"color": {
+			"default": "#700707",
+			"easy": "",
+		},
+	},
+	"LGV-BRE3":{
+		"label" : "LGV BRE3",
+		"urls" : [],
+		"color": {
+			"default": "#A42626",
+			"easy": "#66711F",
+		},
+	},
+	"LGV-FR4":{
+		"label" : "LGV FR4",
+		"urls" : [],
+		"color": {
+			"default": "#25158b",
+			"easy": "#005619",
+		},
+	},
+	"LGV-FR7":{
+		"label" : "LGV FR7",
+		"urls" : [],
+		"color": {
+			"default": "#DA026C",
+			"easy": "#AF126F",
+		},
+	},
+	"LGV-FR8":{
+		"label" : "LGV FR8",
+		"urls" : [],
+		"color": {
+			"default": "#E07777",
+			"easy": "#C4D983",
+		},
+	},
+	"LGV-FR9":{
+		"label" : "LGV-FR9",
+		"urls" : [],
+		"color": {
+			"default": "#BB0C64",
+			"easy": "#006788",
+		},
+	},
+	"IC1":{
+		"label" : "IC1",
+		"urls" : [],
+		"color": {
+			"default": "#00FDFF",
+			"easy": "#0077BA",
+		},
+	}
+}

@@ -1,0 +1,668 @@
+{
+	"FR_22070_0":{
+		"label": "Guingamp",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_22278_0":{
+		"label": "Saint-Brieuc",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35238_0":{
+		"label": "Rennes",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_28085_0":{
+		"label": "Chartres",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_91377_1":{
+		"label": "Massy TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_72181_0":{
+		"label": "",
+		"urls" : ["Le Mans"],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_49007_0":{
+		"label": "Angers",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_53130_0":{
+		"label": "Laval",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_14118_0":{
+		"label": "Caen",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_37261_0":{
+		"label": "Tours",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_37233_0":{
+		"label": "Saint-Pierre-des-Corps",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_41269_1":{
+		"label": "Vendôme TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_45234_0":{
+		"label": "Orléans",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_61169_0":{
+		"label": "Flers",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35288_0":{
+		"label": "Saint-Malo",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44049_0":{
+		"label": "Le Croisic",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56206_0":{
+		"label": "Vanne Saint-Avé TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44007_0":{
+		"label": "Avessac",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29265_0":{
+		"label": "Morlay Sainte-Sève TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56098_0":{
+		"label": "Lorient Lanester TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29019_0":{
+		"label": "Brest",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_85194_0":{
+		"label": "Les Sables-d'Olonne",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_86194_0":{
+		"label": "Poitiers",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_17300_0":{
+		"label": "La Rochelles",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_17142_0":{
+		"label": "La Rochelles Dompierre TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_75115_0":{
+		"label": "Paris Montparnasse",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56121_0":{
+		"label": "Lorient",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_49328_0":{
+		"label": "Saumur",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44043_0":{
+		"label": "Clisson",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44003_0":{
+		"label": "Ancenis-Saint-Géréon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29233_0":{
+		"label": "Quimperlé",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35079_0":{
+		"label": "Chevaigné",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35095_0":{
+		"label": "Dol-de-Bretagne",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44109_0":{
+		"label": "Nantes",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29232_0":{
+		"label": "Quimper",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56007_0":{
+		"label": "Auray",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_85191_0":{
+		"label": "La Roche-sur-Yon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_69382_0":{
+		"label": "Lyon Perrache",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_13201_0":{
+		"label": "Marseille Saint-Charles",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_64260_0":{
+		"label": "Hendaye",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_67482_0":{
+		"label": "Strasbourg",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_59350_0":{
+		"label": "Lille Europe",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_62274_0":{
+		"label": "Douai-Lens TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_62193_0":{
+		"label": "Calais",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56260_0":{
+		"label": "Vannes",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_56184_0":{
+		"label": "Questembert",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35236_0":{
+		"label": "Redon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_85146_0":{
+		"label": "Montaigu-Vendée",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29080_0":{
+		"label": "Hôpital-Camfrout",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_61145_0":{
+		"label": "Domfront",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29302_0":{
+		"label": "Pont-de-buis",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_50188_0":{
+		"label": "Folligny",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_41269_0":{
+		"label": "Vendôme",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_10387_0":{
+		"label": "Troyes",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_51454_0":{
+		"label": "Reims TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_55545_1":{
+		"label": "Verdun TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_54546_0":{
+		"label": "Lorraine TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_41018_0":{
+		"label": "Blois",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_58194_0":{
+		"label": "Nevers",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_03236_0":{
+		"label": "Saint-Germain-des-fossés",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_21231_0":{
+		"label": "Dijon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_72132_0":{
+		"label": "La Ferté-Bernard",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_28280_0":{
+		"label": "Nogent-le-Rotrou",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_50147_0":{
+		"label": "Courtances",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_50502_0":{
+		"label": "Saint-Lô",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_42187_0":{
+		"label": "Roanne",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_03190_0":{
+		"label": "Moulins",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_33063_0":{
+		"label": "Bordeaux Saint-Jean",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_40192_0":{
+		"label": "Mont-de-Marsan",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_40088_0":{
+		"label": "Dax",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_64102_1":{
+		"label": "Bayonne TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_17415_1":{
+		"label": "Saintes TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29151_0":{
+		"label": "Morlaix",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_22207_0":{
+		"label": "Plouaret",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_22093_0":{
+		"label": "Lambal",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35184_0":{
+		"label": "La Brohinière",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35240_0":{
+		"label": "Le Rheu",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29103_0":{
+		"label": "Landerneau",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_29105_0":{
+		"label": "Landivisiau",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_50025_0":{
+		"label": "Avranches",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44110_0":{
+		"label": "Nort-sur-Erdre",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_80021_0":{
+		"label": "Amiens",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_76540_0":{
+		"label": "Rouen",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_77111_0":{
+		"label": "Marne la vallée chessy",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_95527_0":{
+		"label": "Roissy Aeroport CDG Terminal 2",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_59350_1":{
+		"label": "Lille Europe",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44184_0":{
+		"label": "Saint-Nazaire",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_18279_0":{
+		"label": "Vierzon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_18033_0":{
+		"label": "Bourges",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_53147_0":{
+		"label": "Mayenne",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_53097_0":{
+		"label": "Évron",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35136_0":{
+		"label": "Janzé",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44036_0":{
+		"label": "Châteaubriant",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_72264_0":{
+		"label": "Sablé-sur-Sarthe",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_49331_0":{
+		"label": "Segré-en-Anjou-Bleu",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_53062_0":{
+		"label": "Château-Gontier-sur-Mayenne",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_79202_0":{
+		"label": "Parthenay",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_86066_0":{
+		"label": "Châtellerault",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_37072_0":{
+		"label": "Chinon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_79049_0":{
+		"label": "Bressuire",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_49099_0":{
+		"label": "Cholet",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_61001_0":{
+		"label": "Alençon",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_61006_0":{
+		"label": "Argentan",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_08164_0":{
+		"label": "Falaise",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_69383_0":{
+		"label": "Lyon Part-Dieu",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_84007_1":{
+		"label": "Avignon TGV",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_72071_0":{
+		"label": "Château-du-Loire",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_72124_0":{
+		"label": "Ecommoy",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_35176_0":{
+		"label": "Guipry-Messac",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44195_0":{
+		"label": "Savenay",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	},
+	"FR_44129_0":{
+		"label": "Pontchâteau",
+		"urls" : [],
+		"directions" : [],
+		"lignes" : []
+	}
+}
