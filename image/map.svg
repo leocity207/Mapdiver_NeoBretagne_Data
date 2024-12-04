@@ -539,7 +539,7 @@
 		<circle class="station-circle" id="S-FR_18279_0" cx="574.4104" cy="179.91667" r="0.625" />
 		<circle class="station-circle" id="S-FR_18033_0" cx="625.21045" cy="230.71666" r="0.625" />
 		<circle class="station-circle" id="S-FR_353600_0" cx="209.28542" cy="62.441666" r="0.625" />
-		<circle class="station-circle" id="S-FR_353600_0-9" cx="271.19791" cy="17.197916" r="0.625" />
+		<circle class="station-circle" id="S-FR_353600_0_9" cx="271.19791" cy="17.197916" r="0.625" />
 		<circle class="station-circle" id="S-FR_53097_0" cx="324.37918" cy="62.441666" r="0.625" />
 		<circle class="station-circle" id="S-FR_35136_0" cx="166.59166" cy="87.216667" r="0.625" />
 		<circle class="station-circle" id="S-FR_44036_0" cx="219.88075" cy="-40.036976" r="0.625" transform="rotate(45)" />
@@ -604,8 +604,8 @@
 		<text class="label bbbig" x="309.19769" y="-499.85516" id="ST-FR_75115_0-A" transform="rotate(45)">Paris</text>
 	  	<text class="label bbbig" x="278.28519" y="-486.98264" id="ST-FR_75115_0-B" transform="rotate(45)">Montparnass</text>
 
-		<text class="label normal" x="271.89642" y="19.928392" id="text495">Mayenne</text>
-		<text class="label normal" x="272.06519" y="-19.927856" id="ST-FR_53147_0">Domfront</text>
+		<text class="label normal" x="271.89642" y="19.928392" id="ST-FR_53147_0">Mayenne</text>
+		<text class="label normal" x="272.06519" y="-19.927856" id="ST-FR_61145_0">Domfront</text>
 		<text class="label normal" x="273.6163" y="-44.119343" id="ST-FR_61169_0">Flers</text>
 		<text class="label normal" x="224.45839" y="311.13403" id="ST-FR_72181_0" transform="rotate(-45)">Le Mans</text>
 		<text class="label big" x="-44.787811" y="17.377867" id="ST-FR_22278_0" transform="rotate(-45)">Saint-Brieuc</text>
