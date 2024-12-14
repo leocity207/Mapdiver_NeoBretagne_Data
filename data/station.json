@@ -21,7 +21,7 @@
 			"lignes" : ["LGV_BRE0","LGV_BRE1","LGV_FR7","LGV_FR9","LGV_FR8"]
 		},
 		"FR_72181_0":{
-			"label": "",
+			"label": "Le Mans",
 			"lignes" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"]
 		},
 		"FR_49007_0":{
