@@ -139,7 +139,7 @@ class SVG_Map {
 	/**
 	 * Setup all the callback on the map
 	 */
-	Setup_Mouse_Handlers = () => {
+	Setup_Mouse_Handlers() {
 
 		this.fabric_canvas.on('mouse:wheel', this.#Handle_User_Mousewheel_Zoom);
 		this.fabric_canvas.on('object:moving', this.#Handle_User_Map_Move_Touch);

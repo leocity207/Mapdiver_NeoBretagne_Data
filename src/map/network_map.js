@@ -597,7 +597,7 @@ class Network_Map extends SVG_Map {
 			if (this._Check_Pointer_In_Range(event.pointer)) { // only if on same position
 				const target_id = event.currentSubTargets[0].id
 				if (target_id !== null) {
-					const station_code = this.#Find_Station_Code_In_Id(target_id);
+					const station_code = this.Find_Station_Code_In_Id(target_id);
 					if (station_code !== '')
 						resolve_url('station_from', { from_slug: station_code });
 				}

@@ -3,7 +3,7 @@
 /**
  * Base configuration for the SVG map Object
  */
-const Config = {
+export const Config = {
 
   /**
    * if debug log should be enabled
@@ -100,7 +100,7 @@ const Config = {
 /**
  * Config for the Network Page object
  */
-const Network_Config = {
+export const Network_Config = {
 
   /**
    * Track or Line prefix ID
@@ -128,5 +128,3 @@ const Network_Config = {
    */
   COLOR_ANIMATION_TIME : 150,
 }
-
-export default Config;
