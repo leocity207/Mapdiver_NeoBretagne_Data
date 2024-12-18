@@ -41,6 +41,7 @@ class Network_Map extends SVG_Map {
 		// all Line
 		let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID);
 		for (let obj of tracks) {
+			if(this.config.DEBUG) console.warn('set handler for tracks: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
 			obj.on('mouseup', this.#Handle_Mouse_Click_Track);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
@@ -49,7 +50,7 @@ class Network_Map extends SVG_Map {
 		// all Track labels
 		let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID);
 		for (let obj of line_labels) {
-			if(this.config.DEBUG) console.warn('set handler for id: '+obj.id) ;
+			if(this.config.DEBUG) console.warn('set handler for line label: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
 			obj.on('mouseup', this.#Handle_Mouse_Click_Track);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
@@ -58,6 +59,7 @@ class Network_Map extends SVG_Map {
 		// all station
 		let station_icons = this._Find_Map_Objs_By_Id(this.network_config.STATION_PREFIX_ID)
 		for (let obj of station_icons) {
+			if(this.config.DEBUG) console.warn('set handler for station: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
 			obj.on('mouseup', this.#Handle_Mouse_Click_Station);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
@@ -66,6 +68,7 @@ class Network_Map extends SVG_Map {
 		// all station labels
 		let station_labels = this._Find_Map_Objs_By_Id(this.network_config.STATION_LABEL_PREFIX_ID)
 		for (let obj of station_labels) {
+			if(this.config.DEBUG) console.warn('set handler for station: '+obj.id) ;
 			obj.on('mouseup', this.#Handle_Mouse_Click_Station);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);

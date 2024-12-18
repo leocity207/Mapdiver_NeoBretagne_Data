@@ -105,22 +105,22 @@ export const Network_Config = {
   /**
    * Track or Line prefix ID
    */
-  TRACK_PREFIX_ID: 'track_',
+  TRACK_PREFIX_ID: 'L-',
 
   /**
    * Line label prefix ID
    */
-  LINE_LABEL_PREFIX_ID: 'line_label_',
+  LINE_LABEL_PREFIX_ID: 'LT-',
 
   /**
    * Station Icon prefix ID
    */
-  STATION_PREFIX_ID: 'station_icon_',
+  STATION_PREFIX_ID: 'S-',
 
   /**
    * Station label Prefix ID
    */
-  STATION_LABEL_PREFIX_ID: 'station_label_',
+  STATION_LABEL_PREFIX_ID: 'ST-',
   
   /**
    * Color change animation time (lines, labels)
