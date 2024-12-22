@@ -581,14 +581,18 @@ class Network_Map extends SVG_Map {
 	* @param event comming from hammer
 	*/
 	#Handle_Mouse_Click_Track = (event) => {
-		if (event.currentSubTargets.length) {
-			if (this._Check_Pointer_In_Range(event.pointer)) { // only if on same position
-				const target_id = event.currentSubTargets[0].id
-				const track_code = this.#Find_Track_Code_In_Id(target_id);
-				if (track_code !== '') 
-					resolve_url('line', { line_slug: track_code })
-			}
-		}
+		if (!event.currentSubTargets.length) 
+			throw new Error("Event target container has nothing inside.");	
+		if (this._Check_Pointer_In_Range(event.pointer)) 
+			return this.config.DEBUG ? console.log("mouse click pointer is not in range") : undefined;
+		const target_id = event.currentSubTargets[0].id
+		if (!target_id.length) 
+			throw new Error("The target id is empty.");
+		const track_code = this.#Find_Track_Code_In_Id(target_id);
+		if (!track_code) 
+			throw new Error("Track code not found.");
+		history.pushState({ line: track_code }, "", track_code);
+		document.dispatchEvent(new CustomEvent('line-click', { detail: track_code, bubbles: true  }));
 	}
 
 	/**
@@ -596,48 +600,42 @@ class Network_Map extends SVG_Map {
 	* @param event pointing to the station
 	*/
 	#Handle_Mouse_Click_Station = (event) => {
-		if (event.currentSubTargets.length) {
-			if (this._Check_Pointer_In_Range(event.pointer)) { // only if on same position
-				const target_id = event.currentSubTargets[0].id
-				if (target_id !== null) {
-					const station_code = this.Find_Station_Code_In_Id(target_id);
-					if (station_code !== '')
-						resolve_url('station_from', { from_slug: station_code });
-				}
-			}
-		}
+		if (!event.currentSubTargets.length) 
+			throw new Error("Event target container has nothing inside.");	
+		if (this._Check_Pointer_In_Range(event.pointer))  // only if on same position
+			return this.config.DEBUG ? console.log("mouse click pointer is not in range") : undefined;
+		const target_id = event.currentSubTargets[0].id
+		if (!target_id.length) 
+			throw new Error("The target id is empty.");
+		const station_code = this.#Find_Station_Code_In_Id(target_id);
+		if (!station_code) 
+			throw new Error("Station code not found.");
+		history.pushState({ station: station_code }, "", station_code);
+		document.dispatchEvent(new CustomEvent('station-click', { detail: station_code,composed: true }));
 	}
 
 	/**
 	* find line codes in label or line id
 	*/
 	#Find_Track_Code_In_Id = (id) => {
-		const regex = /^line_label_([a-zA-Z0-9]+)_|^track_([a-zA-Z0-9]+)_/;
-		let match = regex.exec(id)
-		if (match !== null) {
-			let filtered_match = match.filter(e => e !== undefined)
-			return filtered_match.length ? filtered_match.slice(-1).pop() : '';
-		} else
-			return '';
+		if (id.indexOf(this.network_config.TRACK_PREFIX_ID) <= -1 && id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID) <= -1)
+			throw Error("Line not found");
+		let ID_parts  = id.split('-')
+		if(ID_parts.length < 2)
+			throw Error("Line id length too short, Id was : " + id);
+		return  ID_parts[1];
 	}
 
 	/**
 	* find station code in station label or station icon
 	*/
-	Find_Station_Code_In_Id(id) {
-		if (id.indexOf('station_label_') > -1) {
-			let id_arr = id.split('label_');
-			if (id_arr[1].indexOf('_') > -1)
-				return id_arr[1].split('_')[0];
-			else
-				return id_arr[1];
-		} else if (id.indexOf('station_icon_') > -1) {
-			let id_arr = id.split('icon_');
-			if (id_arr[1].indexOf('_') > -1)
-				return id_arr[1].split('_')[0];
-			else 
-				return id_arr[1];
-		}
+	#Find_Station_Code_In_Id(id) {
+		if (id.indexOf(this.network_config.STATION_LABEL_PREFIX_ID) <= -1 && id.indexOf(this.network_config.STATION_PREFIX_ID) <= -1)
+			throw Error("Station not found");
+		let ID_parts  = id.split('-')
+		if(ID_parts.length < 2)
+			throw Error("Station id length too short, Id was : " + id);
+		return  ID_parts[1];	
 	}
 
 	// find the line json object in all lines
