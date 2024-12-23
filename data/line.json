@@ -1,6 +1,6 @@
 {
 	"Lines": {
-		"LER-BRE0":{
+		"LER_BRE0":{
 			"label" : "LER BRE0",
 			"urls" : {},
 			"color": {
@@ -27,7 +27,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE1":{
+		"LER_BRE1":{
 			"label" : "LER BRE1",
 			"urls" : {},
 			"color": {
@@ -58,7 +58,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE2":{
+		"LER_BRE2":{
 			"label" : "LER BRE2",
 			"urls" : {},
 			"color": {
@@ -82,7 +82,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE3":{
+		"LER_BRE3":{
 			"label" : "LER BRE3",
 			"urls" : {},
 			"color": {
@@ -104,8 +104,8 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE4":{
-			"label" : "LER-BRE4",
+		"LER_BRE4":{
+			"label" : "LER_BRE4",
 			"urls" : {},
 			"color": {
 				"default": "#2437B1",
@@ -124,7 +124,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE5":{
+		"LER_BRE5":{
 			"label" : "LER BRE5",
 			"urls" : {},
 			"color": {
@@ -144,7 +144,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE6":{
+		"LER_BRE6":{
 			"label" : "LER BRE6",
 			"urls" : {},
 			"color": {
@@ -162,7 +162,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE7":{
+		"LER_BRE7":{
 			"label" : "LER BRE7",
 			"urls" : {},
 			"color": {
@@ -179,7 +179,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-BRE8":{
+		"LER_BRE8":{
 			"label" : "LER BRE8",
 			"urls" : {},
 			"color": {
@@ -199,7 +199,7 @@
 			}
 		},
 
-		"LER-NOR2":{
+		"LER_NOR2":{
 			"label" : "LER NOR2",
 			"urls" : {},
 			"color": {
@@ -218,7 +218,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-NOR3":{
+		"LER_NOR3":{
 			"label" : "LER NOR3",
 			"urls" : {},
 			"color": {
@@ -238,7 +238,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-CVL4":{
+		"LER_CVL4":{
 			"label" : "LER CVL4",
 			"urls" : {},
 			"color": {
@@ -255,7 +255,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-NAQ7":{
+		"LER_NAQ7":{
 			"label" : "LER NAQ7",
 			"urls" : {},
 			"color": {
@@ -272,7 +272,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LER-CVL1":{
+		"LER_CVL1":{
 			"label" : "LER CVL1",
 			"urls" : {},
 			"color": {
@@ -291,7 +291,7 @@
 			}
 		},
 
-		"LGV-BRE0":{
+		"LGV_BRE0":{
 			"label" : "LGV BRE0",
 			"urls" : {},
 			"color": {
@@ -313,7 +313,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-BRE1":{
+		"LGV_BRE1":{
 			"label" : "LGV BRE1",
 			"urls" : {},
 			"color": {
@@ -335,7 +335,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-BRE2":{
+		"LGV_BRE2":{
 			"label" : "LGV BRE2",
 			"urls" : {},
 			"color": {
@@ -354,7 +354,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-BRE3":{
+		"LGV_BRE3":{
 			"label" : "LGV BRE3",
 			"urls" : {},
 			"color": {
@@ -371,7 +371,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-FR4":{
+		"LGV_FR4":{
 			"label" : "LGV FR4",
 			"urls" : {},
 			"color": {
@@ -399,7 +399,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-FR7":{
+		"LGV_FR7":{
 			"label" : "LGV FR7",
 			"urls" : {},
 			"color": {
@@ -421,7 +421,7 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-FR8":{
+		"LGV_FR8":{
 			"label" : "LGV FR8",
 			"urls" : {},
 			"color": {
@@ -443,8 +443,8 @@
 				"default-r": "~default-a"
 			}
 		},
-		"LGV-FR9":{
-			"label" : "LGV-FR9",
+		"LGV_FR9":{
+			"label" : "LGV_FR9",
 			"urls" : {},
 			"color": {
 				"default": "#BB0C64",

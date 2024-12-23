@@ -366,7 +366,7 @@ class SVG_Map {
 	* @returns {fabric.Object[]}  The list of objects that match the conditions
 	* @protected
 	*/
-	_Find_Map_Objs_By_Id(id, exact_Match, obj_type = undefined)  {
+	_Find_Map_Objs_By_Id(id, exact_Match = false, obj_type = undefined)  {
 		let result_list = [];
 		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'id', id, result_list, exact_Match);
 		if (obj_type !== undefined) {
@@ -721,12 +721,14 @@ class SVG_Map {
 			if (obj.type.includes('group'))
 				this.#Traverse_All_Canvas_Objects(obj.getObjects(), attributeName, attributeValue, result, fullMatch);
 			else {
-				if (fullMatch)
+				if (fullMatch) {
 					if (obj[attributeName] === attributeValue)
 						result.push(obj);
-				else 
+				}
+				else {
 					if (obj[attributeName].includes(attributeValue))
 						result.push(obj);
+				}
 			}
 		}
 	}

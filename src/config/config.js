@@ -127,4 +127,9 @@ export const Network_Config = {
    * When the user select 
    */
   COLOR_ANIMATION_TIME : 150,
+
+  /**
+   * Color to use when a line is disabled
+   */
+  DISABLE_ELEMENT_COLOR: '#CECECE'
 }
