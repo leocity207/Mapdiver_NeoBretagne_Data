@@ -74,14 +74,20 @@ class Network_Map extends SVG_Map {
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);
 		}
+
+		let to_be_deactivated = this.Find_Map_Objs_By_Classname("event-disable");
+		for (let obj of to_be_deactivated) {
+			obj.evented = false; // Disable events for the object
+		}
+		
 	}
 
-	#Change_Obj_Color = (obj, color) => {
+	#Change_Obj_Color = (obj, color, target = 'stroke') => {
 		let that = this;
 		if(this.config.HARD_ANIMATION_TRANSITION)
-			obj.set('stroke', color)
+			obj.set(target, color)
 		else
-			obj.animate("stroke", color, {
+			obj.animate(target, color, {
 				"duration": this.config.COLOR_ANIMATION_TIME,
 				onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
 			});
@@ -106,24 +112,15 @@ class Network_Map extends SVG_Map {
 			this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
 
 		// Handle labels that should be disabled
-		let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false, 'path');
-		for (const obj of line_labels) {
-			if (obj.id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`) === -1) {
-				const cid = this.#Find_Track_Code_In_Id(obj.id);
-				const cld = this.#Find_Line_Data_By_Id(cid);
-				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill'));
-				if (cid.color === obj_fill)
-					this.#Change_Obj_Color(obj, this.network_config.DISABLE_ELEMENT_COLOR);
-			}
-		}
+		let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
+		for (const obj of line_labels)
+			if (obj.id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`) === -1)
+				this.#Change_Obj_Color(obj, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
 
 		// Handle the label that should be shown
 		const specific_line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`, false);
-		for (const obj of specific_line_labels) {
-			let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) 
-			if (line_data.color[this.selected_color] === obj_fill || obj_fill === this.DISABLE_ELEMENT_COLOR)
-				this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
-		}
+		for (const obj of specific_line_labels) 
+				this.#Change_Obj_Color(obj, line_data.color[this.selected_color],'fill');
 		this.fabric_canvas.requestRenderAll();
 	}
 
