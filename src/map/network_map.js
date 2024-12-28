@@ -82,6 +82,12 @@ class Network_Map extends SVG_Map {
 		
 	}
 
+	/** 
+	* Change the colore of the 'obj' to 'color' for the 'target' property
+	* @param obj the object you want to change the color 
+	* @param color the color in hexadecimal like #FFFFFF
+	* @param target the target property of the object you want to change its color (can be 'strock' or 'fill')
+	*/
 	#Change_Obj_Color = (obj, color, target = 'stroke') => {
 		let that = this;
 		if(this.config.HARD_ANIMATION_TRANSITION)
@@ -95,57 +101,55 @@ class Network_Map extends SVG_Map {
 
 	/** 
 	* disable all other lines, mark the line with the line color handle labels too
-	* @param line_code The code of the line to show
+	* @param line_codes List of line Codes for exmple [LER_BRE01,LGV_BRE03]
 	*/
-	Highlight_Line = (line_code) => {
-		if(this.config.DEBUG) console.log('Highlight_Line called');
-		// Handle all other track/Line to disable them 
-		let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
-		for (const obj of tracks) 
-			if (obj.id.indexOf(this.network_config.TRACK_PREFIX_ID + `${line_code}`) === -1) 
-				this.#Change_Obj_Color(obj, this.network_config.DISABLE_ELEMENT_COLOR);
-
-		// Chnage the color of all the related selected tracks
-		const specific_tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID + `${line_code}`, false);
-		const line_data = this.#Find_Line_Data_By_Id(line_code)
-		for (const obj of specific_tracks)
-			this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
-
-		// Handle labels that should be disabled
-		let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
-		for (const obj of line_labels)
-			if (obj.id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`) === -1)
-				this.#Change_Obj_Color(obj, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
-
-		// Handle the label that should be shown
-		const specific_line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID + `${line_code}`, false);
-		for (const obj of specific_line_labels) 
-				this.#Change_Obj_Color(obj, line_data.color[this.selected_color],'fill');
-		this.fabric_canvas.requestRenderAll();
-	}
+	Highlight_Lines = (line_codes) => {
+	    if (this.config.DEBUG) console.log('Highlight_Lines called');
+	
+	    // Prepare sets for objects that need to be highlighted
+	    const Tracks_to_higlight = new Set(line_codes.map(code => `${this.network_config.TRACK_PREFIX_ID}${code}`));
+	    const labels_to_higlight = new Set(line_codes.map(code => `${this.network_config.LINE_LABEL_PREFIX_ID}${code}`));
+	
+	    // Precompute colors for each line code
+	    const line_colors = {};
+	    line_codes.forEach(code => {
+	        const line_data = this.#Find_Line_Data_By_Id(code);
+	        if (line_data) {
+	            line_colors[`${this.network_config.TRACK_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+	            line_colors[`${this.network_config.LINE_LABEL_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+	        }
+			else
+				throw Error(`Code was not found inside the list: ${code}`);
+	    });
+	
+	    // Get tracks and labels separately
+	    const tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
+	    const labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
+	
+	    // Process tracks
+	    tracks.forEach(track => {
+	        if (Tracks_to_higlight.has(track.id)) 
+	            this.#Change_Obj_Color(track, line_colors[track.id]);
+	        else 
+	            this.#Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
+	    });
+	
+	    // Process labels
+	    labels.forEach(label => {
+	        if (labels_to_higlight.has(label.id))
+	            this.#Change_Obj_Color(label, line_colors[label.id], 'fill');
+	        else
+	            this.#Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
+	    });
+		
+	    this.fabric_canvas.requestRenderAll();
+	};
 
 	/**
 	 * revert all line marking to the original color
 	 */
 	Reset_Line_Highlight = () => {
-		if(this.config.DEBUG) console.log('Reset_Line_Highlight called');
-		// Tracks
-		let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
-		for (let obj of tracks) {
-			const line_code = this.#Find_Track_Code_In_Id(obj.id)
-			const line_data = this.#Find_Line_Data_By_Id(line_code)
-			this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
-		}
-		// Labels
-		let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false, 'path');
-		for (const obj of line_labels) {
-			const line_code = this.#Find_Track_Code_In_Id(obj.id)
-			const line_data = this.#Find_Line_Data_By_Id(line_code)
-			let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // After animation the values are in rgba, convert it for compare
-			if (this.network_configDISABLE_ELEMENT_COLOR === obj_fill)
-				this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
-		}
-		this.fabric_canvas.requestRenderAll()
+		Highlight_Lines([]);
 	}
 
 
@@ -154,219 +158,10 @@ class Network_Map extends SVG_Map {
 	 * highlight all line part(s) that are in connection with the to station.
 	 * We can actually highlight the whole line and do not have to search line parts, because there is no destination given.
 	 */
-	Highlight_All_From_Station_Lines = () => {
+	Highlight_All_Lines_At_Station = (station_code) => {
 		// get all line names, first in an array, after make a unique set
-		let that = this
-		let lines_arr = []
-		for (const entry of Object.entries(this.from_station_origins_json.connected_stations))
-			for (const h_entry of Object.entries(entry[1].track_highlights))
-				lines_arr.push(h_entry[0])
-
-		const lines = [...new Set(lines_arr)]
-		// handle tracks
-		let tracks = this._Find_Map_Objs_By_Id(this.network.TRACK_PREFIX_ID);
-		for (let obj of tracks) { // disable all that are not in the lines array, for color setting without animation this would not be needed
-			let disable = true
-			for (const line_code of lines) { // extra for loop for animate cycle
-				if (obj.id.indexOf(this.network.TRACK_PREFIX_ID + `-${line_code}`) !== -1) {
-					disable = false
-					break
-				}
-			}
-			if (disable) 
-				this.#Change_Obj_Color(obj, this.DISABLE_ELEMENT_COLOR);
-		}
-		for (const line_code of lines) {
-			const specific_tracks = this._Find_Map_Objs_By_Id(this.network.TRACK_PREFIX_ID + `${line_code}`);
-			const line_data = this.#Find_Line_Data_By_Id(line_code)
-			for (let obj of specific_tracks)
-				this.#Change_Obj_Color(obj, line_data.color[this.selected_color]);
-		}
-		// handle labels
-		let line_labels = this._Find_Map_Objs_By_Id(this.network.LINE_LABEL_PREFIX_ID, 'path');
-		for (const obj of line_labels) { // disable all that are not in the lines array, for color setting without animation this would not be needed
-			let disable = true
-			for (const line_code of lines) { // extra for loop for animate cycle
-				if (obj.id.indexOf(this.network.LINE_LABEL_PREFIX_ID + `${line_code}_`) !== -1) {
-					disable = false
-					break
-				}
-			}
-			if (disable) {
-				const cid = this.#Find_Track_Code_In_Id(obj.id)
-				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
-				if (cld.color === obj_fill) {
-					if(this.config.HARD_ANIMATION_TRANSITION)
-						obj.set('fill', DISABLE_ELEMENT_COLOR);
-					else
-						obj.animate("fill", DISABLE_ELEMENT_COLOR, {
-							"duration": this.config.COLOR_ANIMATION_TIME,
-							onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-						});
-				}
-			}
-		}
-		for (const line_code of lines) {
-			const spezific_line_labels = this._Find_Map_Objs_By_Id(this.network.LINE_LABEL_PREFIX_ID + `${line_code}_`)
-			for (const obj of spezific_line_labels) {
-				const cid = this.#Find_Track_Code_In_Id(obj.id)
-				const cld = this.#Find_Line_Data_By_Id(cid)
-				let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
-				if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
-					if(this.config.HARD_ANIMATION_TRANSITION)
-						obj.set('fill', cld.color)
-					else
-						obj.animate("fill", cld.color, {
-							"duration": this.config.COLOR_ANIMATION_TIME,
-							onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-						});
-				}
-			}
-		}
-	}
-
-	/**
-	 * highlight all line part(s) that are in connection with the to and from station disable the rest. If there is no connection, disable all lines and labels
-	 * this function might need few tweeking
-	 * @param from_station_code starting station point
-	 * @param to_station_code   end station code
-	 */
-	Highlight_All_From_To_Station_Lines = (from_station_code, to_station_code) => {
-		let that = this
-		let tmp_lines_obj = {}
-		let anim_line_codes_arr = [] // used for animation check only
-
-		
-		const to_connected_stations = this.from_station_origins_json.connected_stations[to_station_code]
-		if(this.config.DEBUG) console.log('to_connected_stations', to_connected_stations);
-		if(from_connected_stations !== undefined && to_connected_stations !== undefined) {
-			if (to_connected_stations !== undefined) {
-				for (const [line_code, entries] of Object.entries(to_connected_stations.track_highlights)) {
-					if (!(line_code in tmp_lines_obj))
-						tmp_lines_obj[line_code] = []
-					tmp_lines_obj[line_code].push(...entries)
-					anim_line_codes_arr.push(...entries)
-				}
-				// make unique sets
-				let lines_obj = {}
-				for (const [line_code, entries] of Object.entries(tmp_lines_obj)) {
-					if (!(line_code in lines_obj))
-						lines_obj[line_code] = [...new Set(entries)]
-				}
-				const anim_line_codes = [...new Set(anim_line_codes_arr)] // only used for animation
-				// tracks
-				let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID);
-				for (let obj of tracks) { // disable all
-					let disable = true
-					for (const line_code of anim_line_codes) { // extra for loop for animate cycle
-						if (obj.id === this.network_config.TRACK_PREFIX_ID + `${line_code}`) {
-							disable = false
-							break
-						}
-					}
-					if (disable) {
-						if(this.config.HARD_ANIMATION_TRANSITION)
-							obj.set('stroke', DISABLE_ELEMENT_COLOR);
-						else
-							obj.animate("stroke", DISABLE_ELEMENT_COLOR, {
-								"duration": this.config.COLOR_ANIMATION_TIME,
-								onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-							});
-					}
-				}
-				for (const [line_code, lines] of Object.entries(lines_obj)) {
-					const line_data = this.#Find_Line_Data_By_Id(line_code)
-					for (const full_line_code of lines) {
-						const specific_track = tracks.find(x => x.id === this.network_config.TRACK_PREFIX_ID + `${full_line_code}`);
-						if (specific_track !== undefined) {
-							if(this.config.HARD_ANIMATION_TRANSITION)
-								specific_track.set('stroke', line_data.color)
-							else
-								specific_track.animate("stroke", line_data.color, {
-									"duration": this.config.COLOR_ANIMATION_TIME,
-									onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-								});
-						}
-					}
-				}
-				// labels
-				let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, 'path');
-				for (const obj of line_labels) {
-					let disable = true
-					for (const line_code of anim_line_codes) { // extra for loop for animate cycle
-						if (obj.id.indexOf(`line_label_${line_code}`) !== -1) {
-							disable = false
-							break
-						}
-					}
-					if (disable) {
-						const cid = this.#Find_Track_Code_In_Id(obj.id)
-						const cld = this.#Find_Line_Data_By_Id(cid)
-						let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
-						if (cld.color === obj_fill) {
-							if(this.config.HARD_ANIMATION_TRANSITION)
-								obj.set('fill', DISABLE_ELEMENT_COLOR);
-							else
-								obj.animate("fill", DISABLE_ELEMENT_COLOR, {
-									"duration": this.config.COLOR_ANIMATION_TIME,
-									onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-								});
-						}
-					}
-				}
-				for (const entry of Object.entries(lines_obj)) {
-					for (const full_line_code of entry[1]) {
-						const spezific_line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID + `${full_line_code}`)
-						for (const obj of spezific_line_labels) {
-							const cid = this.#Find_Track_Code_In_Id(obj.id)
-							const cld = this.#Find_Line_Data_By_Id(cid)
-							let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
-							if (cld.color === obj_fill || obj_fill === DISABLE_ELEMENT_COLOR) {
-								if(this.config.HARD_ANIMATION_TRANSITION)
-									obj.set('fill', cld.color)
-								else
-									obj.animate("fill", cld.color, {
-										"duration": this.config.COLOR_ANIMATION_TIME,
-										onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-									});
-							}
-						}
-					}
-				}
-			} else {
-				// tracks
-				let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID);
-				for (const obj of tracks) { // disable all
-					if(this.config.HARD_ANIMATION_TRANSITION)
-						obj.set('stroke', DISABLE_ELEMENT_COLOR);
-					else
-						obj.animate("stroke", DISABLE_ELEMENT_COLOR, {
-							"duration": this.config.COLOR_ANIMATION_TIME,
-							onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-						});
-				}
-				// labels
-				let line_labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, 'path');
-				for (const obj of line_labels) {
-					const cid = this.#Find_Track_Code_In_Id(obj.id)
-					const cld = this.#Find_Line_Data_By_Id(cid)
-					let obj_fill = Utils.Rgba_To_Hex(obj.get('fill')) // after animation the values are in rgba, convert it for compare
-					if (cld.color === obj_fill) {
-						if(this.config.HARD_ANIMATION_TRANSITION)
-							obj.set('fill', DISABLE_ELEMENT_COLOR);
-						else
-							obj.animate("fill", DISABLE_ELEMENT_COLOR, {
-								"duration": this.config.COLOR_ANIMATION_TIME,
-								onChange: that.fabric_canvas.requestRenderAll.bind(that.fabric_canvas)
-							});
-					}
-				}
-				if(this.config.DEBUG) console.log('from_connected_stations or to_connected_stations is undefined');
-				if(this.config.DEBUG) console.log('from_connected_stations: ',from_connected_stations);
-				if(this.config.DEBUG) console.log('to_connected_stations: ',to_connected_stations);
-			}
-		}
+		let lines = this.stations[station_code].lines;
+		this.Highlight_Lines(lines)
 	}
 
 	/**
