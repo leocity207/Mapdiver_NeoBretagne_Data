@@ -16,33 +16,24 @@ class Sticky_Header extends HTMLElement {
     Init() {
 
         this.attachShadow({ mode: 'open' });
+        const styleLink = document.createElement('link');
+		styleLink.setAttribute('rel', 'stylesheet');
+		styleLink.setAttribute('href', 'style/sticky-header.css');
+		this.shadowRoot.appendChild(styleLink);
 
         const header = document.createElement('header');
         header.setAttribute('id', 'sticky-header');
-        header.style.position = 'sticky';
-        header.style.top = '0';
-        header.style.zIndex = '1000';
-        header.style.backgroundColor = '#333';
-        header.style.color = 'white';
-        header.style.padding = '10px 20px';
-        header.style.display = 'flex';
-        header.style.justifyContent = 'space-between';
-        header.style.alignItems = 'center';
-        header.style.boxShadow = '0 4px 2px -2px gray';
 
         // Hamburger menu
         const hamburger = document.createElement('div');
         hamburger.setAttribute('id', 'hamburger');
-        hamburger.style.cursor = 'pointer';
         hamburger.innerHTML = '&#9776;'; // Unicode for hamburger icon
 
         // Search bar
         const searchBar = document.createElement('input');
         searchBar.setAttribute('id', 'search-bar');
         searchBar.setAttribute('placeholder', 'Search...');
-        searchBar.style.padding = '5px';
-        searchBar.style.fontSize = '16px';
-        searchBar.style.borderRadius = '4px';
+
 
         // Logo
         const logo = document.createElement('div');

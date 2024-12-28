@@ -1,0 +1,30 @@
+#sticky-header {
+    position : sticky;
+    top : 0;
+    z-Index : 1000;
+    background-color : #F5F5F5;
+    color : white;
+    padding : 10px 20px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    box-shadow : 0 4px 2px -2px gray;
+}
+
+
+#hamburger{
+    cursor : pointer;
+    font-size : xx-large;
+    color: black
+}
+
+#search-bar{
+    padding : 5px;
+    font-size : larger;
+    border-radius : 4px;
+}
+
+#logo {
+    color: black;
+}
+
