@@ -1,6 +1,6 @@
 import Page from "./page.js";
 import SVG_Map from "../map/svg_map.js";
-import Config from "../config/config.js"
+import {Config} from "../config/config.js"
 
 /**
  * Map_App are object that define a node containing a SVG_Map for manipulation and display
