@@ -128,16 +128,18 @@ class Network_Map extends SVG_Map {
 	
 	    // Process tracks
 	    tracks.forEach(track => {
-	        if (Tracks_to_higlight.has(track.id)) 
-	            this.#Change_Obj_Color(track, line_colors[track.id]);
+			const track_id_first_part = Utils.Get_First_Part(track.id)
+	        if (Tracks_to_higlight.has(track_id_first_part)) 
+	            this.#Change_Obj_Color(track, line_colors[track_id_first_part]);
 	        else 
 	            this.#Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
 	    });
 	
 	    // Process labels
 	    labels.forEach(label => {
-	        if (labels_to_higlight.has(label.id))
-	            this.#Change_Obj_Color(label, line_colors[label.id], 'fill');
+			const label_id_first_part = Utils.Get_First_Part(label.id);
+	        if (labels_to_higlight.has(label_id_first_part))
+	            this.#Change_Obj_Color(label, line_colors[label_id_first_part], 'fill');
 	        else
 	            this.#Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
 	    });

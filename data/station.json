@@ -70,7 +70,7 @@
 		},
 		"FR_44007_0":{
 			"label": "Avessac Redon TGV",
-			"lines" : ["LER_BRE3","LGV_BRE3","LGV_FR4","LGV_BRE3","LGV_BRE2"]
+			"lines" : ["LER_BRE3","LGV_BRE3","LER_BRE2","LGV_FR4","LGV_BRE3","LGV_BRE2"]
 		},
 		"FR_29265_0":{
 			"label": "Morlaix Sainte-Sève TGV",
@@ -138,7 +138,7 @@
 		},
 		"FR_29232_0":{
 			"label": "Quimper",
-			"lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1"]
+			"lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1","LER_BRE1"]
 		},
 		"FR_56007_0":{
 			"label": "Auray",

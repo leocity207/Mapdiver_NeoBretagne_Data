@@ -65,6 +65,32 @@ class Utils {
 			throw error; // Re-throw the error for further handling
 		}
 	}
+
+	/**
+	 * Extracts the first part of a string that consists of two sections separated by a hyphen (`-`).
+	 * If the input contains more than two sections (separated by hyphens), only the first two sections are returned.
+	 * If the input contains only one section or is already in the form of `X-X`, it returns the input as is.
+	 *
+	 * @param {string} input - The input string to process. The string should be in the form of `X-X` or `X-X-X` (or similar).
+	 * @returns {string} The first two sections of the input string, separated by a hyphen, or the input string itself if no hyphen is present.
+	 *
+	 * @example
+	 * getFirstPart("abc-def");
+	 * // Returns: "abc-def"
+	 *
+	 * @example
+	 * getFirstPart("abc-def-ghi");
+	 * // Returns: "abc-def"
+	 *
+	 * @example
+	 * getFirstPart("single-part");
+	 * // Returns: "single-part"
+	 */
+	static Get_First_Part = function(input) {
+		const match = input.match(/^([^-]+-[^-]+)/);
+		return match ? match[0] : input;
+	}
+  
 }
 
 export default Utils
