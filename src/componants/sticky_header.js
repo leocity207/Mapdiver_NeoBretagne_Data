@@ -27,7 +27,7 @@ class Sticky_Header extends HTMLElement {
         // Hamburger menu
         const hamburger = document.createElement('div');
         hamburger.setAttribute('id', 'hamburger');
-        hamburger.innerHTML = '&#9776;'; // Unicode for hamburger icon
+        hamburger.innerHTML = '<div class="bar bar1"></div><div class="bar bar2"></div><div class="bar bar3"></div>'; // Unicode for hamburger icon
 
         // Search bar
         const searchBar = document.createElement('input');
@@ -36,10 +36,10 @@ class Sticky_Header extends HTMLElement {
 
 
         // Logo
-        const logo = document.createElement('div');
-        logo.setAttribute('id', 'logo');
-        logo.innerText = 'Logo';
-        logo.style.fontSize = '20px';
+        const logo = document.createElement('img');
+        logo.setAttribute('src', 'image/logo.svg');  // Update with the correct path to your logo.svg
+        logo.setAttribute('alt', 'Logo');
+        logo.style.height = '40px';
 
         // Append elements to the header
         header.appendChild(hamburger);

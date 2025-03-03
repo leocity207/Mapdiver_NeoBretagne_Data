@@ -10,7 +10,7 @@
 		},
 		"FR_35238_0":{
 			"label": "Rennes",
-			"lines" : ["LER_BRE0","LER_NOR2","LER_BRE2","LER_BRE3","LGV_BRE0","LER_BRE4","LGV_BRE3","LGV_FR4"]
+			"lines" : ["LER_BRE0","LER_NOR2","LER_BRE2","LER_BRE3","LGV_BRE0","LER_BRE4","LGV_BRE3","LGV_FR4","LGV_FR8"]
 		},
 		"FR_28085_0":{
 			"label": "Chartres",
