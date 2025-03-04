@@ -45,6 +45,7 @@ class Map_Page extends Page {
 		// keep a reference to the container and the canvas
 		this.map_container = map_container;
 		this.map_canvas = map_canvas;
+		this.sticky_header = sticky_header;
 	}
 
 	/**

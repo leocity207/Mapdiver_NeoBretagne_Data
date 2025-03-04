@@ -60,6 +60,9 @@ class Network_Map_Page extends Map_Page {
 		await this.map.Setup("Fr", this.map_canvas);
 		this.network_data = await Utils.Fetch_Resource("dyn/network_data")
 		this.map.Setup_Mouse_Handlers(this.network_data.Lines, this.network_data.Stations);
+
+		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
+		this.sticky_header.Autocomplete(labels);
 	}
 
 	/**
