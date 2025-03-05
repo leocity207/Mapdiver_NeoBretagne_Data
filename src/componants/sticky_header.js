@@ -34,7 +34,7 @@ class Sticky_Header extends HTMLElement {
 		search_Bar_Container.setAttribute('class', 'autocomplete');
 		this.searchBar = document.createElement('input');
 		this.searchBar.setAttribute('id', 'search-bar');
-		this.searchBar.setAttribute('placeholder', 'Search...');
+		this.searchBar.setAttribute('placeholder', 'Recherche par ligne/gare');
 		search_Bar_Container.appendChild(this.searchBar);
 
 
@@ -98,7 +98,12 @@ class Sticky_Header extends HTMLElement {
 				autocomplete_element.parentNode.removeChild(autocomplete_element);
 	}
 
-	Autocomplete( match_list) {
+	/**
+	 * 
+	 * @param {List<String>} match_list the list of choice
+	 * @param {Function} On_Choice function when the choice is made
+	 */
+	Autocomplete(match_list,On_Choice) {
 		/*the autocomplete function takes two arguments,
 		the text field element and an listay of possible autocompleted values:*/
 		var currentFocus;
@@ -129,11 +134,12 @@ class Sticky_Header extends HTMLElement {
 				element_container.innerHTML += "<input type='hidden' value='" + match_element + "'>";
 				/*execute a function when someone clicks on the item value (DIV element):*/
 				element_container.addEventListener("click", function(e) {
-				/*insert the value for the autocomplete text field:*/
-				that.searchBar.value = this.getElementsByTagName("input")[0].value;
+					/*insert the value for the autocomplete text field:*/
+					that.searchBar.value = "";
 					/*close the list of autocompleted values,
 					(or any other open lists of autocompleted values:*/
 					that.Close_All_Lists();
+					On_Choice(this.getElementsByTagName("input")[0].value);
 				});
 				autocomplete_container.appendChild(element_container);
 			  }

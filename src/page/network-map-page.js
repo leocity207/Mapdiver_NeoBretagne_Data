@@ -20,7 +20,7 @@ class Network_Map_Page extends Map_Page {
 			this.map.Reset_All_Highlight_Station();
 		this.map.Highlight_All_Lines_At_Station(event.detail);
 		if(this.panel_detail_is_open) 
-			this.map.Zoom_Highlighted_Stations(event.detail);
+			this.map.Zoom_Highlighted_Stations(event.detail);I
 	}
 
 	On_Line_CLicked(event) {
@@ -39,6 +39,17 @@ class Network_Map_Page extends Map_Page {
 			this.map.Reset_Line_Highlight();
 		} else if(prev_event.type === 'line') 
 			this.map.Reset_Line_Highlight();
+	}
+
+	On_Selected_By_Label(label) {
+		let solutionKey = Object.keys(this.network_data.Stations).find(key => this.network_data.Stations[key].label === label);
+		if(solutionKey)
+			return this.On_Station_CLicked({type: 'station', detail: solutionKey});
+		solutionKey = Object.keys(this.network_data.Lines).find(key => this.network_data.Lines[key].label === label);
+		if(solutionKey)
+			return this.On_Line_CLicked({type: 'line', detail: solutionKey})
+		if(!solutionKey)
+			return console.error("No solution found for label " + label);
 	}
 	/**
 	 * Asynchronous function that initialize the map. the function resolve when the SVG is loaded and displayed inside the current node
@@ -62,7 +73,7 @@ class Network_Map_Page extends Map_Page {
 		this.map.Setup_Mouse_Handlers(this.network_data.Lines, this.network_data.Stations);
 
 		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
-		this.sticky_header.Autocomplete(labels);
+		this.sticky_header.Autocomplete(labels,this.On_Selected_By_Label.bind(this));
 	}
 
 	/**
