@@ -20,7 +20,7 @@ class Network_Map_Page extends Map_Page {
 			this.map.Reset_All_Highlight_Station();
 		this.map.Highlight_All_Lines_At_Station(event.detail);
 		if(this.panel_detail_is_open) 
-			this.map.Zoom_Highlighted_Stations(event.detail);I
+			this.map.Zoom_Highlighted_Stations(event.detail);
 	}
 
 	On_Line_CLicked(event) {

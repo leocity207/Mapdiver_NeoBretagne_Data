@@ -27,7 +27,14 @@ class Sticky_Header extends HTMLElement {
 		// Hamburger menu
 		const hamburger = document.createElement('div');
 		hamburger.setAttribute('id', 'hamburger');
-		hamburger.innerHTML = '<div class="bar bar1"></div><div class="bar bar2"></div><div class="bar bar3"></div>'; // Unicode for hamburger icon
+		hamburger.innerHTML = '<div class="bar bar1"></div>\
+							   <div class="bar bar2"></div>\
+							   <div class="bar bar3"></div>';
+
+		// Toggle Sidebar on Click
+		hamburger.addEventListener('click', () => {
+			hamburger.classList.toggle('active');
+		});
 
 		// Search bar
 		const search_Bar_Container = document.createElement('div');
