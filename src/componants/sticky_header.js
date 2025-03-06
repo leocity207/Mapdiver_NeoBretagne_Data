@@ -3,14 +3,14 @@ class Sticky_Header extends HTMLElement {
 		super();
 	}
 
-	connectedCallback() {
-		//this.render();
-	}
-
 	static Create() {
 		let sticky_header = document.createElement('sticky-header');
 		sticky_header.Init();
 		return sticky_header;
+	}
+
+	Add_Callback_Hamburger(callback) {
+		this.callback_hamburger = callback;
 	}
 
 	Init() {
@@ -32,8 +32,10 @@ class Sticky_Header extends HTMLElement {
 							   <div class="bar bar3"></div>';
 
 		// Toggle Sidebar on Click
+		let that = this;
 		hamburger.addEventListener('click', () => {
 			hamburger.classList.toggle('active');
+			if(this.callback_hamburger) this.callback_hamburger();
 		});
 
 		// Search bar
