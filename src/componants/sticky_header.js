@@ -3,16 +3,19 @@ class Sticky_Header extends HTMLElement {
 		super();
 	}
 
+	/**
+	 * Create the Sticky header object and initialize it
+	 * @returns {Sticky_Header}
+	 */
 	static Create() {
 		let sticky_header = document.createElement('sticky-header');
 		sticky_header.Init();
 		return sticky_header;
 	}
 
-	Add_Callback_Hamburger(callback) {
-		this.callback_hamburger = callback;
-	}
-
+	/**
+	 * Initialize the object, should not be used by itself
+	 */
 	Init() {
 
 		this.attachShadow({ mode: 'open' });
@@ -21,8 +24,10 @@ class Sticky_Header extends HTMLElement {
 		styleLink.setAttribute('href', 'style/sticky-header.css');
 		this.shadowRoot.appendChild(styleLink);
 
+		// Create the header
 		const header = document.createElement('header');
 		header.setAttribute('id', 'sticky-header');
+		this.shadowRoot.appendChild(header);
 
 		// Hamburger menu
 		const hamburger = document.createElement('div');
@@ -46,37 +51,28 @@ class Sticky_Header extends HTMLElement {
 		this.searchBar.setAttribute('placeholder', 'Recherche par ligne/gare');
 		search_Bar_Container.appendChild(this.searchBar);
 
-
 		// Logo
 		const logo = document.createElement('img');
 		logo.setAttribute('src', 'image/logo.svg');  // Update with the correct path to your logo.svg
-		logo.setAttribute('alt', 'Logo');
-		logo.style.height = '40px';
 
 		// Append elements to the header
 		header.appendChild(hamburger);
 		header.appendChild(search_Bar_Container);
 		header.appendChild(logo);
+	}
 
-		// Add the header to the shadow DOM
-		this.shadowRoot.appendChild(header);
-
-		// Dispatch custom event on hamburger click
-		hamburger.addEventListener('click', () => {
-			const event = new CustomEvent('togglePanel', {
-				detail: { action: 'toggle' },
-				bubbles: true, // Allow event to bubble up the DOM
-				composed: true // Allow the event to pass through shadow DOM boundaries
-			});
-			this.dispatchEvent(event);
-		});
+	/**
+	 * add a callback to the hamburger menu. when the hamberger menu is clicked the callback will be called
+	 * @param {Function} callback to be called when the hamberger menu is clicked
+	 */
+	Add_Callback_Hamburger(callback) {
+		this.callback_hamburger = callback;
 	}
 
 	/**
 	 * function to remove the "active" class from all autocomplete items:
 	 * @param {List<Node>} nodes
-	 */
-	//  
+	*/  
 	Remove_Active(nodes) {
 		for (let node of nodes)
 			node.classList.remove("autocomplete-active");

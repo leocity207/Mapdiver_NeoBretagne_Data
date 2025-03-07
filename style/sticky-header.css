@@ -143,6 +143,7 @@ color: #ffffff;
 /**
  * Logo
 **/
-#logo {
+img {
     color: black;
+    height: 40px;
 }
