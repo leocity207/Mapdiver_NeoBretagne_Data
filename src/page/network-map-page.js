@@ -9,8 +9,6 @@ import { Config, Network_Config} from "../config/config.js"
  */
 class Network_Map_Page extends Map_Page {
 
-	////////
-	
 	constructor() {
 		super();
 	}
@@ -40,6 +38,17 @@ class Network_Map_Page extends Map_Page {
 		} else if(prev_event.type === 'line') 
 			this.map.Reset_Line_Highlight();
 	}
+
+	On_Selected_By_Label(label) {
+		let solutionKey = Object.keys(this.network_data.Stations).find(key => this.network_data.Stations[key].label === label);
+		if(solutionKey)
+			return this.On_Station_CLicked({type: 'station', detail: solutionKey});
+		solutionKey = Object.keys(this.network_data.Lines).find(key => this.network_data.Lines[key].label === label);
+		if(solutionKey)
+			return this.On_Line_CLicked({type: 'line', detail: solutionKey})
+		if(!solutionKey)
+			return console.error("No solution found for label " + label);
+	}
 	/**
 	 * Asynchronous function that initialize the map. the function resolve when the SVG is loaded and displayed inside the current node
 	 */
@@ -60,6 +69,9 @@ class Network_Map_Page extends Map_Page {
 		await this.map.Setup("Fr", this.map_canvas);
 		this.network_data = await Utils.Fetch_Resource("dyn/network_data")
 		this.map.Setup_Mouse_Handlers(this.network_data.Lines, this.network_data.Stations);
+
+		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
+		this.sticky_header.Set_Autocomplete_List_Callbacks(labels,this.On_Selected_By_Label.bind(this));
 	}
 
 	/**

@@ -1,6 +1,7 @@
 import Page from "./page.js";
 import SVG_Map from "../map/svg_map.js";
 import {Config} from "../config/config.js"
+import Sticky_Header from "../components/sticky_header.js"
 
 /**
  * Map_App are object that define a node containing a SVG_Map for manipulation and display
@@ -26,6 +27,9 @@ class Map_Page extends Page {
 	Init() {
 		super.Init();
 
+		const sticky_header = Sticky_Header.Create();
+		this.shadowRoot.appendChild(sticky_header);
+
 		// create a container to hold the canvas
 		const map_container = document.createElement('div');
 		map_container.setAttribute('id', 'map-container');
@@ -41,6 +45,7 @@ class Map_Page extends Page {
 		// keep a reference to the container and the canvas
 		this.map_container = map_container;
 		this.map_canvas = map_canvas;
+		this.sticky_header = sticky_header;
 	}
 
 	/**
