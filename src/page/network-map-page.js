@@ -9,8 +9,6 @@ import { Config, Network_Config} from "../config/config.js"
  */
 class Network_Map_Page extends Map_Page {
 
-	////////
-	
 	constructor() {
 		super();
 	}
@@ -73,7 +71,7 @@ class Network_Map_Page extends Map_Page {
 		this.map.Setup_Mouse_Handlers(this.network_data.Lines, this.network_data.Stations);
 
 		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
-		this.sticky_header.Autocomplete(labels,this.On_Selected_By_Label.bind(this));
+		this.sticky_header.Set_Autocomplete_List_Callbacks(labels,this.On_Selected_By_Label.bind(this));
 	}
 
 	/**
