@@ -1,8 +1,6 @@
 class LeftPanel extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
-        this.panelVisible = false; // Start with panel hidden
     }
 
     connectedCallback() {
@@ -17,29 +15,24 @@ class LeftPanel extends HTMLElement {
 
     Init() {
         // Create the left panel
-        const leftPanel = document.createElement('div');
-        leftPanel.setAttribute('id', 'left-panel');
-        leftPanel.style.position = 'fixed';
-        leftPanel.style.left = '-250px'; // Start hidden
-        leftPanel.style.top = '0';
-        leftPanel.style.height = '100%';
-        leftPanel.style.width = '250px';
-        leftPanel.style.backgroundColor = '#333';
-        leftPanel.style.color = 'white';
-        leftPanel.style.transition = 'left 0.3s ease';
-        leftPanel.style.padding = '10px';
+        this.attachShadow({ mode: 'open' });
+        this.panel_visible = false; // Start with panel hidden
+        this.left_panel = document.createElement('div');
+        this.left_panel.classList.add('left-panel');
 
         // Add content to the left panel
-        leftPanel.innerHTML = `<h3>Menu</h3><p>Some options here.</p>`;
+        this.left_panel.innerHTML = '<h3>Menu</h3><p>Some options here.</p>';
 
         // Append the left panel to the shadow DOM
-        this.shadowRoot.appendChild(leftPanel);
+        this.shadowRoot.appendChild(left_panel);
     }
 
     togglePanel() {
-        const leftPanel = this.shadowRoot.querySelector('#left-panel');
-        this.panelVisible = !this.panelVisible;
-        leftPanel.style.left = this.panelVisible ? '0px' : '-250px';
+        this.panel_visible = !this.panel_visible;
+        if(this.panel_visible)
+            this.left_panel.classList.add("open");
+        else
+            this.left_panel.classList.remove("open");
     }
 }
 
