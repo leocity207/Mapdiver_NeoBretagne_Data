@@ -1,9 +1,15 @@
+import { Subject }  from "../../libraries/RxJS_wrapper.js";
+
 /**
  * Sticky Header
  * 
  * This class creates a sticky header that remains at the top of the page.
  */
 class Sticky_Header extends HTMLElement {
+
+	static subject_hamberger = new Subject();
+	static subject_autocomplete = new Subject();
+	
 	constructor() {
 		super();
 	}
@@ -42,7 +48,7 @@ class Sticky_Header extends HTMLElement {
 		
 		hamburger.addEventListener('click', () => {
 			hamburger.classList.toggle('active');
-			if (this.callback_hamburger) this.callback_hamburger();
+			subject_hamberger.next();
 		});
 
 		// Search bar
@@ -64,11 +70,11 @@ class Sticky_Header extends HTMLElement {
 	}
 
 	/**
-	 * Adds a callback function for the hamburger menu.
-	 * @param {Function} callback - Function to execute on click.
-	 */
-	Set_Hamburger_Click_Callback(callback) {
-		this.callback_hamburger = callback;
+	 * function to remove the "active" class from all autocomplete items:
+	 * @return {RxJS.Subject} the hamburger subject you can subscribe to
+	*/  
+	On_Hamberger_Clicked() {
+		return Sticky_Header.subject_hamberger;
 	}
 
 	/**
@@ -108,9 +114,9 @@ class Sticky_Header extends HTMLElement {
 	/**
 	 * Initializes autocomplete functionality by passing the list and callback when items is selected.
 	 * @param {Array<string>} match_list - List of suggestions.
-	 * @param {Function} on_choice - Callback when an item is selected.
+	* @return {RxjS.Subject} the autocomplete subject you can subscribe to
 	 */
-	Set_Autocomplete_List_Callbacks(match_list, on_choice) {
+	Set_Autocomplete_List(match_list) {
 		let current_focus;
 		let that = this;
 		
@@ -133,7 +139,7 @@ class Sticky_Header extends HTMLElement {
 					element_container.addEventListener("click", function () {
 						that.search_bar.value = "";
 						that.Close_All_Lists();
-						on_choice(this.getElementsByTagName("input")[0].value);
+						Sticky_Header.subject_autocomplete.next(this.getElementsByTagName("input")[0].value);
 					});
 					autocomplete_container.appendChild(element_container);
 				}
@@ -160,6 +166,8 @@ class Sticky_Header extends HTMLElement {
 		document.addEventListener("click", function (e) {
 			that.Close_All_Lists(e.target);
 		});
+
+		return Sticky_Header.subject_autocomplete;
 	}
 }
 
