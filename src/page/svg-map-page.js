@@ -2,6 +2,7 @@ import Page from "./page.js";
 import SVG_Map from "../map/svg_map.js";
 import {Config} from "../config/config.js"
 import Sticky_Header from "../components/sticky_header.js"
+import LeftPanel from "../components/left_panel.js"
 
 /**
  * Map_App are object that define a node containing a SVG_Map for manipulation and display
@@ -27,25 +28,23 @@ class Map_Page extends Page {
 	Init() {
 		super.Init();
 
-		const sticky_header = Sticky_Header.Create();
-		this.shadowRoot.appendChild(sticky_header);
+		this.sticky_header = Sticky_Header.Create();
+		this.shadowRoot.appendChild(this.sticky_header);
+
+		this.LeftPanel = LeftPanel.Create();
+		this.shadowRoot.appendChild(this.LeftPanel);
 
 		// create a container to hold the canvas
-		const map_container = document.createElement('div');
-		map_container.setAttribute('id', 'map-container');
+		this.map_container = document.createElement('div');
+		this.map_container.setAttribute('id', 'map-container');
 
 		// create a canvas inside the container
-		const map_canvas = document.createElement('canvas');
-		map_container.appendChild(map_canvas);
-		map_canvas.setAttribute('id', 'map-canvas');
+		this.map_canvas  = document.createElement('canvas');
+		this.map_container.appendChild(this.map_canvas);
+		this.map_canvas.setAttribute('id', 'map-canvas');
 
 		// add the container to the shadow root
-		this.shadowRoot.appendChild(map_container);
-
-		// keep a reference to the container and the canvas
-		this.map_container = map_container;
-		this.map_canvas = map_canvas;
-		this.sticky_header = sticky_header;
+		this.shadowRoot.appendChild(this.map_container);
 	}
 
 	/**

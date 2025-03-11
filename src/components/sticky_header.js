@@ -48,7 +48,7 @@ class Sticky_Header extends HTMLElement {
 		
 		hamburger.addEventListener('click', () => {
 			hamburger.classList.toggle('active');
-			subject_hamberger.next();
+			Sticky_Header.subject_hamberger.next();
 		});
 
 		// Search bar
@@ -73,7 +73,7 @@ class Sticky_Header extends HTMLElement {
 	 * function to remove the "active" class from all autocomplete items:
 	 * @return {RxJS.Subject} the hamburger subject you can subscribe to
 	*/  
-	On_Hamberger_Clicked() {
+	static On_Hamberger_Clicked() {
 		return Sticky_Header.subject_hamberger;
 	}
 
