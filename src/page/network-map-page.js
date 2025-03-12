@@ -2,6 +2,7 @@ import Network_Map from "../map/network_map.js";
 import Map_Page from "./svg-map-page.js";
 import Utils from "../utils/utils.js";
 import { Config, Network_Config} from "../config/config.js"
+import Switch_Event from "../components/switch.js";
 /**
  * Network_Map_Station define a node that contain a Network_Map object
  * 
@@ -71,7 +72,13 @@ class Network_Map_Page extends Map_Page {
 		this.map.Setup_Mouse_Handlers(this.network_data.Lines, this.network_data.Stations);
 
 		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
-		this.sticky_header.Set_Autocomplete_List(labels).subscribe(label => this.On_Selected_By_Label(label));;
+		this.sticky_header.Set_Autocomplete_List(labels).subscribe(label => this.On_Selected_By_Label(label));
+		Switch_Event.Get_Observable("color").subscribe((event) => {
+			if(event.state)
+				this.map.Change_Color("easy");
+			else
+				this.map.Change_Color("default");
+		});
 	}
 
 	/**

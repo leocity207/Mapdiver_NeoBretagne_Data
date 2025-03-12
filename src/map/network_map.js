@@ -99,6 +99,11 @@ class Network_Map extends SVG_Map {
 			});
 	}
 
+	Change_Color = (color) => {
+		this.selected_color = color;
+		this.Reset_Line_Highlight();
+	}
+
 	/** 
 	* disable all other lines, mark the line with the line color handle labels too
 	* @param line_codes List of line Codes for exmple [LER_BRE01,LGV_BRE03]
@@ -151,7 +156,7 @@ class Network_Map extends SVG_Map {
 	 * revert all line marking to the original color
 	 */
 	Reset_Line_Highlight = () => {
-		Highlight_Lines([]);
+		this.Highlight_Lines([]);
 	}
 
 
