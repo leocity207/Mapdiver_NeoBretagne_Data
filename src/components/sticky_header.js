@@ -1,177 +1,173 @@
-import { Subject }  from "../../libraries/RxJS_wrapper.js";
+import { Subject } from "../../libraries/RxJS_wrapper.js";
 
 /**
- * Sticky Header
+ * Sticky_Header
  * 
  * This class creates a sticky header that remains at the top of the page.
  */
 class Sticky_Header extends HTMLElement {
+    static subject_hamburger = new Subject();
+    static subject_autocomplete = new Subject();
 
-	static subject_hamberger = new Subject();
-	static subject_autocomplete = new Subject();
-	
-	constructor() {
-		super();
-	}
+    constructor() {
+        super();
+    }
 
-	/**
-	 * Factory constructor to create a Sticky_Header instance.
-	 * @returns {Sticky_Header}
-	 */
-	static Create() {
-		let sticky_header = document.createElement('sticky-header');
-		sticky_header.Init();
-		return sticky_header;
-	}
+    /**
+     * Creates and initializes a Sticky_Header instance.
+     * @returns {Sticky_Header} A new instance of Sticky_Header.
+     */
+    static Create() {
+        const sticky_header = document.createElement("sticky-header");
+        sticky_header.Init();
+        return sticky_header;
+    }
 
-	/**
-	 * Initializes the Sticky Header object.
-	 */
-	Init() {
-		this.attachShadow({ mode: 'open' });
-		const style_link = document.createElement('link');
-		style_link.setAttribute('rel', 'stylesheet');
-		style_link.setAttribute('href', 'style/sticky-header.css');
-		this.shadowRoot.appendChild(style_link);
+    /**
+     * Initializes the sticky header and its elements.
+     */
+    Init() {
+        this.attachShadow({ mode: "open" });
+        
+        const style_link = document.createElement("link");
+        style_link.setAttribute("rel", "stylesheet");
+        style_link.setAttribute("href", "style/sticky-header.css");
+        this.shadowRoot.appendChild(style_link);
 
-		// Create the header
-		const header = document.createElement('header');
-		header.setAttribute('id', 'sticky-header');
-		this.shadowRoot.appendChild(header);
+        const header = document.createElement("header");
+        header.setAttribute("id", "sticky-header");
+        this.shadowRoot.appendChild(header);
 
-		// Create the hamburger menu
-		const hamburger = document.createElement('div');
-		hamburger.setAttribute('id', 'hamburger');
-		hamburger.innerHTML = '<div class="bar bar1"></div>\
-							   <div class="bar bar2"></div>\
-							   <div class="bar bar3"></div>';
-		
-		hamburger.addEventListener('click', () => {
-			hamburger.classList.toggle('active');
-			Sticky_Header.subject_hamberger.next();
-		});
+        const hamburger = document.createElement("div");
+        hamburger.setAttribute("id", "hamburger");
+        hamburger.innerHTML = `
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        `;
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            Sticky_Header.subject_hamburger.next();
+        });
 
-		// Search bar
-		const search_bar_container = document.createElement('div');
-		search_bar_container.setAttribute('class', 'autocomplete');
-		this.search_bar = document.createElement('input');
-		this.search_bar.setAttribute('id', 'search-bar');
-		this.search_bar.setAttribute('placeholder', 'Recherche par ligne/gare');
-		search_bar_container.appendChild(this.search_bar);
+        const search_bar_container = document.createElement("div");
+        search_bar_container.setAttribute("class", "autocomplete");
+        this.search_bar = document.createElement("input");
+        this.search_bar.setAttribute("id", "search-bar");
+        this.search_bar.setAttribute("placeholder", "Recherche par ligne/gare");
+        search_bar_container.appendChild(this.search_bar);
 
-		// Logo
-		const logo = document.createElement('img');
-		logo.setAttribute('src', 'image/logo.svg');
+        const logo = document.createElement("img");
+        logo.setAttribute("src", "image/logo.svg");
 
-		// Append elements to the header
-		header.appendChild(hamburger);
-		header.appendChild(search_bar_container);
-		header.appendChild(logo);
-	}
+        header.appendChild(hamburger);
+        header.appendChild(search_bar_container);
+        header.appendChild(logo);
+    }
 
-	/**
-	 * function to remove the "active" class from all autocomplete items:
-	 * @return {RxJS.Subject} the hamburger subject you can subscribe to
-	*/  
-	static On_Hamberger_Clicked() {
-		return Sticky_Header.subject_hamberger;
-	}
+    /**
+     * Returns the RxJS subject for hamburger menu clicks.
+     * @returns {Subject} Subject that emits when the hamburger menu is clicked.
+     */
+    static On_Hamburger_Clicked() {
+        return Sticky_Header.subject_hamburger;
+    }
 
-	/**
-	 * Removes the 'active' class from all autocomplete items.
-	 * @param {NodeList} nodes - List of nodes to update.
-	 */
-	Remove_Active_Items(nodes) {
-		nodes.forEach(node => node.classList.remove("autocomplete-active"));
-	}
+    /**
+     * Removes the 'active' class from all autocomplete items.
+     * @param {NodeList} nodes - List of nodes to update.
+     */
+    Remove_Active_Items(nodes) {
+        nodes.forEach(node => node.classList.remove("autocomplete-active"));
+    }
 
-	/**
-	 * Adds the 'active' class to an autocomplete item.
-	 * @param {NodeList} nodes - List of nodes to update.
-	 * @param {number} current_focus - Current focused index.
-	 */
-	Add_Active_Item(nodes, current_focus) {
-		if (!nodes) return;
-		this.Remove_Active_Items(nodes);
-		if (current_focus >= nodes.length) current_focus = 0;
-		if (current_focus < 0) current_focus = nodes.length - 1;
-		nodes[current_focus].classList.add("autocomplete-active");
-	}
+    /**
+     * Adds the 'active' class to an autocomplete item.
+     * @param {NodeList} nodes - List of nodes to update.
+     * @param {number} current_focus - Current focused index.
+     */
+    Add_Active_Item(nodes, current_focus) {
+        if (!nodes) return;
+        this.Remove_Active_Items(nodes);
+        if (current_focus >= nodes.length) current_focus = 0;
+        if (current_focus < 0) current_focus = nodes.length - 1;
+        nodes[current_focus].classList.add("autocomplete-active");
+    }
 
-	/**
-	 * Closes all autocomplete lists except the given element.
-	 * @param {HTMLElement} element - Element to keep open.
-	 */
-	Close_All_Lists(element) {
-		const autocomplete_elements = this.search_bar.parentNode.getElementsByClassName("autocomplete-items");
-		for (let autocomplete_element of autocomplete_elements) {
-			if (element !== autocomplete_element && element !== this.search_bar) {
-				autocomplete_element.parentNode.removeChild(autocomplete_element);
-			}
-		}
-	}
+    /**
+     * Closes all autocomplete lists except the given element.
+     * @param {HTMLElement} element - Element to keep open.
+     */
+    Close_All_Lists(element) {
+        const autocomplete_elements = this.search_bar.parentNode.getElementsByClassName("autocomplete-items");
+        for (let autocomplete_element of autocomplete_elements) {
+            if (element !== autocomplete_element && element !== this.search_bar) {
+                autocomplete_element.parentNode.removeChild(autocomplete_element);
+            }
+        }
+    }
 
-	/**
-	 * Initializes autocomplete functionality by passing the list and callback when items is selected.
-	 * @param {Array<string>} match_list - List of suggestions.
-	* @return {RxjS.Subject} the autocomplete subject you can subscribe to
-	 */
-	Set_Autocomplete_List(match_list) {
-		let current_focus;
-		let that = this;
-		
-		this.search_bar.addEventListener("input", function () {
-			let val = this.value;
-			that.Close_All_Lists();
-			if (!val) return false;
-			
-			current_focus = -1;
-			let autocomplete_container = document.createElement("div");
-			autocomplete_container.setAttribute("id", this.id + "autocomplete-list");
-			autocomplete_container.setAttribute("class", "autocomplete-items");
-			that.search_bar.parentNode.appendChild(autocomplete_container);
-			
-			match_list.forEach(match_element => {
-				if (match_element.toUpperCase().startsWith(val.toUpperCase())) {
-					let element_container = document.createElement("div");
-					element_container.innerHTML = `<strong>${match_element.substr(0, val.length)}</strong>${match_element.substr(val.length)}`;
-					element_container.innerHTML += `<input type='hidden' value='${match_element}'>`;
-					element_container.addEventListener("click", function () {
-						that.search_bar.value = "";
-						that.Close_All_Lists();
-						Sticky_Header.subject_autocomplete.next(this.getElementsByTagName("input")[0].value);
-					});
-					autocomplete_container.appendChild(element_container);
-				}
-			});
-		});
+    /**
+     * Initializes autocomplete functionality with a list of suggestions.
+     * @param {Array<string>} match_list - List of suggestions.
+     * @returns {Subject} Subject that emits the selected autocomplete value.
+     */
+    Set_Autocomplete_List(match_list) {
+        let current_focus;
+        const that = this;
 
-		this.search_bar.addEventListener("keydown", function (e) {
-			let autocomplete_container = document.getElementById(this.id + "autocomplete-list");
-			if (autocomplete_container) autocomplete_container = autocomplete_container.getElementsByTagName("div");
-			if (e.keyCode == 40) {
-				current_focus++;
-				that.Add_Active_Item(autocomplete_container, current_focus);
-			} else if (e.keyCode == 38) {
-				current_focus--;
-				that.Add_Active_Item(autocomplete_container, current_focus);
-			} else if (e.keyCode == 13) {
-				e.preventDefault();
-				if (current_focus > -1 && autocomplete_container) {
-					autocomplete_container[current_focus].click();
-				}
-			}
-		});
+        this.search_bar.addEventListener("input", function () {
+            const val = this.value;
+            that.Close_All_Lists();
+            if (!val) return false;
+            
+            current_focus = -1;
+            const autocomplete_container = document.createElement("div");
+            autocomplete_container.setAttribute("id", this.id + "autocomplete-list");
+            autocomplete_container.setAttribute("class", "autocomplete-items");
+            that.search_bar.parentNode.appendChild(autocomplete_container);
+            
+            match_list.forEach(match_element => {
+                if (match_element.toUpperCase().startsWith(val.toUpperCase())) {
+                    const element_container = document.createElement("div");
+                    element_container.innerHTML = `<strong>${match_element.substr(0, val.length)}</strong>${match_element.substr(val.length)}`;
+                    element_container.innerHTML += `<input type='hidden' value='${match_element}'>`;
+                    element_container.addEventListener("click", function () {
+                        that.search_bar.value = "";
+                        that.Close_All_Lists();
+                        Sticky_Header.subject_autocomplete.next(this.getElementsByTagName("input")[0].value);
+                    });
+                    autocomplete_container.appendChild(element_container);
+                }
+            });
+        });
 
-		document.addEventListener("click", function (e) {
-			that.Close_All_Lists(e.target);
-		});
+        this.search_bar.addEventListener("keydown", function (e) {
+            let autocomplete_container = document.getElementById(this.id + "autocomplete-list");
+            if (autocomplete_container) autocomplete_container = autocomplete_container.getElementsByTagName("div");
+            if (e.keyCode === 40) {
+                current_focus++;
+                that.Add_Active_Item(autocomplete_container, current_focus);
+            } else if (e.keyCode === 38) {
+                current_focus--;
+                that.Add_Active_Item(autocomplete_container, current_focus);
+            } else if (e.keyCode === 13) {
+                e.preventDefault();
+                if (current_focus > -1 && autocomplete_container) {
+                    autocomplete_container[current_focus].click();
+                }
+            }
+        });
 
-		return Sticky_Header.subject_autocomplete;
-	}
+        document.addEventListener("click", function (e) {
+            that.Close_All_Lists(e.target);
+        });
+
+        return Sticky_Header.subject_autocomplete;
+    }
 }
 
 // Define the custom element
-customElements.define('sticky-header', Sticky_Header);
+customElements.define("sticky-header", Sticky_Header);
 
 export default Sticky_Header;

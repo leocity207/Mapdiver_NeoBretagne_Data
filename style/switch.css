@@ -1,10 +1,8 @@
-
 text {
 	font-size: 0.9em;
 	height: 1.7em;
 	display: inline-block;
 }
-
 
 .left-panel > * {
 	margin-left: 1rem;
@@ -12,24 +10,21 @@ text {
 
 .title {
 	font-size: 1.75em;
-	margin-bottom: .625em;
+	margin-bottom: 0.625em;
 	line-height: 1.4;
 }
 
 .text {
-	font-size: .9375em;
+	font-size: 0.9375em;
 	margin-bottom: 1.125em;
 	line-height: 1.7;
 }
 
 .open {
-	left: 0px;
-	
+	left: 0;
 }
 
-/* The switch - the box around the slider */
 .switch {
-	font-size: 17px;
 	position: relative;
 	display: inline-block;
 	width: 3.5em;
@@ -37,15 +32,13 @@ text {
 	scale: 0.7;
 	top: -0.3em;
 }
-  
-  /* Hide default HTML checkbox */
+
 .switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
- }
-  
-  /* The slider */
+}
+
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -55,31 +48,31 @@ text {
 	bottom: 0;
 	background-color: #fff;
 	border: 1px solid #adb5bd;
-	transition: .4s;
+	transition: 0.4s;
 	border-radius: 30px;
 }
-  
+
 .slider:before {
 	position: absolute;
 	content: "";
 	height: 1.4em;
 	width: 1.4em;
-	border-radius: 20px;
+	border-radius: 50%;
 	left: 0.27em;
 	bottom: 0.25em;
 	background-color: #adb5bd;
-	transition: .4s;
+	transition: 0.4s;
 }
-  
+
 input:checked + .slider {
 	background-color: #ff0000;
-	border: 1px solid #ff0000;
+	border-color: #ff0000;
 }
-  
+
 input:focus + .slider {
 	box-shadow: 0 0 1px #ff0000;
 }
-  
+
 input:checked + .slider:before {
 	transform: translateX(1.4em);
 	background-color: #fff;
