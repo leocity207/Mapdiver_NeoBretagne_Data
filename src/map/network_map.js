@@ -37,7 +37,8 @@ class Network_Map extends SVG_Map {
 	*/
 	Setup_Mouse_Handlers(lines, stations) {
 		super.Setup_Mouse_Handlers();
-		this.lines = lines
+		this.lines = lines;
+		this.highlighted_line_codes = Object.keys(lines);
 		this.stations = stations
 		// all Line
 		let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID);
@@ -101,7 +102,7 @@ class Network_Map extends SVG_Map {
 
 	Change_Color = (color) => {
 		this.selected_color = color;
-		this.Reset_Line_Highlight();
+		this.Highlight_Lines(this.highlighted_line_codes);
 	}
 
 	/** 
@@ -109,54 +110,55 @@ class Network_Map extends SVG_Map {
 	* @param line_codes List of line Codes for exmple [LER_BRE01,LGV_BRE03]
 	*/
 	Highlight_Lines = (line_codes) => {
-	    if (this.config.DEBUG) console.log('Highlight_Lines called');
+		this.highlighted_line_codes = line_codes;
+		if (this.config.DEBUG) console.log('Highlight_Lines called');
 	
-	    // Prepare sets for objects that need to be highlighted
-	    const Tracks_to_higlight = new Set(line_codes.map(code => `${this.network_config.TRACK_PREFIX_ID}${code}`));
-	    const labels_to_higlight = new Set(line_codes.map(code => `${this.network_config.LINE_LABEL_PREFIX_ID}${code}`));
+		// Prepare sets for objects that need to be highlighted
+		const Tracks_to_higlight = new Set(line_codes.map(code => `${this.network_config.TRACK_PREFIX_ID}${code}`));
+		const labels_to_higlight = new Set(line_codes.map(code => `${this.network_config.LINE_LABEL_PREFIX_ID}${code}`));
 	
-	    // Precompute colors for each line code
-	    const line_colors = {};
-	    line_codes.forEach(code => {
-	        const line_data = this.#Find_Line_Data_By_Id(code);
-	        if (line_data) {
-	            line_colors[`${this.network_config.TRACK_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
-	            line_colors[`${this.network_config.LINE_LABEL_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
-	        }
+		// Precompute colors for each line code
+		const line_colors = {};
+		line_codes.forEach(code => {
+			const line_data = this.#Find_Line_Data_By_Id(code);
+			if (line_data) {
+				line_colors[`${this.network_config.TRACK_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+				line_colors[`${this.network_config.LINE_LABEL_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+			}
 			else
 				throw Error(`Code was not found inside the list: ${code}`);
-	    });
+		});
 	
-	    // Get tracks and labels separately
-	    const tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
-	    const labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
+		// Get tracks and labels separately
+		const tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
+		const labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
 	
-	    // Process tracks
-	    tracks.forEach(track => {
+		// Process tracks
+		tracks.forEach(track => {
 			const track_id_first_part = Utils.Get_First_Part(track.id)
-	        if (Tracks_to_higlight.has(track_id_first_part)) 
-	            this.#Change_Obj_Color(track, line_colors[track_id_first_part]);
-	        else 
-	            this.#Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
-	    });
+			if (Tracks_to_higlight.has(track_id_first_part)) 
+				this.#Change_Obj_Color(track, line_colors[track_id_first_part]);
+			else 
+				this.#Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
+		});
 	
-	    // Process labels
-	    labels.forEach(label => {
+		// Process labels
+		labels.forEach(label => {
 			const label_id_first_part = Utils.Get_First_Part(label.id);
-	        if (labels_to_higlight.has(label_id_first_part))
-	            this.#Change_Obj_Color(label, line_colors[label_id_first_part], 'fill');
-	        else
-	            this.#Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
-	    });
+			if (labels_to_higlight.has(label_id_first_part))
+				this.#Change_Obj_Color(label, line_colors[label_id_first_part], 'fill');
+			else
+				this.#Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
+		});
 		
-	    this.fabric_canvas.requestRenderAll();
+		this.fabric_canvas.requestRenderAll();
 	};
 
 	/**
 	 * revert all line marking to the original color
 	 */
 	Reset_Line_Highlight = () => {
-		this.Highlight_Lines([]);
+		this.Highlight_Lines(Object.keys(this.lines));
 	}
 
 
