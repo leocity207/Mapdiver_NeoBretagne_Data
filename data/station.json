@@ -178,15 +178,15 @@
 		},
 		"FR_56260_0":{
 			"label": "Vannes",
-			"lines" : ["LER_BRE2","LGV_BRE3"]
+			"lines" : ["LER_BRE2","LER_BRE1"]
 		},
 		"FR_56184_0":{
 			"label": "Questembert",
-			"lines" : ["LER_BRE2","LGV_BRE3"]
+			"lines" : ["LER_BRE2","LER_BRE1"]
 		},
 		"FR_35236_0":{
 			"label": "Redon",
-			"lines" : ["LER_BRE2","LGV_BRE3"]
+			"lines" : ["LER_BRE2","LER_BRE1"]
 		},
 		"FR_85146_0":{
 			"label": "Montaigu-Vendée",
