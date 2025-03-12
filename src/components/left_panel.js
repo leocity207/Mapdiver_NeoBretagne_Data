@@ -1,4 +1,5 @@
 import Sticky_Header from "./sticky_header.js"
+import Switch_Event from "./switch.js";
 
 class LeftPanel extends HTMLElement {
 	constructor() {
@@ -38,14 +39,7 @@ class LeftPanel extends HTMLElement {
 		this.left_panel.appendChild(title_option);
 
 		
-		const master_switch = document.createElement('div');
-		master_switch.classList.add('switch-container');
-		master_switch.innerHTML = " <text>Simple</text>\
-									<label class='switch'>\
-										<input type='checkbox'>\
-										<span class='slider'></span>\
-								   </label>";
-		this.left_panel.appendChild(master_switch);
+		this.left_panel.appendChild(Switch_Event.Create("color", "Simple color"));
 
 		// Append the left panel to the shadow DOM
 		this.shadowRoot.appendChild(this.left_panel);
