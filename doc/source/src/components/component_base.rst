@@ -6,3 +6,5 @@ Componants describe utility componants node object that can be integrated into t
 .. toctree::
 
 	sticky_header.rst
+	switch.rst
+	left_panel.rst

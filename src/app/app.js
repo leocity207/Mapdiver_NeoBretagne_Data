@@ -15,6 +15,20 @@ import Page from '../page/page.js';
 */
 class App extends HTMLElement
 {
+	/**
+	 * The loader node that can be display when the page is loading
+	 */
+	loader = undefined;
+
+	/**
+	 * The main page to display inside the app
+	 */
+	main_page = undefined;
+
+	/**
+	 * icon of the app to display inside the App container
+	 */
+	icon = undefined;
 
 	/////////
 	/// CTOR

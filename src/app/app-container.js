@@ -14,16 +14,33 @@ import App from './app.js';
  */
 class App_Container extends HTMLElement
 {
+	/**
+	 * The list of app inside the container
+	 */
+	m_app_list = [];
+
+	/**
+	 * The current `App` being displayed
+	 */
+	m_current_app = undefined;
+
+	/**
+	 * the panel node displaying selectable app
+	 */
+	panel = undefined;
+
+	/**
+	 * the main canva for the `App`
+	 */
+	app_window = undefined;
 
 	////////
 	/// CTOR
 	////////
 	constructor() {
 		super();
-		this.m_app_list = [];
-		this.m_current_app = undefined;
-		this.panel = App_Container.#Create_Left_Panel();
-		this.app_window = App_Container.#Create_App_Windows();
+		this.panel = App_Container.Create_Left_Panel();
+		this.app_window = App_Container.Create_App_Windows();
 	}
 
 	/**
@@ -74,25 +91,24 @@ class App_Container extends HTMLElement
 		return elt;
 	}
 
-	/*
+	/**
 	* Create the left panel Div that contains app icons.
 	*
 	* @return HTMLDivElement of class *panel*
-	* @private 
 	*/
-	static #Create_Left_Panel() {
+	static Create_Left_Panel() {
 		let elt = document.createElement("div");
 		elt.classList.add("panel");
 		elt.style.display = 'none';
 		return elt;
 	}
 
-	/*
+	/**
 	* create the main app display Div that contains app icons
+
 	* @return HTMLDivElement of class *app-window*
-	* @private
 	*/
-	static #Create_App_Windows() {
+	static Create_App_Windows() {
 		let elt = document.createElement("div");
 		elt.classList.add("app-window");
 		return elt;

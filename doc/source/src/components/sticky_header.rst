@@ -1,15 +1,25 @@
 Sticky Header
 =============
-The **Sticky Header** is a user interface element that remains fixed at the top of the page, ensuring important navigation components are always accessible, even as the user scrolls.
-
-Structure
----------
-
-The Sticky Header consists of three key components:
-
-- **Left Section:** A **hamburger menu** that triggers a click event when selected.
-- **Center Section:** A **search bar** that accepts a list of searchable elements and emits an event when an item is selected.
-- **Right Section:** A **logo** that can be displayed for branding purposes.
 
 .. js:autoclass:: Sticky_Header
-   :members:
+
+====================
+
+Public Members
+--------------
+	.. js:autofunction:: Sticky_Header#Set_Autocomplete_List
+
+====================
+
+Public Static Members
+----------------------
+	.. js:autofunction:: Sticky_Header.On_Hamburger_Clicked
+
+====================
+
+Private Members
+---------------
+	.. js:autofunction:: Sticky_Header#Init
+	.. js:autofunction:: Sticky_Header#Remove_Active_Items
+	.. js:autofunction:: Sticky_Header#Add_Active_Item
+	.. js:autofunction:: Sticky_Header#Close_All_Lists

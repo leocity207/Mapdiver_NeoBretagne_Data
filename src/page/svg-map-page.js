@@ -11,8 +11,20 @@ import LeftPanel from "../components/left_panel.js"
  */
 class Map_Page extends Page {
 
-	////////
-	m_map;
+	/**
+	 * div container for the map
+	 */
+	map_container
+
+	/**
+	 * canva div that will be inside the  map_container
+	 */
+	map_canvas
+
+	/**
+	 * sticky header above the map
+	 */
+	sticky_header
 	
 	constructor() {
 		super();
@@ -20,7 +32,6 @@ class Map_Page extends Page {
 
 	/**
 	 * Initialize an Map_App object after it has been instantiated
-	 * @protected
 	 *
 	 * This function create a container and a canvas inside it. The container is used to scale the canvas
 	 * and the canvas is used as the context for the fabric.js canvas
@@ -56,6 +67,9 @@ class Map_Page extends Page {
 		this.map.Setup_Mouse_Handlers();
 	}
 
+	/**
+	 * create a travling movemont tower the initial object indicated in the conf on the map
+	 */
 	Initial_Zoom_Move = async () => {
 		await this.map.Initial_Zoom_Move();
 	}

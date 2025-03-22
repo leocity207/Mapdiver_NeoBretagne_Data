@@ -2,11 +2,28 @@ import Sticky_Header from "./sticky_header.js";
 import Switch_Event from "./switch.js";
 
 /**
- * Left_Panel
+ * The **Left Panel** is a user interface element that remains fixed on the left side of the screen.  
+ * It can be toggled on or off to show or hide its contents and provides various interactive options.
  * 
- * This class creates a left-side panel for user interactions.
+ * Structure
+ * ---------
+ * 
+ * The left panel consists of two main components:
+ * 
+ * - **Title and Subtitle**: Provides instructions or context for users.
+ * - **Options**: Allows users to modify characteristics of the map.
  */
 class Left_Panel extends HTMLElement {
+
+    /**
+     * Indicates whether the left panel is currently visible or not.
+     */
+    panel_visible = false;
+
+    /**
+     * The DOM element representing the left panel.
+     */
+    left_panel;
     constructor() {
         super();
     }
@@ -32,7 +49,6 @@ class Left_Panel extends HTMLElement {
         style_link.setAttribute("href", "style/left-panel.css");
         this.shadowRoot.appendChild(style_link);
 
-        this.panel_visible = false; // Start with panel hidden
         this.left_panel = document.createElement("div");
         this.left_panel.classList.add("left-panel");
 
@@ -62,11 +78,11 @@ class Left_Panel extends HTMLElement {
      */
     Toggle_Panel() {
         this.panel_visible = !this.panel_visible;
-        if (this.panel_visible) {
+        if (this.panel_visible)
             this.left_panel.classList.add("open");
-        } else {
+        else 
             this.left_panel.classList.remove("open");
-        }
+        
     }
 }
 

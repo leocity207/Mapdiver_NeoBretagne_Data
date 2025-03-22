@@ -1,9 +1,17 @@
 import { Subject } from "../../libraries/RxJS_wrapper.js";
 
 /**
- * Sticky_Header
+ * The **Sticky Header** is a user interface element that remains fixed at the top of the page, ensuring important navigation components are always accessible, even as the user scrolls.
  * 
- * This class creates a sticky header that remains at the top of the page.
+ * Structure
+ * ---------
+ * 
+ * The Sticky Header consists of three key components:
+ *
+ * - **Left Section:** A **hamburger menu** that triggers a click event when selected.
+ * - **Center Section:** A **search bar** that accepts a list of searchable elements and emits an event when an item is selected.
+ * - **Right Section:** A **logo** that can be displayed for branding purposes.
+ *
  */
 class Sticky_Header extends HTMLElement {
     static subject_hamburger = new Subject();
@@ -24,6 +32,8 @@ class Sticky_Header extends HTMLElement {
     }
 
     /**
+     * #PROTECTED#
+     * 
      * Initializes the sticky header and its elements.
      */
     Init() {
@@ -67,6 +77,7 @@ class Sticky_Header extends HTMLElement {
 
     /**
      * Returns the RxJS subject for hamburger menu clicks.
+     * 
      * @returns {Subject} Subject that emits when the hamburger menu is clicked.
      */
     static On_Hamburger_Clicked() {
@@ -75,7 +86,10 @@ class Sticky_Header extends HTMLElement {
 
     /**
      * Removes the 'active' class from all autocomplete items.
+     * 
      * @param {NodeList} nodes - List of nodes to update.
+     * 
+     * @access private
      */
     Remove_Active_Items(nodes) {
         nodes.forEach(node => node.classList.remove("autocomplete-active"));
@@ -83,8 +97,11 @@ class Sticky_Header extends HTMLElement {
 
     /**
      * Adds the 'active' class to an autocomplete item.
+     * 
      * @param {NodeList} nodes - List of nodes to update.
      * @param {number} current_focus - Current focused index.
+     * 
+     * @access private
      */
     Add_Active_Item(nodes, current_focus) {
         if (!nodes) return;
@@ -97,6 +114,8 @@ class Sticky_Header extends HTMLElement {
     /**
      * Closes all autocomplete lists except the given element.
      * @param {HTMLElement} element - Element to keep open.
+     * 
+     * @access private
      */
     Close_All_Lists(element) {
         const autocomplete_elements = this.search_bar.parentNode.getElementsByClassName("autocomplete-items");
