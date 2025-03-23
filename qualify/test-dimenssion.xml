@@ -1,0 +1,42 @@
+<Project name="Maptiva">
+ 	<Dimension type="ressource">
+		<Choice name="Bretagne"/>
+	</Dimension>
+
+	<Dimension type="object-type">
+		<Choice name="station-label">The station label</Choice>
+		<Choice name="station">the station element.</Choice>
+		<Choice name="track-line">the track line displayed as a path.</Choice>
+		<Choice name="track-label">The track label.</Choice>
+	</Dimension>
+
+	<Dimension type="text-type">
+		<Choice name="station-label">The station label</Choice>
+		<Choice name="track-label">The track label.</Choice>
+	</Dimension>
+
+	<Dimension type="search-Input">
+		<Choice name="valid-station-name">User enters an existing station name.</Choice>
+		<Choice name="valid-line-name">User enters an existing station name.</Choice>
+		<Choice name="invalid-input">User enters a random string.</Choice>
+	</Dimension>
+
+	<Dimension type="color-mode">
+		<Choice name="default">the default coloring schems</Choice>
+		<Choice name="easy">the easy to read coloring schems.</Choice>
+	</Dimension>
+
+	<Dimension type="gesture">
+		<Choice name="mousse drag">Dragging with the mousse.</Choice>
+		<Choice name="finger drag">Dragging with the finger.</Choice>
+		<Choice name="mousse Scrolling">Scrolling in and out with the mousse.</Choice>
+		<Choice name="finger Scrolling">Scrolling in and out with the user finger.</Choice>
+	</Dimension>
+
+	<Dimension type="screen-ratio">
+		<Choice name="3840x2160"/>
+		<Choice name="412x915"/>
+		<Choice name="1500x750"/>
+		<Choice name="1000x1000"/>
+	</Dimension>
+</Project>
