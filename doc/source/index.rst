@@ -75,12 +75,18 @@ Documentation Index
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents
+   :caption: Technical documentation
 
    src/app/app_base
    src/page/page_base
    src/map/map_base
    src/components/component_base
    src/loader/loader_base
-   src/config/config_base
    src/utils/utils
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Customization
+
+   src/config/config_base
+   src/data/data_base
