@@ -33,3 +33,4 @@ await loadRxJS();
 // Synchronously exported `fabric` that will be assigned after loading
 export let RxJS = window.rxjs;
 export let Subject = window.rxjs.Subject;
+export let filter = window.rxjs.filter;

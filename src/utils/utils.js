@@ -6,6 +6,7 @@ class Utils {
 
 	/**
 	 * Transform a RGBA color into a HexString 
+	 * 
 	 * @param {String} rgba rgba code like "#1234FE" 
 	 * @param {Boolean} with_alpha if there are digit for the alpha canal and if it should be transcribed
 	 * @returns {String} the hex string of the color
@@ -23,15 +24,22 @@ class Utils {
 
 	/**
 	 * check the bound of the value and put it in bound if needed
+	 * 
 	 * @param {Float} value The value to check if in bound
 	 * @param {Float} min the min value
 	 * @param {Float} max the max value
-	 * @returns 
+	 * @returns {Float} rounded value withing the bounds
 	 */
 	static Round_Bound = (value, min, max) => {
 		return Math.min(Math.max(value, min), max);
 	}
 
+	/**
+	 * Timout function to create delay
+	 * 
+	 * @param {Floa} t milisecond to wait
+	 * @returns a promise resoved when the timout ends
+	 */
 	static Wait = async (t) =>
 	{ 
 		return new Promise((resolve, reject) => setTimeout(resolve, t))

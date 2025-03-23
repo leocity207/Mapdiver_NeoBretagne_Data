@@ -11,6 +11,77 @@ import Utils from '../utils/utils.js';
 class SVG_Map {
 
 	/**
+	 * Filename and path to the ressource of the svg map
+	 */
+	filename;
+
+	/**
+	 * The configurration of the svg map please look at ``config``
+	 */
+	config;
+
+	/**
+	 * The fabric canvas for the svg map
+	 */
+	fabric_canvas = null;
+
+	/**
+	 * The svg main group that all object inherit
+	 */
+	groupSVGElements = null
+
+	/**
+	 * the language that should be used in the map
+	 */
+	language = null;
+
+	/**
+	 * the right panel width if open
+	 */
+	panel_detail_space = 0;
+
+	/**
+	 * the right panel header height
+	 */
+	panel_header_height = 0;
+
+	/**
+	 * the type of client, can be mobile | tablet | desktop
+	 */
+	client_type;
+
+	/**
+	 * keep object with animation parameters to stop it
+	 */
+	move_zoom_animation_obj = {x: 0, y: 0, zoom: 1}
+
+	/**
+	 * Position data to know if we are movving
+	 */
+	last_bounding_data = {left: 0, top: 0, right: 0, bottom: 0}
+
+	/**
+	 * Tells wether or not we are in an animation
+	 */
+	map_animation_run = false
+
+	/**
+	 * The scale for when the user start a scroll/pinch	gesture
+	 */
+	pinch_start_scale = 0
+
+	/**
+	 * Last saved scroll/pinch factor
+	 */
+	last_scale = 0
+
+	/**
+	 * Save the last pointer position on mousedown, to prevent ghost clicks
+	 */
+	last_pointer = undefined
+
+
+	/**
 	 * 
 	 * @param {String} client_type if you areusing mobile or desktop
 	 * @param {String} filename the filename of the svg map
@@ -19,74 +90,19 @@ class SVG_Map {
 	constructor(client_type, filename, config) {
 
 		this.filename = filename;
-		SVG_Map.#Initialize_Fabric();
-		this.config = config;
-
-		// keep reference on the canvas and the svg main group
-		this.fabric_canvas = null;
-		this.svg_main_group = null;
-		this.language = null;
-
-		// from origins if a from station is selected
-		this.from_station_origins_json = {}
-		// to origins if a to station is selected
-		this.to_station_origins_json = {}		
-
-		// we need the router infos to assemble some of the urls
-		/* 
-			as for now we do not need them anymore, because
-			in #Handle_Mouse_Click_Station we only set the from
-			station from now one. But we keep it, if there
-			is a later need
-		*/
-		this.router_infos = undefined //probably not needed
-
-		// panel widths, to take into calculations
-		this.panel_detail_space = 0 //probably not needed
-
-		// panel header height
-		this.panel_header_height = 0 //probably not needed
-
-		// client type, can be mobile | tablet | desktop
+		SVG_Map._Initialize_Fabric();
+		this.config = config;	
 		this.client_type = client_type;
 
-		// keep object with animation parameters to stop it
-		this.move_zoom_animation_obj = {
-			x: 0,
-			y: 0,
-			zoom: 1
-		}
-
 		// binding this to event handlers
-		this.#Handle_User_Mousewheel_Zoom = this.#Handle_User_Mousewheel_Zoom.bind(this);
-		this.#Handle_User_Map_Move_Touch = this.#Handle_User_Map_Move_Touch.bind(this);
-		this.#Handle_User_Gesture_Zoom = this.#Handle_User_Gesture_Zoom.bind(this);
-		this.#Handle_Pinch_Start = this.#Handle_Pinch_Start.bind(this)
-		this.#Handle_Pinch_End = this.#Handle_Pinch_End.bind(this)
+		this._Handle_User_Mousewheel_Zoom = this._Handle_User_Mousewheel_Zoom.bind(this);
+		this._Handle_User_Map_Move_Touch = this._Handle_User_Map_Move_Touch.bind(this);
+		this._Handle_User_Gesture_Zoom = this._Handle_User_Gesture_Zoom.bind(this);
+		this._Handle_Pinch_Start = this._Handle_Pinch_Start.bind(this)
+		this._Handle_Pinch_End = this._Handle_Pinch_End.bind(this)
 		this._Handle_Mouse_Over_Obj = this._Handle_Mouse_Over_Obj.bind(this);
 		this._Handle_Mouse_Out_Obj = this._Handle_Mouse_Out_Obj.bind(this);
-		this.#Handle_Main_Group_Mousedown = this.#Handle_Main_Group_Mousedown.bind(this);
-		// keep some position data for the check on moving
-		this.last_bounding_data = {
-			left: 0,
-			top: 0,
-			right: 0,
-			bottom: 0
-		}
-
-		// are we in a animation run
-		// never set this direct, use _Handle_Animation_State
-		this.map_animation_run = false
-
-		// save the start scale on gesture "pinch"
-		this.pinch_start_scale = 0
-		// save the last scale
-		this.last_scale = 0
-
-		// save the last pointer position on mousedown, to prevent ghost clicks
-		this.last_pointer = undefined
-
-		this.pinch_zoom_click_deactivated = false
+		this._Handle_Main_Group_Mousedown = this._Handle_Main_Group_Mousedown.bind(this);
 	}
 
 	////////////////////
@@ -120,7 +136,7 @@ class SVG_Map {
 				obj.set('hasControls', false); // remove any handlers for rotation or scale
 				this.fabric_canvas.add(obj);
 				this.svg_main_group = obj;
-				let initial_zoom = this.#Best_Initial_Zoom(); // calculate the zoom that fits best
+				let initial_zoom = this._Best_Initial_Zoom(); // calculate the zoom that fits best
 				this.fabric_canvas.setZoom(initial_zoom);
 				this.fabric_canvas.viewportCenterObject(obj); // center the svg in the viewport, take zoom into account
 				this.fabric_canvas.requestRenderAll();
@@ -141,8 +157,8 @@ class SVG_Map {
 	 */
 	Setup_Mouse_Handlers() {
 
-		this.fabric_canvas.on('mouse:wheel', this.#Handle_User_Mousewheel_Zoom);
-		this.fabric_canvas.on('object:moving', this.#Handle_User_Map_Move_Touch);
+		this.fabric_canvas.on('mouse:wheel', this._Handle_User_Mousewheel_Zoom);
+		this.fabric_canvas.on('object:moving', this._Handle_User_Map_Move_Touch);
 
 		// gesture is not well handled with fabricjs, use hammerjs
 		let hammer = new Hammer.Manager(this.fabric_canvas.upperCanvasEl); // Initialize hammer
@@ -150,13 +166,13 @@ class SVG_Map {
 		let tap = new Hammer.Tap();
 
 		hammer.add([pinch, tap]);
-		hammer.on('pinch', this.#Handle_User_Gesture_Zoom);
-		hammer.on('pinchstart', this.#Handle_Pinch_Start)
-		hammer.on('pinchend', this.#Handle_Pinch_End)
-		hammer.on('pinchcancel', this.#Handle_Pinch_End)
+		hammer.on('pinch', this._Handle_User_Gesture_Zoom);
+		hammer.on('pinchstart', this._Handle_Pinch_Start)
+		hammer.on('pinchend', this._Handle_Pinch_End)
+		hammer.on('pinchcancel', this._Handle_Pinch_End)
 
 		// main mouse down, prevent ghost clicks from dragging
-		this.svg_main_group.on('mousedown', this.#Handle_Main_Group_Mousedown)
+		this.svg_main_group.on('mousedown', this._Handle_Main_Group_Mousedown)
 	}
 
 	/**
@@ -166,10 +182,10 @@ class SVG_Map {
 	*/
 	Find_Map_Objs_By_Classname = (class_name, obj_type = undefined) => {
 		let result_list = [];
-		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'class', class_name, result_list);
+		this._Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'class', class_name, result_list);
 		if (obj_type !== undefined) {
 			let typed_result_list = [];
-			this.#Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list);
+			this._Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list);
 			return typed_result_list;
 		} 
 		return result_list;
@@ -237,7 +253,7 @@ class SVG_Map {
 		this.fabric_canvas.calcOffset()
 		this.fabric_canvas.requestRenderAll()
 		// do recalc and center
-		const initial_zoom = this.#Best_Initial_Zoom()
+		const initial_zoom = this._Best_Initial_Zoom()
 		this.fabric_canvas.setZoom(initial_zoom)
 		this.fabric_canvas.viewportCenterObject(this.svg_main_group)
 	}
@@ -328,6 +344,11 @@ class SVG_Map {
 		return bounds;
 	}
 
+	/**
+	 * Return the bounding box square of an object
+	 * @param {Object} object 
+	 * @returns {Bound}
+	 */
 	_GetObjectBounds(object) {
 		const matrix = object.calcTransformMatrix(false);
 		const xLeft = matrix[4] - object.width / 2;
@@ -368,10 +389,10 @@ class SVG_Map {
 	*/
 	_Find_Map_Objs_By_Id(id, exact_Match = false, obj_type = undefined)  {
 		let result_list = [];
-		this.#Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'id', id, result_list, exact_Match);
+		this._Traverse_All_Canvas_Objects(this.fabric_canvas.getObjects(), 'id', id, result_list, exact_Match);
 		if (obj_type !== undefined) {
 			let typed_result_list = [];
-			this.#Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list, exact_Match);
+			this._Traverse_All_Canvas_Objects(result_list, 'type', obj_type, typed_result_list, exact_Match);
 			return typed_result_list;
 		} 
 		return result_list;
@@ -501,7 +522,7 @@ class SVG_Map {
 	* @param {Event} event a hammer event
 	* @private
 	*/
-	#Handle_Pinch_Start = (event) => {
+	_Handle_Pinch_Start = (event) => {
 		this.svg_main_group.lockMovementX = true;
 		this.svg_main_group.lockMovementY = true;
 		this.pinch_start_scale = event.scale
@@ -513,7 +534,7 @@ class SVG_Map {
 	* @param {Event} event a hammer event
 	* @private
 	*/
-	#Handle_Pinch_End = (event) => {
+	_Handle_Pinch_End = (event) => {
 		this.last_scale = event.scale
 		this.svg_main_group.lockMovementX = false;
 		this.svg_main_group.lockMovementY = false;
@@ -524,7 +545,7 @@ class SVG_Map {
 	* @param {Event} event a hammer event
 	* @private
 	*/
-	#Handle_User_Gesture_Zoom = (event) => {
+	_Handle_User_Gesture_Zoom = (event) => {
 		// uses pinch event from hammerjs
 		if (!this.map_animation_run) { 
 			if (this.last_scale !== event.scale) {
@@ -556,7 +577,7 @@ class SVG_Map {
 	* @todo If zoomed in a corner and near the edge, no zoom out is possible; we should actually pan and zoom.
 	* @private
 	*/
-	#Handle_User_Mousewheel_Zoom = (event) => {
+	_Handle_User_Mousewheel_Zoom = (event) => {
 		// Return early if a map animation is running
 		if (this.map_animation_run) return;
 
@@ -592,8 +613,8 @@ class SVG_Map {
 	* @param {Event} event is the hammer event when we are moving around
 	* @private
 	*/
-	#Handle_User_Map_Move_Touch = (event) => {
-		// if we have a pinch gesture going on, return and let hammerjs handle it in #Handle_User_Gesture_Zoom
+	_Handle_User_Map_Move_Touch = (event) => {
+		// if we have a pinch gesture going on, return and let hammerjs handle it in _Handle_User_Gesture_Zoom
 		if (event.e.touches && event.e.touches.length === 2 || this.map_animation_run) return;
 
 		const object = event.target;
@@ -636,7 +657,7 @@ class SVG_Map {
 	* @param {Event} event hammer event
 	* @private
 	*/
-	#Handle_Main_Group_Mousedown = (event) => {
+	_Handle_Main_Group_Mousedown = (event) => {
 		this.last_pointer = event.pointer
 	}
 
@@ -645,7 +666,7 @@ class SVG_Map {
 	 * @return {number} The optimal scale value as a float.
 	 * @private
 	 */
-	#Best_Initial_Zoom() {
+	_Best_Initial_Zoom() {
 		// Find the centering object by ID
 		const centering_objects = this._Find_Map_Objs_By_Id(this.config.INITIAL_CENTERING_OBJECT_ID, true, 'path');
 
@@ -716,10 +737,10 @@ class SVG_Map {
 	 * @param {Object[]} result          The result list that will contain all the objects that match the attributeValue for this attributeName
 	 * @param {boolean}  fullMatch       If true, the attributeValue should be exactly equal to the object's attribute value. If false, the attributeValue should be a substring of the object's attribute value
 	*/
-	#Traverse_All_Canvas_Objects = (objects, attributeName, attributeValue, result, fullMatch = true) => {
+	_Traverse_All_Canvas_Objects = (objects, attributeName, attributeValue, result, fullMatch = true) => {
 		for (const obj of objects) {
 			if (obj.type.includes('group'))
-				this.#Traverse_All_Canvas_Objects(obj.getObjects(), attributeName, attributeValue, result, fullMatch);
+				this._Traverse_All_Canvas_Objects(obj.getObjects(), attributeName, attributeValue, result, fullMatch);
 			else {
 				if (fullMatch) {
 					if (obj[attributeName] === attributeValue)
@@ -737,8 +758,10 @@ class SVG_Map {
 	/// Private static function
 	///////////////////////////
 
-	// Staticaly initialize fabric
-	static #Initialize_Fabric() {
+	/**
+	 *Staticaly initialize fabric
+	 */
+	static _Initialize_Fabric() {
 		// adjust some stuff in the library for better randering
 		fabric.Object.prototype.objectCaching = false;
 		// we need to add "class" as a attribute to the parser, else it get's lost!

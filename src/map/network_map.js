@@ -8,6 +8,31 @@ import Utils from '../utils/utils.js';
 class Network_Map extends SVG_Map {
 
 	/**
+	 * The configuration for the Network map
+	 */
+	network_config;
+
+	/**
+	 * Object descibing the lines inside the network map
+	 */
+	lines = {};
+
+	/**
+	 * Object descibing the stations inside the network map 
+	 */
+	stations = {};
+
+	/**
+	 * Selected color patern for the lines
+	 */
+	selected_color = "default";
+
+	/**
+	 * List of lines Id's that are currently being highlighted
+	 */
+	highlighted_line_codes;
+
+	/**
 	* Setup all the callback on the map
 	* @param Lines, list of Line Object
 	* @param Station, list of Station Objects
@@ -17,18 +42,9 @@ class Network_Map extends SVG_Map {
 
 		this.network_config = network_config;
 
-		this.#Handle_Mouse_Click_Track = this.#Handle_Mouse_Click_Track.bind(this);
-		this.#Handle_Mouse_Click_Station = this.#Handle_Mouse_Click_Station.bind(this);
-
-		this.lines = [];
-		this.stations = [];
-		this.selected_color = "default"
+		this._Handle_Mouse_Click_Track = this._Handle_Mouse_Click_Track.bind(this);
+		this._Handle_Mouse_Click_Station = this._Handle_Mouse_Click_Station.bind(this);
 	}
-
-	/*
-	* Public function
-	*/
-
 
 	/**
 	* Setup all the callback on the map
@@ -37,14 +53,15 @@ class Network_Map extends SVG_Map {
 	*/
 	Setup_Mouse_Handlers(lines, stations) {
 		super.Setup_Mouse_Handlers();
-		this.lines = lines
+		this.lines = lines;
+		this.highlighted_line_codes = Object.keys(lines);
 		this.stations = stations
 		// all Line
 		let tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID);
 		for (let obj of tracks) {
 			if(this.config.DEBUG) console.warn('set handler for tracks: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
-			obj.on('mouseup', this.#Handle_Mouse_Click_Track);
+			obj.on('mouseup', this._Handle_Mouse_Click_Track);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);
 		}
@@ -53,7 +70,7 @@ class Network_Map extends SVG_Map {
 		for (let obj of line_labels) {
 			if(this.config.DEBUG) console.warn('set handler for line label: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
-			obj.on('mouseup', this.#Handle_Mouse_Click_Track);
+			obj.on('mouseup', this._Handle_Mouse_Click_Track);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);
 		}
@@ -62,7 +79,7 @@ class Network_Map extends SVG_Map {
 		for (let obj of station_icons) {
 			if(this.config.DEBUG) console.warn('set handler for station: '+obj.id) ;
 			obj.set('perPixelTargetFind', true); // if false, the event is triggered on the "bounding" box. We do not want that.
-			obj.on('mouseup', this.#Handle_Mouse_Click_Station);
+			obj.on('mouseup', this._Handle_Mouse_Click_Station);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);
 		}
@@ -70,7 +87,7 @@ class Network_Map extends SVG_Map {
 		let station_labels = this._Find_Map_Objs_By_Id(this.network_config.STATION_LABEL_PREFIX_ID)
 		for (let obj of station_labels) {
 			if(this.config.DEBUG) console.warn('set handler for station: '+obj.id) ;
-			obj.on('mouseup', this.#Handle_Mouse_Click_Station);
+			obj.on('mouseup', this._Handle_Mouse_Click_Station);
 			obj.on('mouseover', this._Handle_Mouse_Over_Obj);
 			obj.on('mouseout', this._Handle_Mouse_Out_Obj);
 		}
@@ -85,10 +102,10 @@ class Network_Map extends SVG_Map {
 	/** 
 	* Change the colore of the 'obj' to 'color' for the 'target' property
 	* @param obj the object you want to change the color 
-	* @param color the color in hexadecimal like #FFFFFF
+	* @param color the color in hexadecimal like _FFFFFF
 	* @param target the target property of the object you want to change its color (can be 'strock' or 'fill')
 	*/
-	#Change_Obj_Color = (obj, color, target = 'stroke') => {
+	_Change_Obj_Color = (obj, color, target = 'stroke') => {
 		let that = this;
 		if(this.config.HARD_ANIMATION_TRANSITION)
 			obj.set(target, color)
@@ -99,59 +116,70 @@ class Network_Map extends SVG_Map {
 			});
 	}
 
+	/**
+	 * Change the color scheme for all lines
+	 * 
+	 * @param {String} color the name of the type of color scheme to display ("default/simple...")
+	 */
+	Change_Color = (color) => {
+		this.selected_color = color;
+		this.Highlight_Lines(this.highlighted_line_codes);
+	}
+
 	/** 
 	* disable all other lines, mark the line with the line color handle labels too
 	* @param line_codes List of line Codes for exmple [LER_BRE01,LGV_BRE03]
 	*/
 	Highlight_Lines = (line_codes) => {
-	    if (this.config.DEBUG) console.log('Highlight_Lines called');
+		this.highlighted_line_codes = line_codes;
+		if (this.config.DEBUG) console.log('Highlight_Lines called');
 	
-	    // Prepare sets for objects that need to be highlighted
-	    const Tracks_to_higlight = new Set(line_codes.map(code => `${this.network_config.TRACK_PREFIX_ID}${code}`));
-	    const labels_to_higlight = new Set(line_codes.map(code => `${this.network_config.LINE_LABEL_PREFIX_ID}${code}`));
+		// Prepare sets for objects that need to be highlighted
+		const Tracks_to_higlight = new Set(line_codes.map(code => `${this.network_config.TRACK_PREFIX_ID}${code}`));
+		const labels_to_higlight = new Set(line_codes.map(code => `${this.network_config.LINE_LABEL_PREFIX_ID}${code}`));
 	
-	    // Precompute colors for each line code
-	    const line_colors = {};
-	    line_codes.forEach(code => {
-	        const line_data = this.#Find_Line_Data_By_Id(code);
-	        if (line_data) {
-	            line_colors[`${this.network_config.TRACK_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
-	            line_colors[`${this.network_config.LINE_LABEL_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
-	        }
+		// Precompute colors for each line code
+		const line_colors = {};
+		line_codes.forEach(code => {
+			const line_data = this._Find_Line_Data_By_Id(code);
+			if (line_data) {
+				line_colors[`${this.network_config.TRACK_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+				line_colors[`${this.network_config.LINE_LABEL_PREFIX_ID}${code}`] = line_data.color[this.selected_color];
+			}
 			else
 				throw Error(`Code was not found inside the list: ${code}`);
-	    });
+		});
 	
-	    // Get tracks and labels separately
-	    const tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
-	    const labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
+		// Get tracks and labels separately
+		const tracks = this._Find_Map_Objs_By_Id(this.network_config.TRACK_PREFIX_ID, false);
+		const labels = this._Find_Map_Objs_By_Id(this.network_config.LINE_LABEL_PREFIX_ID, false);
 	
-	    // Process tracks
-	    tracks.forEach(track => {
+		// Process tracks
+		tracks.forEach(track => {
 			const track_id_first_part = Utils.Get_First_Part(track.id)
-	        if (Tracks_to_higlight.has(track_id_first_part)) 
-	            this.#Change_Obj_Color(track, line_colors[track_id_first_part]);
-	        else 
-	            this.#Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
-	    });
+			if (Tracks_to_higlight.has(track_id_first_part)) 
+				this._Change_Obj_Color(track, line_colors[track_id_first_part]);
+			else 
+				this._Change_Obj_Color(track, this.network_config.DISABLE_ELEMENT_COLOR);
+		});
 	
-	    // Process labels
-	    labels.forEach(label => {
+		// Process labels
+		labels.forEach(label => {
 			const label_id_first_part = Utils.Get_First_Part(label.id);
-	        if (labels_to_higlight.has(label_id_first_part))
-	            this.#Change_Obj_Color(label, line_colors[label_id_first_part], 'fill');
-	        else
-	            this.#Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
-	    });
+			if (labels_to_higlight.has(label_id_first_part))
+				this._Change_Obj_Color(label, line_colors[label_id_first_part], 'fill');
+			else
+				this._Change_Obj_Color(label, this.network_config.DISABLE_ELEMENT_COLOR, 'fill');
+		});
 		
-	    this.fabric_canvas.requestRenderAll();
+		this.fabric_canvas.requestRenderAll();
 	};
 
 	/**
 	 * revert all line marking to the original color
 	 */
 	Reset_Line_Highlight = () => {
-		Highlight_Lines([]);
+		this.Highlight_Lines(Object.keys(this.lines));
 	}
 
 
@@ -171,7 +199,7 @@ class Network_Map extends SVG_Map {
 	 * @param line_code where we want to zoom to
 	 */
 	Zoom_Highlighted_Line = (line_code) => {
-		const line_data = this.#Find_Line_Data_By_Id(line_code)
+		const line_data = this._Find_Line_Data_By_Id(line_code)
 		if (line_data !== undefined) {
 			const station_codes = line_data.map_stations.split("-");
 			this.Zoom_Highlighted_Tracks(station_codes)
@@ -196,6 +224,7 @@ class Network_Map extends SVG_Map {
 
 	/**
 	* optimize zoom_box for highlighted tracks find MAX stretch values for all Stations around highlighted tracks replacement for Zoom_Highlighted_Line & Zoom_Highlighted_Stations -> expects a set of station_codes
+	*
 	* @param station_codes station that should be the center of the zoom
 	*/
 	Zoom_Highlighted_Tracks = (station_codes) => {
@@ -281,7 +310,7 @@ class Network_Map extends SVG_Map {
 	}
 
 	/**
-	* remove all highlights for all stations
+	* Remove all highlights for all stations
 	*/
 	Reset_All_Highlight_Station = () => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
@@ -293,7 +322,9 @@ class Network_Map extends SVG_Map {
 	}
 
 	/**
-	* check if the station highlight is visible use a config specific margin for the borders
+	* Check if the station highlight is visible use a config specific margin for the borders
+	*
+	* @param {String} station_code string code of the station
 	*/
 	Check_Station_Visible = (station_code) => {
 		const all_highlights = this._Find_Map_Objs_By_Id('highlight_'); // get all, do a find on them here
@@ -335,7 +366,7 @@ class Network_Map extends SVG_Map {
 	* Handle the when the user click on the map with a track to get more information
 	* @param event comming from hammer
 	*/
-	#Handle_Mouse_Click_Track = (event) => {
+	_Handle_Mouse_Click_Track = (event) => {
 		if (!event.currentSubTargets.length) 
 			throw new Error("Event target container has nothing inside.");	
 		if (!this._Check_Pointer_In_Range(event.pointer)) 
@@ -343,7 +374,7 @@ class Network_Map extends SVG_Map {
 		const target_id = event.currentSubTargets[0].id
 		if (!target_id.length) 
 			throw new Error("The target id is empty.");
-		const track_code = this.#Find_Track_Code_In_Id(target_id);
+		const track_code = this._Find_Track_Code_In_Id(target_id);
 		if (!track_code) 
 			throw new Error("Track code not found.");
 		history.pushState({ line: track_code }, "", track_code);
@@ -354,7 +385,7 @@ class Network_Map extends SVG_Map {
 	* Handle when the user click on a station
 	* @param event pointing to the station
 	*/
-	#Handle_Mouse_Click_Station = (event) => {
+	_Handle_Mouse_Click_Station = (event) => {
 		if (!event.currentSubTargets.length) 
 			throw new Error("Event target container has nothing inside.");	
 		if (!this._Check_Pointer_In_Range(event.pointer))  // only if on same position
@@ -362,7 +393,7 @@ class Network_Map extends SVG_Map {
 		const target_id = event.currentSubTargets[0].id
 		if (!target_id.length) 
 			throw new Error("The target id is empty.");
-		const station_code = this.#Find_Station_Code_In_Id(target_id);
+		const station_code = this._Find_Station_Code_In_Id(target_id);
 		if (!station_code) 
 			throw new Error("Station code not found.");
 		history.pushState({ station: station_code }, "", station_code);
@@ -372,7 +403,7 @@ class Network_Map extends SVG_Map {
 	/**
 	* find line codes in label or line id
 	*/
-	#Find_Track_Code_In_Id = (id) => {
+	_Find_Track_Code_In_Id = (id) => {
 		if (id.indexOf(this.network_config.TRACK_PREFIX_ID) <= -1 && id.indexOf(this.network_config.LINE_LABEL_PREFIX_ID) <= -1)
 			throw Error("Line not found");
 		let ID_parts  = id.split('-')
@@ -384,7 +415,7 @@ class Network_Map extends SVG_Map {
 	/**
 	* find station code in station label or station icon
 	*/
-	#Find_Station_Code_In_Id(id) {
+	_Find_Station_Code_In_Id(id) {
 		if (id.indexOf(this.network_config.STATION_LABEL_PREFIX_ID) <= -1 && id.indexOf(this.network_config.STATION_PREFIX_ID) <= -1)
 			throw Error("Station not found");
 		let ID_parts  = id.split('-')
@@ -393,15 +424,20 @@ class Network_Map extends SVG_Map {
 		return  ID_parts[1];	
 	}
 
-	// find the line json object in all lines
-	#Find_Line_Data_By_Id = (code) => {
+	/** 
+	 * find the line json object in all lines
+	 */
+	_Find_Line_Data_By_Id = (code) => {
 		return this.lines[code];
 	}
 
-	// find the station json object in all stations
-	#Find_Station_Data_By_Id = (code) => {
+	/**
+	 * find the station json object in all stations
+	 */
+	_Find_Station_Data_By_Id = (code) => {
 		return this.all_stations_json.find(x => x.code === code);
 	}
 }
 
 export default Network_Map;
+ 

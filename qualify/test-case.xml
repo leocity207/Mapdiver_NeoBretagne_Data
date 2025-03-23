@@ -1,0 +1,73 @@
+<Project name="Maptiva">
+	<Folder name="Functional-Tests">
+		<Test id="T1" name="verify-map-display" req="R1">
+			Verify that the map is correctly displayed on the main webpage. After loading the page
+		</Test>
+
+		<Test id="T2" name="do-a-research" req="R3 R5 R8 R14">
+			<Dimension type="text-type">
+				<Choice name="station-label"/>
+				<Choice name="track-label"/>
+			</Dimension>
+			<Dimension type="search-Input">
+				<Choice name="valid-station-name"/>
+				<Choice name="valid-line-name"/>
+				<Choice name="invalid-input"/>
+			</Dimension>
+			Make a research using the search.
+			Once validating your choice the map should display the slected choice.
+			you could also be able to change element via the arrow or tab on keyboard and push enter to select the result
+		</Test>
+
+		<Test id="T3" name="hamburger-menue" req="R6 R9 R13">
+			Verify that users can search and highlight elements on the map.
+		</Test>
+
+		<Test id="T4" name="select-on-map" req="R6 R9 R2 R11 R7">
+			<Dimension type="object-type"/>
+				<Choice name="station-label"/>
+				<Choice name="station"/>
+				<Choice name="track-line"/>
+				<Choice name="track-label"/>
+			</Dimension>
+			Verify that users can select item on the map.
+		</Test>
+
+		<Test id="T5" name="traveling-on-the-map" req="R22">
+			<Dimension type="gesture">
+				<Choice name="mousse drag"/>
+				<Choice name="mousse Scrolling"/>
+			</Dimension>
+			Verify that users can navigate all acrosse the map.
+		</Test>
+
+		<Test id="T6" name="changing-color-map" req="R4 R21">
+			<Dimension type="color-mode"/>
+				<Choice name="default"/>
+				<Choice name="easy"/>
+			</Dimension>
+			Verify that users can change the color via the left panel menue.
+		</Test>
+	</Folder>
+
+	<Folder id="T7" name="Accessibility Requirements" req="R16 R21">
+		<Dimension type="screen-ratio">
+			<Choice name="3840x2160"/>
+			<Choice name="412x915"/>
+			<Choice name="1500x750"/>
+			<Choice name="1000x1000"/>
+		</Dimension>
+		The screen should adapt with the screen not get out of bound or display weirdly
+	<Folder>
+
+	<Folder name="Performance-Tests">
+		<Test id="T8" name="measure-map-load-time" req="R10">
+			<Dimension type="Load Time"/>
+			Verify that the map loads within 3 seconds.
+		</Test>
+		<Test id="T9" name="measure-search-performance" req="R12">
+			<Dimension type="Response-Time"/>
+			Verify that search results are displayed within 300ms.
+		</Test>
+	</Folder>
+</Project>

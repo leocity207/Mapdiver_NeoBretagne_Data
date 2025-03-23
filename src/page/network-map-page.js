@@ -2,6 +2,7 @@ import Network_Map from "../map/network_map.js";
 import Map_Page from "./svg-map-page.js";
 import Utils from "../utils/utils.js";
 import { Config, Network_Config} from "../config/config.js"
+import Switch_Event from "../components/switch.js";
 /**
  * Network_Map_Station define a node that contain a Network_Map object
  * 
@@ -9,10 +10,35 @@ import { Config, Network_Config} from "../config/config.js"
  */
 class Network_Map_Page extends Map_Page {
 
+	/**
+	 * last event that happend in the form  {type: string, detail: Any};
+	 */
+	prev_event
+
+	/**
+	 * tells wether the panel is open (should be unused)
+	 */
+	panel_detail_is_open
+
+	/**
+	 * data bout the network that is being displayed {Stations: json_data, detail: json_data}
+	 */
+	network_data
+
+	/**
+	 * the network Network_Map
+	 */
+	map 
+
 	constructor() {
 		super();
 	}
 
+	/**
+	 * When the user click on a staion
+	 * 
+	 * @param {Object} event 
+	 */
 	On_Station_CLicked(event) {
 		if(this.prev_event.type === 'line')
 			this.map.Reset_All_Highlight_Station();
@@ -21,6 +47,11 @@ class Network_Map_Page extends Map_Page {
 			this.map.Zoom_Highlighted_Stations(event.detail);
 	}
 
+	/**
+	 * When the user click on a line
+	 * 
+	 * @param {Object} event 
+	 */
 	On_Line_CLicked(event) {
 		if(this.prev_event.type === 'station')
 			this.map.Reset_All_Highlight_Station();
@@ -29,6 +60,11 @@ class Network_Map_Page extends Map_Page {
 			this.map.Zoom_Highlighted_Line(event.detail);
 	}
 
+	/**
+	 * When the user go back or deselect the curent station or line
+	 * 
+	 * @param {Object} event 
+	 */
 	On_Pop_State(event) {
 		if(!this.prev_event.type) 
 			this.map.Initial_Zoom_Move();
@@ -39,6 +75,10 @@ class Network_Map_Page extends Map_Page {
 			this.map.Reset_Line_Highlight();
 	}
 
+	/**
+	 * when the user select a label on the map 
+	 * @param {Object} label 
+	 */
 	On_Selected_By_Label(label) {
 		let solutionKey = Object.keys(this.network_data.Stations).find(key => this.network_data.Stations[key].label === label);
 		if(solutionKey)
@@ -72,6 +112,12 @@ class Network_Map_Page extends Map_Page {
 
 		const labels = Object.values(this.network_data.Lines).map(line => line.label).concat(Object.values(this.network_data.Stations).map(station => station.label));
 		this.sticky_header.Set_Autocomplete_List(labels).subscribe(label => this.On_Selected_By_Label(label));
+		Switch_Event.Get_Observable("color").subscribe((event) => {
+			if(event.state)
+				this.map.Change_Color("easy");
+			else
+				this.map.Change_Color("default");
+		});
 	}
 
 	/**
