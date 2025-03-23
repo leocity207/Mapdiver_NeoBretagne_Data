@@ -1,0 +1,93 @@
+<Campaign date=23-03-25 commit="1e9899bdb75d27e9326f5d1a932a8c9cb16b6e6f" tester="leo">
+	<Test id="T1">
+		<Dimension type="result">
+			<Choice name="failed"/>
+		</Dimension>
+		<Dimension type="remark">
+			When we open the map after loading there is a frame where the map change weirdly
+		</Dimension>
+	</Test>
+
+	<Test id="T2">
+		<Dimension type="text-type">
+			<Choice name="station-label"/>
+			<Choice name="track-label"/>
+		</Dimension>
+		<Dimension type="search-Input">
+			<Choice name="valid-station-name"/>
+			<Choice name="valid-line-name"/>
+			<Choice name="invalid-input"/>
+		</Dimension>
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+
+	<Test id="T3">
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+
+	<Test id="T4">
+		<Dimension type="object-type"/>
+			<Choice name="station-label"/>
+			<Choice name="station"/>
+			<Choice name="track-line"/>
+			<Choice name="track-label"/>
+		</Dimension>
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+
+	<Test id="T5">
+		<Dimension type="gesture">
+			<Choice name="mousse drag"/>
+			<Choice name="mousse Scrolling"/>
+		</Dimension>
+		<Dimension type="result">
+			<Choice name="failed"/>
+		</Dimension>
+		<Dimension type="remark">
+			The scrolling is a bit heratics
+		</Dimension>
+	</Test>
+
+	<Test ref="T6" >
+		<Dimension type="color-mode">
+			<Choice name="default"/>
+			<Choice name="easy"/>
+		</Dimension>
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+
+	<Test id="T7">
+		<Dimension type="screen-ratio">
+			<Choice name="3840x2160"/>
+			<Choice name="412x915"/>
+			<Choice name="1500x750"/>
+			<Choice name="1000x1000"/>
+		</Dimension>
+		<Dimension type="result">
+			<Choice name="failed"/>
+		</Dimension>
+		<Dimension type="remark">
+			The GUI is broken and doesn't adapt to the size and the initial move get outside
+		</Dimension>
+	</Test>
+
+	<Test id="T8">
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+
+	<Test id="T9">
+		<Dimension type="result">
+			<Choice name="success"/>
+		</Dimension>
+	</Test>
+</Campaign>

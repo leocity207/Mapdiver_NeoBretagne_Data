@@ -24,33 +24,33 @@
 		</Test>
 
 		<Test id="T4" name="select-on-map" req="R6 R9 R2 R11 R7">
-			<Dimension type="object-type">
-				<Choice name="station-label">The station label</Choice>
-				<Choice name="station">the station element.</Choice>
-				<Choice name="track-line">the track line displayed as a path.</Choice>
-				<Choice name="track-label">The track label.</Choice>
+			<Dimension type="object-type"/>
+				<Choice name="station-label"/>
+				<Choice name="station"/>
+				<Choice name="track-line"/>
+				<Choice name="track-label"/>
 			</Dimension>
 			Verify that users can select item on the map.
 		</Test>
 
 		<Test id="T5" name="traveling-on-the-map" req="R22">
 			<Dimension type="gesture">
-				<Choice name="mousse drag">Dragging with the mousse.</Choice>
-				<Choice name="mousse Scrolling">Scrolling in and out with the mousse.</Choice>
+				<Choice name="mousse drag"/>
+				<Choice name="mousse Scrolling"/>
 			</Dimension>
 			Verify that users can navigate all acrosse the map.
 		</Test>
 
 		<Test id="T6" name="changing-color-map" req="R4 R21">
-			<Dimension type="color-mode">
-				<Choice name="default">the default coloring schems</Choice>
-				<Choice name="easy">the easy to read coloring schems.</Choice>
+			<Dimension type="color-mode"/>
+				<Choice name="default"/>
+				<Choice name="easy"/>
 			</Dimension>
 			Verify that users can change the color via the left panel menue.
 		</Test>
 	</Folder>
 
-	<Folder name="Accessibility Requirements" req="R16 R21">
+	<Folder id="T7" name="Accessibility Requirements" req="R16 R21">
 		<Dimension type="screen-ratio">
 			<Choice name="3840x2160"/>
 			<Choice name="412x915"/>
@@ -61,11 +61,11 @@
 	<Folder>
 
 	<Folder name="Performance-Tests">
-		<Test id="T7" name="measure-map-load-time" req="R10">
+		<Test id="T8" name="measure-map-load-time" req="R10">
 			<Dimension type="Load Time"/>
 			Verify that the map loads within 3 seconds.
 		</Test>
-		<Test id="T8" name="measure-search-performance" req="R12">
+		<Test id="T9" name="measure-search-performance" req="R12">
 			<Dimension type="Response-Time"/>
 			Verify that search results are displayed within 300ms.
 		</Test>

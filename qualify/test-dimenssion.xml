@@ -39,4 +39,13 @@
 		<Choice name="1500x750"/>
 		<Choice name="1000x1000"/>
 	</Dimension>
+
+	<Dimension type="result">
+		<Choice name="success"/>
+		<Choice name="failed"/>
+	</Dimension>
+
+	<Dimension type="remark" free="true">
+	</Dimension>
+
 </Project>
