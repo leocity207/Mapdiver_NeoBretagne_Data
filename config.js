@@ -8,7 +8,7 @@ export const Config = {
   /**
    * if debug log should be enabled
    */
-  DEBUG: true,
+  DEBUG: false,
   
 	/** 
    * Initial Zoom value if we cannot zoom on object ID
