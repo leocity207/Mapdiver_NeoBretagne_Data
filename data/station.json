@@ -443,6 +443,10 @@
 		"FR_44129_0":{
 			"label": "Pontchâteau",
 			"lines" : ["LER_BRE3","LER_BRE1"]
+		},
+		"FR_35360_0" : {
+			"label" : "Vitré",
+			"line" : ["LER_BRE0"]
 		}
 	}
 }
