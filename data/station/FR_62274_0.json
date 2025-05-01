@@ -1,4 +1,4 @@
-
-
-
-
+{
+    "label": "Douai-Lens TGV",
+    "lines" : ["LGV_FR4","LGV_FR7"]
+}

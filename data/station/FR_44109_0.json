@@ -1,4 +1,4 @@
-
-
-
-
+{
+    "label": "Nantes",
+    "lines" : ["LER_BRE4","LER_BRE7","LER_BRE6","IC1","LGV_FR7","LGV_FR9","LGV_BRE2","LGV_FR4","LGV_BRE1","LER_BRE5","LER_BRE1","LER_BRE3"]
+}

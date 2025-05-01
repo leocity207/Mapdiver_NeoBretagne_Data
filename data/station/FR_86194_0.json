@@ -1,3 +1,4 @@
-
-
-
+{
+    "label": "Poitiers",
+    "lines" : ["LER_BRE3","LER_NAQ7"]
+}

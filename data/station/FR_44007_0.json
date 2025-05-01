@@ -1,3 +1,4 @@
-
-
-
+{
+    "label": "Avessac Redon TGV",
+    "lines" : ["LER_BRE3","LGV_BRE3","LER_BRE2","LGV_FR4","LGV_BRE3","LGV_BRE2"]
+}

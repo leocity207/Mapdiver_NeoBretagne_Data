@@ -1,4 +1,4 @@
-
-
-
-
+{
+    "label": "Paris Montparnasse",
+    "lines" : ["LER_CVL1","LGV_BRE0","LGV_BRE1"]
+}

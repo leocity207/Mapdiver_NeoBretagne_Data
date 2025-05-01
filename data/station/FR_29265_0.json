@@ -1,3 +1,4 @@
-
-
-
+{
+    "label": "Morlaix Sainte-Sève TGV",
+    "lines" :  ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
+}

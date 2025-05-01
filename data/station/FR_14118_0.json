@@ -1,3 +1,4 @@
-
-
-
+{
+    "label": "Caen",
+    "lines" : ["LER_NOR2","LER_NOR3","LGV_FR4"]
+}
