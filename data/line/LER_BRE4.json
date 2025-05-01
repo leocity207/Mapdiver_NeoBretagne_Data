@@ -1,0 +1,123 @@
+{
+	"code": "LER_BRE4",
+	"label": "LER BRE4",
+	"urls": {},
+	"color": {
+		"default": "#2437B1",
+		"easy": "#94C11A"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LER_BRE4_A_20",
+			"label": "Default A Direction",
+			"interval_minutes": 60,
+			"departure_minute": 20,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_35288_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35095_0",
+					"arrival_minute": 5,
+					"departure_minute": 6,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35079_0",
+					"arrival_minute": 11,
+					"departure_minute": 12,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 18,
+					"departure_minute": 19,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35136_0",
+					"arrival_minute": 23,
+					"departure_minute": 24,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44036_0",
+					"arrival_minute": 27,
+					"departure_minute": 28,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44110_0",
+					"arrival_minute": 31,
+					"departure_minute": 32,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 33,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LER_BRE4_R_50",
+			"label": "Default R Direction",
+			"interval_minutes": 60,
+			"departure_minute": 50,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_44109_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44110_0",
+					"arrival_minute": 2,
+					"departure_minute": 3,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44036_0",
+					"arrival_minute": 6,
+					"departure_minute": 7,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35136_0",
+					"arrival_minute": 10,
+					"departure_minute": 11,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 15,
+					"departure_minute": 16,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35079_0",
+					"arrival_minute": 22,
+					"departure_minute": 23,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35095_0",
+					"arrival_minute": 28,
+					"departure_minute": 29,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35288_0",
+					"arrival_minute": 33,
+					"flags": []
+				}
+			]
+		}
+	]
+}

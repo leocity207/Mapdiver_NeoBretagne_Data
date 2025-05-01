@@ -1,0 +1,147 @@
+{
+	"code": "LGV_BRE0",
+	"label": "LGV BRE0",
+	"urls": {},
+	"color": {
+		"default": "#FA0A0A",
+		"easy": "#294B95"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LGV_BRE0_A_00",
+			"label": "Default A Direction",
+			"interval_minutes": 120,
+			"departure_minute": 0,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_29019_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29265_0",
+					"arrival_minute": 18,
+					"departure_minute": 20,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_22070_0",
+					"arrival_minute": 42,
+					"departure_minute": 44,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_22278_0",
+					"arrival_minute": 68,
+					"departure_minute": 70,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 95,
+					"departure_minute": 97,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_53130_0",
+					"arrival_minute": 122,
+					"departure_minute": 124,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 148,
+					"departure_minute": 150,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_28085_0",
+					"arrival_minute": 165,
+					"departure_minute": 167,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_91377_1",
+					"arrival_minute": 180,
+					"departure_minute": 182,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_75115_0",
+					"arrival_minute": 188,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LGV_BRE0_R_30",
+			"label": "Default R Direction",
+			"interval_minutes": 120,
+			"departure_minute": 30,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_75115_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_91377_1",
+					"arrival_minute": 8,
+					"departure_minute": 10,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_28085_0",
+					"arrival_minute": 23,
+					"departure_minute": 25,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 40,
+					"departure_minute": 42,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_53130_0",
+					"arrival_minute": 66,
+					"departure_minute": 68,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 93,
+					"departure_minute": 95,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_22278_0",
+					"arrival_minute": 120,
+					"departure_minute": 122,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_22070_0",
+					"arrival_minute": 146,
+					"departure_minute": 148,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29265_0",
+					"arrival_minute": 170,
+					"departure_minute": 172,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29019_0",
+					"arrival_minute": 188,
+					"flags": []
+				}
+			]
+		}
+	]
+}

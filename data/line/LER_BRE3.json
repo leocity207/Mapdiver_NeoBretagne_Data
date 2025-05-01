@@ -1,0 +1,149 @@
+{
+	"code": "LER_BRE3",
+	"label": "LER BRE3",
+	"urls": {
+		"fr": "/LER_BRE3"
+	},
+	"color": {
+		"default": "#316B80",
+		"easy": "#F39100"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LER_BRE3_A_30",
+			"label": "Nantes - Poitiers",
+			"interval_minutes": 15,
+			"departure_minute": 30,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_35238_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35176_0",
+					"arrival_minute": 7,
+					"departure_minute": 9,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44007_0",
+					"arrival_minute": 19,
+					"departure_minute": 21,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44129_0",
+					"arrival_minute": 31,
+					"departure_minute": 33,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44195_0",
+					"arrival_minute": 42,
+					"departure_minute": 44,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 53,
+					"departure_minute": 55,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49099_0",
+					"arrival_minute": 65,
+					"departure_minute": 67,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_79049_0",
+					"arrival_minute": 66,
+					"departure_minute": 68,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_79202_0",
+					"arrival_minute": 75,
+					"departure_minute": 77,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_86194_0",
+					"arrival_minute": 88,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LER_BRE3_R_00",
+			"label": "Poitiers - Nantes",
+			"interval_minutes": 15,
+			"departure_minute": 0,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_86194_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_79202_0",
+					"arrival_minute": 11,
+					"departure_minute": 13,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_79049_0",
+					"arrival_minute": 20,
+					"departure_minute": 22,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49099_0",
+					"arrival_minute": 31,
+					"departure_minute": 33,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 41,
+					"departure_minute": 43,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44195_0",
+					"arrival_minute": 52,
+					"departure_minute": 54,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44129_0",
+					"arrival_minute": 63,
+					"departure_minute": 65,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44007_0",
+					"arrival_minute": 75,
+					"departure_minute": 77,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35176_0",
+					"arrival_minute": 76,
+					"departure_minute": 78,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 87,
+					"flags": []
+				}
+			]
+		}
+	]
+}

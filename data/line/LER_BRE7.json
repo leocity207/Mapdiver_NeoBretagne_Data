@@ -1,0 +1,87 @@
+{
+	"code": "LER_BRE7",
+	"label": "LER BRE7",
+	"urls": {},
+	"color": {
+		"default": "#7594E0",
+		"easy": "#AD0600"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LER_BRE7_A_15",
+			"label": "Default A Direction",
+			"interval_minutes": 60,
+			"departure_minute": 15,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_44109_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44003_0",
+					"arrival_minute": 12,
+					"departure_minute": 13,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49007_0",
+					"arrival_minute": 25,
+					"departure_minute": 26,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72264_0",
+					"arrival_minute": 39,
+					"departure_minute": 40,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 57,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LER_BRE7_R_45",
+			"label": "Default R Direction",
+			"interval_minutes": 60,
+			"departure_minute": 45,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_72181_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72264_0",
+					"arrival_minute": 17,
+					"departure_minute": 18,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49007_0",
+					"arrival_minute": 31,
+					"departure_minute": 32,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44003_0",
+					"arrival_minute": 44,
+					"departure_minute": 45,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 57,
+					"flags": []
+				}
+			]
+		}
+	]
+}

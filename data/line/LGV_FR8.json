@@ -1,0 +1,127 @@
+{
+	"code": "LGV_FR8",
+	"label": "LGV FR8",
+	"urls": {},
+	"color": {
+		"default": "#E07777",
+		"easy": "#C4D983"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LGV_FR8_A_00",
+			"label": "Default A Direction",
+			"interval_minutes": 240,
+			"departure_minute": 0,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_35238_0",
+					"departure_minute": 0
+				},
+				{
+					"station_ID": "FR_53130_0",
+					"arrival_minute": 42,
+					"departure_minute": 43
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 95,
+					"departure_minute": 96
+				},
+				{
+					"station_ID": "FR_28085_0",
+					"arrival_minute": 138,
+					"departure_minute": 139
+				},
+				{
+					"station_ID": "FR_91377_1",
+					"arrival_minute": 182,
+					"departure_minute": 183
+				},
+				{
+					"station_ID": "FR_10387_0",
+					"arrival_minute": 235,
+					"departure_minute": 236
+				},
+				{
+					"station_ID": "FR_21231_0",
+					"arrival_minute": 288,
+					"departure_minute": 289
+				},
+				{
+					"station_ID": "FR_69383_0",
+					"arrival_minute": 341,
+					"departure_minute": 342
+				},
+				{
+					"station_ID": "FR_84007_1",
+					"arrival_minute": 394,
+					"departure_minute": 395
+				},
+				{
+					"station_ID": "FR_13201_0",
+					"arrival_minute": 450
+				}
+			]
+		},
+		{
+			"code": "LGV_FR8_R_30",
+			"label": "Default R Direction",
+			"interval_minutes": 240,
+			"departure_minute": 30,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_13201_0",
+					"departure_minute": 0
+				},
+				{
+					"station_ID": "FR_84007_1",
+					"arrival_minute": 55,
+					"departure_minute": 56
+				},
+				{
+					"station_ID": "FR_69383_0",
+					"arrival_minute": 108,
+					"departure_minute": 109
+				},
+				{
+					"station_ID": "FR_21231_0",
+					"arrival_minute": 161,
+					"departure_minute": 162
+				},
+				{
+					"station_ID": "FR_10387_0",
+					"arrival_minute": 214,
+					"departure_minute": 215
+				},
+				{
+					"station_ID": "FR_91377_1",
+					"arrival_minute": 267,
+					"departure_minute": 268
+				},
+				{
+					"station_ID": "FR_28085_0",
+					"arrival_minute": 311,
+					"departure_minute": 312
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 354,
+					"departure_minute": 355
+				},
+				{
+					"station_ID": "FR_53130_0",
+					"arrival_minute": 407,
+					"departure_minute": 408
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 450
+				}
+			]
+		}
+	]
+}

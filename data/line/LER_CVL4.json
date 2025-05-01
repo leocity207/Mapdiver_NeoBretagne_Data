@@ -1,1 +1,87 @@
-
+{
+	"code": "LER_CVL4",
+	"label": "LER CVL4",
+	"urls": {},
+	"color": {
+		"default": "#171764",
+		"easy": "#2CAEB3"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LER_CVL4_A_15",
+			"label": "Default A Direction",
+			"interval_minutes": 60,
+			"departure_minute": 15,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_45234_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41018_0",
+					"arrival_minute": 12,
+					"departure_minute": 13,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41269_0",
+					"arrival_minute": 24,
+					"departure_minute": 25,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41269_1",
+					"arrival_minute": 34,
+					"departure_minute": 35,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_72181_0",
+					"arrival_minute": 53,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LER_CVL4_R_45",
+			"label": "Default R Direction",
+			"interval_minutes": 60,
+			"departure_minute": 45,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_72181_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41269_1",
+					"arrival_minute": 18,
+					"departure_minute": 19,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41269_0",
+					"arrival_minute": 28,
+					"departure_minute": 29,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_41018_0",
+					"arrival_minute": 39,
+					"departure_minute": 40,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_45234_0",
+					"arrival_minute": 53,
+					"flags": []
+				}
+			]
+		}
+	]
+}

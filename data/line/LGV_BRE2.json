@@ -1,0 +1,97 @@
+{
+	"code": "LGV_BRE2",
+	"label": "LGV BRE2",
+	"urls": {},
+	"color": {
+		"default": "#700707",
+		"easy": ""
+	},
+	"timetable_pattern": [
+		{
+			"code": "LGV_BRE2_A_10",
+			"label": "Default A Direction",
+			"interval_minutes": 60,
+			"departure_minute": 10,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_29019_0",
+					"departure_minute": 0
+				},
+				{
+					"station_ID": "FR_29265_0",
+					"arrival_minute": 18,
+					"departure_minute": 19
+				},
+				{
+					"station_ID": "FR_22070_0",
+					"arrival_minute": 38,
+					"departure_minute": 39
+				},
+				{
+					"station_ID": "FR_22278_0",
+					"arrival_minute": 58,
+					"departure_minute": 59
+				},
+				{
+					"station_ID": "FR_35240_0",
+					"arrival_minute": 76,
+					"departure_minute": 77
+				},
+				{
+					"station_ID": "FR_44007_0",
+					"arrival_minute": 92,
+					"departure_minute": 93
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 114
+				}
+			]
+		},
+		{
+			"code": "LGV_BRE2_R_40",
+			"label": "Default R Direction",
+			"interval_minutes": 60,
+			"departure_minute": 40,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_44109_0",
+					"departure_minute": 0
+				},
+				{
+					"station_ID": "FR_44007_0",
+					"arrival_minute": 21,
+					"departure_minute": 22
+				},
+				{
+					"station_ID": "FR_35240_0",
+					"arrival_minute": 37,
+					"departure_minute": 38
+				},
+				{
+					"station_ID": "FR_22278_0",
+					"arrival_minute": 55,
+					"departure_minute": 56
+				},
+				{
+					"station_ID": "FR_22070_0",
+					"arrival_minute": 75,
+					"departure_minute": 76
+				},
+				{
+					"station_ID": "FR_29265_0",
+					"arrival_minute": 95,
+					"departure_minute": 96
+				},
+				{
+					"station_ID": "FR_29019_0",
+					"arrival_minute": 114
+				}
+			]
+		}
+	]
+}

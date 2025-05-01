@@ -2,7 +2,7 @@
 	"code": "LER_BRE0",
 	"label": "LER BRE0",
 	"urls": {
-		"fr": "/LER_BRE0",
+		"fr": "/LER_BRE0"
 	},
 	"color": {
 		"default": "#25158B",
@@ -13,96 +13,96 @@
 			"code": "LER_BRE0_A_22",
 			"label": "Brest - Le Mans",
 			"interval_minutes": 60,
-			"departure_minute": ":22",
+			"departure_minute": 22,
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
 				{
 					"station_ID": "FR_29019_0",
-					"departure_minute": ":00",
+					"departure_minute": 0,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29103_0",
-					"arrival_minute": ":08",
-					"departure_minute": ":09",
+					"arrival_minute": 8,
+					"departure_minute": 9,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29105_0",
-					"arrival_minute": ":16",
-					"departure_minute": ":17",
+					"arrival_minute": 16,
+					"departure_minute": 17,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29265_0",
-					"arrival_minute": ":25",
-					"departure_minute": ":26",
+					"arrival_minute": 25,
+					"departure_minute": 26,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29151_0",
-					"arrival_minute": ":33",
-					"departure_minute": ":34",
+					"arrival_minute": 33,
+					"departure_minute": 34,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22207_0",
-					"arrival_minute": ":42",
-					"departure_minute": ":44",
+					"arrival_minute": 42,
+					"departure_minute": 44,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22070_0",
-					"arrival_minute": ":50",
-					"departure_minute": ":53",
+					"arrival_minute": 50,
+					"departure_minute": 53,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22278_0",
-					"arrival_minute": ":58",
-					"departure_minute": ":59",
+					"arrival_minute": 58,
+					"departure_minute": 59,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22093_0",
-					"arrival_minute": "01:07",
-					"departure_minute": "01:09",
+					"arrival_minute": 67,
+					"departure_minute": 69,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35184_0",
-					"arrival_minute": "01:16",
-					"departure_minute": "01:17",
+					"arrival_minute": 76,
+					"departure_minute": 77,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35238_0",
-					"arrival_minute": "01:25",
-					"departure_minute": "01:26",
+					"arrival_minute": 85,
+					"departure_minute": 86,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35360_0",
-					"arrival_minute": "01:33",
-					"departure_minute": "01:34",
+					"arrival_minute": 93,
+					"departure_minute": 94,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_53130_0",
-					"arrival_minute": "01:41",
-					"departure_minute": "01:42",
+					"arrival_minute": 101,
+					"departure_minute": 102,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_53097_0",
-					"arrival_minute": "01:50",
-					"departure_minute": "01:52",
+					"arrival_minute": 110,
+					"departure_minute": 112,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_72181_0",
-					"arrival_minute": "02:00",
+					"arrival_minute": 120,
 					"flags": []
 				}
 			]
@@ -111,96 +111,96 @@
 			"code": "LER_BRE0_R_07",
 			"label": "Le Mans - Brest",
 			"interval_minutes": 60,
-			"departure_minute": ":07",
+			"departure_minute": 7,
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
 				{
 					"station_ID": "FR_72181_0",
-					"departure_minute": ":00",
+					"departure_minute": 00,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_53097_0",
-					"arrival_minute": ":08",
-					"departure_minute": ":10",
+					"arrival_minute": 08,
+					"departure_minute": 10,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_53130_0",
-					"arrival_minute": ":16",
-					"departure_minute": ":17",
+					"arrival_minute": 16,
+					"departure_minute": 17,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35360_0",
-					"arrival_minute": ":25",
-					"departure_minute": ":26",
+					"arrival_minute": 25,
+					"departure_minute": 26,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35238_0",
-					"arrival_minute": ":33",
-					"departure_minute": ":34",
+					"arrival_minute": 33,
+					"departure_minute": 34,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_35184_0",
-					"arrival_minute": ":42",
-					"departure_minute": ":43",
+					"arrival_minute": 42,
+					"departure_minute": 43,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22093_0",
-					"arrival_minute": ":50",
-					"departure_minute": ":52",
+					"arrival_minute": 50,
+					"departure_minute": 52,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22278_0",
-					"arrival_minute": ":58",
-					"departure_minute": ":59",
+					"arrival_minute": 58,
+					"departure_minute": 59,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22070_0",
-					"arrival_minute": "01:07",
-					"departure_minute": "01:10",
+					"arrival_minute": 67,
+					"departure_minute": 70,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_22207_0",
-					"arrival_minute": "01:16",
-					"departure_minute": "01:18",
+					"arrival_minute": 76,
+					"departure_minute": 78,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29151_0",
-					"arrival_minute": "01:25",
-					"departure_minute": "01:26",
+					"arrival_minute": 85,
+					"departure_minute": 86,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29265_0",
-					"arrival_minute": "01:33",
-					"departure_minute": "01:34",
+					"arrival_minute": 93,
+					"departure_minute": 94,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29105_0",
-					"arrival_minute": "01:42",
-					"departure_minute": "01:43",
+					"arrival_minute": 102,
+					"departure_minute": 103,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29103_0",
-					"arrival_minute": "01:50",
-					"departure_minute": "01:51",
+					"arrival_minute": 110,
+					"departure_minute": 111,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_29019_0",
-					"arrival_minute": "02:00",
+					"arrival_minute": 120,
 					"flags": []
 				}
 			]

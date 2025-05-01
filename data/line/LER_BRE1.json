@@ -1,0 +1,257 @@
+{
+	"code": "LER_BRE1",
+	"label": "LER BRE1",
+	"urls": {
+		"fr": "/LER_BRE1"
+	},
+	"color": {
+		"default": "#4D84B8",
+		"easy": "#9184BE"
+	},
+	"timetable_pattern": [
+		{
+			"code": "LER_BRE1_A_22",
+			"label": "Brest - Tours",
+			"interval_minutes": 60,
+			"departure_minute": 22,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_29019_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29080_0",
+					"arrival_minute": 8,
+					"departure_minute": 9,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29302_0",
+					"arrival_minute": 16,
+					"departure_minute": 17,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29232_0",
+					"arrival_minute": 25,
+					"departure_minute": 26,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29233_0",
+					"arrival_minute": 33,
+					"departure_minute": 34,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56121_0",
+					"arrival_minute": 42,
+					"departure_minute": 44,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56098_0",
+					"arrival_minute": 50,
+					"departure_minute": 53,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56007_0",
+					"arrival_minute": 58,
+					"departure_minute": 59,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56260_0",
+					"arrival_minute": 67,
+					"departure_minute": 69,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56206_0",
+					"arrival_minute": 76,
+					"departure_minute": 77,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56184_0",
+					"arrival_minute": 85,
+					"departure_minute": 86,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35236_0",
+					"arrival_minute": 93,
+					"departure_minute": 94,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44129_0",
+					"arrival_minute": 101,
+					"departure_minute": 102,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44195_0",
+					"arrival_minute": 110,
+					"departure_minute": 112,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 120,
+					"departure_minute": 122,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44003_0",
+					"arrival_minute": 130,
+					"departure_minute": 132,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49007_0",
+					"arrival_minute": 140,
+					"departure_minute": 142,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49328_0",
+					"arrival_minute": 150,
+					"departure_minute": 152,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_37261_0",
+					"arrival_minute": 160,
+					"flags": []
+				}
+			]
+		},
+		{
+			"code": "LER_BRE1_R_07",
+			"label": "Tours - Brest",
+			"interval_minutes": 60,
+			"departure_minute": 7,
+			"service": "local",
+			"infomessages": [],
+			"lineflowstops": [
+				{
+					"station_ID": "FR_37261_0",
+					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49328_0",
+					"arrival_minute": 8,
+					"departure_minute": 10,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_49007_0",
+					"arrival_minute": 16,
+					"departure_minute": 18,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44003_0",
+					"arrival_minute": 25,
+					"departure_minute": 27,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44109_0",
+					"arrival_minute": 33,
+					"departure_minute": 35,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44195_0",
+					"arrival_minute": 42,
+					"departure_minute": 44,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_44129_0",
+					"arrival_minute": 50,
+					"departure_minute": 52,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35236_0",
+					"arrival_minute": 58,
+					"departure_minute": 59,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56184_0",
+					"arrival_minute": 67,
+					"departure_minute": 69,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56206_0",
+					"arrival_minute": 76,
+					"departure_minute": 78,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56260_0",
+					"arrival_minute": 85,
+					"departure_minute": 87,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56007_0",
+					"arrival_minute": 93,
+					"departure_minute": 95,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56098_0",
+					"arrival_minute": 102,
+					"departure_minute": 104,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_56121_0",
+					"arrival_minute": 110,
+					"departure_minute": 112,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29233_0",
+					"arrival_minute": 120,
+					"departure_minute": 122,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29232_0",
+					"arrival_minute": 130,
+					"departure_minute": 132,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29302_0",
+					"arrival_minute": 140,
+					"departure_minute": 142,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29080_0",
+					"arrival_minute": 150,
+					"departure_minute": 152,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_29019_0",
+					"arrival_minute": 160,
+					"flags": []
+				}
+			]
+		}
+	]
+}
