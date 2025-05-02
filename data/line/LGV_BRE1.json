@@ -1,7 +1,9 @@
 {
 	"code": "LGV_BRE1",
 	"label": "LGV BRE1",
-	"urls": {},
+	"urls": {
+		"fr": "/LGV_BRE1"
+	},
 	"color": {
 		"default": "#C01400",
 		"easy": "#B69495"
@@ -9,9 +11,11 @@
 	"timetable_pattern": [
 		{
 			"code": "LGV_BRE1_A_05",
-			"label": "Default A Direction",
+			"label": "Quimper - Paris Montparnass",
 			"interval_minutes": 60,
 			"departure_minute": 5,
+			"first_departure":"4:05:00",
+			"last_departure":"00:05:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -67,9 +71,11 @@
 		},
 		{
 			"code": "LGV_BRE1_R_35",
-			"label": "Default R Direction",
+			"label": "Paris Montparnass - Quimper",
 			"interval_minutes": 60,
 			"departure_minute": 35,
+			"first_departure":"4:35:00",
+			"last_departure":"00:35:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

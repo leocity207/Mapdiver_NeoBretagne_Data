@@ -1,7 +1,9 @@
 {
 	"code": "LER_CVL4",
 	"label": "LER CVL4",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_CVL4"
+	},
 	"color": {
 		"default": "#171764",
 		"easy": "#2CAEB3"
@@ -9,9 +11,11 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_CVL4_A_15",
-			"label": "Default A Direction",
-			"interval_minutes": 60,
+			"label": "Le Mans - Orleans",
+			"interval_minutes": 30,
 			"departure_minute": 15,
+			"first_departure":"4:15:00",
+			"last_departure":"23:15:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -47,9 +51,11 @@
 		},
 		{
 			"code": "LER_CVL4_R_45",
-			"label": "Default R Direction",
-			"interval_minutes": 60,
+			"label": "Orleans - le Mans",
+			"interval_minutes": 30,
 			"departure_minute": 45,
+			"first_departure":"4:15:00",
+			"last_departure":"23:15:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

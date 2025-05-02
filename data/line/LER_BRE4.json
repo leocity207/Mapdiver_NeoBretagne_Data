@@ -1,17 +1,21 @@
 {
 	"code": "LER_BRE4",
 	"label": "LER BRE4",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_BRE4"
+	},
 	"color": {
 		"default": "#2437B1",
 		"easy": "#94C11A"
 	},
 	"timetable_pattern": [
 		{
-			"code": "LER_BRE4_A_20",
-			"label": "Default A Direction",
-			"interval_minutes": 60,
-			"departure_minute": 20,
+			"code": "LER_BRE4_A_22",
+			"label": "Saint-Malo - Nantes",
+			"interval_minutes": 30,
+			"departure_minute": 22,
+			"first_departure":"4:22:00",
+			"last_departure":"23:52:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -65,9 +69,11 @@
 		},
 		{
 			"code": "LER_BRE4_R_50",
-			"label": "Default R Direction",
-			"interval_minutes": 60,
+			"label": "Nantes - Saint-Malo",
+			"interval_minutes": 30,
 			"departure_minute": 50,
+			"first_departure":"4:20:00",
+			"last_departure":"23:20:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

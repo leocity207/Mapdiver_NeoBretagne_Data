@@ -1,17 +1,21 @@
 {
 	"code": "LGV_FR7",
 	"label": "LGV FR7",
-	"urls": {},
+	"urls": {
+		"fr": "/LGV_FR7"
+	},
 	"color": {
 		"default": "#DA026C",
 		"easy": "#AF126F"
 	},
 	"timetable_pattern": [
 		{
-			"code": "LGV_FR7_A_00",
-			"label": "Default A Direction",
-			"interval_minutes": 120,
-			"departure_minute": 0,
+			"code": "LGV_FR7_A_02",
+			"label": "Nantes - Lille Flandres",
+			"interval_minutes": 60,
+			"departure_minute": 2,
+			"first_departure":"4:02:00",
+			"last_departure":"00:02:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -66,10 +70,12 @@
 			]
 		},
 		{
-			"code": "LGV_FR7_R_30",
-			"label": "Default R Direction",
-			"interval_minutes": 120,
-			"departure_minute": 30,
+			"code": "LGV_FR7_R_37",
+			"label": "Lille Flandre - Nantes",
+			"interval_minutes": 60,
+			"departure_minute": 37,
+			"first_departure":"4:37:00",
+			"last_departure":"23:37:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

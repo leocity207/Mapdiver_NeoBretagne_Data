@@ -1,7 +1,9 @@
 {
 	"code": "LGV_BRE3",
 	"label": "LGV BRE3",
-	"urls": {},
+	"urls": {
+		"fr": "/LGV_BRE3"
+	},
 	"color": {
 		"default": "#A42626",
 		"easy": "#66711F"
@@ -9,9 +11,11 @@
 	"timetable_pattern": [
 		{
 			"code": "LGV_BRE3_A_15",
-			"label": "Default A Direction",
+			"label": "Quimper - Rennes",
 			"interval_minutes": 60,
 			"departure_minute": 15,
+			"first_departure":"4:15:00",
+			"last_departure":"00:15:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -42,9 +46,11 @@
 		},
 		{
 			"code": "LGV_BRE3_R_45",
-			"label": "Default R Direction",
+			"label": "Rennes - Quimper",
 			"interval_minutes": 60,
 			"departure_minute": 45,
+			"first_departure":"4:45:00",
+			"last_departure":"23:45:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

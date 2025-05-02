@@ -1,7 +1,9 @@
 {
 	"code": "LER_BRE8",
 	"label": "LER BRE8",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_BRE8"
+	},
 	"color": {
 		"default": "#0FBFC4",
 		"easy": "#EA5097"
@@ -9,9 +11,11 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_BRE8_A_05",
-			"label": "Default A Direction",
-			"interval_minutes": 60,
+			"label": "Angers - Flers",
+			"interval_minutes": 30,
 			"departure_minute": 5,
+			"first_departure":"4:05:00",
+			"last_departure":"00:05:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -59,9 +63,11 @@
 		},
 		{
 			"code": "LER_BRE8_R_35",
-			"label": "Default R Direction",
-			"interval_minutes": 60,
+			"label": "Flers - Angers",
+			"interval_minutes": 30,
 			"departure_minute": 35,
+			"first_departure":"4:35:00",
+			"last_departure":"23:35:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

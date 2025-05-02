@@ -1,17 +1,21 @@
 {
 	"code": "LER_NOR3",
 	"label": "LER NOR3",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_NOR3"
+	},
 	"color": {
 		"default": "#95D9FD",
 		"easy": "#565655"
 	},
 	"timetable_pattern": [
 		{
-			"code": "LER_NOR3_A_20",
-			"label": "Default A Direction",
-			"interval_minutes": 60,
-			"departure_minute": 20,
+			"code": "LER_NOR3_A_27",
+			"label": "Caens - Tours",
+			"interval_minutes": 30,
+			"departure_minute": 27,
+			"first_departure":"4:27:00",
+			"last_departure":"23:27:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -64,10 +68,12 @@
 			]
 		},
 		{
-			"code": "LER_NOR3_R_50",
-			"label": "Default R Direction",
-			"interval_minutes": 60,
-			"departure_minute": 50,
+			"code": "LER_NOR3_R_20",
+			"label": "Tours - Caens",
+			"interval_minutes": 30,
+			"departure_minute": 20,
+			"first_departure":"4:20:00",
+			"last_departure":"23:50:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

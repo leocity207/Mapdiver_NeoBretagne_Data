@@ -1,17 +1,21 @@
 {
 	"code": "LGV_BRE2",
 	"label": "LGV BRE2",
-	"urls": {},
+	"urls": {
+		"fr": "/LGV_BRE2"
+	},
 	"color": {
 		"default": "#700707",
-		"easy": ""
+		"easy": "#700707"
 	},
 	"timetable_pattern": [
 		{
 			"code": "LGV_BRE2_A_10",
-			"label": "Default A Direction",
+			"label": "Brest - Nantes",
 			"interval_minutes": 60,
 			"departure_minute": 10,
+			"first_departure":"4:10:00",
+			"last_departure":"00:10:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -52,9 +56,11 @@
 		},
 		{
 			"code": "LGV_BRE2_R_40",
-			"label": "Default R Direction",
+			"label": "Nantes - Brest",
 			"interval_minutes": 60,
 			"departure_minute": 40,
+			"first_departure":"4:40:00",
+			"last_departure":"23:40:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

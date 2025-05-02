@@ -1,17 +1,21 @@
 {
 	"code": "LER_NAQ7",
 	"label": "LER NAQ7",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_NAQ7"
+	},
 	"color": {
 		"default": "#2D71CA",
 		"easy": "#15AE8D"
 	},
 	"timetable_pattern": [
 		{
-			"code": "LER_NAQ7_A_10",
-			"label": "Default A Direction",
-			"interval_minutes": 60,
-			"departure_minute": 10,
+			"code": "LER_NAQ7_A_12",
+			"label": "Angers - Poitiers",
+			"interval_minutes": 30,
+			"departure_minute": 12,
+			"first_departure":"4:12:00",
+			"last_departure":"23:42:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -46,10 +50,12 @@
 			]
 		},
 		{
-			"code": "LER_NAQ7_R_40",
-			"label": "Default R Direction",
-			"interval_minutes": 60,
-			"departure_minute": 40,
+			"code": "LER_NAQ7_R_48",
+			"label": "Poitiers - Angers",
+			"interval_minutes": 30,
+			"departure_minute": 48,
+			"first_departure":"4:48:00",
+			"last_departure":"23:48:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

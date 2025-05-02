@@ -14,6 +14,8 @@
 			"label": "Brest - Nantes",
 			"interval_minutes": 60,
 			"departure_minute": 45,
+			"first_departure":"4:15:00",
+			"last_departure":"23:20:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -94,6 +96,8 @@
 			"label": "Nantes - Brest",
 			"interval_minutes": 60,
 			"departure_minute": 15,
+			"first_departure":"4:15:00",
+			"last_departure":"23:15:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

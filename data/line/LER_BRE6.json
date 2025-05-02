@@ -1,7 +1,9 @@
 {
 	"code": "LER_BRE6",
 	"label": "LER BRE6",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_BRE6"
+	},
 	"color": {
 		"default": "#19A8C8",
 		"easy": "#FEC800"
@@ -9,9 +11,11 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_BRE6_A_25",
-			"label": "Default A Direction",
+			"label": "Nantes - La Rochelles",
 			"interval_minutes": 60,
 			"departure_minute": 25,
+			"first_departure":"4:25:00",
+			"last_departure":"23:25:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -53,9 +57,11 @@
 		},
 		{
 			"code": "LER_BRE6_R_55",
-			"label": "Default R Direction",
+			"label": "La Rochelles - Nantes",
 			"interval_minutes": 60,
 			"departure_minute": 55,
+			"first_departure":"4:30:00",
+			"last_departure":"23:55:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

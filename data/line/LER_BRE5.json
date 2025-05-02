@@ -1,17 +1,21 @@
 {
 	"code": "LER_BRE5",
 	"label": "LER BRE5",
-	"urls": {},
+	"urls": {
+		"fr": "/LER_BRE5"
+	},
 	"color": {
 		"default": "#01112F",
 		"easy": "#0090D6"
 	},
 	"timetable_pattern": [
 		{
-			"code": "LER_BRE5_A_10",
-			"label": "Default A Direction",
+			"code": "LER_BRE5_A_11",
+			"label": "Le Croisic - Les sables d'Olonne",
 			"interval_minutes": 60,
-			"departure_minute": 10,
+			"departure_minute": 11,
+			"first_departure":"4:11:00",
+			"last_departure":"23:11:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -64,10 +68,12 @@
 			]
 		},
 		{
-			"code": "LER_BRE5_R_40",
-			"label": "Default R Direction",
+			"code": "LER_BRE5_R_48",
+			"label": "Les sables d'Olonne - Le Croisic",
 			"interval_minutes": 60,
-			"departure_minute": 40,
+			"departure_minute": 48,
+			"first_departure":"4:48:00",
+			"last_departure":"23:32:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

@@ -12,8 +12,10 @@
 		{
 			"code": "LER_BRE3_A_30",
 			"label": "Nantes - Poitiers",
-			"interval_minutes": 15,
+			"interval_minutes": 30,
 			"departure_minute": 30,
+			"first_departure":"4:15:00",
+			"last_departure":"23:30:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -80,8 +82,10 @@
 		{
 			"code": "LER_BRE3_R_00",
 			"label": "Poitiers - Nantes",
-			"interval_minutes": 15,
+			"interval_minutes": 30,
 			"departure_minute": 0,
+			"first_departure":"4:30:00",
+			"last_departure":"23:30:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [

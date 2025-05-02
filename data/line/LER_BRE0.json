@@ -14,6 +14,8 @@
 			"label": "Brest - Le Mans",
 			"interval_minutes": 60,
 			"departure_minute": 22,
+			"first_departure":"4:22:00",
+			"last_departure":"23:22:00",
 			"service": "local",
 			"infomessages": [],
 			"lineflowstops": [
@@ -113,16 +115,18 @@
 			"interval_minutes": 60,
 			"departure_minute": 7,
 			"service": "local",
+			"first_departure":"4:07:00",
+			"last_departure":"23:37:00",
 			"infomessages": [],
 			"lineflowstops": [
 				{
 					"station_ID": "FR_72181_0",
-					"departure_minute": 00,
+					"departure_minute": 0,
 					"flags": []
 				},
 				{
 					"station_ID": "FR_53097_0",
-					"arrival_minute": 08,
+					"arrival_minute": 8,
 					"departure_minute": 10,
 					"flags": []
 				},
