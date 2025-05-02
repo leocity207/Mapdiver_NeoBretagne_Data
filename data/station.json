@@ -1,452 +1,116 @@
 {
-	"Stations": {
-		"FR_22070_0":{
-			"label": "Guingamp",
-			"lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
-		},
-		"FR_22278_0":{
-			"label": "Saint-Brieuc",
-			"lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
-		},
-		"FR_35238_0":{
-			"label": "Rennes",
-			"lines" : ["LER_BRE0","LER_NOR2","LER_BRE2","LER_BRE3","LGV_BRE0","LER_BRE4","LGV_BRE3","LGV_FR4","LGV_FR8"]
-		},
-		"FR_28085_0":{
-			"label": "Chartres",
-			"lines" : ["LER_CVL1","LGV_BRE0","LGV_BRE1","LGV_FR7","LGV_FR9","LGV_FR8"]
-		},
-		"FR_91377_1":{
-			"label": "Massy TGV",
-			"lines" : ["LGV_BRE0","LGV_BRE1","LGV_FR7","LGV_FR9","LGV_FR8"]
-		},
-		"FR_72181_0":{
-			"label": "Le Mans",
-			"lines" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"]
-		},
-		"FR_49007_0":{
-			"label": "Angers",
-			"lines" : ["LER_NAQ7","LER_BRE8","LER_BRE1","LGV_FR9","LGV_FR7","IC1","LER_BRE7","LGV_BRE1"]
-		},
-		"FR_53130_0":{
-			"label": "Laval",
-			"lines" : ["LER_BRE8","LER_BRE0","LGV_FR8","LGV_BRE0"]
-		},
-		"FR_14118_0":{
-			"label": "Caen",
-			"lines" : ["LER_NOR2","LER_NOR3","LGV_FR4"]
-		},
-		"FR_37261_0":{
-			"label": "Tours",
-			"lines" : ["LER_BRE1","LER_NOR3"]
-		},
-		"FR_37233_0":{
-			"label": "Saint-Pierre-des-Corps",
-			"lines" : ["IC1","LGV_FR7","LGV_FR9","LGV_BRE1"]
-		},
-		"FR_41269_1":{
-			"label": "Vendôme TGV",
-			"lines" : ["LGV_FR7","LGV_FR9","LGV_BRE1"]
-		},
-		"FR_45234_0":{
-			"label": "Orléans",
-			"lines" : ["LER_CVL4"]
-		},
-		"FR_61169_0":{
-			"label": "Flers",
-			"lines" : ["LER_BRE8"]
-		},
-		"FR_35288_0":{
-			"label": "Saint-Malo",
-			"lines" : ["LER_BRE4"]
-		},
-		"FR_44049_0":{
-			"label": "Le Croisic",
-			"lines" : ["LER_BRE5"]
-		},
-		"FR_56206_0":{
-			"label": "Vannes Saint-Avé TGV",
-			"lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1","LER_BRE1"]
-		},
-		"FR_44007_0":{
-			"label": "Avessac Redon TGV",
-			"lines" : ["LER_BRE3","LGV_BRE3","LER_BRE2","LGV_FR4","LGV_BRE3","LGV_BRE2"]
-		},
-		"FR_29265_0":{
-			"label": "Morlaix Sainte-Sève TGV",
-			"lines" :  ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
-		},
-		"FR_56098_0":{
-			"label": "Lorient Lanester TGV",
-			"lines" : ["LGV_BRE3","LGV_BRE1","LER_BRE1","LER_BRE2"]
-		},
-		"FR_29019_0":{
-			"label": "Brest",
-			"lines" : ["LER_BRE1","LER_BRE0","LGV_BRE2","LGV_BRE0"]
-		},
-		"FR_85194_0":{
-			"label": "Les Sables-d'Olonne",
-			"lines" : ["LER_BRE5"]
-		},
-		"FR_86194_0":{
-			"label": "Poitiers",
-			"lines" : ["LER_BRE3","LER_NAQ7"]
-		},
-		"FR_17300_0":{
-			"label": "La Rochelles",
-			"lines" : ["LER_BRE6"]
-		},
-		"FR_17142_0":{
-			"label": "La Rochelles Dompierre TGV",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_75115_0":{
-			"label": "Paris Montparnasse",
-			"lines" : ["LER_CVL1","LGV_BRE0","LGV_BRE1"]
-		},
-		"FR_56121_0":{
-			"label": "Lorient",
-			"lines" : ["LER_BRE1","LER_BRE2"]
-		},
-		"FR_49328_0":{
-			"label": "Saumur",
-			"lines" : ["IC1","LER_NAQ7","LER_BRE1"]
-		},
-		"FR_44043_0":{
-			"label": "Clisson",
-			"lines" : ["LER_BRE5","LER_BRE6"]
-		},
-		"FR_44003_0":{
-			"label": "Ancenis-Saint-Géréon",
-			"lines" : ["LER_BRE7","IC1","LER_BRE1"]
-		},
-		"FR_29233_0":{
-			"label": "Quimperlé",
-			"lines" : ["LER_BRE1","LER_BRE2"]
-		},
-		"FR_35079_0":{
-			"label": "Chevaigné",
-			"lines" : ["LER_BRE4","LER_NOR2"]
-		},
-		"FR_35095_0":{
-			"label": "Dol-de-Bretagne",
-			"lines" : ["LER_BRE4","LER_NOR2"]
-		},
-		"FR_44109_0":{
-			"label": "Nantes",
-			"lines" : ["LER_BRE4","LER_BRE7","LER_BRE6","IC1","LGV_FR7","LGV_FR9","LGV_BRE2","LGV_FR4","LGV_BRE1","LER_BRE5","LER_BRE1","LER_BRE3"]
-		},
-		"FR_29232_0":{
-			"label": "Quimper",
-			"lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1","LER_BRE1"]
-		},
-		"FR_56007_0":{
-			"label": "Auray",
-			"lines" : ["LER_BRE1","LER_BRE2"]
-		},
-		"FR_85191_0":{
-			"label": "La Roche-sur-Yon",
-			"lines" : ["LER_BRE5","LER_BRE6","LGV_FR4"]
-		},
-		"FR_69382_0":{
-			"label": "Lyon Perrache",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_13201_0":{
-			"label": "Marseille Saint-Charles",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_64260_0":{
-			"label": "Hendaye",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_67482_0":{
-			"label": "Strasbourg",
-			"lines" : ["LGV_FR9"]
-		},
-		"FR_59350_0":{
-			"label": "Lille Flandre",
-			"lines" : ["LGV_FR7"]
-		},
-		"FR_62274_0":{
-			"label": "Douai-Lens TGV",
-			"lines" : ["LGV_FR4","LGV_FR7"]
-		},
-		"FR_62193_0":{
-			"label": "Calais",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_56260_0":{
-			"label": "Vannes",
-			"lines" : ["LER_BRE2","LER_BRE1"]
-		},
-		"FR_56184_0":{
-			"label": "Questembert",
-			"lines" : ["LER_BRE2","LER_BRE1"]
-		},
-		"FR_35236_0":{
-			"label": "Redon",
-			"lines" : ["LER_BRE2","LER_BRE1"]
-		},
-		"FR_85146_0":{
-			"label": "Montaigu-Vendée",
-			"lines" : ["LER_BRE5","LER_BRE6"]
-		},
-		"FR_29080_0":{
-			"label": "Hôpital-Camfrout",
-			"lines" : ["LER_BRE1"]
-		},
-		"FR_61145_0":{
-			"label": "Domfront",
-			"lines" : ["LER_BRE8"]
-		},
-		"FR_29302_0":{
-			"label": "Pont-de-buis",
-			"lines" : ["LER_BRE1"]
-		},
-		"FR_50188_0":{
-			"label": "Folligny",
-			"lines" : ["LER_NOR2"]
-		},
-		"FR_41269_0":{
-			"label": "Vendôme",
-			"lines" : ["LER_CVL4"]
-		},
-		"FR_10387_0":{
-			"label": "Troyes",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_51454_0":{
-			"label": "Reims TGV",
-			"lines" : ["LGV_FR9"]
-		},
-		"FR_55545_1":{
-			"label": "Verdun TGV",
-			"lines" : ["LGV_FR9"]
-		},
-		"FR_54546_0":{
-			"label": "Lorraine TGV",
-			"lines" : ["LGV_FR9"]
-		},
-		"FR_41018_0":{
-			"label": "Blois",
-			"lines" : ["LER_CVL4"]
-		},
-		"FR_58194_0":{
-			"label": "Nevers",
-			"lines" : ["IC1"]
-		},
-		"FR_03236_0":{
-			"label": "Saint-Germain-des-fossés",
-			"lines" : ["IC1"]
-		},
-		"FR_21231_0":{
-			"label": "Dijon",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_72132_0":{
-			"label": "La Ferté-Bernard",
-			"lines" : ["LER_CVL1"]
-		},
-		"FR_28280_0":{
-			"label": "Nogent-le-Rotrou",
-			"lines" : ["LER_CVL1"]
-		},
-		"FR_50147_0":{
-			"label": "Courtances",
-			"lines" : ["LER_NOR2"]
-		},
-		"FR_50502_0":{
-			"label": "Saint-Lô",
-			"lines" : ["LER_NOR2"]
-		},
-		"FR_42187_0":{
-			"label": "Roanne",
-			"lines" : ["IC1"]
-		},
-		"FR_03190_0":{
-			"label": "Moulins",
-			"lines" : ["IC1"]
-		},
-		"FR_33063_0":{
-			"label": "Bordeaux Saint-Jean",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_40192_0":{
-			"label": "Mont-de-Marsan",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_40088_0":{
-			"label": "Dax",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_64102_1":{
-			"label": "Bayonne TGV",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_17415_1":{
-			"label": "Saintes TGV",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_29151_0":{
-			"label": "Morlaix",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_22207_0":{
-			"label": "Plouaret",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_22093_0":{
-			"label": "Lambal",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_35184_0":{
-			"label": "La Brohinière",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_35240_0":{
-			"label": "Le Rheu",
-			"lines" : ["LGV_BRE2"]
-		},
-		"FR_29103_0":{
-			"label": "Landerneau",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_29105_0":{
-			"label": "Landivisiau",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_50025_0":{
-			"label": "Avranches",
-			"lines" : ["LER_NOR2"]
-		},
-		"FR_44110_0":{
-			"label": "Nort-sur-Erdre",
-			"lines" : ["LER_BRE4"]
-		},
-		"FR_80021_0":{
-			"label": "Amiens",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_76540_0":{
-			"label": "Rouen",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_77111_0":{
-			"label": "Marne la vallée chessy",
-			"lines" : []
-		},
-		"FR_95527_0":{
-			"label": "Roissy Aeroport CDG Terminal 2",
-			"lines" : ["LGV_FR7"]
-		},
-		"FR_59350_1":{
-			"label": "Lille Europe",
-			"lines" : ["LGV_FR4"]
-		},
-		"FR_44184_0":{
-			"label": "Saint-Nazaire",
-			"lines" : ["LER_BRE5"]
-		},
-		"FR_18279_0":{
-			"label": "Vierzon",
-			"lines" : ["IC1"]
-		},
-		"FR_18033_0":{
-			"label": "Bourges",
-			"lines" : ["IC1"]
-		},
-		"FR_53147_0":{
-			"label": "Mayenne",
-			"lines" : ["LER_BRE8"]
-		},
-		"FR_53097_0":{
-			"label": "Évron",
-			"lines" : ["LER_BRE0"]
-		},
-		"FR_35136_0":{
-			"label": "Janzé",
-			"lines" : ["LER_BRE4"]
-		},
-		"FR_44036_0":{
-			"label": "Châteaubriant",
-			"lines" : ["LER_BRE4"]
-		},
-		"FR_72264_0":{
-			"label": "Sablé-sur-Sarthe",
-			"lines" : ["LER_BRE7"]
-		},
-		"FR_49331_0":{
-			"label": "Segré-en-Anjou-Bleu",
-			"lines" : ["LER_BRE8"]
-		},
-		"FR_53062_0":{
-			"label": "Château-Gontier-sur-Mayenne",
-			"lines" : ["LER_BRE8"]
-		},
-		"FR_79202_0":{
-			"label": "Parthenay",
-			"lines" : ["LER_BRE3"]
-		},
-		"FR_86066_0":{
-			"label": "Châtellerault",
-			"lines" : ["LER_NAQ7"]
-		},
-		"FR_37072_0":{
-			"label": "Chinon",
-			"lines" : ["LER_NAQ7"]
-		},
-		"FR_79049_0":{
-			"label": "Bressuire",
-			"lines" : ["LER_BRE3"]
-		},
-		"FR_49099_0":{
-			"label": "Cholet",
-			"lines" : ["LER_BRE3"]
-		},
-		"FR_61001_0":{
-			"label": "Alençon",
-			"lines" : ["LER_NOR3"]
-		},
-		"FR_61006_0":{
-			"label": "Argentan",
-			"lines" : ["LER_NOR3"]
-		},
-		"FR_08164_0":{
-			"label": "Falaise",
-			"lines" : ["LER_NOR3"]
-		},
-		"FR_69383_0":{
-			"label": "Lyon Part-Dieu",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_84007_1":{
-			"label": "Avignon TGV",
-			"lines" : ["LGV_FR8"]
-		},
-		"FR_72071_0":{
-			"label": "Château-du-Loir",
-			"lines" : ["LER_NOR3"]
-		},
-		"FR_72124_0":{
-			"label": "Ecommoy",
-			"lines" : ["LER_NOR3"]
-		},
-		"FR_35176_0":{
-			"label": "Guipry-Messac",
-			"lines" : ["LER_BRE2","LER_BRE3"]
-		},
-		"FR_44195_0":{
-			"label": "Savenay",
-			"lines" : ["LER_BRE3","LER_BRE1","LER_BRE5"]
-		},
-		"FR_44129_0":{
-			"label": "Pontchâteau",
-			"lines" : ["LER_BRE3","LER_BRE1"]
-		},
-		"FR_35360_0" : {
-			"label" : "Vitré",
-			"line" : ["LER_BRE0"]
-		}
-	}
+	"Stations": [
+		"FR_22070_0",
+		"FR_22278_0",
+		"FR_35238_0",
+		"FR_28085_0",
+		"FR_91377_1",
+		"FR_72181_0",
+		"FR_49007_0",
+		"FR_53130_0",
+		"FR_14118_0",
+		"FR_37261_0",
+		"FR_37233_0",
+		"FR_41269_1",
+		"FR_45234_0",
+		"FR_61169_0",
+		"FR_35288_0",
+		"FR_44049_0",
+		"FR_56206_0",
+		"FR_44007_0",
+		"FR_29265_0",
+		"FR_56098_0",
+		"FR_29019_0",
+		"FR_85194_0",
+		"FR_86194_0",
+		"FR_17300_0",
+		"FR_17142_0",
+		"FR_75115_0",
+		"FR_56121_0",
+		"FR_49328_0",
+		"FR_44043_0",
+		"FR_44003_0",
+		"FR_29233_0",
+		"FR_35079_0",
+		"FR_35095_0",
+		"FR_44109_0",
+		"FR_29232_0",
+		"FR_56007_0",
+		"FR_85191_0",
+		"FR_69382_0",
+		"FR_13201_0",
+		"FR_64260_0",
+		"FR_67482_0",
+		"FR_59350_0",
+		"FR_62274_0",
+		"FR_62193_0",
+		"FR_56260_0",
+		"FR_56184_0",
+		"FR_35236_0",
+		"FR_85146_0",
+		"FR_29080_0",
+		"FR_61145_0",
+		"FR_29302_0",
+		"FR_50188_0",
+		"FR_41269_0",
+		"FR_10387_0",
+		"FR_51454_0",
+		"FR_55545_1",
+		"FR_54546_0",
+		"FR_41018_0",
+		"FR_58194_0",
+		"FR_03236_0",
+		"FR_21231_0",
+		"FR_72132_0",
+		"FR_28280_0",
+		"FR_50147_0",
+		"FR_50502_0",
+		"FR_42187_0",
+		"FR_03190_0",
+		"FR_33063_0",
+		"FR_40192_0",
+		"FR_40088_0",
+		"FR_64102_1",
+		"FR_17415_1",
+		"FR_29151_0",
+		"FR_22207_0",
+		"FR_22093_0",
+		"FR_35184_0",
+		"FR_35240_0",
+		"FR_29103_0",
+		"FR_29105_0",
+		"FR_50025_0",
+		"FR_44110_0",
+		"FR_80021_0",
+		"FR_76540_0",
+		"FR_77111_0",
+		"FR_95527_0",
+		"FR_59350_1",
+		"FR_44184_0",
+		"FR_18279_0",
+		"FR_18033_0",
+		"FR_53147_0",
+		"FR_53097_0",
+		"FR_35136_0",
+		"FR_44036_0",
+		"FR_72264_0",
+		"FR_49331_0",
+		"FR_53062_0",
+		"FR_79202_0",
+		"FR_86066_0",
+		"FR_37072_0",
+		"FR_79049_0",
+		"FR_49099_0",
+		"FR_61001_0",
+		"FR_61006_0",
+		"FR_08164_0",
+		"FR_69383_0",
+		"FR_84007_1",
+		"FR_72071_0",
+		"FR_72124_0",
+		"FR_35176_0",
+		"FR_44195_0",
+		"FR_44129_0",
+		"FR_35360_0"
+	]
 }
