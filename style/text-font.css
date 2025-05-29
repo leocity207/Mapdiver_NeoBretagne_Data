@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Avenir";
+  src: url('/resources-config/style/Inter.otf');
+}
+
 div, input{
 	font-family: 'Avenir';
 	font-weight: 300;
