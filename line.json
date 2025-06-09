@@ -1,0 +1,483 @@
+			{
+				"code": "IC1",
+				"label": "IC1",
+				"urls": {
+					"de": "/de/linie/IC1",
+					"fr": "/fr/ligne/IC1",
+					"it": "/it/linea/IC1",
+					"en": "/en/line/IC1"
+				},
+				"color": "#DD2F1D",
+				"timetable_pattern": [
+					{
+						"type_info": "timetable",
+						"code": "IC1__GEAP_SG__22",
+						"label": "Gen\u00e8ve-A\u00e9roport\u2013Z\u00fcrich HB\u2013St. Gallen",
+						"label_all_debug": "Gen\u00e8ve-A\u00e9roport\u2013Gen\u00e8ve\u2013Renens VD\u2013Lausanne\u2013Fribourg/Freiburg\u2013Bern\u2013Z\u00fcrich HB\u2013Z\u00fcrich Oerlikon\u2013Z\u00fcrich Flughafen\u2013Winterthur\u2013Wil SG\u2013Uzwil\u2013Flawil\u2013Gossau SG\u2013St. Gallen",
+						"line_labels": [
+							"IC1"
+						],
+						"interval_minutes": 60,
+						"tact_combo_60min_key": "",
+						"departure_minute": ":22",
+						"infomessages": [
+							{
+								"infomessage_key": "IC1_IR15__tmp_Totalunterbruch_FRI_BN_Aug",
+								"level": "lineflow_stop",
+								"type": "normal",
+								"text": {
+									"de": "Totalunterbruch von 28.06. - 24.08.2025 zwischen Fribourg/Freiburg und Bern.",
+									"fr": "Interruption totale du trafic du 28.06. - 24.08.2025 entre Fribourg/Freiburg et Bern.",
+									"it": "Blocco totale del traffico dal 28.06. al 24.08.2025 tra Friburg/Freiburg e Bern.",
+									"en": "Interruption of service from 28.06. to 24.08.2025 between Fribourg/Freiburg and Bern."
+								}
+							}
+						],
+						"number_info_normal": 1,
+						"number_info_warning": 0,
+						"lineflowstops": [
+							{
+								"station_code": "GEAP",
+								"prev_stops_string": "-",
+								"station_label": "Gen\u00e8ve-A\u00e9roport",
+								"arrival_minute": "",
+								"departure_minute": ":22",
+								"is_origin": true,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": true,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "GE",
+								"prev_stops_string": "-GEAP-",
+								"station_label": "Gen\u00e8ve",
+								"arrival_minute": ":28",
+								"departure_minute": ":31",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "REN",
+								"prev_stops_string": "-GEAP-GE-",
+								"station_label": "Renens VD",
+								"arrival_minute": ":07",
+								"departure_minute": ":08",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "LS",
+								"prev_stops_string": "-GEAP-GE-REN-",
+								"station_label": "Lausanne",
+								"arrival_minute": ":14",
+								"departure_minute": ":17",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "FRI",
+								"prev_stops_string": "-GEAP-GE-REN-LS-",
+								"station_label": "Fribourg/Freiburg",
+								"arrival_minute": ":02",
+								"departure_minute": ":03",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "BN",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-",
+								"station_label": "Bern",
+								"arrival_minute": ":26",
+								"departure_minute": ":31",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZUE",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-",
+								"station_label": "Z\u00fcrich HB",
+								"arrival_minute": ":28",
+								"departure_minute": ":39",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZOER",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-",
+								"station_label": "Z\u00fcrich Oerlikon",
+								"arrival_minute": ":45",
+								"departure_minute": ":45",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZFH",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-",
+								"station_label": "Z\u00fcrich Flughafen",
+								"arrival_minute": ":51",
+								"departure_minute": ":53",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "W",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-",
+								"station_label": "Winterthur",
+								"arrival_minute": ":06",
+								"departure_minute": ":08",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "WIL",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-W-",
+								"station_label": "Wil SG",
+								"arrival_minute": ":25",
+								"departure_minute": ":26",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "UZW",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-W-WIL-",
+								"station_label": "Uzwil",
+								"arrival_minute": ":33",
+								"departure_minute": ":34",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "FLA",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-W-WIL-UZW-",
+								"station_label": "Flawil",
+								"arrival_minute": ":39",
+								"departure_minute": ":39",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "GSS",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-W-WIL-UZW-FLA-",
+								"station_label": "Gossau SG",
+								"arrival_minute": ":44",
+								"departure_minute": ":44",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "SG",
+								"prev_stops_string": "-GEAP-GE-REN-LS-FRI-BN-ZUE-ZOER-ZFH-W-WIL-UZW-FLA-GSS-",
+								"station_label": "St. Gallen",
+								"arrival_minute": ":52",
+								"departure_minute": "",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": true,
+								"is_warning": false
+							}
+						]
+					},
+					{
+						"type_info": "basetact",
+						"code": "IC1__SG_GEAP__07",
+						"label": "St. Gallen\u2013Z\u00fcrich HB\u2013Gen\u00e8ve-A\u00e9roport",
+						"label_all_debug": "St. Gallen\u2013Gossau SG\u2013Flawil\u2013Uzwil\u2013Wil SG\u2013Winterthur\u2013Z\u00fcrich Flughafen\u2013Z\u00fcrich Oerlikon\u2013Z\u00fcrich HB\u2013Bern\u2013Fribourg/Freiburg\u2013Lausanne\u2013Renens VD\u2013Gen\u00e8ve\u2013Gen\u00e8ve-A\u00e9roport",
+						"line_labels": [
+							"IC1"
+						],
+						"interval_minutes": 60,
+						"tact_combo_60min_key": "",
+						"departure_minute": ":07",
+						"infomessages": [
+							{
+								"infomessage_key": "IC1_IR15__tmp_Totalunterbruch_BN_FRI_Aug",
+								"level": "lineflow_stop",
+								"type": "normal",
+								"text": {
+									"de": "Totalunterbruch von 28.06. - 24.08.2025 zwischen Bern und Fribourg/Freiburg.",
+									"fr": "Interruption totale du trafic du 28.06. - 24.08.2025 entre Bern et Fribourg/Freiburg.",
+									"it": "Blocco totale del traffico dal 28.06. al 24.08.2025 tra Bern e Fribourg/Freiburg.",
+									"en": "Interruption of service from 28.06. to 24.08.2025 between Bern and Fribourg/Freiburg."
+								}
+							},
+							{
+								"infomessage_key": "IC1__unregelm_bis_GEAP_1",
+								"level": "lineflow",
+								"type": "normal",
+								"text": {
+									"de": "18:07 ab St. Gallen verkehrt von Montag bis Freitag nur bis Lausanne.",
+									"fr": "Le train de 18:07 au d\u00e9part de St.\u00a0Gallen ne circule du lundi au vendredi que jusqu\u2019\u00e0 Lausanne.",
+									"it": "Il treno delle 18:07 da St. Gallen circola da luned\u00ec a venerd\u00ec solo fino a Lausanne.",
+									"en": "The 18:07 service from St. Gallen runs only as far as Lausanne from Mondays to Fridays."
+								}
+							},
+							{
+								"infomessage_key": "IC1__unregelm_bis_GEAP_2",
+								"level": "lineflow",
+								"type": "normal",
+								"text": {
+									"de": "19:07 ab St.Gallen verkehrt Sonntag bis Donnerstag nur bis Lausanne.",
+									"fr": "Le train de 19:07 au d\u00e9part de St. Gallen ne circule que jusqu\u2019\u00e0 Lausanne du dimanche au jeudi.",
+									"it": "Il treno delle 19:07 da St. Gallen circola solo fino a Lausanne dalla domenica al gioved\u00ec.",
+									"en": "The 19:07 service from St. Gallen only runs as far as Lausanne from Sunday to Thursday."
+								}
+							}
+						],
+						"number_info_normal": 3,
+						"number_info_warning": 0,
+						"lineflowstops": [
+							{
+								"station_code": "SG",
+								"prev_stops_string": "-",
+								"station_label": "St. Gallen",
+								"arrival_minute": "",
+								"departure_minute": ":07",
+								"is_origin": true,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": true,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "GSS",
+								"prev_stops_string": "-SG-",
+								"station_label": "Gossau SG",
+								"arrival_minute": ":14",
+								"departure_minute": ":14",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "FLA",
+								"prev_stops_string": "-SG-GSS-",
+								"station_label": "Flawil",
+								"arrival_minute": ":19",
+								"departure_minute": ":19",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "UZW",
+								"prev_stops_string": "-SG-GSS-FLA-",
+								"station_label": "Uzwil",
+								"arrival_minute": ":25",
+								"departure_minute": ":25",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "WIL",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-",
+								"station_label": "Wil SG",
+								"arrival_minute": ":33",
+								"departure_minute": ":34",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "W",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-",
+								"station_label": "Winterthur",
+								"arrival_minute": ":52",
+								"departure_minute": ":54",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZFH",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-",
+								"station_label": "Z\u00fcrich Flughafen",
+								"arrival_minute": ":06",
+								"departure_minute": ":08",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZOER",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-",
+								"station_label": "Z\u00fcrich Oerlikon",
+								"arrival_minute": ":13",
+								"departure_minute": ":14",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "ZUE",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-",
+								"station_label": "Z\u00fcrich HB",
+								"arrival_minute": ":21",
+								"departure_minute": ":32",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "BN",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-",
+								"station_label": "Bern",
+								"arrival_minute": ":28",
+								"departure_minute": ":34",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "FRI",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-BN-",
+								"station_label": "Fribourg/Freiburg",
+								"arrival_minute": ":56",
+								"departure_minute": ":57",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "LS",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-BN-FRI-",
+								"station_label": "Lausanne",
+								"arrival_minute": ":43",
+								"departure_minute": ":46",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "REN",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-BN-FRI-LS-",
+								"station_label": "Renens VD",
+								"arrival_minute": ":52",
+								"departure_minute": ":53",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "GE",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-BN-FRI-LS-REN-",
+								"station_label": "Gen\u00e8ve",
+								"arrival_minute": ":25",
+								"departure_minute": ":28",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": false,
+								"is_warning": false
+							},
+							{
+								"station_code": "GEAP",
+								"prev_stops_string": "-SG-GSS-FLA-UZW-WIL-W-ZFH-ZOER-ZUE-BN-FRI-LS-REN-GE-",
+								"station_label": "Gen\u00e8ve-A\u00e9roport",
+								"arrival_minute": ":35",
+								"departure_minute": "",
+								"is_origin": false,
+								"is_destination": false,
+								"is_previous_stop": false,
+								"is_lineflow_start": false,
+								"is_lineflow_end": true,
+								"is_warning": false
+							}
+						]
+					}
+				]
+			},
