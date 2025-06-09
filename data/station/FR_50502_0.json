@@ -1,4 +1,5 @@
 {
-    "label": "Saint-Lô",
-    "lines" : ["LER_NOR2"]
+	"label": "Saint-Lô",
+	"code": "FR_50502_0",
+	"lines" : ["LER_NOR2"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Châteaubriant",
-    "lines" : ["LER_BRE4"]
+	"label": "Châteaubriant",
+	"code": "FR_44036_0",
+	"lines" : ["LER_BRE4"]
 }

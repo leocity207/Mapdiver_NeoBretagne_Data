@@ -1,4 +1,5 @@
 {
-    "label": "Nogent-le-Rotrou",
-    "lines" : ["LER_CVL1"]
+	"label": "Nogent-le-Rotrou",
+	"code": "FR_28280_0",
+	"lines" : ["LER_CVL1"]
 }

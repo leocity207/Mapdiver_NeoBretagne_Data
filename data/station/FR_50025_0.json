@@ -1,4 +1,5 @@
 {
-    "label": "Avranches",
-    "lines" : ["LER_NOR2"]
+	"label": "Avranches",
+	"code": "FR_50025_0",
+	"lines" : ["LER_NOR2"]
 }

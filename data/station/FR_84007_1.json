@@ -1,4 +1,5 @@
 {
-    "label": "Avignon TGV",
-    "lines" : ["LGV_FR8"]
+	"label": "Avignon TGV",
+	"code": "FR_84007_1",
+	"lines" : ["LGV_FR8"]
 }

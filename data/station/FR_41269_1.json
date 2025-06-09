@@ -1,4 +1,5 @@
 {
-    "label": "Vendôme TGV",
-    "lines" : ["LGV_FR7","LGV_FR9","LGV_BRE1"]
+	"label": "Vendôme TGV",
+	"code": "FR_41269_1",
+	"lines" : ["LGV_FR7","LGV_FR9","LGV_BRE1"]
 }

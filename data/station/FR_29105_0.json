@@ -1,4 +1,5 @@
 {
-    "label": "Landivisiau",
-    "lines" : ["LER_BRE0"]
+	"label": "Landivisiau",
+	"code": "FR_29105_0",
+	"lines" : ["LER_BRE0"]
 }

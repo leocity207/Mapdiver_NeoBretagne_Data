@@ -1,4 +1,5 @@
 {
-    "label": "Dol-de-Bretagne",
-    "lines" : ["LER_BRE4","LER_NOR2"]
+	"label": "Dol-de-Bretagne",
+	"code": "FR_35095_0",
+	"lines" : ["LER_BRE4","LER_NOR2"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Auray",
-    "lines" : ["LER_BRE1","LER_BRE2"]
+	"label": "Auray",
+	"code": "FR_56007_0",
+	"lines" : ["LER_BRE1","LER_BRE2"]
 }

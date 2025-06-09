@@ -1,4 +1,5 @@
 {
-    "label": "Caen",
-    "lines" : ["LER_NOR2","LER_NOR3","LGV_FR4"]
+	"label": "Caen",
+	"code": "FR_14118_0",
+	"lines" : ["LER_NOR2","LER_NOR3","LGV_FR4"]
 }

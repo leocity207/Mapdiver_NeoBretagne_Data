@@ -1,4 +1,5 @@
 {
-    "label": "Amiens",
-    "lines" : ["LGV_FR4"]
+	"label": "Amiens",
+	"code": "FR_80021_0",
+	"lines" : ["LGV_FR4"]
 }

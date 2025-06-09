@@ -1,4 +1,5 @@
 {
-    "label": "Redon",
-    "lines" : ["LER_BRE2","LER_BRE1"]
+	"label": "Redon",
+	"code": "FR_35236_0",
+	"lines" : ["LER_BRE2","LER_BRE1"]
 }

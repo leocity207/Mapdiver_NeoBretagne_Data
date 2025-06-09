@@ -1,4 +1,5 @@
 {
-    "label": "Vannes",
-    "lines" : ["LER_BRE2","LER_BRE1"]
+	"label": "Vannes",
+	"code": "FR_56260_0",
+	"lines" : ["LER_BRE2","LER_BRE1"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Saint-Brieuc",
-    "lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
+	"label": "Saint-Brieuc",
+	"code": "FR_22278_0",
+	"lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
 }

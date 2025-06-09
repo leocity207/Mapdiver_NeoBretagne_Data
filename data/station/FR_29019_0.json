@@ -1,4 +1,5 @@
 {
-    "label": "Brest",
-    "lines" : ["LER_BRE1","LER_BRE0","LGV_BRE2","LGV_BRE0"]
+	"label": "Brest",
+	"code": "FR_29019_0",
+	"lines" : ["LER_BRE1","LER_BRE0","LGV_BRE2","LGV_BRE0"]
 }

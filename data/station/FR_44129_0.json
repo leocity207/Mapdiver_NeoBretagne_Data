@@ -1,4 +1,5 @@
 {
-    "label": "Pontchâteau",
-    "lines" : ["LER_BRE3","LER_BRE1"]
+	"label": "Pontchâteau",
+	"code": "FR_44129_0",
+	"lines" : ["LER_BRE3","LER_BRE1"]
 }

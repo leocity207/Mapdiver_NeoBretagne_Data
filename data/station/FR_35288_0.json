@@ -1,4 +1,5 @@
 {
-    "label": "Saint-Malo",
-    "lines" : ["LER_BRE4"]
+	"label": "Saint-Malo",
+	"code": "FR_35288_0",
+	"lines" : ["LER_BRE4"]
 }

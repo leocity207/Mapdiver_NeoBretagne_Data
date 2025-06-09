@@ -1,4 +1,5 @@
 {
-    "label": "Guingamp",
-    "lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
+	"label": "Guingamp",
+	"code": "FR_22070_0",
+	"lines" : ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Châtellerault",
-    "lines" : ["LER_NAQ7"]
+	"label": "Châtellerault",
+	"code": "FR_86066_0",
+	"lines" : ["LER_NAQ7"]
 }

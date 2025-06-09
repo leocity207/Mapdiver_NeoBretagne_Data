@@ -1,4 +1,5 @@
 {
-    "label": "Blois",
-    "lines" : ["LER_CVL4"]
+	"label": "Blois",
+	"code": "FR_41018_0",
+	"lines" : ["LER_CVL4"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Dax",
-    "lines" : ["LGV_FR4"]
+	"label": "Dax",
+	"code": "FR_40088_0",
+	"lines" : ["LGV_FR4"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Chinon",
-    "lines" : ["LER_NAQ7"]
+	"label": "Chinon",
+	"code": "FR_37072_0",
+	"lines" : ["LER_NAQ7"]
 }

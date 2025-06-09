@@ -1,4 +1,5 @@
 {
-    "label": "Marne la vallée chessy",
-    "lines" : []
+	"label": "Marne la vallée chessy",
+	"code": "FR_77111_0",
+	"lines" : ["LGV_FR7"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Chevaigné",
-    "lines" : ["LER_BRE4","LER_NOR2"]
+	"label": "Chevaigné",
+	"code": "FR_35079_0",
+	"lines" : ["LER_BRE4","LER_NOR2"]
 }

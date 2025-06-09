@@ -1,4 +1,5 @@
 {
-    "label": "Dijon",
-    "lines" : ["LGV_FR8"]
+	"label": "Dijon",
+	"code": "FR_21231_0",
+	"lines" : ["LGV_FR8"]
 }

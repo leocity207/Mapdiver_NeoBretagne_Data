@@ -1,4 +1,5 @@
 {
-    "label": "Guipry-Messac",
-    "lines" : ["LER_BRE2","LER_BRE3"]
+	"label": "Guipry-Messac",
+	"code": "FR_35176_0",
+	"lines" : ["LER_BRE2","LER_BRE3"]
 }

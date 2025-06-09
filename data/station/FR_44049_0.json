@@ -1,4 +1,5 @@
 {
-    "label": "Le Croisic",
-    "lines" : ["LER_BRE5"]
+	"label": "Le Croisic",
+	"code": "FR_44049_0",
+	"lines" : ["LER_BRE5"]
 }

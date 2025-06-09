@@ -1,4 +1,5 @@
 {
-    "label": "Rennes",
-    "lines" : ["LER_BRE0","LER_NOR2","LER_BRE2","LER_BRE3","LGV_BRE0","LER_BRE4","LGV_BRE3","LGV_FR4","LGV_FR8"]
+	"label": "Rennes",
+	"code": "FR_35238_0",
+	"lines" : ["LER_BRE0","LER_NOR2","LER_BRE2","LER_BRE3","LGV_BRE0","LER_BRE4","LGV_BRE3","LGV_FR4","LGV_FR8"]
 }

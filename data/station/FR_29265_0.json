@@ -1,4 +1,5 @@
 {
-    "label": "Morlaix Sainte-Sève TGV",
-    "lines" :  ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
+	"label": "Morlaix Sainte-Sève TGV",
+	"code": "FR_29265_0",
+	"lines" :  ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
 }

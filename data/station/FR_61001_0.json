@@ -1,4 +1,5 @@
 {
-    "label": "Alençon",
-    "lines" : ["LER_NOR3"]
+	"label": "Alençon",
+	"code": "FR_61001_0",
+	"lines" : ["LER_NOR3"]
 }

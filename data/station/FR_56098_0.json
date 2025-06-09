@@ -1,4 +1,5 @@
 {
-    "label": "Lorient Lanester TGV",
-    "lines" : ["LGV_BRE3","LGV_BRE1","LER_BRE1","LER_BRE2"]
+	"label": "Lorient Lanester TGV",
+	"code": "FR_56098_0",
+	"lines" : ["LGV_BRE3","LGV_BRE1","LER_BRE1","LER_BRE2"]
 }

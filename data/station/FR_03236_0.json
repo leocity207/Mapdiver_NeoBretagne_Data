@@ -1,4 +1,5 @@
 {
-    "label": "Saint-Germain-des-fossés",
-    "lines" : ["IC1"]
+	"label": "Saint-Germain-des-fossés",
+	"code": "FR_03236_0",
+	"lines" : ["IC1"]
 }

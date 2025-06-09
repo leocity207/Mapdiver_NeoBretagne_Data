@@ -1,4 +1,5 @@
 {
-    "label": "Roissy Aeroport CDG Terminal 2",
-    "lines" : ["LGV_FR7"]
+	"label": "Roissy Aeroport CDG Terminal 2",
+	"code": "FR_95527_0",
+	"lines" : ["LGV_FR7"]
 }

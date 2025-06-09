@@ -1,4 +1,5 @@
 {
-    "label": "Landerneau",
-    "lines" : ["LER_BRE0"]
+	"label": "Landerneau",
+	"code": "FR_29103_0",
+	"lines" : ["LER_BRE0"]
 }

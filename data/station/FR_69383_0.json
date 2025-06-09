@@ -1,4 +1,5 @@
 {
-    "label": "Lyon Part-Dieu",
-    "lines" : ["LGV_FR8"]
+	"label": "Lyon Part-Dieu",
+	"code": "FR_69383_0",
+	"lines" : ["LGV_FR8"]
 }

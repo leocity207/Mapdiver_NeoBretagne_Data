@@ -1,4 +1,5 @@
 {
-    "label": "Plouaret",
-    "lines" : ["LER_BRE0"]
+	"label": "Plouaret",
+	"code": "FR_22207_0",
+	"lines" : ["LER_BRE0"]
 }

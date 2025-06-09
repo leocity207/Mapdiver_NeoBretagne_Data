@@ -1,4 +1,5 @@
 {
-    "label": "Angers",
-    "lines" : ["LER_NAQ7","LER_BRE8","LER_BRE1","LGV_FR9","LGV_FR7","IC1","LER_BRE7","LGV_BRE1"]
+	"label": "Angers",
+	"code": "FR_49007_0",
+	"lines" : ["LER_NAQ7","LER_BRE8","LER_BRE1","LGV_FR9","LGV_FR7","IC1","LER_BRE7","LGV_BRE1"]
 }

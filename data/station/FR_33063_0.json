@@ -1,4 +1,5 @@
 {
-    "label": "Bordeaux Saint-Jean",
-    "lines" : ["LGV_FR4"]
+	"label": "Bordeaux Saint-Jean",
+	"code": "FR_33063_0",
+	"lines" : ["LGV_FR4"]
 }

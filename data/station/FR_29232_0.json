@@ -1,4 +1,5 @@
 {
-    "label": "Quimper",
-    "lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1","LER_BRE1"]
+	"label": "Quimper",
+	"code": "FR_29232_0",
+	"lines" : ["LER_BRE2","LGV_BRE3","LGV_BRE1","LER_BRE1"]
 }

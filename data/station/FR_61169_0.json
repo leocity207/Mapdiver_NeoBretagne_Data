@@ -1,4 +1,5 @@
 {
-    "label": "Flers",
-    "lines" : ["LER_BRE8"]
+	"label": "Flers",
+	"code": "FR_61169_0",
+	"lines" : ["LER_BRE8"]
 }

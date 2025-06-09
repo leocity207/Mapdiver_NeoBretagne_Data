@@ -1,4 +1,5 @@
 {
-    "label": "Le Mans",
-    "lines" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"]
+	"label": "Le Mans",
+	"code": "FR_72181_0",
+	"lines" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"]
 }

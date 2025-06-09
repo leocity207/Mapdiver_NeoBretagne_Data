@@ -1,4 +1,5 @@
 {
-    "label": "Saint-Pierre-des-Corps",
-    "lines" : ["IC1","LGV_FR7","LGV_FR9","LGV_BRE1"]
+	"label": "Saint-Pierre-des-Corps",
+	"code": "FR_37233_0",
+	"lines" : ["IC1","LGV_FR7","LGV_FR9","LGV_BRE1"]
 }

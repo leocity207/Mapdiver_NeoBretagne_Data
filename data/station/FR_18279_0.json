@@ -1,4 +1,5 @@
 {
-    "label": "Vierzon",
-    "lines" : ["IC1"]
+	"label": "Vierzon",
+	"code": "FR_18279_0",
+	"lines" : ["IC1"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Courtances",
-    "lines" : ["LER_NOR2"]
+	"label": "Courtances",
+	"code": "FR_50147_0",
+	"lines" : ["LER_NOR2"]
 }

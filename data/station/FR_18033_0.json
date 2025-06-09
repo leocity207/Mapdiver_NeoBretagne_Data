@@ -1,4 +1,5 @@
 {
-    "label": "Bourges",
-    "lines" : ["IC1"]
+	"label": "Bourges",
+	"code": "FR_18033_0",
+	"lines" : ["IC1"]
 }

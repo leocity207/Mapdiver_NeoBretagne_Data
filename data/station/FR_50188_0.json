@@ -1,4 +1,5 @@
 {
-    "label": "Folligny",
-    "lines" : ["LER_NOR2"]
+	"label": "Folligny",
+	"code": "FR_50188_0",
+	"lines" : ["LER_NOR2"]
 }

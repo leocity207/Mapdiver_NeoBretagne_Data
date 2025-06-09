@@ -1,4 +1,5 @@
 {
-    "label": "Douai-Lens TGV",
-    "lines" : ["LGV_FR4","LGV_FR7"]
+	"label": "Douai-Lens TGV",
+	"code": "FR_62274_0",
+	"lines" : ["LGV_FR4","LGV_FR7"]
 }

@@ -1,4 +1,5 @@
 {
-    "label": "Quimperlé",
-    "lines" : ["LER_BRE1","LER_BRE2"]
+	"label": "Quimperlé",
+	"code": "FR_29233_0",
+	"lines" : ["LER_BRE1","LER_BRE2"]
 }

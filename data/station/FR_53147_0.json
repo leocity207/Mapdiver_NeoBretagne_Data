@@ -1,4 +1,5 @@
 {
-    "label": "Mayenne",
-    "lines" : ["LER_BRE8"]
+	"label": "Mayenne",
+	"code": "FR_53147_0",
+	"lines" : ["LER_BRE8"]
 }

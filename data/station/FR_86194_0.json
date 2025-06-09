@@ -1,4 +1,5 @@
 {
-    "label": "Poitiers",
-    "lines" : ["LER_BRE3","LER_NAQ7"]
+	"label": "Poitiers",
+	"code": "FR_86194_0",
+	"lines" : ["LER_BRE3","LER_NAQ7"]
 }

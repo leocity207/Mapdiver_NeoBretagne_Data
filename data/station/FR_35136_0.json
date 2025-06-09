@@ -1,4 +1,5 @@
 {
-    "label": "Janzé",
-    "lines" : ["LER_BRE4"]
+	"label": "Janzé",
+	"code": "FR_35136_0",
+	"lines" : ["LER_BRE4"]
 }

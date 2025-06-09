@@ -1,4 +1,5 @@
 {
-    "label": "Rouen",
-    "lines" : ["LGV_FR4"]
+	"label": "Rouen",
+	"code": "FR_76540_0",
+	"lines" : ["LGV_FR4"]
 }
