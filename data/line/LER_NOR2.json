@@ -58,6 +58,12 @@
 				{
 					"station_ID": "FR_35079_0",
 					"arrival_minute": 82,
+					"departure_minute": 83,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 90,
 					"flags": []
 				}
 			]
@@ -73,8 +79,14 @@
 			"infomessages": [],
 			"lineflowstops": [
 				{
-					"station_ID": "FR_35079_0",
+					"station_ID": "FR_35238_0",
 					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35079_0",
+					"departure_minute": 5,
+					"arrival_minute": 6,
 					"flags": []
 				},
 				{
