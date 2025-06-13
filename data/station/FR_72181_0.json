@@ -1,5 +1,16 @@
 {
 	"label": "Le Mans",
 	"code": "FR_72181_0",
-	"lines" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"]
+	"lines" : ["LER_CVL1","LER_CVL4","LER_NOR3","LER_BRE0","LER_BRE7","LGV_BRE0","LGV_FR8"],
+	"direction": {
+		"LER_NOR3_A_27": "FR_37261_0",
+		"LER_NOR3_R_20": "FR_14118_0",
+		"LGV_FR8_A_27": "FR_13201_0",
+		"LGV_FR8_R_32": "FR_35238_0",
+		"LGV_BRE0_R_30": "FR_35238_0",
+		"LER_BRE0_R_07": "FR_29019_0",
+		"LER_CVL1_A_21": "FR_75115_0",
+		"LER_CVL4_A_15": "FR_45234_0",
+		"LER_BRE7_R_45": "FR_44109_0"
+	}
 }

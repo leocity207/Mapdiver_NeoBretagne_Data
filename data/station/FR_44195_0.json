@@ -1,5 +1,13 @@
 {
 	"label": "Savenay",
 	"code": "FR_44195_0",
-	"lines" : ["LER_BRE3","LER_BRE1","LER_BRE5"]
+	"lines" : ["LER_BRE3","LER_BRE1","LER_BRE5"],
+	"direction": {
+		"LER_BRE1_A_22": "FR_37261_0",
+		"LER_BRE1_R_07": "FR_29019_0",
+		"LER_BRE3_A_30": "FR_86194_0",
+		"LER_BRE3_R_00": "FR_44109_0",
+		"LER_BRE5_A_11": "FR_85194_0",
+		"LER_BRE5_R_48": "FR_44049_0"
+	}
 }

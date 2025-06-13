@@ -1,5 +1,8 @@
 {
 	"label": "Les Sables-d'Olonne",
 	"code": "FR_85194_0",
-	"lines" : ["LER_BRE5"]
+	"lines" : ["LER_BRE5"],
+	"direction": {
+		"LER_BRE5_R_48": "FR_44049_0"
+	}
 }

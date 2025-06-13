@@ -1,5 +1,17 @@
 {
 	"label": "Avessac Redon TGV",
 	"code": "FR_44007_0",
-	"lines" : ["LER_BRE3","LGV_BRE3","LER_BRE2","LGV_FR4","LGV_BRE3","LGV_BRE2"]
+	"lines" : ["LER_BRE3","LGV_BRE3","LER_BRE2","LGV_FR4","LGV_BRE2"],
+	"direction": {
+		"LGV_FR4_A_00": "FR_64260_0",
+		"LGV_FR4_R_30": "FR_62193_0",
+		"LGV_BRE2_A_10": "FR_35238_0",
+		"LGV_BRE2_R_40": "FR_44109_0",
+		"LER_BRE2_A_45": "FR_35238_0",
+		"LER_BRE2_R_15": "FR_29019_0",
+		"LGV_BRE3_R_45": "FR_29232_0",
+		"LGV_BRE3_A_15": "FR_35238_0",
+		"LER_BRE3_A_30": "FR_86194_0",
+		"LER_BRE3_R_00": "FR_44109_0"
+	}
 }

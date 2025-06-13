@@ -1,5 +1,11 @@
 {
 	"label": "Douai-Lens TGV",
 	"code": "FR_62274_0",
-	"lines" : ["LGV_FR4","LGV_FR7"]
+	"lines" : ["LGV_FR4","LGV_FR7"],
+	"direction": {
+		"LGV_FR4_A_00": "FR_64260_0",
+		"LGV_FR4_R_30": "FR_62193_0",
+		"LGV_FR7_A_02": "FR_59350_0",
+		"LGV_FR7_R_30": "FR_44109_0"
+	}
 }

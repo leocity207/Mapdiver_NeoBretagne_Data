@@ -1,5 +1,9 @@
 {
 	"label": "Lambal",
 	"code": "FR_22093_0",
-	"lines" : ["LER_BRE0"]
+	"lines" : ["LER_BRE0"],
+	"direction": {
+		"LER_BRE0_A_22": "FR_35238_0",
+		"LER_BRE0_R_07": "FR_29019_0"
+	}
 }

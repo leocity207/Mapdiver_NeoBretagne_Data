@@ -1,5 +1,9 @@
 {
 	"label": "Moulins",
 	"code": "FR_03190_0",
-	"lines" : ["IC1"]
+	"lines" : ["IC1"],
+	"direction": {
+		"IC1_A_15": "FR_44109_0",
+		"IC1_R_30": "FR_69382_0"
+	}
 }

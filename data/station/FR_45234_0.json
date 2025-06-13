@@ -1,5 +1,8 @@
 {
 	"label": "Orléans",
 	"code": "FR_45234_0",
-	"lines" : ["LER_CVL4"]
+	"lines" : ["LER_CVL4"],
+	"direction": {
+		"LER_CVL4_R_45": "FR_72181_0"
+	}
 }

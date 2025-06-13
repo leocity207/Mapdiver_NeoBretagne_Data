@@ -1,5 +1,13 @@
 {
 	"label": "La Roche-sur-Yon",
 	"code": "FR_85191_0",
-	"lines" : ["LER_BRE5","LER_BRE6","LGV_FR4"]
+	"lines" : ["LER_BRE5","LER_BRE6","LGV_FR4"],
+	"direction": {
+		"LGV_FR4_A_00": "FR_64260_0",
+		"LGV_FR4_R_30": "FR_62193_0",
+		"LER_BRE6_A_25": "FR_17300_0",
+		"LER_BRE6_R_55": "FR_44109_0",
+		"LER_BRE5_A_11": "FR_85194_0",
+		"LER_BRE5_R_48": "FR_44049_0"
+	}
 }

@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LGV_FR8_A_27",
-			"label": "Rennes - Marseille saint Charlles",
+			"label": "Rennes - Marseille Saint-Charles",
 			"interval_minutes": 120,
 			"departure_minute": 27,
 			"first_departure":"4:27:00",
@@ -72,7 +72,7 @@
 		},
 		{
 			"code": "LGV_FR8_R_32",
-			"label": "Marseille saint Charlles - Rennes",
+			"label": "Marseille Saint-Charles - Rennes",
 			"interval_minutes": 120,
 			"departure_minute": 32,
 			"first_departure":"4:32:00",

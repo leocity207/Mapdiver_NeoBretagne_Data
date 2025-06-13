@@ -1,5 +1,9 @@
 {
 	"label": "Chinon",
 	"code": "FR_37072_0",
-	"lines" : ["LER_NAQ7"]
+	"lines" : ["LER_NAQ7"],
+	"direction": {
+		"LER_NAQ7_A_12": "FR_86194_0",
+		"LER_NAQ7_R_48": "FR_49007_0"
+	}
 }

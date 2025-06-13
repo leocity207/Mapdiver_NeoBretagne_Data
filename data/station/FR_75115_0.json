@@ -1,5 +1,10 @@
 {
 	"label": "Paris Montparnasse",
 	"code": "FR_75115_0",
-	"lines" : ["LER_CVL1","LGV_BRE0","LGV_BRE1"]
+	"lines" : ["LER_CVL1","LGV_BRE0","LGV_BRE1"],
+	"direction": {
+		"LGV_BRE0_R_30": "FR_35238_0",
+		"LER_CVL1_R_50": "FR_72181_0",
+		"LGV_BRE1_R_35": "FR_44109_0"
+	}
 }

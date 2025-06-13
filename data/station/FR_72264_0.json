@@ -1,5 +1,9 @@
 {
 	"label": "Sablé-sur-Sarthe",
 	"code": "FR_72264_0",
-	"lines" : ["LER_BRE7"]
+	"lines" : ["LER_BRE7"],
+	"direction": {
+		"LER_BRE7_A_15": "FR_72181_0",
+		"LER_BRE7_R_45": "FR_44109_0"
+	}
 }

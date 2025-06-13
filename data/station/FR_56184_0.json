@@ -1,5 +1,11 @@
 {
 	"label": "Questembert",
 	"code": "FR_56184_0",
-	"lines" : ["LER_BRE2","LER_BRE1"]
+	"lines" : ["LER_BRE2","LER_BRE1"],
+	"direction": {
+		"LER_BRE1_A_22": "FR_37261_0",
+		"LER_BRE1_R_07": "FR_29019_0",
+		"LER_BRE2_A_45": "FR_35238_0",
+		"LER_BRE2_R_15": "FR_29019_0"
+	}
 }
