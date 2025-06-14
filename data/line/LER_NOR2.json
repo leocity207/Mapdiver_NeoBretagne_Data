@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_NOR2_A_05",
-			"label": "Rennes - Caen",
+			"label": "Caen - Rennes",
 			"interval_minutes": 30,
 			"departure_minute": 5,
 			"first_departure":"4:05:00",
@@ -70,7 +70,7 @@
 		},
 		{
 			"code": "LER_NOR2_R_04",
-			"label": "Caen - Rennes",
+			"label": "Rennes - Caens",
 			"interval_minutes": 30,
 			"departure_minute": 4,
 			"first_departure":"4:04:00",

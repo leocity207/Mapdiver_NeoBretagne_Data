@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_NAQ7_A_12",
-			"label": "Angers - Poitiers",
+			"label": "Poitiers - Angers",
 			"interval_minutes": 30,
 			"departure_minute": 12,
 			"first_departure":"4:12:00",
@@ -52,7 +52,7 @@
 		},
 		{
 			"code": "LER_NAQ7_R_48",
-			"label": "Poitiers - Angers",
+			"label": "Angers - Poitiers",
 			"interval_minutes": 30,
 			"departure_minute": 48,
 			"first_departure":"4:48:00",

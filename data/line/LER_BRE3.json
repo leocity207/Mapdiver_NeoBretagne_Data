@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_BRE3_A_30",
-			"label": "Nantes - Poitiers",
+			"label": "Rennes - Poitiers",
 			"interval_minutes": 30,
 			"departure_minute": 30,
 			"first_departure":"4:15:00",
@@ -82,7 +82,7 @@
 		},
 		{
 			"code": "LER_BRE3_R_00",
-			"label": "Poitiers - Nantes",
+			"label": "Poitiers - Rennes",
 			"interval_minutes": 30,
 			"departure_minute": 0,
 			"first_departure":"4:30:00",
