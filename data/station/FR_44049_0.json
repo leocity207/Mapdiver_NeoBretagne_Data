@@ -1,8 +1,10 @@
 {
 	"label": "Le Croisic",
 	"code": "FR_44049_0",
-	"lines" : ["LER_BRE5"],
+	"lines": [
+	"LER_BRE5"
+	],
 	"direction": {
-		"LER_BRE5_A_11": "FR_85194_0"
+	"LER_BRE5_A_11": "FR_44109_0"
 	}
 }

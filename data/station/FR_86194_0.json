@@ -1,10 +1,12 @@
 {
 	"label": "Poitiers",
 	"code": "FR_86194_0",
-	"lines" : ["LER_BRE3","LER_NAQ7"],
+	"lines": [
+	"LER_BRE3",
+	"LER_NAQ7"
+	],
 	"direction": {
-		"LER_BRE3_A_30": "FR_86194_0",
-		"LER_BRE3_R_00": "FR_44109_0",
-		"LER_NAQ7_R_48": "FR_49007_0"
+	"LER_BRE3_R_00": "FR_44109_0",
+	"LER_NAQ7_A_12": "FR_49007_0"
 	}
 }

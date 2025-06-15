@@ -1,9 +1,11 @@
 {
 	"label": "Saint-Lô",
 	"code": "FR_50502_0",
-	"lines" : ["LER_NOR2"],
+	"lines": [
+	"LER_NOR2"
+	],
 	"direction": {
-		"LER_NOR2_A_05": "FR_14118_0",
-		"LER_NOR2_R_04": "FR_35238_0"
+	"LER_NOR2_A_05": "FR_35238_0",
+	"LER_NOR2_R_04": "FR_14118_0"
 	}
 }

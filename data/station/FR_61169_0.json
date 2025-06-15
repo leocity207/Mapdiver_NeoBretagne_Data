@@ -1,8 +1,10 @@
 {
 	"label": "Flers",
 	"code": "FR_61169_0",
-	"lines" : ["LER_BRE8"],
+	"lines": [
+	"LER_BRE8"
+	],
 	"direction": {
-		"LER_BRE8_R_35": "FR_49007_0"
+	"LER_BRE8_R_35": "FR_49007_0"
 	}
 }

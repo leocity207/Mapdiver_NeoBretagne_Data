@@ -1,15 +1,23 @@
 {
 	"label": "Massy TGV",
 	"code": "FR_91377_1",
-	"lines" : ["LGV_BRE0","LGV_BRE1","LGV_FR7","LGV_FR9","LGV_FR8"],
+	"lines": [
+	"LGV_BRE0",
+	"LGV_BRE1",
+	"LGV_FR7",
+	"LGV_FR9",
+	"LGV_FR8"
+	],
 	"direction": {
-		"LGV_FR8_A_27": "FR_13201_0",
-		"LGV_FR8_R_32": "FR_35238_0",
-		"LGV_BRE1_A_05": "FR_75115_0",
-		"LGV_BRE1_R_35": "FR_44109_0",
-		"LGV_FR7_A_02": "FR_59350_0",
-		"LGV_FR7_R_30": "FR_44109_0",
-		"LGV_FR9_A_10": "FR_67482_0",
-		"LGV_FR9_R_30": "FR_44109_0"
+	"LGV_BRE0_A_00": "FR_75115_0",
+	"LGV_BRE0_R_30": "FR_72181_0",
+	"LGV_BRE1_A_05": "FR_75115_0",
+	"LGV_BRE1_R_35": "FR_49007_0",
+	"LGV_FR7_A_02": "FR_59350_0",
+	"LGV_FR7_R_37": "FR_49007_0",
+	"LGV_FR9_A_10": "FR_67482_0",
+	"LGV_FR9_R_30": "FR_49007_0",
+	"LGV_FR8_A_27": "FR_13201_0",
+	"LGV_FR8_R_32": "FR_72181_0"
 	}
 }

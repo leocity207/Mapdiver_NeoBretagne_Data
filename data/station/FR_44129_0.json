@@ -1,11 +1,14 @@
 {
 	"label": "Pontchâteau",
 	"code": "FR_44129_0",
-	"lines" : ["LER_BRE3","LER_BRE1"],
+	"lines": [
+	"LER_BRE3",
+	"LER_BRE1"
+	],
 	"direction": {
-		"LER_BRE1_A_22": "FR_37261_0",
-		"LER_BRE1_R_07": "FR_29019_0",
-		"LER_BRE3_A_30": "FR_86194_0",
-		"LER_BRE3_R_00": "FR_44109_0"
+	"LER_BRE3_A_30": "FR_44109_0",
+	"LER_BRE3_R_00": "FR_35238_0",
+	"LER_BRE1_A_22": "FR_44109_0",
+	"LER_BRE1_R_07": "FR_29232_0"
 	}
 }

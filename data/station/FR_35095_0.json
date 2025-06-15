@@ -1,11 +1,14 @@
 {
 	"label": "Dol-de-Bretagne",
 	"code": "FR_35095_0",
-	"lines" : ["LER_BRE4","LER_NOR2"],
+	"lines": [
+	"LER_BRE4",
+	"LER_NOR2"
+	],
 	"direction": {
-		"LER_NOR2_A_05": "FR_14118_0",
-		"LER_NOR2_R_04": "FR_35238_0",
-		"LER_BRE4_A_22": "FR_44109_0",
-		"LER_BRE4_R_50": "FR_35288_0"
+	"LER_BRE4_A_22": "FR_35238_0",
+	"LER_BRE4_R_50": "FR_35288_0",
+	"LER_NOR2_A_05": "FR_35238_0",
+	"LER_NOR2_R_04": "FR_14118_0"
 	}
 }

@@ -1,9 +1,11 @@
 {
 	"label": "Janzé",
 	"code": "FR_35136_0",
-	"lines" : ["LER_BRE4"],
+	"lines": [
+	"LER_BRE4"
+	],
 	"direction": {
-		"LER_BRE4_A_22": "FR_44109_0",
-		"LER_BRE4_R_50": "FR_35288_0"
+	"LER_BRE4_A_22": "FR_44109_0",
+	"LER_BRE4_R_50": "FR_35238_0"
 	}
 }

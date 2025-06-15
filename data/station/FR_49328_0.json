@@ -1,13 +1,17 @@
 {
 	"label": "Saumur",
 	"code": "FR_49328_0",
-	"lines" : ["IC1","LER_NAQ7","LER_BRE1"],
+	"lines": [
+	"IC1",
+	"LER_NAQ7",
+	"LER_BRE1"
+	],
 	"direction": {
-		"IC1_A_15": "FR_44109_0",
-		"IC1_R_30": "FR_69382_0",
-		"LER_BRE1_A_22": "FR_37261_0",
-		"LER_BRE1_R_07": "FR_29019_0",
-		"LER_NAQ7_A_12": "FR_86194_0",
-		"LER_NAQ7_R_48": "FR_49007_0"
+	"IC1_A_15": "FR_69382_0",
+	"IC1_R_30": "FR_49007_0",
+	"LER_NAQ7_A_12": "FR_49007_0",
+	"LER_NAQ7_R_48": "FR_86194_0",
+	"LER_BRE1_A_22": "FR_37261_0",
+	"LER_BRE1_R_07": "FR_49007_0"
 	}
 }
