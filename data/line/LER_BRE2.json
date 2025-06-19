@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_BRE2_A_45",
-			"label": "Brest - Nantes",
+			"label": "Quimper - Rennes",
 			"interval_minutes": 60,
 			"departure_minute": 45,
 			"first_departure":"4:15:00",
@@ -94,7 +94,7 @@
 		},
 		{
 			"code": "LER_BRE2_R_15",
-			"label": "Nantes - Brest",
+			"label": "Rennes - Quimper",
 			"interval_minutes": 60,
 			"departure_minute": 15,
 			"first_departure":"4:15:00",

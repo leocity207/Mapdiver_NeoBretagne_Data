@@ -1,4 +1,17 @@
 {
-    "label": "Morlaix Sainte-Sève TGV",
-    "lines" :  ["LER_BRE0","LGV_BRE2","LGV_BRE0"]
+	"label": "Morlaix Sainte-Sève TGV",
+	"code": "FR_29265_0",
+	"lines": [
+	"LER_BRE0",
+	"LGV_BRE2",
+	"LGV_BRE0"
+	],
+	"direction": {
+	"LER_BRE0_A_22": "FR_35238_0",
+	"LER_BRE0_R_07": "FR_29019_0",
+	"LGV_BRE2_A_10": "FR_44109_0",
+	"LGV_BRE2_R_40": "FR_29019_0",
+	"LGV_BRE0_A_00": "FR_35238_0",
+	"LGV_BRE0_R_30": "FR_29019_0"
+	}
 }

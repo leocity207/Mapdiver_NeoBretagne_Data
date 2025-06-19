@@ -1,4 +1,8 @@
 {
-    "label": "Lyon Perrache",
-    "lines" : ["LGV_FR8"]
+	"label": "Lyon Perrache",
+	"code": "FR_69382_0",
+	"lines": [
+	"LGV_FR8"
+	],
+	"direction": {}
 }

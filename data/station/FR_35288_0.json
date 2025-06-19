@@ -1,4 +1,10 @@
 {
-    "label": "Saint-Malo",
-    "lines" : ["LER_BRE4"]
+	"label": "Saint-Malo",
+	"code": "FR_35288_0",
+	"lines": [
+	"LER_BRE4"
+	],
+	"direction": {
+	"LER_BRE4_A_22": "FR_35238_0"
+	}
 }

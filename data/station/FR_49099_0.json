@@ -1,4 +1,11 @@
 {
-    "label": "Cholet",
-    "lines" : ["LER_BRE3"]
+	"label": "Cholet",
+	"code": "FR_49099_0",
+	"lines": [
+	"LER_BRE3"
+	],
+	"direction": {
+	"LER_BRE3_A_30": "FR_86194_0",
+	"LER_BRE3_R_00": "FR_44109_0"
+	}
 }

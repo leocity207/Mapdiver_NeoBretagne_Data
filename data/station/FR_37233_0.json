@@ -1,4 +1,20 @@
 {
-    "label": "Saint-Pierre-des-Corps",
-    "lines" : ["IC1","LGV_FR7","LGV_FR9","LGV_BRE1"]
+	"label": "Saint-Pierre-des-Corps",
+	"code": "FR_37233_0",
+	"lines": [
+	"IC1",
+	"LGV_FR7",
+	"LGV_FR9",
+	"LGV_BRE1"
+	],
+	"direction": {
+	"IC1_A_15": "FR_69382_0",
+	"IC1_R_30": "FR_49007_0",
+	"LGV_FR7_A_02": "FR_59350_0",
+	"LGV_FR7_R_37": "FR_49007_0",
+	"LGV_FR9_A_10": "FR_67482_0",
+	"LGV_FR9_R_30": "FR_49007_0",
+	"LGV_BRE1_A_05": "FR_75115_0",
+	"LGV_BRE1_R_35": "FR_49007_0"
+	}
 }

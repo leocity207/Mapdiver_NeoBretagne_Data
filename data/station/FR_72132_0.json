@@ -1,4 +1,11 @@
 {
-    "label": "La Ferté-Bernard",
-    "lines" : ["LER_CVL1"]
+	"label": "La Ferté-Bernard",
+	"code": "FR_72132_0",
+	"lines": [
+	"LER_CVL1"
+	],
+	"direction": {
+	"LER_CVL1_A_21": "FR_72181_0",
+	"LER_CVL1_R_50": "FR_75115_0"
+	}
 }

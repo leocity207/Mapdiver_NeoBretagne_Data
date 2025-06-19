@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_NOR2_A_05",
-			"label": "Rennes - Caens",
+			"label": "Caen - Rennes",
 			"interval_minutes": 30,
 			"departure_minute": 5,
 			"first_departure":"4:05:00",
@@ -58,13 +58,19 @@
 				{
 					"station_ID": "FR_35079_0",
 					"arrival_minute": 82,
+					"departure_minute": 83,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35238_0",
+					"arrival_minute": 90,
 					"flags": []
 				}
 			]
 		},
 		{
 			"code": "LER_NOR2_R_04",
-			"label": "Caens - Rennes",
+			"label": "Rennes - Caens",
 			"interval_minutes": 30,
 			"departure_minute": 4,
 			"first_departure":"4:04:00",
@@ -73,8 +79,14 @@
 			"infomessages": [],
 			"lineflowstops": [
 				{
-					"station_ID": "FR_35079_0",
+					"station_ID": "FR_35238_0",
 					"departure_minute": 0,
+					"flags": []
+				},
+				{
+					"station_ID": "FR_35079_0",
+					"departure_minute": 5,
+					"arrival_minute": 6,
 					"flags": []
 				},
 				{

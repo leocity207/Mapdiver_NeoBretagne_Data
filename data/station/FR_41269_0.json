@@ -1,4 +1,11 @@
 {
-    "label": "Vendôme",
-    "lines" : ["LER_CVL4"]
+	"label": "Vendôme",
+	"code": "FR_41269_0",
+	"lines": [
+	"LER_CVL4"
+	],
+	"direction": {
+	"LER_CVL4_A_15": "FR_72181_0",
+	"LER_CVL4_R_45": "FR_45234_0"
+	}
 }

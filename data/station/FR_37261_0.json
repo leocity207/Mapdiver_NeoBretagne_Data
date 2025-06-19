@@ -1,4 +1,12 @@
 {
-    "label": "Tours",
-    "lines" : ["LER_BRE1","LER_NOR3"]
+	"label": "Tours",
+	"code": "FR_37261_0",
+	"lines": [
+	"LER_BRE1",
+	"LER_NOR3"
+	],
+	"direction": {
+	"LER_BRE1_R_07": "FR_49007_0",
+	"LER_NOR3_R_20": "FR_72181_0"
+	}
 }

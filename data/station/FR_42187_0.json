@@ -1,4 +1,11 @@
 {
-    "label": "Roanne",
-    "lines" : ["IC1"]
+	"label": "Roanne",
+	"code": "FR_42187_0",
+	"lines": [
+	"IC1"
+	],
+	"direction": {
+	"IC1_A_15": "FR_69382_0",
+	"IC1_R_30": "FR_49007_0"
+	}
 }

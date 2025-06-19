@@ -1,4 +1,10 @@
 {
-    "label": "Marseille Saint-Charles",
-    "lines" : ["LGV_FR8"]
+	"label": "Marseille Saint-Charles",
+	"code": "FR_13201_0",
+	"lines": [
+	"LGV_FR8"
+	],
+	"direction": {
+	"LGV_FR8_R_32": "FR_72181_0"
+	}
 }

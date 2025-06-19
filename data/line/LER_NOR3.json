@@ -12,7 +12,7 @@
 	"timetable_pattern": [
 		{
 			"code": "LER_NOR3_A_27",
-			"label": "Caens - Tours",
+			"label": "Caen - Tours",
 			"interval_minutes": 30,
 			"departure_minute": 27,
 			"first_departure":"4:27:00",
@@ -70,7 +70,7 @@
 		},
 		{
 			"code": "LER_NOR3_R_20",
-			"label": "Tours - Caens",
+			"label": "Tours - Caen",
 			"interval_minutes": 30,
 			"departure_minute": 20,
 			"first_departure":"4:20:00",

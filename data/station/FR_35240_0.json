@@ -1,4 +1,11 @@
 {
-    "label": "Le Rheu",
-    "lines" : ["LGV_BRE2"]
+	"label": "Le Rheu",
+	"code": "FR_35240_0",
+	"lines": [
+	"LGV_BRE2"
+	],
+	"direction": {
+	"LGV_BRE2_A_10": "FR_44109_0",
+	"LGV_BRE2_R_40": "FR_29019_0"
+	}
 }

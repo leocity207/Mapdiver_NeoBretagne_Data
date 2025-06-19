@@ -1,4 +1,10 @@
 {
-    "label": "Lille Flandre",
-    "lines" : ["LGV_FR7"]
+	"label": "Lille Flandre",
+	"code": "FR_59350_0",
+	"lines": [
+	"LGV_FR7"
+	],
+	"direction": {
+	"LGV_FR7_R_37": "FR_49007_0"
+	}
 }

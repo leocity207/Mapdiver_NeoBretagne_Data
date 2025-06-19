@@ -1,4 +1,8 @@
 {
-    "label" : "Vitré",
-    "line" : ["LER_BRE0"]
+	"label": "Vitré",
+	"code": "FR_35360_0",
+	"line": [
+	"LER_BRE0"
+	],
+	"direction": {}
 }

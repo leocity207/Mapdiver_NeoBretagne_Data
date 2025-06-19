@@ -1,4 +1,17 @@
 {
-    "label": "Vendôme TGV",
-    "lines" : ["LGV_FR7","LGV_FR9","LGV_BRE1"]
+	"label": "Vendôme TGV",
+	"code": "FR_41269_1",
+	"lines": [
+	"LGV_FR7",
+	"LGV_FR9",
+	"LGV_BRE1"
+	],
+	"direction": {
+	"LGV_FR7_A_02": "FR_59350_0",
+	"LGV_FR7_R_37": "FR_49007_0",
+	"LGV_FR9_A_10": "FR_67482_0",
+	"LGV_FR9_R_30": "FR_49007_0",
+	"LGV_BRE1_A_05": "FR_75115_0",
+	"LGV_BRE1_R_35": "FR_49007_0"
+	}
 }

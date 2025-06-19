@@ -1,4 +1,10 @@
 {
-    "label": "La Rochelles",
-    "lines" : ["LER_BRE6"]
+	"label": "La Rochelles",
+	"code": "FR_17300_0",
+	"lines": [
+	"LER_BRE6"
+	],
+	"direction": {
+	"LER_BRE6_R_55": "FR_85191_0"
+	}
 }

@@ -1,4 +1,11 @@
 {
-    "label": "Bressuire",
-    "lines" : ["LER_BRE3"]
+	"label": "Bressuire",
+	"code": "FR_79049_0",
+	"lines": [
+	"LER_BRE3"
+	],
+	"direction": {
+	"LER_BRE3_A_30": "FR_86194_0",
+	"LER_BRE3_R_00": "FR_44109_0"
+	}
 }

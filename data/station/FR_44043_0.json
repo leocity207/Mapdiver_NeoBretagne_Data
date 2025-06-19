@@ -1,4 +1,14 @@
 {
-    "label": "Clisson",
-    "lines" : ["LER_BRE5","LER_BRE6"]
+	"label": "Clisson",
+	"code": "FR_44043_0",
+	"lines": [
+	"LER_BRE5",
+	"LER_BRE6"
+	],
+	"direction": {
+	"LER_BRE5_A_11": "FR_85191_0",
+	"LER_BRE5_R_48": "FR_44109_0",
+	"LER_BRE6_A_25": "FR_85191_0",
+	"LER_BRE6_R_55": "FR_44109_0"
+	}
 }

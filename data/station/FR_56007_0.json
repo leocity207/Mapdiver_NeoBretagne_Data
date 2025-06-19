@@ -1,4 +1,14 @@
 {
-    "label": "Auray",
-    "lines" : ["LER_BRE1","LER_BRE2"]
+	"label": "Auray",
+	"code": "FR_56007_0",
+	"lines": [
+	"LER_BRE1",
+	"LER_BRE2"
+	],
+	"direction": {
+	"LER_BRE1_A_22": "FR_44109_0",
+	"LER_BRE1_R_07": "FR_29232_0",
+	"LER_BRE2_A_45": "FR_35238_0",
+	"LER_BRE2_R_15": "FR_29232_0"
+	}
 }

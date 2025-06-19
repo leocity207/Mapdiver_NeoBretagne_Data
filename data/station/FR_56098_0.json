@@ -1,4 +1,20 @@
 {
-    "label": "Lorient Lanester TGV",
-    "lines" : ["LGV_BRE3","LGV_BRE1","LER_BRE1","LER_BRE2"]
+	"label": "Lorient Lanester TGV",
+	"code": "FR_56098_0",
+	"lines": [
+	"LGV_BRE3",
+	"LGV_BRE1",
+	"LER_BRE1",
+	"LER_BRE2"
+	],
+	"direction": {
+	"LGV_BRE3_A_15": "FR_35238_0",
+	"LGV_BRE3_R_45": "FR_29232_0",
+	"LGV_BRE1_A_05": "FR_44109_0",
+	"LGV_BRE1_R_35": "FR_29232_0",
+	"LER_BRE1_A_22": "FR_44109_0",
+	"LER_BRE1_R_07": "FR_29232_0",
+	"LER_BRE2_A_45": "FR_35238_0",
+	"LER_BRE2_R_15": "FR_29232_0"
+	}
 }

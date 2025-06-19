@@ -1,4 +1,30 @@
 {
-    "label": "Angers",
-    "lines" : ["LER_NAQ7","LER_BRE8","LER_BRE1","LGV_FR9","LGV_FR7","IC1","LER_BRE7","LGV_BRE1"]
+	"label": "Angers",
+	"code": "FR_49007_0",
+	"lines": [
+	"LER_NAQ7",
+	"LER_BRE8",
+	"LER_BRE1",
+	"LGV_FR9",
+	"LGV_FR7",
+	"IC1",
+	"LER_BRE7",
+	"LGV_BRE1"
+	],
+	"direction": {
+	"LER_NAQ7_R_48": "FR_86194_0",
+	"LER_BRE8_A_05": "FR_61169_0",
+	"LER_BRE1_A_22": "FR_37261_0",
+	"LER_BRE1_R_07": "FR_44109_0",
+	"LGV_FR9_A_10": "FR_67482_0",
+	"LGV_FR9_R_30": "FR_44109_0",
+	"LGV_FR7_A_02": "FR_59350_0",
+	"LGV_FR7_R_37": "FR_44109_0",
+	"IC1_A_15": "FR_69382_0",
+	"IC1_R_30": "FR_44109_0",
+	"LER_BRE7_A_15": "FR_72181_0",
+	"LER_BRE7_R_45": "FR_44109_0",
+	"LGV_BRE1_A_05": "FR_75115_0",
+	"LGV_BRE1_R_35": "FR_44109_0"
+	}
 }

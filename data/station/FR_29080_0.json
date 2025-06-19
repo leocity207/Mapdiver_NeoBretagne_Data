@@ -1,4 +1,11 @@
 {
-    "label": "Hôpital-Camfrout",
-    "lines" : ["LER_BRE1"]
+	"label": "Hôpital-Camfrout",
+	"code": "FR_29080_0",
+	"lines": [
+	"LER_BRE1"
+	],
+	"direction": {
+	"LER_BRE1_A_22": "FR_29232_0",
+	"LER_BRE1_R_07": "FR_29019_0"
+	}
 }

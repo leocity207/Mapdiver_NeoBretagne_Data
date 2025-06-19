@@ -1,4 +1,10 @@
 {
-    "label": "Strasbourg",
-    "lines" : ["LGV_FR9"]
+	"label": "Strasbourg",
+	"code": "FR_67482_0",
+	"lines": [
+	"LGV_FR9"
+	],
+	"direction": {
+	"LGV_FR9_R_30": "FR_49007_0"
+	}
 }

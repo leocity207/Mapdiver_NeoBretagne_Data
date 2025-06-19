@@ -1,4 +1,11 @@
 {
-    "label": "Bayonne TGV",
-    "lines" : ["LGV_FR4"]
+	"label": "Bayonne TGV",
+	"code": "FR_64102_1",
+	"lines": [
+	"LGV_FR4"
+	],
+	"direction": {
+	"LGV_FR4_A_00": "FR_64260_0",
+	"LGV_FR4_R_30": "FR_85191_0"
+	}
 }

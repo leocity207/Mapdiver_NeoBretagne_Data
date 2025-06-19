@@ -1,4 +1,11 @@
 {
-    "label": "Château-du-Loir",
-    "lines" : ["LER_NOR3"]
+	"label": "Château-du-Loir",
+	"code": "FR_72071_0",
+	"lines": [
+	"LER_NOR3"
+	],
+	"direction": {
+	"LER_NOR3_A_27": "FR_37261_0",
+	"LER_NOR3_R_20": "FR_72181_0"
+	}
 }
