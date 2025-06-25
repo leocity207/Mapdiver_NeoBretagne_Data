@@ -79,7 +79,7 @@ export const Config = {
 	/**
 	 * default easing animation
 	 */
-	DEFAULT_ANIMATION_EASING : 'easeInOutQuart',
+	DEFAULT_ANIMATION_EASING : 'inOutQuart',
 
 	/**
 	 * if the transition between animation should be hard or eased
