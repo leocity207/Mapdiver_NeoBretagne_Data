@@ -126,7 +126,7 @@ export const Network_Config = {
 	 * Color change animation time (lines, labels)
 	 * When the user select
 	 */
-	COLOR_ANIMATION_TIME : 150,
+	COLOR_ANIMATION_TIME : 400,
 
 	/**
 	 * Color to use when a line is disabled
