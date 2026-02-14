@@ -19,77 +19,34 @@
 			"infomessages": [],
 			"first_departure":"5:15:00",
 			"last_departure":"20:15:00",
-			"lineflowstops": [
-				{
-					"station_ID": "FR_44109_0",
-					"departure_minute": 0,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_44003_0",
-					"arrival_minute": 15,
-					"departure_minute": 17,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_49007_0",
-					"arrival_minute": 45,
-					"departure_minute": 47,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_49328_0",
-					"arrival_minute": 75,
-					"departure_minute": 77,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_37233_0",
-					"arrival_minute": 105,
-					"departure_minute": 107,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_18279_0",
-					"arrival_minute": 135,
-					"departure_minute": 137,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_18033_0",
-					"arrival_minute": 165,
-					"departure_minute": 167,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_58194_0",
-					"arrival_minute": 195,
-					"departure_minute": 197,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_03190_0",
-					"arrival_minute": 225,
-					"departure_minute": 227,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_03236_0",
-					"arrival_minute": 255,
-					"departure_minute": 257,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_42187_0",
-					"arrival_minute": 285,
-					"departure_minute": 287,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_69382_0",
-					"arrival_minute": 343,
-					"flags": []
-				}
+			"is_reversed": false,
+			"arrival_minutes": [
+				null,
+				15,
+				45,
+				75,
+				105,
+				135,
+				165,
+				195,
+				225,
+				255,
+				285,
+				343
+			],
+			"departure_minutes": [
+				0,
+				17,
+				47,
+				77,
+				107,
+				137,
+				167,
+				197,
+				227,
+				257,
+				287,
+				null
 			]
 		},
 		{
@@ -101,77 +58,85 @@
 			"first_departure":"5:30:00",
 			"last_departure":"20:30:00",
 			"infomessages": [],
-			"lineflowstops": [
-				{
-					"station_ID": "FR_69382_0",
-					"departure_minute": 0,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_42187_0",
-					"arrival_minute": 58,
-					"departure_minute": 60,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_03236_0",
-					"arrival_minute": 88,
-					"departure_minute": 90,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_03190_0",
-					"arrival_minute": 118,
-					"departure_minute": 120,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_58194_0",
-					"arrival_minute": 148,
-					"departure_minute": 150,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_18033_0",
-					"arrival_minute": 178,
-					"departure_minute": 180,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_18279_0",
-					"arrival_minute": 208,
-					"departure_minute": 210,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_37233_0",
-					"arrival_minute": 238,
-					"departure_minute": 240,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_49328_0",
-					"arrival_minute": 268,
-					"departure_minute": 270,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_49007_0",
-					"arrival_minute": 298,
-					"departure_minute": 300,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_44003_0",
-					"arrival_minute": 328,
-					"departure_minute": 330,
-					"flags": []
-				},
-				{
-					"station_ID": "FR_44109_0",
-					"arrival_minute": 343,
-					"flags": []
-				}
+			"is_reversed": true,
+			"arrival_minutes": [
+				null,
+				58,
+				88,
+				118,
+				148,
+				178,
+				208,
+				238,
+				268,
+				298,
+				328,
+				343
+			],
+			"departure_minutes": [
+				0,
+				60,
+				90,
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300,
+				330,
+				null
+			]
+		}
+	],
+	"stations": [
+        "FR_44109_0",
+        "FR_44003_0",
+        "FR_49007_0",
+        "FR_49328_0",
+        "FR_37233_0",
+        "FR_18279_0",
+        "FR_18033_0",
+        "FR_58194_0",
+        "FR_03190_0",
+        "FR_03236_0",
+        "FR_42187_0",
+        "FR_69382_0"
+    ],
+	"timetables": 
+	[
+		{
+			"id": "IC1-1",
+			"label": "100",
+			"pattern": "Weekday",
+			"info_messages": [],
+			"arrival_minutes": [
+				null,
+				58,
+				88,
+				118,
+				148,
+				178,
+				208,
+				238,
+				268,
+				298,
+				328,
+				343
+			],
+			"departure_minutes": [
+				0,
+				60,
+				90,
+				120,
+				150,
+				180,
+				210,
+				240,
+				270,
+				300,
+				330,
+				null
 			]
 		}
 	]
