@@ -1,6 +1,7 @@
 {
 	"label": "Bourges",
-	"code": "FR_18033_0",
+	"url": "/FR_18033_0",
+	"id": "FR_18033_0",
 	"lines": [
 	"IC1"
 	],

@@ -1,6 +1,7 @@
 {
 	"label": "Angers",
-	"code": "FR_49007_0",
+	"url": "/FR_49007_0",
+	"id": "FR_49007_0",
 	"lines": [
 	"LER_NAQ7",
 	"LER_BRE8",

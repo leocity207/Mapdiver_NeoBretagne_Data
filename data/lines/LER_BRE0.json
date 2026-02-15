@@ -1,9 +1,7 @@
 {
-	"code": "LER_BRE0",
+	"id": "LER_BRE0",
 	"label": "LER BRE0",
-	"urls": {
-		"fr": "/LER_BRE0"
-	},
+	"url": "/LER_BRE0",
 	"color": {
 		"default": "#25158B",
 		"easy": "#DD2F1D"
@@ -28,14 +26,14 @@
     ],
 	"timetable_pattern": [
 		{
-			"code": "LER_BRE0_A_22",
+			"id": "LER_BRE0_A_22",
 			"label": "Brest - Le Mans",
 			"interval_minutes": 60,
 			"departure_minute": 22,
 			"first_departure":"4:22:00",
 			"last_departure":"23:22:00",
-			"service": "local",
-			"infomessages": [],
+			"stop_pattern": "local",
+			"info_messages": [],
 			"is_reversed" : false,
 			"arrival_minutes": [
 				null,
@@ -73,14 +71,14 @@
 			]
 		},
 		{
-			"code": "LER_BRE0_R_07",
+			"id": "LER_BRE0_R_07",
 			"label": "Le Mans - Brest",
 			"interval_minutes": 60,
 			"departure_minute": 7,
-			"service": "local",
+			"stop_pattern": "local",
 			"first_departure":"4:07:00",
 			"last_departure":"23:37:00",
-			"infomessages": [],
+			"info_messages": [],
 			"is_reversed": true,
 			"arrival_minutes": [
 				null,
@@ -117,6 +115,50 @@
 				null
 			]
 			
+		}
+	],
+	"timetables": 
+	[
+		{
+			"id": "IC1-1",
+			"label": "100",
+			"calendar_pattern": "Weekday",
+			"stop_pattern" : "local",
+			"info_messages": [],
+			"arrival_minutes": [
+				null,
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00"
+			],
+			"departure_minutes": [
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				"10:00",
+				null
+			]
 		}
 	]
 }

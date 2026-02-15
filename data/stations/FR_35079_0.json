@@ -1,6 +1,7 @@
 {
 	"label": "Chevaigné",
-	"code": "FR_35079_0",
+	"url": "/FR_35079_0",
+	"id": "FR_35079_0",
 	"lines": [
 	"LER_BRE4",
 	"LER_NOR2"

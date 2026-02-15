@@ -1,6 +1,7 @@
 {
 	"label": "Bordeaux Saint-Jean",
-	"code": "FR_33063_0",
+	"url": "/FR_33063_0",
+	"id": "FR_33063_0",
 	"lines": [
 	"LGV_FR4"
 	],

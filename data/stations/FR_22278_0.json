@@ -1,6 +1,7 @@
 {
 	"label": "Saint-Brieuc",
-	"code": "FR_22278_0",
+	"url": "/FR_22278_0",
+	"id": "FR_22278_0",
 	"lines": [
 	"LER_BRE0",
 	"LGV_BRE2",

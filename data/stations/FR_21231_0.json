@@ -1,6 +1,7 @@
 {
 	"label": "Dijon",
-	"code": "FR_21231_0",
+	"url": "/FR_21231_0",
+	"id": "FR_21231_0",
 	"lines": [
 	"LGV_FR8"
 	],

@@ -1,6 +1,7 @@
 {
 	"label": "Saint-Pierre-des-Corps",
-	"code": "FR_37233_0",
+	"url": "/FR_37233_0",
+	"id": "FR_37233_0",
 	"lines": [
 	"IC1",
 	"LGV_FR7",

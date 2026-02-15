@@ -1,6 +1,7 @@
 {
 	"label": "Rennes",
-	"code": "FR_35238_0",
+	"url": "/FR_35238_0",
+	"id": "FR_35238_0",
 	"lines": [
 	"LER_BRE0",
 	"LER_NOR2",

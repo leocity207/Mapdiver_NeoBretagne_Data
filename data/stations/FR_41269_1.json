@@ -1,6 +1,7 @@
 {
 	"label": "Vendôme TGV",
-	"code": "FR_41269_1",
+	"url": "/FR_41269_1",
+	"id": "FR_41269_1",
 	"lines": [
 	"LGV_FR7",
 	"LGV_FR9",

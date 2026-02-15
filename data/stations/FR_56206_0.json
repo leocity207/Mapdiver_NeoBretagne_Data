@@ -1,6 +1,7 @@
 {
 	"label": "Vannes Saint-Avé TGV",
-	"code": "FR_56206_0",
+	"url": "/FR_56206_0",
+	"id": "FR_56206_0",
 	"lines": [
 	"LER_BRE2",
 	"LGV_BRE3",

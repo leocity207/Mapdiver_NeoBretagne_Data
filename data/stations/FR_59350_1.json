@@ -1,6 +1,7 @@
 {
 	"label": "Lille Europe",
-	"code": "FR_59350_1",
+	"url": "/FR_59350_1",
+	"id": "FR_59350_1",
 	"lines": [
 	"LGV_FR4"
 	],

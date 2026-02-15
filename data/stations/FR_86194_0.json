@@ -1,6 +1,7 @@
 {
 	"label": "Poitiers",
-	"code": "FR_86194_0",
+	"url": "/FR_86194_0",
+	"id": "FR_86194_0",
 	"lines": [
 	"LER_BRE3",
 	"LER_NAQ7"

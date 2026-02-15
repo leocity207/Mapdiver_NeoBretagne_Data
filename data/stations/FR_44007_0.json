@@ -1,6 +1,7 @@
 {
 	"label": "Avessac Redon TGV",
-	"code": "FR_44007_0",
+	"url": "/FR_44007_0",
+	"id": "FR_44007_0",
 	"lines": [
 	"LER_BRE3",
 	"LGV_BRE3",

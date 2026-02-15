@@ -1,6 +1,7 @@
 {
 	"label": "Reims TGV",
-	"code": "FR_51454_0",
+	"url": "/FR_51454_0",
+	"id": "FR_51454_0",
 	"lines": [
 	"LGV_FR9"
 	],

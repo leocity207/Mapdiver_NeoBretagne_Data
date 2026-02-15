@@ -1,6 +1,7 @@
 {
 	"label": "Saint-Nazaire",
-	"code": "FR_44184_0",
+	"url": "/FR_44184_0",
+	"id": "FR_44184_0",
 	"lines": [
 	"LER_BRE5"
 	],

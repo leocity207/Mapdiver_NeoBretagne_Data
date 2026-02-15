@@ -1,6 +1,7 @@
 {
 	"label": "Le Mans",
-	"code": "FR_72181_0",
+	"url": "/FR_72181_0",
+	"id": "FR_72181_0",
 	"lines": [
 	"LER_CVL1",
 	"LER_CVL4",

@@ -1,6 +1,7 @@
 {
 	"label": "Lyon Part-Dieu",
-	"code": "FR_69383_0",
+	"url": "/FR_69383_0",
+	"id": "FR_69383_0",
 	"lines": [
 	"LGV_FR8"
 	],

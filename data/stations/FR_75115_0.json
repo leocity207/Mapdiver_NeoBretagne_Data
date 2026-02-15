@@ -1,6 +1,7 @@
 {
 	"label": "Paris Montparnasse",
-	"code": "FR_75115_0",
+	"url": "/FR_75115_0",
+	"id": "FR_75115_0",
 	"lines": [
 	"LER_CVL1",
 	"LGV_BRE0",

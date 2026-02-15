@@ -1,6 +1,7 @@
 {
 	"label": "Lille Flandre",
-	"code": "FR_59350_0",
+	"url": "/FR_59350_0",
+	"id": "FR_59350_0",
 	"lines": [
 	"LGV_FR7"
 	],

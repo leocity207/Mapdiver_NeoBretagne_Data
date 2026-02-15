@@ -1,6 +1,7 @@
 {
 	"label": "Folligny",
-	"code": "FR_50188_0",
+	"url": "/FR_50188_0",
+	"id": "FR_50188_0",
 	"lines": [
 	"LER_NOR2"
 	],

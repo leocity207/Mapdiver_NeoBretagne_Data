@@ -1,6 +1,7 @@
 {
 	"label": "Auray",
-	"code": "FR_56007_0",
+	"url": "/FR_56007_0",
+	"id": "FR_56007_0",
 	"lines": [
 	"LER_BRE1",
 	"LER_BRE2"

@@ -1,6 +1,7 @@
 {
 	"label": "La Rochelles",
-	"code": "FR_17300_0",
+	"url": "/FR_17300_0",
+	"id": "FR_17300_0",
 	"lines": [
 	"LER_BRE6"
 	],

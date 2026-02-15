@@ -1,6 +1,7 @@
 {
 	"label": "La Ferté-Bernard",
-	"code": "FR_72132_0",
+	"url": "/FR_72132_0",
+	"id": "FR_72132_0",
 	"lines": [
 	"LER_CVL1"
 	],

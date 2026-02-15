@@ -1,6 +1,7 @@
 {
 	"label": "Mont-de-Marsan",
-	"code": "FR_40192_0",
+	"url": "/FR_40192_0",
+	"id": "FR_40192_0",
 	"lines": [
 	"LGV_FR4"
 	],

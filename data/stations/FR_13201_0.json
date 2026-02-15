@@ -1,6 +1,7 @@
 {
 	"label": "Marseille Saint-Charles",
-	"code": "FR_13201_0",
+	"url": "/FR_13201_0",
+	"id": "FR_13201_0",
 	"lines": [
 	"LGV_FR8"
 	],

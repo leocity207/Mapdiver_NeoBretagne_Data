@@ -1,6 +1,7 @@
 {
 	"label": "Argentan",
-	"code": "FR_61006_0",
+	"url": "/FR_61006_0",
+	"id": "FR_61006_0",
 	"lines": [
 	"LER_NOR3"
 	],

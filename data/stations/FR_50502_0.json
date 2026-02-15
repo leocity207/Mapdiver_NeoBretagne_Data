@@ -1,6 +1,7 @@
 {
 	"label": "Saint-Lô",
-	"code": "FR_50502_0",
+	"url": "/FR_50502_0",
+	"id": "FR_50502_0",
 	"lines": [
 	"LER_NOR2"
 	],

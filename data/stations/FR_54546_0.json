@@ -1,6 +1,7 @@
 {
 	"label": "Lorraine TGV",
-	"code": "FR_54546_0",
+	"url": "/FR_54546_0",
+	"id": "FR_54546_0",
 	"lines": [
 	"LGV_FR9"
 	],

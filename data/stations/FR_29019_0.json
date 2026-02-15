@@ -1,6 +1,7 @@
 {
 	"label": "Brest",
-	"code": "FR_29019_0",
+	"url": "/FR_29019_0",
+	"id": "FR_29019_0",
 	"lines": [
 	"LER_BRE1",
 	"LER_BRE0",

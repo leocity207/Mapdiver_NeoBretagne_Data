@@ -1,6 +1,7 @@
 {
 	"label": "Laval",
-	"code": "FR_53130_0",
+	"url": "/FR_53130_0",
+	"id": "FR_53130_0",
 	"lines": [
 	"LER_BRE8",
 	"LER_BRE0",

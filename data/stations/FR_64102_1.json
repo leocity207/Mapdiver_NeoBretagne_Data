@@ -1,6 +1,7 @@
 {
 	"label": "Bayonne TGV",
-	"code": "FR_64102_1",
+	"url": "/FR_64102_1",
+	"id": "FR_64102_1",
 	"lines": [
 	"LGV_FR4"
 	],

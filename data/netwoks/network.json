@@ -1,5 +1,8 @@
 {
 	"calendar_patterns": [
+		"31.12",
+		"week-end",
+		"weekday"
 	],
 	"stations": [
 		"FR_22070_0",
@@ -149,6 +152,9 @@
 	"patterns" : [
 	],
 	"stop_patterns" : [
+		"express",
+		"local",
+		"rapid"
 	],
 	"territories": [
 	]

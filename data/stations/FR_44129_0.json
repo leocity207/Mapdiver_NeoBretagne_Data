@@ -1,6 +1,7 @@
 {
 	"label": "Pontchâteau",
-	"code": "FR_44129_0",
+	"url": "/FR_44129_0",
+	"id": "FR_44129_0",
 	"lines": [
 	"LER_BRE3",
 	"LER_BRE1"

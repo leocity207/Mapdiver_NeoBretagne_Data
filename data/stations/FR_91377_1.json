@@ -1,6 +1,7 @@
 {
 	"label": "Massy TGV",
-	"code": "FR_91377_1",
+	"url": "/FR_91377_1",
+	"id": "FR_91377_1",
 	"lines": [
 	"LGV_BRE0",
 	"LGV_BRE1",

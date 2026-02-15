@@ -1,6 +1,7 @@
 {
 	"label": "Saint-Malo",
-	"code": "FR_35288_0",
+	"url": "/FR_35288_0",
+	"id": "FR_35288_0",
 	"lines": [
 	"LER_BRE4"
 	],

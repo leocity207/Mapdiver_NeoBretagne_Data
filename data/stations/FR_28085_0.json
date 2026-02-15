@@ -1,6 +1,7 @@
 {
 	"label": "Chartres",
-	"code": "FR_28085_0",
+	"url": "/FR_28085_0",
+	"id": "FR_28085_0",
 	"lines": [
 	"LER_CVL1",
 	"LGV_BRE0",

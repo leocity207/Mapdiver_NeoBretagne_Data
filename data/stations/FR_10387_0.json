@@ -1,6 +1,7 @@
 {
 	"label": "Troyes",
-	"code": "FR_10387_0",
+	"url": "/FR_10387_0",
+	"id": "FR_10387_0",
 	"lines": [
 	"LGV_FR8"
 	],
