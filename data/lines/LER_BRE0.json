@@ -24,7 +24,7 @@
         "FR_29103_0",
         "FR_29019_0"
     ],
-	"timetable_pattern": [
+	"patterns": [
 		{
 			"id": "LER_BRE0_A_22",
 			"label": "Brest - Le Mans",
