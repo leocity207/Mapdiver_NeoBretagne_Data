@@ -1,7 +1,7 @@
 {
 	"id": "LER_NOR2",
 	"label": "LER NOR2",
-	"url": "/LER_NOR2",
+	"url": "/line/LER_NOR2",
 	"color": {
 		"default": "#2699D1",
 		"easy": "#7DA9C0"

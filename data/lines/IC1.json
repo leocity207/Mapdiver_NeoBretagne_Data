@@ -1,7 +1,7 @@
 {
 	"id": "IC1",
 	"label": "IC1",
-	"url": "/IC1",
+	"url": "/line/IC1",
 	"color": {
 		"default": "#00FDFF",
 		"easy": "#0077BA"

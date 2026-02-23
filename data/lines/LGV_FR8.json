@@ -1,7 +1,7 @@
 {
 	"id": "LGV_FR8",
 	"label": "LGV FR8",
-	"url": "/LGV_FR8",
+	"url": "/line/LGV_FR8",
 	"color": {
 		"default": "#E07777",
 		"easy": "#C4D983"

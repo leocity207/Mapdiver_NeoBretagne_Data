@@ -1,7 +1,7 @@
 {
 	"id": "LGV_FR7",
 	"label": "LGV FR7",
-	"url": "/LGV_FR7",
+	"url": "/line/LGV_FR7",
 	"color": {
 		"default": "#DA026C",
 		"easy": "#AF126F"

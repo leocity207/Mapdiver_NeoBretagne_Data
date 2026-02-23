@@ -1,7 +1,7 @@
 {
 	"id": "LGV_BRE1",
 	"label": "LGV BRE1",
-	"url": "/LGV_BRE1",
+	"url": "/line/LGV_BRE1",
 	"color": {
 		"default": "#C01400",
 		"easy": "#B69495"
