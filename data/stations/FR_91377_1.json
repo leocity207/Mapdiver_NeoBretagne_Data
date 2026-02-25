@@ -9,7 +9,7 @@
 	"LGV_FR9",
 	"LGV_FR8"
 	],
-	"direction": {
+	"directions": {
 	"LGV_BRE0_A_00": "FR_75115_0",
 	"LGV_BRE0_R_30": "FR_72181_0",
 	"LGV_BRE1_A_05": "FR_75115_0",

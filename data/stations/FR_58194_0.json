@@ -5,7 +5,7 @@
 	"lines": [
 	"IC1"
 	],
-	"direction": {
+	"directions": {
 	"IC1_A_15": "FR_69382_0",
 	"IC1_R_30": "FR_49007_0"
 	}

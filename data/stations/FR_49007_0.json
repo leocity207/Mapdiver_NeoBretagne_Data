@@ -12,7 +12,7 @@
 	"LER_BRE7",
 	"LGV_BRE1"
 	],
-	"direction": {
+	"directions": {
 	"LER_NAQ7_R_48": "FR_86194_0",
 	"LER_BRE8_A_05": "FR_61169_0",
 	"LER_BRE1_A_22": "FR_37261_0",

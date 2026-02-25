@@ -8,7 +8,7 @@
 	"LGV_FR9",
 	"LGV_BRE1"
 	],
-	"direction": {
+	"directions": {
 	"IC1_A_15": "FR_69382_0",
 	"IC1_R_30": "FR_49007_0",
 	"LGV_FR7_A_02": "FR_59350_0",

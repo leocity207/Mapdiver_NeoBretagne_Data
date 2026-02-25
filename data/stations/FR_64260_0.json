@@ -5,7 +5,7 @@
 	"lines": [
 	"LGV_FR4"
 	],
-	"direction": {
+	"directions": {
 	"LGV_FR4_R_30": "FR_85191_0"
 	}
 }

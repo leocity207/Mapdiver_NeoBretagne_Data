@@ -7,7 +7,7 @@
 	"IC1",
 	"LER_BRE1"
 	],
-	"direction": {
+	"directions": {
 	"LER_BRE7_A_15": "FR_49007_0",
 	"LER_BRE7_R_45": "FR_44109_0",
 	"IC1_A_15": "FR_49007_0",

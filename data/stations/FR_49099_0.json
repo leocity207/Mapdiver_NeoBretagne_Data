@@ -5,7 +5,7 @@
 	"lines": [
 	"LER_BRE3"
 	],
-	"direction": {
+	"directions": {
 	"LER_BRE3_A_30": "FR_86194_0",
 	"LER_BRE3_R_00": "FR_44109_0"
 	}

@@ -8,7 +8,7 @@
 	"LER_BRE1",
 	"LER_BRE2"
 	],
-	"direction": {
+	"directions": {
 	"LGV_BRE3_A_15": "FR_35238_0",
 	"LGV_BRE3_R_45": "FR_29232_0",
 	"LGV_BRE1_A_05": "FR_44109_0",

@@ -7,7 +7,7 @@
 	"LER_NOR3",
 	"LGV_FR4"
 	],
-	"direction": {
+	"directions": {
 	"LER_NOR2_A_05": "FR_35238_0",
 	"LER_NOR3_A_27": "FR_72181_0",
 	"LGV_FR4_A_00": "FR_35238_0",
