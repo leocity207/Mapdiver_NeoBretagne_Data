@@ -1,4 +1,22 @@
 
+export const App_Config = {
+
+	/**
+	 * Tells if we should display the network map app
+	 */
+	HAVE_NETWORK_MAP: true,
+
+	/**
+	 * Tells if we should display line schedule app
+	 */
+	HAVE_LINE_TIMETABLE: true,
+
+	/**
+	 * Tells if we should display station schedule app
+	 */
+	HAVE_STATION_SCHEDULES: true 
+}
+
 
 /**
  * Base configuration for the SVG map Object
