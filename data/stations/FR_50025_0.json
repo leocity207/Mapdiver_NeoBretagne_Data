@@ -1,0 +1,12 @@
+{
+	"label": "Avranches",
+	"url": "/station/FR_50025_0",
+	"id": "FR_50025_0",
+	"lines": [
+	"LER_NOR2"
+	],
+	"directions": {
+	"LER_NOR2_A_05": "FR_35238_0",
+	"LER_NOR2_R_04": "FR_14118_0"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"label": "Lille Flandre",
+	"url": "/station/FR_59350_0",
+	"id": "FR_59350_0",
+	"lines": [
+	"LGV_FR7"
+	],
+	"directions": {
+	"LGV_FR7_R_37": "FR_49007_0"
+	}
+}

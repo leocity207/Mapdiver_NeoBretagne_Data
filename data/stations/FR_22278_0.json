@@ -1,0 +1,18 @@
+{
+	"label": "Saint-Brieuc",
+	"url": "/station/FR_22278_0",
+	"id": "FR_22278_0",
+	"lines": [
+	"LER_BRE0",
+	"LGV_BRE2",
+	"LGV_BRE0"
+	],
+	"directions": {
+	"LER_BRE0_A_22": "FR_35238_0",
+	"LER_BRE0_R_07": "FR_29019_0",
+	"LGV_BRE2_A_10": "FR_44109_0",
+	"LGV_BRE2_R_40": "FR_29019_0",
+	"LGV_BRE0_A_00": "FR_35238_0",
+	"LGV_BRE0_R_30": "FR_29019_0"
+	}
+}

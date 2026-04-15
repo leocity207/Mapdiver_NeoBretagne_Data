@@ -1,0 +1,11 @@
+{
+	"label": "Le Croisic",
+	"url": "/station/FR_44049_0",
+	"id": "FR_44049_0",
+	"lines": [
+	"LER_BRE5"
+	],
+	"directions": {
+	"LER_BRE5_A_11": "FR_44109_0"
+	}
+}

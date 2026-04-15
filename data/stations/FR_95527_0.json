@@ -1,0 +1,12 @@
+{
+	"label": "Roissy Aeroport CDG Terminal 2",
+	"url": "/station/FR_95527_0",
+	"id": "FR_95527_0",
+	"lines": [
+	"LGV_FR7"
+	],
+	"directions": {
+	"LGV_FR7_A_02": "FR_59350_0",
+	"LGV_FR7_R_37": "FR_49007_0"
+	}
+}

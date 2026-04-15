@@ -1,0 +1,12 @@
+{
+	"label": "Parthenay",
+	"url": "/station/FR_79202_0",
+	"id": "FR_79202_0",
+	"lines": [
+	"LER_BRE3"
+	],
+	"directions": {
+	"LER_BRE3_A_30": "FR_86194_0",
+	"LER_BRE3_R_00": "FR_44109_0"
+	}
+}

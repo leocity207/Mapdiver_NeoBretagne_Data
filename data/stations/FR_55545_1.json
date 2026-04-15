@@ -1,0 +1,12 @@
+{
+	"label": "Verdun TGV",
+	"url": "/station/FR_55545_1",
+	"id": "FR_55545_1",
+	"lines": [
+	"LGV_FR9"
+	],
+	"directions": {
+	"LGV_FR9_A_10": "FR_67482_0",
+	"LGV_FR9_R_30": "FR_49007_0"
+	}
+}

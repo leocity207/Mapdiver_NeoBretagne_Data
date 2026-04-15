@@ -1,0 +1,11 @@
+{
+	"label": "Les Sables-d'Olonne",
+	"url": "/station/FR_85194_0",
+	"id": "FR_85194_0",
+	"lines": [
+	"LER_BRE5"
+	],
+	"directions": {
+	"LER_BRE5_R_48": "FR_85191_0"
+	}
+}

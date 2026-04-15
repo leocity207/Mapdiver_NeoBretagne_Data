@@ -1,0 +1,11 @@
+{
+	"label": "La Rochelles",
+	"url": "/station/FR_17300_0",
+	"id": "FR_17300_0",
+	"lines": [
+	"LER_BRE6"
+	],
+	"directions": {
+	"LER_BRE6_R_55": "FR_85191_0"
+	}
+}

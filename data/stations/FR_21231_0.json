@@ -1,0 +1,12 @@
+{
+	"label": "Dijon",
+	"url": "/station/FR_21231_0",
+	"id": "FR_21231_0",
+	"lines": [
+	"LGV_FR8"
+	],
+	"directions": {
+	"LGV_FR8_A_27": "FR_13201_0",
+	"LGV_FR8_R_32": "FR_72181_0"
+	}
+}

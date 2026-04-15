@@ -1,0 +1,18 @@
+{
+	"label": "Ancenis-Saint-Géréon",
+	"url": "/station/FR_44003_0",
+	"id": "FR_44003_0",
+	"lines": [
+	"LER_BRE7",
+	"IC1",
+	"LER_BRE1"
+	],
+	"directions": {
+	"LER_BRE7_A_15": "FR_49007_0",
+	"LER_BRE7_R_45": "FR_44109_0",
+	"IC1_A_15": "FR_49007_0",
+	"IC1_R_30": "FR_44109_0",
+	"LER_BRE1_A_22": "FR_49007_0",
+	"LER_BRE1_R_07": "FR_44109_0"
+	}
+}

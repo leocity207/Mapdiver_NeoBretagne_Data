@@ -14,7 +14,7 @@ for filename in os.listdir(LINES_DIR):
         with open(path, "r", encoding="utf-8") as f:
             try:
                 data = json.load(f)
-                line_data[data["code"]] = data
+                line_data[data["id"]] = data
             except Exception as e:
                 print(f"Failed to load line {filename}: {e}")
 
@@ -31,7 +31,7 @@ for station_filename in os.listdir(STATIONS_DIR):
             print(f"Failed to load station {station_filename}: {e}")
             continue
 
-    station_code = station.get("code")
+    station_code = station.get("id")
     if not station_code:
         print(f"Skipping station with no code: {station_filename}")
         continue
@@ -45,7 +45,7 @@ for station_filename in os.listdir(STATIONS_DIR):
             continue
 
         for pattern in line.get("timetable_pattern", []):
-            pattern_code = pattern.get("code")
+            pattern_code = pattern.get("id")
             stops = pattern.get("lineflowstops", [])
             stop_ids = [stop["station_ID"] for stop in stops]
 

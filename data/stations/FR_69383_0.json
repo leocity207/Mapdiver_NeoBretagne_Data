@@ -1,0 +1,12 @@
+{
+	"label": "Lyon Part-Dieu",
+	"url": "/station/FR_69383_0",
+	"id": "FR_69383_0",
+	"lines": [
+	"LGV_FR8"
+	],
+	"directions": {
+	"LGV_FR8_A_27": "FR_13201_0",
+	"LGV_FR8_R_32": "FR_72181_0"
+	}
+}

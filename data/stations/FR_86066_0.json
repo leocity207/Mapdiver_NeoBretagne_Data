@@ -1,0 +1,12 @@
+{
+	"label": "Châtellerault",
+	"url": "/station/FR_86066_0",
+	"id": "FR_86066_0",
+	"lines": [
+	"LER_NAQ7"
+	],
+	"directions": {
+	"LER_NAQ7_A_12": "FR_49007_0",
+	"LER_NAQ7_R_48": "FR_86194_0"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"label": "Le Rheu",
+	"url": "/station/FR_35240_0",
+	"id": "FR_35240_0",
+	"lines": [
+	"LGV_BRE2"
+	],
+	"directions": {
+	"LGV_BRE2_A_10": "FR_44109_0",
+	"LGV_BRE2_R_40": "FR_29019_0"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"label": "Flers",
+	"url": "/station/FR_61169_0",
+	"id": "FR_61169_0",
+	"lines": [
+	"LER_BRE8"
+	],
+	"directions": {
+	"LER_BRE8_R_35": "FR_49007_0"
+	}
+}
