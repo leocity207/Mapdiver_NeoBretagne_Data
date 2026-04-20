@@ -127,7 +127,7 @@
 		{
 			"id": "IC1-1",
 			"label": "100",
-			"calendar_pattern": "Weekday",
+			"calendar_pattern": "weekday",
 			"stop_pattern" : "local",
 			"info_messages": [],
 			"arrival_minutes": [
