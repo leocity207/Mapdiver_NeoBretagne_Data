@@ -30,14 +30,14 @@
 		{
 			"id": "LGV_FR4_A_00",
 			"label": "Calais - Hendaye",
-			"interval_minutes": 3600,
-			"departure_minute": 0,
+			"interval_time": 3600,
+			"departure_time": 0,
 			"first_departure": 14400,
 			"last_departure": 0,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1680,
 				3360,
@@ -55,7 +55,7 @@
 				22320,
 				22860
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1740,
 				3420,
@@ -77,14 +77,14 @@
 		{
 			"id": "LGV_FR4_R_30",
 			"label": "Hendaye - Calais",
-			"interval_minutes": 3600,
-			"departure_minute": 1800,
+			"interval_time": 3600,
+			"departure_time": 1800,
 			"first_departure": 16200,
 			"last_departure": 1800,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				540,
 				1080,
@@ -102,7 +102,7 @@
 				21240,
 				22860
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				600,
 				1140,
@@ -129,7 +129,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -147,7 +147,7 @@
 				52200,
 				52800
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

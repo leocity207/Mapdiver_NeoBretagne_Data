@@ -29,14 +29,14 @@
 		{
 			"id": "LER_BRE0_A_22",
 			"label": "Brest - Le Mans",
-			"interval_minutes": 3600,
-			"departure_minute": 1320,
+			"interval_time": 3600,
+			"departure_time": 1320,
 			"first_departure": 15720,
 			"last_departure": 84120,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				480,
 				960,
@@ -53,7 +53,7 @@
 				6600,
 				7200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				540,
 				1020,
@@ -74,14 +74,14 @@
 		{
 			"id": "LER_BRE0_R_07",
 			"label": "Le Mans - Brest",
-			"interval_minutes": 3600,
-			"departure_minute": 420,
+			"interval_time": 3600,
+			"departure_time": 420,
 			"stop_pattern": "local",
 			"first_departure": 14820,
 			"last_departure": 85020,
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				480,
 				960,
@@ -98,7 +98,7 @@
 				6600,
 				7200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				600,
 				1020,
@@ -124,7 +124,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -141,7 +141,7 @@
 				51000,
 				52200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,
@@ -165,7 +165,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -182,7 +182,7 @@
 				51000,
 				52200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,
@@ -206,7 +206,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -223,7 +223,7 @@
 				51000,
 				52200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,
@@ -247,7 +247,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -264,7 +264,7 @@
 				51000,
 				52200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,
@@ -288,7 +288,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -305,7 +305,7 @@
 				51000,
 				52200
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

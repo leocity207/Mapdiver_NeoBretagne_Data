@@ -24,14 +24,14 @@
 		{
 			"id": "LGV_BRE1_A_05",
 			"label": "Quimper - Paris Montparnass",
-			"interval_minutes": 3600,
-			"departure_minute": 300,
+			"interval_time": 3600,
+			"departure_time": 300,
 			"first_departure": 14700,
 			"last_departure": 300,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1320,
 				2460,
@@ -43,7 +43,7 @@
 				9000,
 				10080
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1380,
 				2520,
@@ -59,14 +59,14 @@
 		{
 			"id": "LGV_BRE1_R_35",
 			"label": "Paris Montparnass - Quimper",
-			"interval_minutes": 3600,
-			"departure_minute": 2100,
+			"interval_time": 3600,
+			"departure_time": 2100,
 			"first_departure": 16500,
 			"last_departure": 2100,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1020,
 				2100,
@@ -78,7 +78,7 @@
 				8580,
 				10080
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1080,
 				2160,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

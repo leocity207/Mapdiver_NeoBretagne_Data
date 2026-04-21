@@ -20,14 +20,14 @@
 		{
 			"id": "LER_BRE6_A_25",
 			"label": "Nantes - La Rochelles",
-			"interval_minutes": 3600,
-			"departure_minute": 1500,
+			"interval_time": 3600,
+			"departure_time": 1500,
 			"first_departure": 15900,
 			"last_departure": 84300,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				420,
 				1020,
@@ -35,7 +35,7 @@
 				2280,
 				3060
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				480,
 				1080,
@@ -47,14 +47,14 @@
 		{
 			"id": "LER_BRE6_R_55",
 			"label": "La Rochelles - Nantes",
-			"interval_minutes": 3600,
-			"departure_minute": 3300,
+			"interval_time": 3600,
+			"departure_time": 3300,
 			"first_departure": 16200,
 			"last_departure": 86100,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				720,
 				1380,
@@ -62,7 +62,7 @@
 				2580,
 				3060
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				780,
 				1440,
@@ -79,7 +79,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -87,7 +87,7 @@
 				42000,
 				44400
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

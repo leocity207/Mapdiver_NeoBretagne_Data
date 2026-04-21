@@ -24,14 +24,14 @@
 		{
 			"id": "LGV_FR8_A_27",
 			"label": "Rennes - Marseille Saint-Charles",
-			"interval_minutes": 7200,
-			"departure_minute": 1620,
+			"interval_time": 7200,
+			"departure_time": 1620,
 			"first_departure": 16020,
 			"last_departure": 84420,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				2520,
 				5700,
@@ -43,7 +43,7 @@
 				23640,
 				27000
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				2580,
 				5760,
@@ -59,14 +59,14 @@
 		{
 			"id": "LGV_FR8_R_32",
 			"label": "Marseille Saint-Charles - Rennes",
-			"interval_minutes": 7200,
-			"departure_minute": 1920,
+			"interval_time": 7200,
+			"departure_time": 1920,
 			"first_departure": 16320,
 			"last_departure": 84720,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				3300,
 				6480,
@@ -78,7 +78,7 @@
 				24420,
 				27000
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				3360,
 				6540,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

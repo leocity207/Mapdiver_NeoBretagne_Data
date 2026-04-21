@@ -24,14 +24,14 @@
 		{
 			"id": "LER_BRE3_A_30",
 			"label": "Rennes - Poitiers",
-			"interval_minutes": 1800,
-			"departure_minute": 1800,
+			"interval_time": 1800,
+			"departure_time": 1800,
 			"first_departure": 15300,
 			"last_departure": 84600,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				420,
 				1140,
@@ -43,7 +43,7 @@
 				4500,
 				5280
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				540,
 				1260,
@@ -59,14 +59,14 @@
 		{
 			"id": "LER_BRE3_R_00",
 			"label": "Poitiers - Rennes",
-			"interval_minutes": 1800,
-			"departure_minute": 0,
+			"interval_time": 1800,
+			"departure_time": 0,
 			"first_departure": 16200,
 			"last_departure": 84600,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				660,
 				1200,
@@ -78,7 +78,7 @@
 				4560,
 				5220
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				780,
 				1320,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

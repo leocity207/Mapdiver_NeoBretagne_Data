@@ -19,21 +19,21 @@
 		{
 			"id": "LGV_BRE3_A_15",
 			"label": "Quimper - Rennes",
-			"interval_minutes": 3600,
-			"departure_minute": 900,
+			"interval_time": 3600,
+			"departure_time": 900,
 			"first_departure": 15300,
 			"last_departure": 900,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1320,
 				2460,
 				3780,
 				5520
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1380,
 				2520,
@@ -44,21 +44,21 @@
 		{
 			"id": "LGV_BRE3_R_45",
 			"label": "Rennes - Quimper",
-			"interval_minutes": 3600,
-			"departure_minute": 2700,
+			"interval_time": 3600,
+			"departure_time": 2700,
 			"first_departure": 17100,
 			"last_departure": 85500,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1680,
 				3000,
 				4140,
 				5520
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1740,
 				3060,
@@ -74,14 +74,14 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
 				37800,
 				42000
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

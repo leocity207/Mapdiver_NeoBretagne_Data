@@ -22,14 +22,14 @@
 		{
 			"id": "LER_NOR3_A_27",
 			"label": "Caen - Tours",
-			"interval_minutes": 1800,
-			"departure_minute": 1620,
+			"interval_time": 1800,
+			"departure_time": 1620,
 			"first_departure": 16020,
 			"last_departure": 84420,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				840,
 				1680,
@@ -39,7 +39,7 @@
 				4260,
 				4740
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				900,
 				1740,
@@ -53,14 +53,14 @@
 		{
 			"id": "LER_NOR3_R_20",
 			"label": "Tours - Caen",
-			"interval_minutes": 1800,
-			"departure_minute": 1200,
+			"interval_time": 1800,
+			"departure_time": 1200,
 			"first_departure": 15600,
 			"last_departure": 85800,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				420,
 				960,
@@ -70,7 +70,7 @@
 				3780,
 				4740
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				480,
 				1020,
@@ -89,7 +89,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -99,7 +99,7 @@
 				47400,
 				47700
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

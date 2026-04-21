@@ -24,14 +24,14 @@
 		{
 			"id": "LGV_FR7_A_02",
 			"label": "Nantes - Lille Flandres",
-			"interval_minutes": 3600,
-			"departure_minute": 120,
+			"interval_time": 3600,
+			"departure_time": 120,
 			"first_departure": 14520,
 			"last_departure": 120,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1680,
 				3360,
@@ -43,7 +43,7 @@
 				15000,
 				17520
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1740,
 				3420,
@@ -59,14 +59,14 @@
 		{
 			"id": "LGV_FR7_R_37",
 			"label": "Lille Flandre - Nantes",
-			"interval_minutes": 3600,
-			"departure_minute": 2220,
+			"interval_time": 3600,
+			"departure_time": 2220,
 			"first_departure": 16620,
 			"last_departure": 85020,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				2460,
 				4800,
@@ -78,7 +78,7 @@
 				15780,
 				17520
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				2520,
 				4860,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

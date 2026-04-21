@@ -26,14 +26,14 @@
 		{
 			"id": "LER_BRE2_A_45",
 			"label": "Quimper - Rennes",
-			"interval_minutes": 3600,
-			"departure_minute": 2700,
+			"interval_time": 3600,
+			"departure_time": 2700,
 			"first_departure": 15300,
 			"last_departure": 84000,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				480,
 				960,
@@ -47,7 +47,7 @@
 				5100,
 				5700
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				540,
 				1020,
@@ -65,14 +65,14 @@
 		{
 			"id": "LER_BRE2_R_15",
 			"label": "Rennes - Quimper",
-			"interval_minutes": 3600,
-			"departure_minute": 900,
+			"interval_time": 3600,
+			"departure_time": 900,
 			"first_departure": 15300,
 			"last_departure": 83700,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				480,
 				960,
@@ -86,7 +86,7 @@
 				5100,
 				5700
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				540,
 				1020,
@@ -109,7 +109,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -123,7 +123,7 @@
 				49200,
 				49800
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

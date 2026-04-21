@@ -19,21 +19,21 @@
 		{
 			"id": "LER_BRE7_A_15",
 			"label": "Nantes - le Mans",
-			"interval_minutes": 3600,
-			"departure_minute": 900,
+			"interval_time": 3600,
+			"departure_time": 900,
 			"first_departure": 15300,
 			"last_departure": 84000,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				720,
 				1500,
 				2340,
 				3420
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				780,
 				1560,
@@ -44,21 +44,21 @@
 		{
 			"id": "LER_BRE7_R_45",
 			"label": "le Mans - Nantes",
-			"interval_minutes": 3600,
-			"departure_minute": 2700,
+			"interval_time": 3600,
+			"departure_time": 2700,
 			"first_departure": 15300,
 			"last_departure": 85500,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1020,
 				1860,
 				2640,
 				3420
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1080,
 				1920,
@@ -74,14 +74,14 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
 				37800,
 				42000
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

@@ -22,14 +22,14 @@
 		{
 			"id": "LER_BRE4_A_22",
 			"label": "Saint-Malo - Nantes",
-			"interval_minutes": 1800,
-			"departure_minute": 1320,
+			"interval_time": 1800,
+			"departure_time": 1320,
 			"first_departure": 15720,
 			"last_departure": 85920,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				300,
 				660,
@@ -39,7 +39,7 @@
 				1860,
 				1980
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				360,
 				720,
@@ -53,14 +53,14 @@
 		{
 			"id": "LER_BRE4_R_50",
 			"label": "Nantes - Saint-Malo",
-			"interval_minutes": 1800,
-			"departure_minute": 3000,
+			"interval_time": 1800,
+			"departure_time": 3000,
 			"first_departure": 15600,
 			"last_departure": 84000,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				120,
 				360,
@@ -70,7 +70,7 @@
 				1680,
 				1980
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				180,
 				420,
@@ -89,7 +89,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -99,7 +99,7 @@
 				47400,
 				47700
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

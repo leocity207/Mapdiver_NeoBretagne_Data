@@ -21,14 +21,14 @@
 		{
 			"id": "LER_BRE8_A_05",
 			"label": "Angers - Flers",
-			"interval_minutes": 1800,
-			"departure_minute": 300,
+			"interval_time": 1800,
+			"departure_time": 300,
 			"first_departure": 14700,
 			"last_departure": 300,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				720,
 				1440,
@@ -37,7 +37,7 @@
 				3540,
 				4440
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				780,
 				1500,
@@ -50,14 +50,14 @@
 		{
 			"id": "LER_BRE8_R_35",
 			"label": "Flers - Angers",
-			"interval_minutes": 1800,
-			"departure_minute": 2100,
+			"interval_time": 1800,
+			"departure_time": 2100,
 			"first_departure": 16500,
 			"last_departure": 84900,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				840,
 				1560,
@@ -66,7 +66,7 @@
 				3660,
 				4440
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				900,
 				1620,
@@ -84,7 +84,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -93,7 +93,7 @@
 				44400,
 				47400
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

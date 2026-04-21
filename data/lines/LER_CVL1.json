@@ -20,14 +20,14 @@
 		{
 			"id": "LER_CVL1_A_21",
 			"label": "Le Mans - Paris Montparnass",
-			"interval_minutes": 1800,
-			"departure_minute": 1260,
+			"interval_time": 1800,
+			"departure_time": 1260,
 			"first_departure": 13860,
 			"last_departure": 85860,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1080,
 				2100,
@@ -35,7 +35,7 @@
 				4020,
 				4980
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1140,
 				2160,
@@ -47,14 +47,14 @@
 		{
 			"id": "LER_CVL1_R_50",
 			"label": "Paris Montparnass - le Mans",
-			"interval_minutes": 3600,
-			"departure_minute": 3000,
+			"interval_time": 3600,
+			"departure_time": 3000,
 			"first_departure": 13800,
 			"last_departure": 85800,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				900,
 				1860,
@@ -62,7 +62,7 @@
 				3840,
 				4980
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				960,
 				1920,
@@ -79,7 +79,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -87,7 +87,7 @@
 				42000,
 				44400
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,

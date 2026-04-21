@@ -24,14 +24,14 @@
 		{
 			"id": "LGV_FR9_A_10",
 			"label": "Nantes - Strasbourg",
-			"interval_minutes": 7200,
-			"departure_minute": 600,
+			"interval_time": 7200,
+			"departure_time": 600,
 			"first_departure": 15000,
 			"last_departure": 79800,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1920,
 				3900,
@@ -43,7 +43,7 @@
 				14460,
 				16440
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1980,
 				3960,
@@ -59,14 +59,14 @@
 		{
 			"id": "LGV_FR9_R_30",
 			"label": "Strasbourg - Nantes",
-			"interval_minutes": 7200,
-			"departure_minute": 1800,
+			"interval_time": 7200,
+			"departure_time": 1800,
 			"first_departure": 19800,
 			"last_departure": 81000,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1920,
 				3240,
@@ -78,7 +78,7 @@
 				14460,
 				16440
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1980,
 				3300,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

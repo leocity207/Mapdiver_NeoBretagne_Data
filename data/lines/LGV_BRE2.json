@@ -21,14 +21,14 @@
 		{
 			"id": "LGV_BRE2_A_10",
 			"label": "Brest - Nantes",
-			"interval_minutes": 3600,
-			"departure_minute": 600,
+			"interval_time": 3600,
+			"departure_time": 600,
 			"first_departure": 15000,
 			"last_departure": 600,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1080,
 				2280,
@@ -37,7 +37,7 @@
 				5520,
 				6840
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1140,
 				2340,
@@ -50,14 +50,14 @@
 		{
 			"id": "LGV_BRE2_R_40",
 			"label": "Nantes - Brest",
-			"interval_minutes": 3600,
-			"departure_minute": 2400,
+			"interval_time": 3600,
+			"departure_time": 2400,
 			"first_departure": 16800,
 			"last_departure": 85200,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1260,
 				2220,
@@ -66,7 +66,7 @@
 				5700,
 				6840
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1320,
 				2280,
@@ -84,7 +84,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -93,7 +93,7 @@
 				44400,
 				47400
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

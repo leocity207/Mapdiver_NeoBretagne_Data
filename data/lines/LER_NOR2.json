@@ -22,14 +22,14 @@
 		{
 			"id": "LER_NOR2_A_05",
 			"label": "Caen - Rennes",
-			"interval_minutes": 1800,
-			"departure_minute": 300,
+			"interval_time": 1800,
+			"departure_time": 300,
 			"first_departure": 14700,
 			"last_departure": 300,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				720,
 				1500,
@@ -39,7 +39,7 @@
 				4920,
 				5400
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				780,
 				1560,
@@ -53,14 +53,14 @@
 		{
 			"id": "LER_NOR2_R_04",
 			"label": "Rennes - Caens",
-			"interval_minutes": 1800,
-			"departure_minute": 240,
+			"interval_time": 1800,
+			"departure_time": 240,
 			"first_departure": 14640,
 			"last_departure": 2040,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				360,
 				960,
@@ -70,7 +70,7 @@
 				4200,
 				4920
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				300,
 				1020,
@@ -89,7 +89,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -99,7 +99,7 @@
 				47400,
 				47700
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

@@ -24,14 +24,14 @@
 		{
 			"id": "LGV_BRE0_A_00",
 			"label": "Brest - Paris Montparnass",
-			"interval_minutes": 3600,
-			"departure_minute": 0,
+			"interval_time": 3600,
+			"departure_time": 0,
 			"first_departure": 14400,
 			"last_departure": 0,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1080,
 				2520,
@@ -43,7 +43,7 @@
 				10800,
 				11280
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1200,
 				2640,
@@ -59,14 +59,14 @@
 		{
 			"id": "LGV_BRE0_R_30",
 			"label": "Paris Montparnass - Brest",
-			"interval_minutes": 7200,
-			"departure_minute": 1800,
+			"interval_time": 7200,
+			"departure_time": 1800,
 			"first_departure": 16200,
 			"last_departure": 84600,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				480,
 				1380,
@@ -78,7 +78,7 @@
 				10200,
 				11280
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				600,
 				1500,
@@ -99,7 +99,7 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
@@ -111,7 +111,7 @@
 				48300,
 				48600
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35400,
 				36000,
 				37200,

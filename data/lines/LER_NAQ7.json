@@ -19,21 +19,21 @@
 		{
 			"id": "LER_NAQ7_A_12",
 			"label": "Poitiers - Angers",
-			"interval_minutes": 1800,
-			"departure_minute": 720,
+			"interval_time": 1800,
+			"departure_time": 720,
 			"first_departure": 15120,
 			"last_departure": 85320,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": false,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				840,
 				1680,
 				2520,
 				3780
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				900,
 				1740,
@@ -44,21 +44,21 @@
 		{
 			"id": "LER_NAQ7_R_48",
 			"label": "Angers - Poitiers",
-			"interval_minutes": 1800,
-			"departure_minute": 2880,
+			"interval_time": 1800,
+			"departure_time": 2880,
 			"first_departure": 17280,
 			"last_departure": 85680,
 			"stop_pattern": "local",
 			"info_messages": [],
 			"is_reversed": true,
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				1200,
 				2040,
 				2880,
 				3780
 			],
-			"departure_minutes": [
+			"departure_times": [
 				0,
 				1260,
 				2100,
@@ -74,14 +74,14 @@
 			"calendar_pattern": "weekday",
 			"stop_pattern": "local",
 			"info_messages": [],
-			"arrival_minutes": [
+			"arrival_times": [
 				null,
 				36000,
 				37200,
 				37800,
 				42000
 			],
-			"departure_minutes": [
+			"departure_times": [
 				35700,
 				37200,
 				37800,
