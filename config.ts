@@ -1,3 +1,4 @@
+import { App_Config_Type, Config_Type, Network_Config_Type } from "../src/utils/configtype"
 
 export const App_Config = {
 
@@ -15,7 +16,7 @@ export const App_Config = {
 	 * Tells if we should display station schedule app
 	 */
 	HAVE_STATION_SCHEDULES: true 
-}
+} satisfies App_Config_Type;
 
 
 /**
@@ -42,6 +43,8 @@ export const Config = {
 	 */
 	INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP : 200,
 	INITIAL_ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE : 150,
+	ADDITIONAL_BOUND_ZOOM_SPACE_MOBILE: 2,
+	ADDITIONAL_BOUND_ZOOM_SPACE_DESKTOP: 2,
 
 	/**
 	 * max zoom in by scrolling
@@ -113,7 +116,7 @@ export const Config = {
 	 * max difference between tap coordinates to recognize click on a element
 	 */
 	TAP_MAX_DIFF : 10,
-}
+} satisfies Config_Type;
 
 /**
  * Config for the Network Page object
@@ -150,4 +153,4 @@ export const Network_Config = {
 	 * Color to use when a line is disabled
 	 */
 	DISABLE_ELEMENT_COLOR: '#CECECE'
-}
+} satisfies Network_Config_Type;
