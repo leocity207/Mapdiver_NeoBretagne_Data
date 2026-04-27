@@ -121,7 +121,7 @@
 		{
 			"id": "BRE0-100",
 			"label": "100",
-			"calendar_pattern": "weekday",
+			"calendar_pattern": ["weekday","week_end","31.12"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [
@@ -162,7 +162,7 @@
 		{
 			"id": "BRE0-101",
 			"label": "101",
-			"calendar_pattern": "weekday",
+			"calendar_pattern": ["weekday"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [
@@ -203,7 +203,7 @@
 		{
 			"id": "BRE0-102",
 			"label": "102",
-			"calendar_pattern": "weekday",
+			"calendar_pattern": ["weekday","week_end"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [
@@ -244,7 +244,7 @@
 		{
 			"id": "BRE0-104",
 			"label": "104",
-			"calendar_pattern": "weekday",
+			"calendar_pattern": ["weekday"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [
@@ -285,7 +285,7 @@
 		{
 			"id": "BRE0-105",
 			"label": "105",
-			"calendar_pattern": "weekday",
+			"calendar_pattern": ["weekday","week_end"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [
