@@ -84,11 +84,12 @@
 	],
 	"timetables": [
 		{
-			"id": "IC1-1",
+			"id": "NOR2-1",
 			"label": "100",
 			"calendar_patterns": ["weekday"],
 			"stop_pattern": "local",
 			"info_messages": [],
+			"is_reversed": false,
 			"arrival_times": [
 				null,
 				36000,

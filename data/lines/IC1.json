@@ -109,6 +109,43 @@
 			"calendar_patterns": ["weekday"],
 			"stop_pattern": "local",
 			"info_messages": [],
+			"is_reversed": false,
+			"arrival_times": [
+				null,
+				36000,
+				37200,
+				37800,
+				42000,
+				44400,
+				47400,
+				47700,
+				48300,
+				48600,
+				49200,
+				49800
+			],
+			"departure_times": [
+				35700,
+				36000,
+				37200,
+				37800,
+				42000,
+				44400,
+				47400,
+				47700,
+				48300,
+				48600,
+				49200,
+				null
+			]
+		},
+		{
+			"id": "IC1-1",
+			"label": "102",
+			"calendar_patterns": ["weekday"],
+			"stop_pattern": "local",
+			"info_messages": [],
+			"is_reversed": true,
 			"arrival_times": [
 				null,
 				36000,
