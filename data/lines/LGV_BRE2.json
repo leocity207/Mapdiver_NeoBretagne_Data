@@ -81,7 +81,7 @@
 		{
 			"id": "IC1-1",
 			"label": "100",
-			"calendar_pattern": "weekday",
+			"calendar_patterns": ["weekday"],
 			"stop_pattern": "local",
 			"info_messages": [],
 			"arrival_times": [

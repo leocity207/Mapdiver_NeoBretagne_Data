@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "Avenir";
-  src: url('/resources-config/style/Inter.otf');
+	font-family: 'Avenir';
+	src: url('/customization/style/Inter.otf');
 }
 
-div, input{
+div,
+input {
 	font-family: 'Avenir';
 	font-weight: 300;
 	letter-spacing: -0.5px;
